@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: e0648cc2fa3054d679e27df509ae2035
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 128
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - PF Tempesta Seven
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d018b11fa2da243dcbbc25fb8ec8e336, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
