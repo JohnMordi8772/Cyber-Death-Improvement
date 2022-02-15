@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4913654924821816978}
   - component: {fileID: 3857342195704331243}
   - component: {fileID: 4436453920203916889}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 5962884343367217124}
   - component: {fileID: 1899259407283958248}
   - component: {fileID: 1162564639973885194}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: pSphere1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 919132148027633945}
   - component: {fileID: 7612764073361138316}
   - component: {fileID: -1041598223186012552}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: fast-color
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,13 +244,13 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
+  m_Height: 4.5
+  m_Radius: 1.65
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!114 &-412487294485464987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,7 +282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: edec41a678f0b3f45b6c6c0f26a9a798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponHolder: {fileID: 0}
+  weaponHolder: {fileID: 7781224635476812433}
   anim: {fileID: 919132148027633943}
 --- !u!114 &-4825094221614095963
 MonoBehaviour:
@@ -432,7 +432,7 @@ GameObject:
   - component: {fileID: 4534393647540433879}
   - component: {fileID: 6809421885676359617}
   - component: {fileID: 5168946003471977499}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: pCube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
