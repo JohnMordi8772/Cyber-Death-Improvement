@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace GoofyGhosts
 {
@@ -20,13 +21,21 @@ namespace GoofyGhosts
         // Update is called once per frame
         void Update()
         {
-            mousePos = newPC.Player.MouseMove.ReadValue<Vector2>();
+            mousePos = Mouse.current.position.ReadValue();
+            mousePos.z = mousePos.y;
+            mousePos.y = 0;
             mousePos = Camera.main.ScreenToWorldPoint(mousePos);
+            //print(mousePos);
+            mousePos.z = -(mousePos.y + 330);
+            mousePos.y = transform.position.y;
             print(mousePos);
-           
+            transform.LookAt(mousePos);
+
+            /*
             newRot = transform.rotation;
-            //newRot.y = Mathf.Atan(Vector3.Distance(transform.position, mousePos));
-            transform.rotation = newRot;  
+            newRot.y = Mathf.Atan(Vector3.Distance(transform.position, mousePos));
+            transform.rotation = newRot; 
+            */
         }
     }
 }
