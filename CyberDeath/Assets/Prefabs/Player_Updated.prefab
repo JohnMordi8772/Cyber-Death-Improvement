@@ -5106,6 +5106,7 @@ GameObject:
   - component: {fileID: 2324929003718334266}
   - component: {fileID: 1376526545639414798}
   - component: {fileID: 6357932740322549151}
+  - component: {fileID: 9054483115790528468}
   m_Layer: 6
   m_Name: Player_Updated
   m_TagString: Player
@@ -5367,6 +5368,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disableControlsChannel: {fileID: 11400000, guid: 56bc1bc67d6b02042b39c65f865aae75, type: 2}
+--- !u!114 &9054483115790528468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036161922323433224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6a022bcf7d27a847b630f0f913fadcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownBeginChannel: {fileID: 11400000, guid: cdd846c907c192546b7637617cc1c096, type: 2}
+  data: {fileID: 11400000, guid: 2c16194a22bb07246bf84da8334f358b, type: 2}
+  playerHealth: {fileID: 2765955800109207684}
+  playerHealthData: {fileID: 11400000, guid: c50700372c5a2464883f7f4e0b5fa4ed, type: 2}
 --- !u!1 &2036161922328002363
 GameObject:
   m_ObjectHideFlags: 0

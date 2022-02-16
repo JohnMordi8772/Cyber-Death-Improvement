@@ -330,7 +330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyOnDeath: 1
   healthInstance: 1
-  data: {fileID: 11400000, guid: 63ae874dbb6936445a695ec8448bb39f, type: 2}
+  data: {fileID: 11400000, guid: 185946632e7de1e4cb82a7eed9e27d78, type: 2}
   deathChannel: {fileID: 11400000, guid: 7379fb5e070662146b5197dd5fec0d6d, type: 2}
   takeDamageChannel: {fileID: 0}
   armor: {fileID: 0}
@@ -364,7 +364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eaa1145d2e221b48a76fd51aed7ae64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  motorData: {fileID: 11400000, guid: d15876723bbde0c4e801ba71940d5b40, type: 2}
+  motorData: {fileID: 11400000, guid: dc22d44c488a4ee4a97ca2ad934792c1, type: 2}
 --- !u!95 &919132148027633943
 Animator:
   serializedVersion: 3
