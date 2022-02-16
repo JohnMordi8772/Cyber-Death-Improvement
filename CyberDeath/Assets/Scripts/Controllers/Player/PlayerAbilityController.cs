@@ -33,6 +33,7 @@ namespace GoofyGhosts
         private void OnEnable()
         {
             controls.Abilities.ActivateAbility.performed += _ => manager.Activate();
+            controls.Abilities.SwapAbility.performed += _ => manager.SwapAbilities<NanobotsAbility>();
 
             controls.Abilities.Enable();
 

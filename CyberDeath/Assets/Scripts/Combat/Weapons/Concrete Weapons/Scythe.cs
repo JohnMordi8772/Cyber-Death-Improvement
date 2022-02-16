@@ -13,12 +13,31 @@ namespace GoofyGhosts
     public class Scythe : IWeapon
     {
         private Collider scytheCollider;
+        PlayerControls controls;
+        [SerializeField] WeaponData scythereference, swordReference;
 
         #region -- // Init // --
         protected override void Awake()
         {
             base.Awake();
+            controls = new PlayerControls();
             scytheCollider = GetComponent<Collider>();
+        }
+
+        private void OnEnable()
+        {
+            controls.WeaponsHandling.SwapWeapon.performed += _ => SwapWeapon();
+            controls.WeaponsHandling.Enable();
+        }
+
+        void SwapWeapon()
+        {
+            if (data.weaponName == "Scythe")
+            {
+                data = swordReference;
+            }
+            else
+                data = scythereference;
         }
 
         private void Start()

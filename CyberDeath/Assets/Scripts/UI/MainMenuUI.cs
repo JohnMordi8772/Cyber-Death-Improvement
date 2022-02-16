@@ -186,7 +186,7 @@ namespace GoofyGhosts
 
         void LoadGameScene()
         {
-            SceneManager.LoadSceneAsync("Greybox2");
+            SceneManager.LoadSceneAsync(1);
         }
 
         // Called when an option is selected
