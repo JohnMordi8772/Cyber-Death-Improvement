@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a1b870d58aef5e4aad2ad070dc2deea, type: 3}
-  m_Name: Basic Enemy
+  m_Name: Fast Enemy
   m_EditorClassIdentifier: 
-  prefab: {fileID: 7146035057275725131, guid: e8329f1d28a2e54488572807bddbc2af, type: 3}
+  prefab: {fileID: 6969221711345317931, guid: b326e8259a3af9448aac24872bbf0658, type: 3}
   waveNumber: 0
-  spawnChance: 0.6
+  spawnChance: 0.4
