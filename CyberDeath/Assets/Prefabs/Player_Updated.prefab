@@ -6512,6 +6512,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: fcd04ba9ccd762144a255a3abb412270, type: 2}
+  scythereference: {fileID: 11400000, guid: fcd04ba9ccd762144a255a3abb412270, type: 2}
+  swordReference: {fileID: 11400000, guid: b681c1a9f753547478b7ce0887181ec1, type: 2}
 --- !u!136 &8934205335043888241
 CapsuleCollider:
   m_ObjectHideFlags: 0

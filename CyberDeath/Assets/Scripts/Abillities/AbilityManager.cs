@@ -26,6 +26,8 @@ namespace GoofyGhosts
         /// </summary>
         [ShowInInspector][ReadOnly] private List<IAbility> abilities;
 
+        PlayerControls playerControls;
+
         private Animator anim;
 
         /// <summary>
@@ -76,19 +78,23 @@ namespace GoofyGhosts
         /// <typeparam name="T">The IAbility type to swap to.</typeparam>
         public void SwapAbilities<T>() where T : IAbility
         {
-            bool abilityExists = AbilityListContains<T>(out IAbility ability);
-
-            if (!abilityExists)
-            {
-                Debug.LogWarning("[AbilityManager]: Cannot swap to ability - type not present in the list" +
-                    "of usable abilities.");
-            }
+            if (currentAbility is DashAbility)
+                currentAbility = GetComponent<NanobotsAbility>();
             else
-            {
-                currentAbility?.OnUnswapped();
-                currentAbility = ability;
-                currentAbility.OnSwapped();
-            }
+                currentAbility = GetComponent<DashAbility>();
+            //bool abilityExists = AbilityListContains<T>(out IAbility ability);
+
+            //if (!abilityExists)
+            //{
+            //    Debug.LogWarning("[AbilityManager]: Cannot swap to ability - type not present in the list" +
+            //        "of usable abilities.");
+            //}
+            //else
+            //{
+            //    currentAbility?.OnUnswapped();
+            //    currentAbility = ability;
+            //    currentAbility.OnSwapped();
+            //}
         }
 
         /// <summary>
