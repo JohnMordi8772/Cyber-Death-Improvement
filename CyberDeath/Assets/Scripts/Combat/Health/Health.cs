@@ -59,7 +59,7 @@ namespace GoofyGhosts
                 return;
             }
 
-            data.currentHealth -= (amnt / armor.GetArmorLevel());
+            data.currentHealth -= (amnt * (1 - (armor.GetArmorLevel() * 0.05f)));
             OnDamageTaken?.Invoke(data);
             takeDamageChannel?.RaiseEvent(data);
 

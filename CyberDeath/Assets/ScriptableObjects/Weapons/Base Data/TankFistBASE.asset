@@ -9,12 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93c3d6fa526ce2d468bab07218807663, type: 3}
-  m_Name: PlayerArmor
+  m_Script: {fileID: 11500000, guid: c55b9e5599b5f3b4c964483ee7a5d79a, type: 3}
+  m_Name: TankFistBASE
   m_EditorClassIdentifier: 
-  baseStat:
-    statName: Armor
-    baseStat: 0
-  currentArmor:
-    statName: 
-    baseStat: 0
+  isBaseData: 1
+  baseData: {fileID: 0}
+  weaponName: Tank Fist
+  attackDamage:
+    statName: Attack Damage
+    baseStat: 6
+  attackSpeed:
+    statName: Attack Speed
+    baseStat: 0.5

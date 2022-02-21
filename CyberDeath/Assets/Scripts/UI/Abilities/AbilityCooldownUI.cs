@@ -37,7 +37,7 @@ namespace GoofyGhosts
         /// Updates the slider according to the cooldown time.
         /// </summary>
         /// <param name="cooldownTime">The ability's cooldown time.</param>
-        private void UpdateSlider(float cooldownTime)
+        public void UpdateSlider(float cooldownTime)
         {
             StopAllCoroutines();
             StartCoroutine(DisplayCooldown(cooldownTime));

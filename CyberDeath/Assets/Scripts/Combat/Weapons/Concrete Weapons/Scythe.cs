@@ -3,7 +3,9 @@
 *    Contributors: 
 *    Date Created: 11/11/2021
 *******************************************************************/
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace GoofyGhosts
 {
@@ -15,6 +17,7 @@ namespace GoofyGhosts
         private Collider scytheCollider;
         PlayerControls controls;
         [SerializeField] WeaponData scythereference, swordReference;
+        [SerializeField] TextMeshProUGUI weaponText;
 
         #region -- // Init // --
         protected override void Awake()
@@ -35,9 +38,13 @@ namespace GoofyGhosts
             if (data.weaponName == "Scythe")
             {
                 data = swordReference;
+                weaponText.text = "Current Weapon: Sword";
             }
             else
+            {
                 data = scythereference;
+                weaponText.text = "Current Weapon: Scythe";
+            }
         }
 
         private void Start()
