@@ -27,6 +27,8 @@ namespace GoofyGhosts
         /// </summary>
         [ShowInInspector] [ReadOnly] private List<IAbility> abilities;
 
+        [SerializeField] AbilityCooldownUI abilityCooldown;
+
         [SerializeField] Image icon;
 
         [SerializeField] Sprite[] spriteIcons;
@@ -86,6 +88,7 @@ namespace GoofyGhosts
             if (currentAbility is DashAbility)
             {
                 currentAbility = GetComponent<NanobotsAbility>();
+                
                 icon.sprite = spriteIcons[1];
             }
             else

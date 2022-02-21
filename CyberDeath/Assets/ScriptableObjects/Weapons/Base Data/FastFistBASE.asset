@@ -9,9 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a1b870d58aef5e4aad2ad070dc2deea, type: 3}
-  m_Name: Fast Enemy
+  m_Script: {fileID: 11500000, guid: c55b9e5599b5f3b4c964483ee7a5d79a, type: 3}
+  m_Name: FastFistBASE
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6969221711345317931, guid: b326e8259a3af9448aac24872bbf0658, type: 3}
-  waveNumber: 0
-  spawnChance: 0.4
+  isBaseData: 1
+  baseData: {fileID: 0}
+  weaponName: Fast Fist
+  attackDamage:
+    statName: Attack Damage
+    baseStat: 1.5
+  attackSpeed:
+    statName: Attack Speed
+    baseStat: 2

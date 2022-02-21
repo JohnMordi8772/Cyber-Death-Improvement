@@ -2574,7 +2574,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3576488162983635956}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.38, z: 0}
+  m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7592014143584584627}
@@ -3039,10 +3039,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyOnDeath: 1
   healthInstance: 1
-  data: {fileID: 11400000, guid: 63ae874dbb6936445a695ec8448bb39f, type: 2}
+  data: {fileID: 11400000, guid: b1a4f6bfc6c5a6b44b3a918c22506768, type: 2}
   deathChannel: {fileID: 11400000, guid: 7379fb5e070662146b5197dd5fec0d6d, type: 2}
   takeDamageChannel: {fileID: 0}
-  armor: {fileID: 0}
+  armor: {fileID: 11400000, guid: a3f169577ede1684e8f55b5c9e730c02, type: 2}
   hitParticles: {fileID: 3542059180156051683}
 --- !u!114 &1626520224266967207
 MonoBehaviour:
@@ -3091,7 +3091,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 4107102036201023127}
   m_Enabled: 1
   m_AgentTypeID: -1372625422
-  m_Radius: 1.65
+  m_Radius: 3.3
   m_Speed: 7
   m_Acceleration: 8
   avoidancePriority: 50
@@ -3100,7 +3100,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 4.51
+  m_Height: 9
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -3216,7 +3216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eaa1145d2e221b48a76fd51aed7ae64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  motorData: {fileID: 11400000, guid: d15876723bbde0c4e801ba71940d5b40, type: 2}
+  motorData: {fileID: 11400000, guid: 80748f294f5b5484385f9ae7451e543c, type: 2}
 --- !u!1 &4128176502769870193
 GameObject:
   m_ObjectHideFlags: 0
@@ -4856,8 +4856,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f8f0271f021234b9bed6e4d735eac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: afdba8ac235d3954b8f8e242ef6cc9ad, type: 2}
-  attackRange: 20
+  data: {fileID: 11400000, guid: 018a99c8f43f81c41bf0c4ba328ac810, type: 2}
+  attackRange: 35
   whatIsTarget:
     serializedVersion: 2
     m_Bits: 64

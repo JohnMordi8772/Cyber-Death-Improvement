@@ -4819,7 +4819,7 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: 63ae874dbb6936445a695ec8448bb39f, type: 2}
   deathChannel: {fileID: 11400000, guid: 7379fb5e070662146b5197dd5fec0d6d, type: 2}
   takeDamageChannel: {fileID: 0}
-  armor: {fileID: 0}
+  armor: {fileID: 11400000, guid: a3f169577ede1684e8f55b5c9e730c02, type: 2}
   hitParticles: {fileID: 7924546688043020046}
 --- !u!114 &198699336
 MonoBehaviour:
