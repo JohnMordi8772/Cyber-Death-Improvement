@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93c3d6fa526ce2d468bab07218807663, type: 3}
-  m_Name: PlayerArmor
+  m_Script: {fileID: 11500000, guid: dbcf4dac8daab374bbb6bc570e8bc016, type: 3}
+  m_Name: TankHealth
   m_EditorClassIdentifier: 
-  baseStat:
-    statName: Armor
-    baseStat: 0
-  currentArmor:
-    statName: 
-    baseStat: 0
+  isBaseData: 0
+  baseData: {fileID: 11400000, guid: 36bd9bbfd615425489cec3584643b229, type: 2}
+  maxHealth:
+    statName: Max Health
+    baseStat: 65
+  currentHealth: 65

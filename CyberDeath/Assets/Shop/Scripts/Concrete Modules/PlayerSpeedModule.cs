@@ -13,7 +13,7 @@ namespace GoofyGhosts
     {
         public override void OnPurchased()
         {
-            motorData.movementSpeed = new StatUpgrade(motorData.movementSpeed, rank * ModuleUpgrades.MOVE_SPEED_UPGRADE);
+            motorData.movementSpeed = new StatUpgrade(motorData.movementSpeed, (rank * ModuleUpgrades.MOVE_SPEED_UPGRADE) + 1.5f);
         }
     }
 }

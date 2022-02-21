@@ -242,43 +242,43 @@ namespace GoofyGhosts
 
         void ShowModuleInfo()
         {
-            /*
+
             GameObject temp = inventory[index];
             Module m = temp.GetComponent<Module>();
             string a = m.name;
 
-            if(a == "Speed")
+            if (a == "Speed")
             {
-                dialogue.QueueDialogue(15);
+                dialogue.displayText.text = "Increase movement speed by 25%.";
             }
-            else if(a == "Swing")
+            else if (a == "Swing")
             {
-                dialogue.QueueDialogue(16);
+                dialogue.displayText.text = "Increase attack speed by 10%.";
             }
-            else if (a == "Power")
+            else if (a == "Attack")
             {
-                dialogue.QueueDialogue(17);
+                dialogue.displayText.text = "Increase damage by a small amount.";
             }
             else if (a == "Endurance")
             {
-                dialogue.QueueDialogue(18);
+                dialogue.displayText.text = "Increase your health by 10 hitpoints.";
             }
             else if (a == "Armor")
             {
-                dialogue.QueueDialogue(19);
+                dialogue.displayText.text = "Take 5% less damage.";
             }
 
-            dialogue.NextLine(); */
+            //dialogue.NextLine();
         }
 
         public void EscapeKey()
         { 
-            if( dialogue.displayText.text == dialogue.dialogue.Peek().ToString())
-            {
+            //if( dialogue.displayText.text == dialogue.dialogue.Peek().ToString())
+            //{
                 ToggleInterface();
                 dialogue.returnToFirst = true;
                 dialogue.NextLine();
-            }
+            //}
         }
 
         public void ToggleInterface()
