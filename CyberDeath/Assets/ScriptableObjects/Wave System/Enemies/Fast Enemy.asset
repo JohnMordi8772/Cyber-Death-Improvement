@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 6969221711345317931, guid: b326e8259a3af9448aac24872bbf0658, type: 3}
   waveNumber: 0
-  spawnChance: 0.4
+  spawnChance: 0
