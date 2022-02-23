@@ -52,6 +52,7 @@ GameObject:
   - component: {fileID: 2299156864005966226}
   - component: {fileID: 2299156864005966227}
   - component: {fileID: 2299156864005966252}
+  - component: {fileID: -3241382971314154593}
   m_Layer: 0
   m_Name: fastenemy
   m_TagString: Untagged
@@ -170,7 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destroyOnDeath: 0
   healthInstance: 0
-  data: {fileID: 11400000, guid: 63ae874dbb6936445a695ec8448bb39f, type: 2}
+  data: {fileID: 11400000, guid: 185946632e7de1e4cb82a7eed9e27d78, type: 2}
   deathChannel: {fileID: 11400000, guid: 7379fb5e070662146b5197dd5fec0d6d, type: 2}
   takeDamageChannel: {fileID: 0}
   armor: {fileID: 0}
@@ -274,6 +275,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e393326fd86147e47976277a1f47635f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-3241382971314154593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380730613261612237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b88a88eb15c33df42ab9fd589421c319, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitSFX: {fileID: 11400000, guid: 3831ba59ad2a9f4458dffbf220436bf5, type: 2}
 --- !u!1 &1599344543535721679
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +429,7 @@ BoxCollider:
   m_GameObject: {fileID: 2299156864022549664}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -428,7 +442,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2299156865232057845}
-  - component: {fileID: 2299156865232057847}
   m_Layer: 0
   m_Name: WeaponHandler
   m_TagString: Untagged
@@ -444,26 +457,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2299156865232057844}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: 0, y: 1.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2299156864022549665}
   m_Father: {fileID: 1757115797031317111}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &2299156865232057847
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2299156865232057844}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &3865498343142020071
 GameObject:
   m_ObjectHideFlags: 0
