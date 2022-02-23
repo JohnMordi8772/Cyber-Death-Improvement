@@ -169,8 +169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e540550d5f0fa44cbc87b474650532f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyOnDeath: 0
-  healthInstance: 0
+  destroyOnDeath: 1
+  healthInstance: 1
   data: {fileID: 11400000, guid: 185946632e7de1e4cb82a7eed9e27d78, type: 2}
   deathChannel: {fileID: 11400000, guid: 7379fb5e070662146b5197dd5fec0d6d, type: 2}
   takeDamageChannel: {fileID: 0}
