@@ -62,16 +62,9 @@ ModelImporter:
       - time: 0
         functionName: Fire
         data: 
-        objectReferenceParameter: {instanceID: 0}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.031496108
-        functionName: Fire0
-        data: 
-        objectReferenceParameter: {fileID: 919132149155446097, guid: f49314efd445ae440ad5871ff3bcf178, type: 3}
-        floatParameter: 0
-        intParameter: 0
+        objectReferenceParameter: {fileID: 1380730613261612237, guid: 63af2ab67cc5c3e43900182f8fb03d2b, type: 3}
+        floatParameter: 1
+        intParameter: 1
         messageOptions: 0
       transformMask: []
       maskType: 3

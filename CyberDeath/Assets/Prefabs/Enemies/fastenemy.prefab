@@ -41,11 +41,9 @@ GameObject:
   - component: {fileID: 1757115797031317111}
   - component: {fileID: 2299156864005966225}
   - component: {fileID: 2299156864005966224}
-  - component: {fileID: 2299156864005966239}
   - component: {fileID: 2299156864005966232}
   - component: {fileID: 2299156864005966233}
   - component: {fileID: 2299156864005966234}
-  - component: {fileID: 2299156864005966235}
   - component: {fileID: 2299156864005966228}
   - component: {fileID: 2299156864005966229}
   - component: {fileID: 2299156864005966230}
@@ -53,6 +51,8 @@ GameObject:
   - component: {fileID: 2299156864005966227}
   - component: {fileID: 2299156864005966252}
   - component: {fileID: -3241382971314154593}
+  - component: {fileID: -5196750018245914960}
+  - component: {fileID: 213669501280812999}
   m_Layer: 7
   m_Name: fastenemy
   m_TagString: Untagged
@@ -115,18 +115,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2299156864005966239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1380730613261612237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2e4f95a2cd362e4da1397499bcb8794, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2299156864005966232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -176,20 +164,6 @@ MonoBehaviour:
   takeDamageChannel: {fileID: 0}
   armor: {fileID: 11400000, guid: a3f169577ede1684e8f55b5c9e730c02, type: 2}
   hitParticles: {fileID: 3743835043822638769, guid: 004dd00d5732f4c878078e06f45657b5, type: 3}
---- !u!114 &2299156864005966235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1380730613261612237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5ee357a4d59e5a4f9ca7a3928834925, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponHolder: {fileID: 2299156865232057845}
-  anim: {fileID: 2299156864005966224}
 --- !u!114 &2299156864005966228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +262,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hitSFX: {fileID: 11400000, guid: 3831ba59ad2a9f4458dffbf220436bf5, type: 2}
+--- !u!114 &-5196750018245914960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380730613261612237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c160d6185a8cabb408713f5804689616, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponHolder: {fileID: 2299156865232057845}
+  anim: {fileID: 2299156864005966224}
+--- !u!114 &213669501280812999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380730613261612237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2e4f95a2cd362e4da1397499bcb8794, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1599344543535721679
 GameObject:
   m_ObjectHideFlags: 0
