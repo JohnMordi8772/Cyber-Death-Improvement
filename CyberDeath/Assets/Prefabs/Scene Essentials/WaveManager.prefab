@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &577789132523395331
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 577789132523395329}
+  - component: {fileID: 577789132523395330}
+  m_Layer: 0
+  m_Name: WaveManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &577789132523395329
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577789132523395331}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &577789132523395330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577789132523395331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6f6ebec7e6e8d54c8e4c3cd1a9534dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startingWave: 1
+  waveChannel: {fileID: 11400000, guid: d1693b35dd5bcf847a746ae36c47fd8b, type: 2}
+  enemiesRemainingChannel: {fileID: 11400000, guid: 536972453eda4a14bae7af29cf4ba116, type: 2}
+  enemyDeathChannel: {fileID: 11400000, guid: 7379fb5e070662146b5197dd5fec0d6d, type: 2}
+  progressWaveChannel: {fileID: 11400000, guid: 2d3fe5ef683b7b24989b2539c86a2a1b, type: 2}
+  audioClipChannel: {fileID: 11400000, guid: 21dd50e5a1219104392fa94444fd29dd, type: 2}
+  waveEndSFX: {fileID: 11400000, guid: c57ce6c01f19b9648b3e769d228c6822, type: 2}
+  waveEnd2SFX: {fileID: 11400000, guid: 2a9fa104b81c37b49a18c8277dbb0236, type: 2}
+  waveStartSFX: {fileID: 11400000, guid: c0b6616cfb8ee354d9a0761d8180ae9b, type: 2}

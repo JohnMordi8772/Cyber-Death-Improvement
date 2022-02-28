@@ -30,15 +30,10 @@ namespace GoofyGhosts
         /// </summary>
         public virtual void OnUnSwap() { }
         /// <summary>
-        /// Invoked when the enemy is attacked.
+        /// Invoked when the enemey is attacked.
         /// </summary>
         /// <param name="damage">The amount of damage received.</param>
         public virtual void OnAttacked(float damage) { }
-        /// <summary>
-        /// Invoked when the enemy is attacked from behind.
-        /// </summary>
-        /// <param name="damage"></param>
-        public virtual void OnCritical(float damage) { }
 
         protected virtual void Awake()
         {

@@ -56,21 +56,6 @@ namespace GoofyGhosts
             health.TakeDamage(damage);
         }
 
-        public override void OnCritical(float damage)
-        {
-            // If the enemy is not stunned, take damage, become stunned,
-            // and wait for stun effect to wear off.
-            if (!stunned)
-            {
-                anim.SetTrigger("Stunned");
-                stunned = true;
-                //StartCoroutine(Cooldown());
-            }
-
-            audioSource.Play();
-            health.TakeDamage(damage);
-        }
-
         /// <summary>
         /// Invoked via an AnimationEvent. Starts seeking target again.
         /// </summary>

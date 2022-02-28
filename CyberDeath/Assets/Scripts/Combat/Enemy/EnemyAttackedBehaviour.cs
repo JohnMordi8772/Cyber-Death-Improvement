@@ -17,7 +17,6 @@ namespace GoofyGhosts
     {
         private EnemyStateManager manager;
         private NavMeshAgent agent;
-        public Transform playerWeapon;
 
         private void Awake()
         {
@@ -30,17 +29,6 @@ namespace GoofyGhosts
            // agent.isStopped = true;
             manager.SwapState<EnemyAttackedState>();
             manager.OnAttacked(amnt);
-        }
-
-        public void TakeCritical(float amnt)
-        {
-            // agent.isStopped = true;
-            if (Physics.Linecast(transform.position, playerWeapon.position))
-            {
-                manager.SwapState<EnemyAttackedState>();
-                manager.OnAttacked(amnt * 1.5f);
-                Debug.Log("Critical Hit");
-            }
         }
     }
 }

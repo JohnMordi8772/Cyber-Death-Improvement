@@ -45,11 +45,6 @@ namespace GoofyGhosts
             currentState.OnAttacked(damage);
         }
 
-        public void OnCritical(float damage)
-        {
-            currentState.OnCritical(damage);
-        }
-
         public void SwapState<T>() where T : IEnemyState
         {
             IEnemyState state = states.Find(t => t.GetType() == typeof(T));

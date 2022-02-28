@@ -4760,7 +4760,6 @@ GameObject:
   - component: {fileID: 1707678543487998786}
   - component: {fileID: 2030221374342325462}
   - component: {fileID: 9134646413626672012}
-  - component: {fileID: -6469835232293008180}
   m_Layer: 7
   m_Name: Enemy
   m_TagString: Untagged
@@ -4820,7 +4819,7 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: 63ae874dbb6936445a695ec8448bb39f, type: 2}
   deathChannel: {fileID: 11400000, guid: 7379fb5e070662146b5197dd5fec0d6d, type: 2}
   takeDamageChannel: {fileID: 0}
-  armor: {fileID: 0}
+  armor: {fileID: 11400000, guid: a3f169577ede1684e8f55b5c9e730c02, type: 2}
   hitParticles: {fileID: 7924546688043020046}
 --- !u!114 &198699336
 MonoBehaviour:
@@ -4919,7 +4918,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e393326fd86147e47976277a1f47635f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerWeapon: {fileID: 4410104399090841834, guid: caae6fa4795649848bafd23056da992e, type: 3}
 --- !u!114 &7050061736848736510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4996,19 +4994,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   motorData: {fileID: 11400000, guid: d15876723bbde0c4e801ba71940d5b40, type: 2}
---- !u!65 &-6469835232293008180
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7146035057275725131}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.3616583, y: 2.3030007, z: 0.38250256}
-  m_Center: {x: 0.0614084, y: 0.65150034, z: -1.5210569}
 --- !u!1 &7163734616472931786
 GameObject:
   m_ObjectHideFlags: 0
