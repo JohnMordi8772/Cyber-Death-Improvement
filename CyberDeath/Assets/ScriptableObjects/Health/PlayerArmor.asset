@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseStat:
     statName: Armor
-    baseStat: 1
+    baseStat: 0
   currentArmor:
-    statName: Armor
-    baseStat: 1
+    statName: 
+    baseStat: 0

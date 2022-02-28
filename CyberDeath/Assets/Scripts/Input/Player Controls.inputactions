@@ -310,6 +310,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "SwapWeapon",
+                    "type": "Button",
+                    "id": "f33551b4-13b9-4932-8925-b110eb3ec3ca",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -387,6 +395,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Aim",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e90bdd6c-4361-4225-9c0a-20a8f8dd99e8",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwapWeapon",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2edd1221-f22d-4887-85d5-8d9e2464fb93",
+                    "path": "<Keyboard>/tab",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwapWeapon",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -498,6 +528,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "SwapAbility",
+                    "type": "Button",
+                    "id": "7299aa3d-9bfa-40a7-b157-bc5bc28dded7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -514,8 +552,8 @@
                 },
                 {
                     "name": "",
-                    "id": "265c07a4-e8e5-4a55-b13e-62ca9291a69e",
-                    "path": "<Gamepad>/rightShoulder",
+                    "id": "069571ae-339b-45d1-adf0-b264b86b3216",
+                    "path": "<Gamepad>/leftShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -525,12 +563,23 @@
                 },
                 {
                     "name": "",
-                    "id": "069571ae-339b-45d1-adf0-b264b86b3216",
-                    "path": "<Gamepad>/leftShoulder",
+                    "id": "a5cd7fcd-8640-4ad1-9172-afa08721d008",
+                    "path": "<Gamepad>/rightShoulder",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ActivateAbility",
+                    "action": "SwapAbility",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7611153a-c13c-48db-a97b-e56b9c4d5b1e",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "SwapAbility",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
@@ -878,7 +927,7 @@
                 {
                     "name": "",
                     "id": "85f865dc-f1f3-4d95-b9ff-02094b360242",
-                    "path": "<Gamepad>/buttonNorth",
+                    "path": "<Gamepad>/dpad/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

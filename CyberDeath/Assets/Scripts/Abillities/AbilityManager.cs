@@ -6,6 +6,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Sirenix.OdinInspector;
 using System.Linq;
 
@@ -19,12 +20,20 @@ namespace GoofyGhosts
         /// <summary>
         /// The current ability.
         /// </summary>
-        [ShowInInspector][ReadOnly] private IAbility currentAbility;
+        [ShowInInspector] [ReadOnly] private IAbility currentAbility;
 
         /// <summary>
         /// The list of the player's abilities.
         /// </summary>
-        [ShowInInspector][ReadOnly] private List<IAbility> abilities;
+        [ShowInInspector] [ReadOnly] private List<IAbility> abilities;
+
+        [SerializeField] AbilityCooldownUI abilityCooldown;
+
+        [SerializeField] Image icon;
+
+        [SerializeField] Sprite[] spriteIcons;
+
+        PlayerControls playerControls;
 
         private Animator anim;
 
@@ -76,19 +85,30 @@ namespace GoofyGhosts
         /// <typeparam name="T">The IAbility type to swap to.</typeparam>
         public void SwapAbilities<T>() where T : IAbility
         {
-            bool abilityExists = AbilityListContains<T>(out IAbility ability);
-
-            if (!abilityExists)
+            if (currentAbility is DashAbility)
             {
-                Debug.LogWarning("[AbilityManager]: Cannot swap to ability - type not present in the list" +
-                    "of usable abilities.");
+                currentAbility = GetComponent<NanobotsAbility>();
+                
+                icon.sprite = spriteIcons[1];
             }
             else
             {
-                currentAbility?.OnUnswapped();
-                currentAbility = ability;
-                currentAbility.OnSwapped();
+                currentAbility = GetComponent<DashAbility>();
+                icon.sprite = spriteIcons[0];
             }
+            //bool abilityExists = AbilityListContains<T>(out IAbility ability);
+
+            //if (!abilityExists)
+            //{
+            //    Debug.LogWarning("[AbilityManager]: Cannot swap to ability - type not present in the list" +
+            //        "of usable abilities.");
+            //}
+            //else
+            //{
+            //    currentAbility?.OnUnswapped();
+            //    currentAbility = ability;
+            //    currentAbility.OnSwapped();
+            //}
         }
 
         /// <summary>
