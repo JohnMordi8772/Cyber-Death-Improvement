@@ -16,5 +16,5 @@ MonoBehaviour:
     statName: Armor
     baseStat: 0
   currentArmor:
-    statName: 
+    statName: Armor
     baseStat: 0

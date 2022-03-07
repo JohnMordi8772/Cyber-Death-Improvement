@@ -31,7 +31,7 @@ namespace GoofyGhosts
         {
             IWeapon weapon = weaponHolder.GetComponentInChildren<IWeapon>();
             SetFireToFalse = () => anim.SetBool("Fire", false);
-
+            //anim.SetInteger("Fire0", 1);
 
             SwapWeapon(weapon);
         }
