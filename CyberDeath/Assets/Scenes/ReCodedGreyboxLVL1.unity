@@ -6759,6 +6759,22 @@ PrefabInstance:
       propertyPath: weaponText
       value: 
       objectReference: {fileID: 900327994}
+    - target: {fileID: 5005352443119575318, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: weaponReference.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005352443119575318, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: weaponReference.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: fcd04ba9ccd762144a255a3abb412270, type: 2}
+    - target: {fileID: 5005352443119575318, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: weaponReference.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: b681c1a9f753547478b7ce0887181ec1, type: 2}
+    - target: {fileID: 5005352443119575318, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: weaponReference.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 7f13da3d1bb47de4dae0a39f997a5c02, type: 2}
     - target: {fileID: 8072498361272376072, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
       propertyPath: m_IsActive
       value: 1
