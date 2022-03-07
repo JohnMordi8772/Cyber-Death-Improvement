@@ -15,14 +15,16 @@ namespace GoofyGhosts
     public class Scythe : IWeapon
     {
         private Collider scytheCollider;
+        int i;
         PlayerControls controls;
-        [SerializeField] WeaponData scythereference, swordReference;
+        [SerializeField] WeaponData[] weaponReference;//scythereference, swordReference;
         [SerializeField] TextMeshProUGUI weaponText;
 
         #region -- // Init // --
         protected override void Awake()
         {
             base.Awake();
+            i = 0;
             controls = new PlayerControls();
             scytheCollider = GetComponent<Collider>();
         }
@@ -35,15 +37,16 @@ namespace GoofyGhosts
 
         void SwapWeapon()
         {
-            if (data.weaponName == "Scythe")
+            if (i < weaponReference.Length - 1)
             {
-                data = swordReference;
-                weaponText.text = "Current Weapon: Sword";
+                data = weaponReference[++i];
+                weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
             }
             else
             {
-                data = scythereference;
-                weaponText.text = "Current Weapon: Scythe";
+                i = 0;
+                data = weaponReference[i];
+                weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
             }
         }
 
