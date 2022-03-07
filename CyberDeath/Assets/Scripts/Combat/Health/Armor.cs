@@ -15,6 +15,7 @@ namespace GoofyGhosts
         [SerializeField] private Stat baseStat;
         [SerializeField] private Stat currentArmor;
         private float armorLevel;
+        public int armorMod;
 
         public Stat CurrentArmor
         {
@@ -33,6 +34,7 @@ namespace GoofyGhosts
         public void Init()
         {
             armorLevel = baseStat.GetStat();
+            armorMod = 0;
         }
 
         public float GetArmorLevel()
