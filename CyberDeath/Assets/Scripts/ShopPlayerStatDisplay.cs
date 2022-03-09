@@ -32,11 +32,11 @@ namespace GoofyGhosts
         // Update is called once per frame
         void Update()
         {
-            attackStat.text = "Attack: +" + (playerAttack.modifier * 10) + "%";
+            attackStat.text = "Attack: +" + (playerAttack.modifier * 5) + "%";
             armorStat.text = "Defense: +" + (playerArmor.armorMod * 5) + "%";
-            healthStat.text = "Health: +" + (playerHealth.modifier * 10);
-            aSpeedStat.text = "Attack Speed: +" + (playerSwing.modifier * 10) + "%";
-            mSpeedStat.text = "Move Speed: +" + (playerMove.modifier * 10) + "%";
+            healthStat.text = "Health: " + (100 + (playerHealth.modifier * 5));
+            aSpeedStat.text = "Attack Speed: +" + (playerSwing.modifier * 5) + "%";
+            mSpeedStat.text = "Move Speed: +" + (playerMove.modifier * 5) + "%";
         }
     }
 }

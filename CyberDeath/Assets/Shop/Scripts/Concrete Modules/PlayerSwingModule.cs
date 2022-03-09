@@ -17,5 +17,11 @@ namespace GoofyGhosts
             weaponData.attackSpeed = new StatUpgrade(weaponData.attackSpeed, rank * ModuleUpgrades.ATT_SPEED_UPGRADE);
             modifier++;
         }
+
+        public void OnPurchased(float value, int mod)
+        {
+            weaponData.attackSpeed = new StatUpgrade(weaponData.attackSpeed, value);
+            modifier += mod;
+        }
     }
 }

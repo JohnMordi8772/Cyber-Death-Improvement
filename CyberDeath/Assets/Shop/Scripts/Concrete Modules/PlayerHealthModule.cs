@@ -24,5 +24,14 @@ namespace GoofyGhosts
             playerHealthChannel.RaiseEvent(playerHealthData);
             modifier++;
         }
+
+        public void OnPurchased(int value, int mod)
+        {
+            Stat healthStat = playerHealthData.maxHealth;
+
+            playerHealthData.maxHealth = new StatUpgrade(healthStat, value);
+            playerHealthChannel.RaiseEvent(playerHealthData);
+            modifier += mod;
+        }
     }
 }

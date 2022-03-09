@@ -15,5 +15,11 @@ namespace GoofyGhosts
             weaponData.attackDamage = new StatUpgrade(weaponData.attackDamage, rank * 1.5f);
             modifier++;
         }
+
+        public void OnPurchased(int value, int mod)
+        {
+            weaponData.attackDamage = new StatUpgrade(weaponData.attackDamage, value);
+            modifier += mod;
+        }
     }
 }
