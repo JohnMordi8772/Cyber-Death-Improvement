@@ -15,11 +15,11 @@ C:/Users/jbart/Documents/GitHub/CyberDeath/Cyber-Death-Improvement/CyberDeath
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-64229
+58510
 Successfully changed project path to: C:/Users/jbart/Documents/GitHub/CyberDeath/Cyber-Death-Improvement/CyberDeath
 C:/Users/jbart/Documents/GitHub/CyberDeath/Cyber-Death-Improvement/CyberDeath
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 176.55 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 138.65 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.18f1 (25bdc3efbc2d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.18f1/Editor/Data/Resources/UnitySubsystems
@@ -35,1911 +35,94 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.18f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.18f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.18f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56288
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56156
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.18f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.18f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002361 seconds.
+Registered in 0.002136 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 187.40 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 120.46 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.419 seconds
+- Completed reload, in  1.185 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1419ms)
-		BeginReloadAssembly (59ms)
+	ReloadAssembly (1185ms)
+		BeginReloadAssembly (55ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (562ms)
-			LoadAssemblies (57ms)
+		EndReloadAssembly (412ms)
+			LoadAssemblies (50ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (130ms)
+			SetupTypeCache (128ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (343ms)
+			RebuildScriptCaches (21ms)
+			SetupLoadedEditorAssemblies (224ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (10ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (187ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (110ms)
-				ProcessInitializeOnLoadMethodAttributes (32ms)
+				RefreshPlugins (121ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (75ms)
+				ProcessInitializeOnLoadMethodAttributes (22ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.013710 seconds.
+Registered in 0.009831 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 135.24 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 129.48 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.730 seconds
+- Completed reload, in  2.637 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2731ms)
-		BeginReloadAssembly (163ms)
+	ReloadAssembly (2638ms)
+		BeginReloadAssembly (121ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (24ms)
-		EndReloadAssembly (2510ms)
-			LoadAssemblies (104ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (2468ms)
+			LoadAssemblies (90ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (382ms)
+			SetupTypeCache (371ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (80ms)
-			SetupLoadedEditorAssemblies (1869ms)
+			RebuildScriptCaches (78ms)
+			SetupLoadedEditorAssemblies (1856ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (7ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (135ms)
-				BeforeProcessingInitializeOnLoad (111ms)
-				ProcessInitializeOnLoadAttributes (1584ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
+				RefreshPlugins (130ms)
+				BeforeProcessingInitializeOnLoad (104ms)
+				ProcessInitializeOnLoadAttributes (1590ms)
+				ProcessInitializeOnLoadMethodAttributes (23ms)
 				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 1.22 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6791 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 290.2 MB.
-System memory in use after: 290.6 MB.
-
-Unloading 182 unused Assets to reduce memory usage. Loaded Objects now: 7266.
-Total: 29.639700 ms (FindLiveObjects: 0.336100 ms CreateObjectMapping: 0.182100 ms MarkObjects: 28.719300 ms  DeleteObjects: 0.400800 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  path: Assets/Art/Animation/Enemy/tank-attack.fbx
-  artifactKey: Guid(7b8fe338d2c64c647b3498babfea3a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank-attack.fbx using Guid(7b8fe338d2c64c647b3498babfea3a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64d585fb47a5fc26478a4bcccae89310') in 0.255428 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/Art/Animation/Enemy/tank-moving.fbx
-  artifactKey: Guid(7ab9b0530e292c148a39163397d9a67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank-moving.fbx using Guid(7ab9b0530e292c148a39163397d9a67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc18198970e58663eb2bd0cd0b1893a0') in 0.097583 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000448 seconds.
-  path: Assets/Art/Animation/Enemy/tankModel.fbx
-  artifactKey: Guid(23ddc6f8ef79b074d88a9779169d5247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tankModel.fbx using Guid(23ddc6f8ef79b074d88a9779169d5247) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d9ebd2e57436c4425c8bd0a84a95522') in 0.079711 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.849601 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61967abaada71e49bc06a2362d9112b7') in 0.014041 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 64.336259 seconds.
-  path: Assets/Art/Animation/Enemy/tank-attack.fbx
-  artifactKey: Guid(7b8fe338d2c64c647b3498babfea3a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank-attack.fbx using Guid(7b8fe338d2c64c647b3498babfea3a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23519af91ca99832cb853444b3d48bd3') in 0.073034 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.199984 seconds.
-  path: Assets/Art/Animation/Enemy/tank-attack.fbx
-  artifactKey: Guid(7b8fe338d2c64c647b3498babfea3a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank-attack.fbx using Guid(7b8fe338d2c64c647b3498babfea3a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '620a6c7ecd7c2f53729d57968382f7ca') in 0.081890 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.114831 seconds.
-  path: Assets/Art/Animation/Enemy/tank-moving.fbx
-  artifactKey: Guid(7ab9b0530e292c148a39163397d9a67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank-moving.fbx using Guid(7ab9b0530e292c148a39163397d9a67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '576bf7cbf0b841a61b5c6ca0ecb3469b') in 0.075874 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 97.190764 seconds.
-  path: Assets/ScriptableObjects/Health/Base/BASETankHealth.asset
-  artifactKey: Guid(36bd9bbfd615425489cec3584643b229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScriptableObjects/Health/Base/BASETankHealth.asset using Guid(36bd9bbfd615425489cec3584643b229) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c562cee287138e28db26c76ebedf5734') in 0.006461 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.843229 seconds.
-  path: Assets/ScriptableObjects/Health/TankHealth.asset
-  artifactKey: Guid(b1a4f6bfc6c5a6b44b3a918c22506768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScriptableObjects/Health/TankHealth.asset using Guid(b1a4f6bfc6c5a6b44b3a918c22506768) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f85a0011d6b15f4b19afc6c9884c1e31') in 0.004541 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.556246 seconds.
-  path: Assets/Art/Animation/Enemy/tank-attack.fbx
-  artifactKey: Guid(7b8fe338d2c64c647b3498babfea3a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank-attack.fbx using Guid(7b8fe338d2c64c647b3498babfea3a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cc3a6155c18dc1decde41fbf6b6b2ab') in 0.082415 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.595544 seconds.
-  path: Assets/Art/Animation/Enemy/tank-attack.fbx
-  artifactKey: Guid(7b8fe338d2c64c647b3498babfea3a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank-attack.fbx using Guid(7b8fe338d2c64c647b3498babfea3a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27c804e2119628547de3f7985e349fdf') in 0.080456 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.149310 seconds.
-  path: Assets/Art/Animation/Enemy/tank.controller
-  artifactKey: Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank.controller using Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8800518beac43744f04a46da554a9cd7') in 0.006593 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.790380 seconds.
-  path: Assets/Art/Animation/Enemy/FastEnemy.controller
-  artifactKey: Guid(b179fbea9460a5f4a96ef9f34b3f1786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/FastEnemy.controller using Guid(b179fbea9460a5f4a96ef9f34b3f1786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f89069c7d7f10d2d5e313809c0122479') in 0.010207 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 47.978538 seconds.
-  path: Assets/Art/idle.anim
-  artifactKey: Guid(f5bb8cb7d056f0a40996054e079e32d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/idle.anim using Guid(f5bb8cb7d056f0a40996054e079e32d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '085b70e6930278350eb7c3dc7986e79c') in 0.008117 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 31.569212 seconds.
-  path: Assets/Art/Animation/Enemy/tank.controller
-  artifactKey: Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank.controller using Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7013bf43677efda235fd33b0542572eb') in 0.006052 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 37.448868 seconds.
-  path: Assets/Art/Animation/Enemy/tank-moving.fbx
-  artifactKey: Guid(7ab9b0530e292c148a39163397d9a67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank-moving.fbx using Guid(7ab9b0530e292c148a39163397d9a67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9911b4d0181cab642a32c8426d56e852') in 0.068941 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.313790 seconds.
-  path: Assets/Art/Imports/Player Anims Final.fbx
-  artifactKey: Guid(bef6bad34813c2340b9cb5873a5d29de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Imports/Player Anims Final.fbx using Guid(bef6bad34813c2340b9cb5873a5d29de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ba44198ddd29fdd54224624073f5cd6') in 0.127841 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 28.741155 seconds.
-  path: Assets/Art/Animation/Enemy/tank-moving.fbx
-  artifactKey: Guid(7ab9b0530e292c148a39163397d9a67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank-moving.fbx using Guid(7ab9b0530e292c148a39163397d9a67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f1facc952919ae443f5c85a4f21b5f7f') in 0.069536 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 447.491125 seconds.
-  path: Assets/Art/Animation/Enemy/tankStun.fbx
-  artifactKey: Guid(db8c461f5d9dfdf4294cec3ed77d7e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tankStun.fbx using Guid(db8c461f5d9dfdf4294cec3ed77d7e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15e05a4e3b868f6a8b732ff49427abc3') in 0.077077 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 20.335072 seconds.
-  path: Assets/Art/Animation/Enemy/tankStun.fbx
-  artifactKey: Guid(db8c461f5d9dfdf4294cec3ed77d7e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tankStun.fbx using Guid(db8c461f5d9dfdf4294cec3ed77d7e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56c3ff1bbcd7b5f4aa3aac5fa875f0b3') in 0.074706 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.607030 seconds.
-  path: Assets/Art/Animation/Enemy/tankStun.fbx
-  artifactKey: Guid(db8c461f5d9dfdf4294cec3ed77d7e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tankStun.fbx using Guid(db8c461f5d9dfdf4294cec3ed77d7e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da25ae0a235bda87cad145b773665dc1') in 0.070753 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 41.891371 seconds.
-  path: Assets/Art/Animation/Enemy/tank.controller
-  artifactKey: Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank.controller using Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a9ced59dbf12b2ac6234658f48dd81b') in 0.004063 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 129.223297 seconds.
-  path: Assets/Art/Animation/Enemy/tank.controller
-  artifactKey: Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank.controller using Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '535b9d540d5bbd47a0a5445a6638829e') in 0.006627 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 122.628254 seconds.
-  path: Assets/Art/Animation/Enemy/FastEnemy.controller
-  artifactKey: Guid(b179fbea9460a5f4a96ef9f34b3f1786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/FastEnemy.controller using Guid(b179fbea9460a5f4a96ef9f34b3f1786) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0c99445357f8c03124f297245817ab4') in 0.005643 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.722140 seconds.
-  path: Assets/Art/Animation/Enemy/tank.controller
-  artifactKey: Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank.controller using Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc3329bbcb5920a1d7252dae1d48e075') in 0.006723 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 110.365447 seconds.
-  path: Assets/Scripts/Combat/Weapons/WeaponUser.cs
-  artifactKey: Guid(edec41a678f0b3f45b6c6c0f26a9a798) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Scripts/Combat/Weapons/WeaponUser.cs using Guid(edec41a678f0b3f45b6c6c0f26a9a798) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '93676311dc322b39f494cc7039922c46') in 0.054526 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000468 seconds.
-  path: Assets/Art/Animation/Player/Player.controller
-  artifactKey: Guid(1b3f99be315356840af3e331e775c185) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Animation/Player/Player.controller using Guid(1b3f99be315356840af3e331e775c185) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ef6a12b6a59041ebf8c25d76abc5279e') in 0.006061 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000457 seconds.
-  path: Assets/Art/idle.anim
-  artifactKey: Guid(f5bb8cb7d056f0a40996054e079e32d2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/idle.anim using Guid(f5bb8cb7d056f0a40996054e079e32d2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5fa7c754c0203ee7fb8070c37235397a') in 0.006123 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000495 seconds.
-  path: Assets/Art/Animation/Enemy/FastEnemy.controller
-  artifactKey: Guid(b179fbea9460a5f4a96ef9f34b3f1786) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Animation/Enemy/FastEnemy.controller using Guid(b179fbea9460a5f4a96ef9f34b3f1786) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd02fdac6ecabacf5142446e994fddd65') in 0.006206 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000320 seconds.
-  path: Assets/Art/Animation/Enemy/tankStun.fbx
-  artifactKey: Guid(db8c461f5d9dfdf4294cec3ed77d7e6c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Animation/Enemy/tankStun.fbx using Guid(db8c461f5d9dfdf4294cec3ed77d7e6c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4c4489f5f20afb8fc32ae4d1472bc6c2') in 0.026498 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000400 seconds.
-  path: Assets/Scenes/ReCodedGreyboxLVL1.unity
-  artifactKey: Guid(617f83d32d38b2f448993da37968c1e8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Scenes/ReCodedGreyboxLVL1.unity using Guid(617f83d32d38b2f448993da37968c1e8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e73461c1df9d09c55bdbfd1dd1581db1') in 0.005604 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000231 seconds.
-  path: Assets/Art/Animation/Enemy/tank.controller
-  artifactKey: Guid(28dd6888eda1fc84c9675bab9632e027) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Animation/Enemy/tank.controller using Guid(28dd6888eda1fc84c9675bab9632e027) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a9090f9ef553aa8f1c11f900acab1149') in 0.006086 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000201 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4350f91324d0b8dac7a9e1d0d7a20400') in 0.005364 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 130.685698 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d3e7679a04878776f4c868cc253f70b') in 0.005497 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.948402 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4edab505722c993418c48a58e6fdcc68') in 0.006523 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.909420 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a0aa5ba0a33cb9507c09b0906bf3719') in 0.007656 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.945699 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '11bda6ebfdcb14a003aefae2273d5171') in 0.006208 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.457592 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b732d015cd457249592312f4e089d600') in 0.007639 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.913391 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4bc02e849b3f2ccaf18c7becb2b9ac73') in 0.005822 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.520195 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ad7c6c64624a92c4eef11eaa32daaab') in 0.007740 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.946406 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '47a62a76cc88c04e53ff77c91048f66f') in 0.006705 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.321375 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e06e8b3ba86356605782581016202228') in 0.009667 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.942680 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '756018fa6c25f1a4eb3129264376ca0f') in 0.006801 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 73.096192 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a282ff96a9a1f83ca971e62b291375cd') in 0.008388 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.942045 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a50c91993f7519c4a19fc01e81e275dd') in 0.007457 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.804145 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eab1076ee726b0bb50e24c55a7465e43') in 0.007817 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.941271 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '34eebabc93fe168dda4081d8e3220855') in 0.007504 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.641330 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f15e70712cd29eb2a35e730a9cb7357') in 0.008360 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.937439 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '12934b6908000e1c5841a4329317fe8b') in 0.006054 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.947203 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c363c516133881a6b37204d5671b2898') in 0.008442 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.939923 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c82b3cb26b2fbc1e0f60024433fb1264') in 0.006632 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.569716 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeade6db8009589e6432308cc9af7990') in 0.008778 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.940118 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'fd5d3044c1eb4d93059c48a80abf53f8') in 0.006354 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.708351 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11d28e6ce7feac7825773138f8025ffe') in 0.007665 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.938410 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8fba2be3081966fb71771129246ff922') in 0.006623 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 61.431702 seconds.
-  path: Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/System.Collections.Generic.IList_bool@32x.png
-  artifactKey: Guid(db74a36189024d50ac6833de2c94b43c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/System.Collections.Generic.IList_bool@32x.png using Guid(db74a36189024d50ac6833de2c94b43c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bd7e9799c05ba3df0993818e8e7941a') in 0.024807 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.954868 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6752e24762bbdd2b898cd07876a7acb7') in 0.005499 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.924958 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'dc94c070276f5879b085c2f12e5cec54') in 0.004940 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.330498 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5ee1de71f3874c369475218b60238de') in 0.008332 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.949170 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8975a8d3dd0c59306058f818ff6b667d') in 0.005304 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 45.311910 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b23e3332e9dffef603a13840d207360d') in 0.022021 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.917999 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ff78182a54c1660a77eafdb79d57ca9f') in 0.008616 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 17.538686 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acdc0e79dbe99893b178a14be633af9f') in 0.016588 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.926165 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8f89545d528a10a621f5c13bcbe20160') in 0.006722 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 50.566896 seconds.
-  path: Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/UnityEngine.LayerMask@16x.png
-  artifactKey: Guid(58db3cd4a6da4ca2a9f16fe0dd06be72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/UnityEngine.LayerMask@16x.png using Guid(58db3cd4a6da4ca2a9f16fe0dd06be72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a2a5607d64f14821487a1dd227fdf49') in 0.012248 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/UnityEngine.Ray@16x.png
-  artifactKey: Guid(596f646843b844aa9a6a274dc46c476d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/UnityEngine.Ray@16x.png using Guid(596f646843b844aa9a6a274dc46c476d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aa3298e0c22119f372d4b44f62c1226') in 0.010512 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000409 seconds.
-  path: Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/UnityEngine.Physics@16x.png
-  artifactKey: Guid(6b34dfee4d944295b2f0a1c7813c63bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/UnityEngine.Physics@16x.png using Guid(6b34dfee4d944295b2f0a1c7813c63bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68ede20d405c9f520a30aca930c1b321') in 0.010372 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000235 seconds.
-  path: Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/UnityEngine.Ray2D@16x.png
-  artifactKey: Guid(144d1205f3ab45878d591f60424f3354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/UnityEngine.Ray2D@16x.png using Guid(144d1205f3ab45878d591f60424f3354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db5c598cbb29ed5dae4f7ddf7c4bbad7') in 0.009585 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.593626 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88e2d419f15415ecf8d97c67f6090403') in 0.036788 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.909635 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd6ee293ead71ed7977c6b1bc5b7f5653') in 0.006990 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.214386 seconds.
-  path: Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/UnityEngine.Matrix4x4@16x.png
-  artifactKey: Guid(9b97264431c84ea79642e2ce8e435ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/UnityEngine.Matrix4x4@16x.png using Guid(9b97264431c84ea79642e2ce8e435ac7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71eab514b5ee35e4ae8735e1dc8f8740') in 0.011908 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000524 seconds.
-  path: Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/UnityEngine.ParticleCollisionEvent@32x.png
-  artifactKey: Guid(00d2b9a7d2574a22a54fcb79ad8c7d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/UnityEngine.ParticleCollisionEvent@32x.png using Guid(00d2b9a7d2574a22a54fcb79ad8c7d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca5e4225312aad755753f565dc44e408') in 0.008866 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000618 seconds.
-  path: Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/UnityEngine.ParticleCollisionEvent@16x.png
-  artifactKey: Guid(9fe54e5bf10d41a0961e7a04bb8ce613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/UnityEngine.ParticleCollisionEvent@16x.png using Guid(9fe54e5bf10d41a0961e7a04bb8ce613) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3978223e58405a893dc6a9332bec85d0') in 0.010520 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.588589 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c509240a1a5407788cc129d64e7b3dc2') in 0.029620 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.913531 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'cbec51535a2d3890325ded8f9a26cbed') in 0.007103 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 30.188656 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aa57958bf3933aed4c908dfc35a8d0b') in 0.031127 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.907771 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '883f84fcaf3483882f1401581ad5a87f') in 0.006764 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.496294 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ed6dfee3d494be10649e535010dc2f4') in 0.037743 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.900593 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '26f82f45b158b71dcdb2e9fe96958308') in 0.004797 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.272792 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4789eed3c8080ec3033bf3e2896407b') in 0.034708 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.857696 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0c3af65eb2ea76fe2306ddaad8e86d68') in 0.007218 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 107.178399 seconds.
-  path: Assets/Art/Animation/Enemy/tank.controller
-  artifactKey: Guid(28dd6888eda1fc84c9675bab9632e027) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Animation/Enemy/tank.controller using Guid(28dd6888eda1fc84c9675bab9632e027) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ce6f349fa69661f1902be90e2adb8b5d') in 0.005547 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.587180 seconds.
-  path: Assets/Art/Animation/Enemy/tank.controller
-  artifactKey: Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank.controller using Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '477439eef5732e71104994598aa9b917') in 0.005147 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.695782 seconds.
-  path: Assets/Art/Animation/Enemy/tank.controller
-  artifactKey: Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank.controller using Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da3f966b774f1641b50213edfad6aa54') in 0.007733 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.927024 seconds.
-  path: Assets/Art/Animation/Enemy/tank.controller
-  artifactKey: Guid(28dd6888eda1fc84c9675bab9632e027) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Animation/Enemy/tank.controller using Guid(28dd6888eda1fc84c9675bab9632e027) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b1a88857a244b8ba51f8fdcc2de017c1') in 0.006450 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 46.948739 seconds.
-  path: Assets/Art/Animation/Enemy/tank-attack.fbx
-  artifactKey: Guid(7b8fe338d2c64c647b3498babfea3a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank-attack.fbx using Guid(7b8fe338d2c64c647b3498babfea3a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6639ff7d323d4d7d966a4503e9d3626b') in 0.076257 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.891486 seconds.
-  path: Assets/Art/Animation/Enemy/tank-attack.fbx
-  artifactKey: Guid(7b8fe338d2c64c647b3498babfea3a64) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Animation/Enemy/tank-attack.fbx using Guid(7b8fe338d2c64c647b3498babfea3a64) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'db24aa66a1babc3a4ad703124805242e') in 0.016241 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 91.524040 seconds.
-  path: Assets/Art/Animation/Enemy/tank.controller
-  artifactKey: Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank.controller using Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c9f7b4038c07c699a51df4b545ff528') in 0.007479 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.921857 seconds.
-  path: Assets/Art/Animation/Enemy/tank.controller
-  artifactKey: Guid(28dd6888eda1fc84c9675bab9632e027) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Animation/Enemy/tank.controller using Guid(28dd6888eda1fc84c9675bab9632e027) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '18adb9e376f142fae84d5554ee1f71f7') in 0.005317 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 106.603574 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96873d12ff4e76a0da87aca86db3479e') in 0.036135 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.888992 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'bebccfca1cd0b21dc55261c0799eeff7') in 0.006111 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.002584 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45fd0815ef48264b172f973a280ca3ab') in 0.035897 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.889864 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '21782f3a9b24265d453243d22329325f') in 0.006284 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 32.915929 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a14c5e49d87e79a481e2c8b86a72dcae') in 0.033623 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.912981 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd5e837f71c8ef361611467763e8e3483') in 0.005594 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.467172 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e39a20975fcbde5fd717374842d1eadc') in 0.040001 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.892538 seconds.
-  path: Assets/Art/tankModel.prefab
-  artifactKey: Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/tankModel.prefab using Guid(d176e788d4c84454699a0cd0c607ec56) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a173877e91a60c80b7cb05c01c597b18') in 0.005229 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010013 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.56 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.085 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2085ms)
-		BeginReloadAssembly (218ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (89ms)
-		EndReloadAssembly (1814ms)
-			LoadAssemblies (94ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (391ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (943ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (3ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (83ms)
-				ProcessInitializeOnLoadAttributes (837ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.64 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6613 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 314.3 MB.
-System memory in use after: 314.7 MB.
-
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 7474.
-Total: 28.649900 ms (FindLiveObjects: 0.376200 ms CreateObjectMapping: 0.211500 ms MarkObjects: 27.903300 ms  DeleteObjects: 0.157300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 112.250324 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f93a1efa7d73ad882098e890f8ddfe1') in 0.131997 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.979193 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29cb79dea7186c9eedc50e603150047a') in 0.019901 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.821559 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b862733fe080b40a622f06886173e18') in 0.013194 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.713841 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cb2193a28ce8e93bd0d2058b088049d') in 0.013144 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.805026 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23ed84fc4754406f57192ce281529baf') in 0.016946 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.291649 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '93ec1c77b8ef43ec5434fe705eee417e') in 0.015661 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.886549 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '746e3a88b991b5641d437602ff578e00') in 0.014981 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.806829 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd6c9ac51b5f7953b74166b28cf59a3d') in 0.016529 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.586741 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35b8343ebd7b0988a2cf087711127c16') in 0.015294 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.499822 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9c557e8e78396a1cc6c871a200bd847') in 0.015069 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.881502 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90ae9a728f76d7e40af25eac673d2911') in 0.015298 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.697813 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26fdcfd4d7e251aa40a04a7bde152b9c') in 0.014273 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.220766 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81c9ae591d866a45f95d1aa260a9e9f5') in 0.014825 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.512132 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3df09c390eec8eed5909d4bb78071e0') in 0.015631 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.268743 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45a42a9b7ed9b79d1d8a3780fddc9bee') in 0.015251 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.935178 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc870d6492a81776240f536f6c494854') in 0.014592 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.571222 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '547d2ee9e5bd225ac6c1d6eafb920052') in 0.014290 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.595188 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4b94462bc8d569b6ad25754554da2cce') in 0.015114 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.345187 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fe7dcac35829effa725d811c1ba1f20') in 0.017582 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.259260 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccde77247e8bdfbb93238504550e61ad') in 0.037476 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.275096 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97a9a888ee217a73186044d02c550c96') in 0.031435 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.639754 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '411efae76c897f395c6b5f0b91c7b79f') in 0.036885 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.893126 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15bdfa56c63f18e6e72273cded862edc') in 0.033236 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.140783 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbc0d279089de65c49e5989c5a2ba6fd') in 0.033130 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.022587 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9baa847aab960ee32ae0db03876186e3') in 0.032821 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.607439 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f816e9b79e58c2d6b95dccae8c6d2a7') in 0.032776 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 28.249312 seconds.
-  path: Assets/Art/Animation/Enemy/tank-moving.fbx
-  artifactKey: Guid(7ab9b0530e292c148a39163397d9a67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank-moving.fbx using Guid(7ab9b0530e292c148a39163397d9a67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'decd85b5cce9d9dbbdae2e704826b475') in 0.095974 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.121180 seconds.
-  path: Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/bool@16x.png
-  artifactKey: Guid(ae3dafb27db94b9584752b961db9a2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/bool@16x.png using Guid(ae3dafb27db94b9584752b961db9a2ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0ac695482f6485af0bf45da17b3c98d') in 0.014888 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/bool@32x.png
-  artifactKey: Guid(086536df336b4ebdb6bb3c587f0ab679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/bool@32x.png using Guid(086536df336b4ebdb6bb3c587f0ab679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b9fd22b761c6f2332fdf9f25de8bed0') in 0.011382 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.077010 seconds.
-  path: Assets/ScriptableObjects/Audio/EnvironmentMixer.mixer
-  artifactKey: Guid(d94e019c81c5ed14f879ce0f3885e779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScriptableObjects/Audio/EnvironmentMixer.mixer using Guid(d94e019c81c5ed14f879ce0f3885e779) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc9614a3f80355ba912b11e2ca4a05c3') in 0.006223 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/Unity Examples/ExampleAssets/Models/Workshop_Set.fbx
-  artifactKey: Guid(47616bd0cda748d4cbedcfc908506b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity Examples/ExampleAssets/Models/Workshop_Set.fbx using Guid(47616bd0cda748d4cbedcfc908506b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6cd0c3f4b2184f1cdcf9ba319661cdd') in 0.071261 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000296 seconds.
-  path: Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/System.Exception@32x.png
-  artifactKey: Guid(d0d9f07898354c0d9cd07de40b127b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Types/System.Exception@32x.png using Guid(d0d9f07898354c0d9cd07de40b127b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '852ef5543b317f62a51e3f7cce305e9c') in 0.009768 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000250 seconds.
-  path: Assets/Unity Examples/ExampleAssets/Models/small_plane.fbx
-  artifactKey: Guid(aeaee610429f51f44981e141eb2a3545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity Examples/ExampleAssets/Models/small_plane.fbx using Guid(aeaee610429f51f44981e141eb2a3545) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '216da92f5d033efc66ce99ec4d678bad') in 0.019719 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.464342 seconds.
-  path: Assets/Art/Animation/Enemy/tank-attack.fbx
-  artifactKey: Guid(7b8fe338d2c64c647b3498babfea3a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank-attack.fbx using Guid(7b8fe338d2c64c647b3498babfea3a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9104e61288bde2130911b7ddecd363bd') in 0.072171 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.751073 seconds.
-  path: Assets/Art/Animation/Enemy/tankStun.fbx
-  artifactKey: Guid(db8c461f5d9dfdf4294cec3ed77d7e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tankStun.fbx using Guid(db8c461f5d9dfdf4294cec3ed77d7e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c0fa31fe69d3a5afd172a120e4e89fd') in 0.078023 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.329700 seconds.
-  path: Assets/Art/Animation/Enemy/tank-attack.fbx
-  artifactKey: Guid(7b8fe338d2c64c647b3498babfea3a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank-attack.fbx using Guid(7b8fe338d2c64c647b3498babfea3a64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e29f8ccf863a94b2a4e690db0199c6cc') in 0.076522 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009696 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.90 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.070 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2070ms)
-		BeginReloadAssembly (177ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (65ms)
-		EndReloadAssembly (1842ms)
-			LoadAssemblies (103ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (375ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (59ms)
-			SetupLoadedEditorAssemblies (962ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (87ms)
-				ProcessInitializeOnLoadAttributes (850ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (16ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.83 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6608 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 315.8 MB.
-System memory in use after: 316.3 MB.
-
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 7557.
-Total: 48.649800 ms (FindLiveObjects: 0.383300 ms CreateObjectMapping: 0.193900 ms MarkObjects: 47.916400 ms  DeleteObjects: 0.154700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 77.267001 seconds.
-  path: Assets/Art/Animation/Enemy/tank-moving.fbx
-  artifactKey: Guid(7ab9b0530e292c148a39163397d9a67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank-moving.fbx using Guid(7ab9b0530e292c148a39163397d9a67c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52ea1759a6e90df48cd82a4f2517b191') in 0.239413 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.017436 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.93 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.452 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2452ms)
-		BeginReloadAssembly (196ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (83ms)
-		EndReloadAssembly (2201ms)
-			LoadAssemblies (102ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (409ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (64ms)
-			SetupLoadedEditorAssemblies (1195ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (120ms)
-				ProcessInitializeOnLoadAttributes (1046ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (23ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.65 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6605 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 315.8 MB.
-System memory in use after: 316.3 MB.
-
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 7595.
-Total: 29.268300 ms (FindLiveObjects: 0.559300 ms CreateObjectMapping: 0.328600 ms MarkObjects: 28.266000 ms  DeleteObjects: 0.112600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.012340 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.307 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2307ms)
-		BeginReloadAssembly (178ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (69ms)
-		EndReloadAssembly (2063ms)
-			LoadAssemblies (98ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (435ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (1080ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (94ms)
-				ProcessInitializeOnLoadAttributes (960ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (24ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.29 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6605 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 315.9 MB.
-System memory in use after: 316.3 MB.
-
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 7597.
-Total: 43.416500 ms (FindLiveObjects: 0.552500 ms CreateObjectMapping: 0.200800 ms MarkObjects: 42.559300 ms  DeleteObjects: 0.102600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 433.818449 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '731ea179dfcf8d73c71297896f9bd29e') in 0.169650 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.014033 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.48 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.281 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2282ms)
-		BeginReloadAssembly (201ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (84ms)
-		EndReloadAssembly (2021ms)
-			LoadAssemblies (110ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (421ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (71ms)
-			SetupLoadedEditorAssemblies (1026ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (900ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (7ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.56 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6605 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 315.9 MB.
-System memory in use after: 316.4 MB.
-
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 7635.
-Total: 27.258900 ms (FindLiveObjects: 0.329300 ms CreateObjectMapping: 0.180500 ms MarkObjects: 26.620600 ms  DeleteObjects: 0.126600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 16.121856 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfeff2a7ac8f548d74ce51311ed5d9bb') in 0.160359 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.598216 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '989fae62345021fd0eaf1a9fdf28b727') in 0.038016 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010284 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.04 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.416 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2417ms)
-		BeginReloadAssembly (204ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (76ms)
-		EndReloadAssembly (2158ms)
-			LoadAssemblies (105ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (436ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (91ms)
-			SetupLoadedEditorAssemblies (1097ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (93ms)
-				ProcessInitializeOnLoadAttributes (974ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (23ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6605 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 316.0 MB.
-System memory in use after: 316.4 MB.
-
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 7673.
-Total: 46.480900 ms (FindLiveObjects: 0.972300 ms CreateObjectMapping: 0.594300 ms MarkObjects: 44.733100 ms  DeleteObjects: 0.179100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 38.608997 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b23fcac1b20385a207b3a00d42b3a709') in 0.201349 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011926 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.64 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.467 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2467ms)
-		BeginReloadAssembly (189ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (5ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (67ms)
-		EndReloadAssembly (2215ms)
-			LoadAssemblies (109ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (447ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (77ms)
-			SetupLoadedEditorAssemblies (1168ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (2ms)
-				BeforeProcessingInitializeOnLoad (93ms)
-				ProcessInitializeOnLoadAttributes (1045ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (28ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.59 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6605 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 316.0 MB.
-System memory in use after: 316.5 MB.
-
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 7711.
-Total: 37.339000 ms (FindLiveObjects: 0.389700 ms CreateObjectMapping: 0.205200 ms MarkObjects: 36.594900 ms  DeleteObjects: 0.148100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009559 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.057 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2057ms)
-		BeginReloadAssembly (192ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (69ms)
-		EndReloadAssembly (1807ms)
-			LoadAssemblies (103ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (382ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (57ms)
-			SetupLoadedEditorAssemblies (923ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (84ms)
-				ProcessInitializeOnLoadAttributes (814ms)
-				ProcessInitializeOnLoadMethodAttributes (12ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (21ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.80 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6605 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 316.0 MB.
-System memory in use after: 316.5 MB.
-
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 7713.
-Total: 30.259600 ms (FindLiveObjects: 0.571500 ms CreateObjectMapping: 0.310800 ms MarkObjects: 29.249600 ms  DeleteObjects: 0.126000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 129.009607 seconds.
-  path: Assets/Art/Animation/Enemy/tankStun.fbx
-  artifactKey: Guid(db8c461f5d9dfdf4294cec3ed77d7e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tankStun.fbx using Guid(db8c461f5d9dfdf4294cec3ed77d7e6c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b689a3de199fd766c126dea9f4e2335d') in 0.182280 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010418 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.98 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.092 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2092ms)
-		BeginReloadAssembly (183ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (69ms)
-		EndReloadAssembly (1858ms)
-			LoadAssemblies (101ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (354ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (56ms)
-			SetupLoadedEditorAssemblies (1002ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (87ms)
-				ProcessInitializeOnLoadAttributes (888ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (33ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.12 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6605 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 316.1 MB.
-System memory in use after: 316.5 MB.
-
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 7751.
-Total: 30.573700 ms (FindLiveObjects: 0.440700 ms CreateObjectMapping: 0.212300 ms MarkObjects: 29.750100 ms  DeleteObjects: 0.168700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.013046 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.20 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.285 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2285ms)
-		BeginReloadAssembly (184ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (67ms)
-		EndReloadAssembly (2034ms)
-			LoadAssemblies (111ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (419ms)
-			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (64ms)
-			SetupLoadedEditorAssemblies (1071ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (93ms)
-				ProcessInitializeOnLoadAttributes (949ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (22ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.93 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6605 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 316.1 MB.
-System memory in use after: 316.5 MB.
-
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 7753.
-Total: 34.645800 ms (FindLiveObjects: 0.513000 ms CreateObjectMapping: 0.325100 ms MarkObjects: 33.668800 ms  DeleteObjects: 0.137200 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 95.640860 seconds.
-  path: Assets/Audio/NextWave.wav
-  artifactKey: Guid(6a7a5372500c4a148bdd5f78f6b9c636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Audio/NextWave.wav using Guid(6a7a5372500c4a148bdd5f78f6b9c636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ae64648addfc29f86bb08091e75b046') in 0.071704 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000273 seconds.
-  path: Packages/com.unity.cinemachine/Editor/EditorResources/CMWaveform.compute
-  artifactKey: Guid(6dd3f00b9032de54c8784df7bdc6fdf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.cinemachine/Editor/EditorResources/CMWaveform.compute using Guid(6dd3f00b9032de54c8784df7bdc6fdf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '954388e599297422ddb35c06ea0f0b66') in 0.005079 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.505329 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b93a0ac087e21437692c39840a4c6b7c') in 0.040146 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000239 seconds.
-  path: Assets/Scenes/ReCodedGreyboxLVL1.unity
-  artifactKey: Guid(617f83d32d38b2f448993da37968c1e8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Scenes/ReCodedGreyboxLVL1.unity using Guid(617f83d32d38b2f448993da37968c1e8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c1d45f6fa7d5be1dd819a8bfeae4f6cb') in 0.007248 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.194018 seconds.
-  path: Assets/Art/Animation/UI/Wave Start Text.anim
-  artifactKey: Guid(8b10f7c949200485f906c5f1f4443abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/UI/Wave Start Text.anim using Guid(8b10f7c949200485f906c5f1f4443abb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a745921931d2f66f3275fb3d9e40503') in 0.004137 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.415795 seconds.
-  path: Assets/Scripts/Wave System/WaveManager.cs
-  artifactKey: Guid(e6f6ebec7e6e8d54c8e4c3cd1a9534dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Wave System/WaveManager.cs using Guid(e6f6ebec7e6e8d54c8e4c3cd1a9534dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2b44c80e18af2ec041cb47c83388179') in 0.003544 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.514370 seconds.
-  path: Assets/Scripts/Interaction/Interactables/WaveSwitchInteractable.cs
-  artifactKey: Guid(19bc823a639d8634c90627c9567ec257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Interaction/Interactables/WaveSwitchInteractable.cs using Guid(19bc823a639d8634c90627c9567ec257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c2e29992cd91a9c35f218e4d047c5ff') in 0.003251 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.004974 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22b13b99b596ac86dedf220da60c9840') in 0.131454 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.374280 seconds.
-  path: Assets/Unity Examples/ExampleAssets/Prefabs/Workbench_LOD1.prefab
-  artifactKey: Guid(38d5ecfa2b93c4095b4cc5d4a590e676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Unity Examples/ExampleAssets/Prefabs/Workbench_LOD1.prefab using Guid(38d5ecfa2b93c4095b4cc5d4a590e676) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c08fae83072ea6bfe876f3e2b9c6e9e') in 0.040152 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.011037 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.07 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.104 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2104ms)
-		BeginReloadAssembly (181ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (7ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (64ms)
-		EndReloadAssembly (1874ms)
-			LoadAssemblies (96ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (374ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (58ms)
-			SetupLoadedEditorAssemblies (1005ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (87ms)
-				ProcessInitializeOnLoadAttributes (888ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
-				AfterProcessingInitializeOnLoad (8ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (26ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.52 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6605 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 316.3 MB.
-System memory in use after: 316.8 MB.
-
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 7793.
-Total: 30.659400 ms (FindLiveObjects: 0.435500 ms CreateObjectMapping: 0.226700 ms MarkObjects: 29.891200 ms  DeleteObjects: 0.104600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 79.629192 seconds.
-  path: Assets/ScriptableObjects/Wave System/Enemies/Tank Enemy.asset
-  artifactKey: Guid(f5e4284d9a0e35e4fb611b3416709b3b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/ScriptableObjects/Wave System/Enemies/Tank Enemy.asset using Guid(f5e4284d9a0e35e4fb611b3416709b3b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4486a27bd5373514319addda939fb4fa') in 0.078665 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000210 seconds.
-  path: Assets/Art/Animation/Enemy/tank.controller
-  artifactKey: Guid(28dd6888eda1fc84c9675bab9632e027) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Animation/Enemy/tank.controller using Guid(28dd6888eda1fc84c9675bab9632e027) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '06024c42f32e7d38a4b3d19c93e837c8') in 0.007426 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.076176 seconds.
-  path: Assets/ScriptableObjects/Wave System/Enemies/Tank Enemy.asset
-  artifactKey: Guid(f5e4284d9a0e35e4fb611b3416709b3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ScriptableObjects/Wave System/Enemies/Tank Enemy.asset using Guid(f5e4284d9a0e35e4fb611b3416709b3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3346022d6f0317aa3d8b63b4cd8b748c') in 0.040117 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 78.554193 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '879e4121bbfb5df33d7d8a311870d2d0') in 0.126775 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.779028 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd17ca3c69fdf37391249e260c6bc8d32') in 0.006047 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.056278 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c48bb9db7e84380dcd74ccd0d61899d') in 0.036002 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.900174 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'eb995a1e80569bfa760dfaec4a05b34b') in 0.006352 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.450243 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e701b1a96253678fb6a7163d748084ec') in 0.036926 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.907852 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'eb6ec9ca631105136e80e2a0dc8289d7') in 0.005763 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.287587 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ff4b194e7d3d36775092f756777e79a') in 0.041695 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.904926 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4edcf31e66b9112cf4871a9947149e2e') in 0.005548 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.986625 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b92fe805af37cdf1f27d323d60b223d') in 0.034341 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.917265 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '230e6a21bc8f93c9140d3e7a6c823cc6') in 0.006259 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 31.928665 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '119e8a30d31ff1e5ef34f7e5238910b7') in 0.039100 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.916709 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5d0b8fb4e9c19c3c209c4ae65c2b5df0') in 0.005617 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 38.876489 seconds.
-  path: Assets/Art/Animation/Enemy/tank.controller
-  artifactKey: Guid(28dd6888eda1fc84c9675bab9632e027) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Animation/Enemy/tank.controller using Guid(28dd6888eda1fc84c9675bab9632e027) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8d0d42e4ffc6e5d1fa1d84ff9a5ab9c5') in 0.008359 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 163.161479 seconds.
-  path: Assets/Art/Animation/Enemy/tank.controller
-  artifactKey: Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank.controller using Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7b5a707e85dcbe89188cbac7931f4d0') in 0.006260 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010062 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
 Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Warning: Annotation not found!
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
-UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
-System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+Unloading 6791 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 290.1 MB.
+System memory in use after: 290.5 MB.
 
-[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
-
-Mono: successfully reloaded assembly
-- Completed reload, in  2.186 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2187ms)
-		BeginReloadAssembly (195ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (74ms)
-		EndReloadAssembly (1934ms)
-			LoadAssemblies (109ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (426ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (72ms)
-			SetupLoadedEditorAssemblies (985ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (92ms)
-				ProcessInitializeOnLoadAttributes (865ms)
-				ProcessInitializeOnLoadMethodAttributes (11ms)
-				AfterProcessingInitializeOnLoad (10ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (25ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.38 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6605 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 316.4 MB.
-System memory in use after: 316.8 MB.
-
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 7831.
-Total: 31.469900 ms (FindLiveObjects: 0.679000 ms CreateObjectMapping: 0.415500 ms MarkObjects: 30.219800 ms  DeleteObjects: 0.153600 ms)
+Unloading 182 unused Assets to reduce memory usage. Loaded Objects now: 7266.
+Total: 25.489600 ms (FindLiveObjects: 0.372300 ms CreateObjectMapping: 0.196700 ms MarkObjects: 24.686700 ms  DeleteObjects: 0.232800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -1954,26 +137,103 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 130.954783 seconds.
-  path: Assets/Art/Animation/Enemy/tank.controller
-  artifactKey: Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Animation/Enemy/tank.controller using Guid(28dd6888eda1fc84c9675bab9632e027) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac2688a554e7bb8d32f9880b9f6b96d0') in 0.022360 seconds 
+  path: Assets/Art/Animation/playerAnimAlpha.fbx
+  artifactKey: Guid(dd03ed147de76b64bb67a0fc4004d529) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Animation/playerAnimAlpha.fbx using Guid(dd03ed147de76b64bb67a0fc4004d529) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '1e1d6280af06d81b2cf055e731458e92') in 0.114731 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 136.156115 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c7176e7abecfd73756b3f82f4e4e82f') in 0.140410 seconds 
+  Time since last request: 0.000340 seconds.
+  path: Assets/Art/Animation/playerAnimAlpha.fbx
+  artifactKey: Guid(dd03ed147de76b64bb67a0fc4004d529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/playerAnimAlpha.fbx using Guid(dd03ed147de76b64bb67a0fc4004d529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfcf3d750ef037fee993eff2f08b5368') in 0.232507 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 82.003970 seconds.
+  path: Assets/Art/Animation/playerAnimAlpha.fbx
+  artifactKey: Guid(dd03ed147de76b64bb67a0fc4004d529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/playerAnimAlpha.fbx using Guid(dd03ed147de76b64bb67a0fc4004d529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da373a8563a03111e34017c1f5f67679') in 0.110338 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.809400 seconds.
+  path: Assets/Art/Animation/playerAnimAlpha.fbx
+  artifactKey: Guid(dd03ed147de76b64bb67a0fc4004d529) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Animation/playerAnimAlpha.fbx using Guid(dd03ed147de76b64bb67a0fc4004d529) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '2d878c4af49308772c0ffd7ab93dc3bc') in 0.044029 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 280.137602 seconds.
+  path: Assets/Scripts/Combat/Weapons/WeaponUser.cs
+  artifactKey: Guid(edec41a678f0b3f45b6c6c0f26a9a798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Combat/Weapons/WeaponUser.cs using Guid(edec41a678f0b3f45b6c6c0f26a9a798) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75de17efeac6570dbdfbf612269156ca') in 0.011493 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.901651 seconds.
+  path: Assets/Art/Animation/playerAnimAlpha.fbx
+  artifactKey: Guid(dd03ed147de76b64bb67a0fc4004d529) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Animation/playerAnimAlpha.fbx using Guid(dd03ed147de76b64bb67a0fc4004d529) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '17ee195142b457013ddac95d96778a8a') in 0.044309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 355.255991 seconds.
+  path: Assets/Art/Animation/playerAnimAlpha.fbx
+  artifactKey: Guid(dd03ed147de76b64bb67a0fc4004d529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/playerAnimAlpha.fbx using Guid(dd03ed147de76b64bb67a0fc4004d529) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6705b679207e4ca28e4aa251c880fcb') in 0.101473 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 93.461176 seconds.
+  path: Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Windows/UpdateWizard/UpdateConsolidatePage@32x.png
+  artifactKey: Guid(79715e707f2945b196ab25fc87db1e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Icons/Windows/UpdateWizard/UpdateConsolidatePage@32x.png using Guid(79715e707f2945b196ab25fc87db1e87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a5791b4564368a61b758264b933acde') in 0.018363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 424.097732 seconds.
+  path: Assets/SFX/109427__black-snow__sword-slice-18.wav
+  artifactKey: Guid(1ffce6991f868764e977facc55b9caa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SFX/109427__black-snow__sword-slice-18.wav using Guid(1ffce6991f868764e977facc55b9caa0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a6a464e44aa0543c67453771c253ba1') in 0.017819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.941451 seconds.
+  path: Assets/SFX/109427__black-snow__sword-slice-18.wav
+  artifactKey: Guid(1ffce6991f868764e977facc55b9caa0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/SFX/109427__black-snow__sword-slice-18.wav using Guid(1ffce6991f868764e977facc55b9caa0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '77c7901a274571525ccaccda1d92a15a') in 0.006527 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 299.656107 seconds.
+  path: Assets/Scenes/ReCodedGreyboxLVL1.unity
+  artifactKey: Guid(617f83d32d38b2f448993da37968c1e8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Scenes/ReCodedGreyboxLVL1.unity using Guid(617f83d32d38b2f448993da37968c1e8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e4214cdd975e7ea30e9207fb67f2c545') in 0.006136 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.548825 seconds.
+  path: Assets/ScriptableObjects/Weapons
+  artifactKey: Guid(00fbb07d4d372f047bb2133087b01387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Weapons using Guid(00fbb07d4d372f047bb2133087b01387) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a8a6de8f9ac51f65bc39bd3d5bedab2') in 0.002440 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 15.856913 seconds.
+  path: Assets/ScriptableObjects/Weapons/BowData.asset
+  artifactKey: Guid(16cdc5b7ca6b9fa44a42d22136d60abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Weapons/BowData.asset using Guid(16cdc5b7ca6b9fa44a42d22136d60abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7a26bcad687c51e4eca6f0eae90b98a') in 0.008130 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.929778 seconds.
+  path: Assets/ScriptableObjects/Weapons/BowData.asset
+  artifactKey: Guid(16cdc5b7ca6b9fa44a42d22136d60abf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/ScriptableObjects/Weapons/BowData.asset using Guid(16cdc5b7ca6b9fa44a42d22136d60abf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e9b0cd7630e9eebc79ec83d38c5a8a21') in 0.006944 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.727830 seconds.
+  path: Assets/ScriptableObjects/Weapons/Base Data
+  artifactKey: Guid(498e151f1969e59408fb3fc44d54038d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Weapons/Base Data using Guid(498e151f1969e59408fb3fc44d54038d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bbc6d036edf402be41d9bdb4dc271ce') in 0.003041 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.012079 seconds.
+Registered in 0.010193 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -1985,42 +245,42 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  2.592 seconds
+- Completed reload, in  1.971 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2592ms)
-		BeginReloadAssembly (217ms)
+	ReloadAssembly (1972ms)
+		BeginReloadAssembly (175ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (9ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (83ms)
-		EndReloadAssembly (2308ms)
-			LoadAssemblies (113ms)
+			CreateAndSetChildDomain (67ms)
+		EndReloadAssembly (1742ms)
+			LoadAssemblies (92ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (471ms)
-			ReleaseScriptCaches (4ms)
-			RebuildScriptCaches (75ms)
-			SetupLoadedEditorAssemblies (1220ms)
+			SetupTypeCache (362ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (918ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (103ms)
-				ProcessInitializeOnLoadAttributes (1086ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				BeforeProcessingInitializeOnLoad (81ms)
+				ProcessInitializeOnLoadAttributes (815ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (32ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.97 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 6605 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 316.4 MB.
-System memory in use after: 316.8 MB.
+Unloading 6606 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 311.4 MB.
+System memory in use after: 311.8 MB.
 
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 7869.
-Total: 33.275200 ms (FindLiveObjects: 0.603700 ms CreateObjectMapping: 0.290500 ms MarkObjects: 32.219300 ms  DeleteObjects: 0.159800 ms)
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 7369.
+Total: 28.392400 ms (FindLiveObjects: 0.395600 ms CreateObjectMapping: 0.209100 ms MarkObjects: 27.658400 ms  DeleteObjects: 0.127100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2035,14 +295,14 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 120.856900 seconds.
-  path: Assets/Prefabs/Enemies/tankModel.prefab
-  artifactKey: Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemies/tankModel.prefab using Guid(aa1741d675570bf44bb99734e6f6e4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9065e2394458422f5fa8e31e8967fb7d') in 0.156411 seconds 
+  Time since last request: 95.534400 seconds.
+  path: Assets/ScriptableObjects/Weapons/BowData.asset
+  artifactKey: Guid(16cdc5b7ca6b9fa44a42d22136d60abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Weapons/BowData.asset using Guid(16cdc5b7ca6b9fa44a42d22136d60abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd784be1081208f1f4800269edfba1f6a') in 0.022271 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.008917 seconds.
+Registered in 0.009888 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
@@ -2060,42 +320,42 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  2.288 seconds
+- Completed reload, in  1.903 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2288ms)
-		BeginReloadAssembly (187ms)
+	ReloadAssembly (1903ms)
+		BeginReloadAssembly (170ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (70ms)
-		EndReloadAssembly (2049ms)
-			LoadAssemblies (100ms)
+			CreateAndSetChildDomain (63ms)
+		EndReloadAssembly (1684ms)
+			LoadAssemblies (89ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (404ms)
+			SetupTypeCache (353ms)
 			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (65ms)
-			SetupLoadedEditorAssemblies (1072ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (886ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (3ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (107ms)
-				ProcessInitializeOnLoadAttributes (935ms)
-				ProcessInitializeOnLoadMethodAttributes (15ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				BeforeProcessingInitializeOnLoad (80ms)
+				ProcessInitializeOnLoadAttributes (785ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (27ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.70 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.01 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6605 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 316.4 MB.
-System memory in use after: 316.9 MB.
+System memory in use before: 311.4 MB.
+System memory in use after: 311.9 MB.
 
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 7907.
-Total: 28.907700 ms (FindLiveObjects: 0.503100 ms CreateObjectMapping: 0.204400 ms MarkObjects: 28.086200 ms  DeleteObjects: 0.112300 ms)
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 7371.
+Total: 27.223500 ms (FindLiveObjects: 0.359900 ms CreateObjectMapping: 0.190700 ms MarkObjects: 26.553400 ms  DeleteObjects: 0.118300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2109,15 +369,27 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
+Received Import Request.
+  Time since last request: 390.975504 seconds.
+  path: Assets/ScriptableObjects/Weapons/Base Data/BowBASE.asset
+  artifactKey: Guid(4e15fce096d7a1a4c94ee93ef02c0608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Weapons/Base Data/BowBASE.asset using Guid(4e15fce096d7a1a4c94ee93ef02c0608) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8a0a1ef805ebdab921aecc5111d5c33') in 0.024457 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.478819 seconds.
+  path: Assets/ScriptableObjects/Weapons/BowData.asset
+  artifactKey: Guid(16cdc5b7ca6b9fa44a42d22136d60abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ScriptableObjects/Weapons/BowData.asset using Guid(16cdc5b7ca6b9fa44a42d22136d60abf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '625875a200d2a50691b619bab7d88709') in 0.004910 seconds 
+========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.009623 seconds.
+Registered in 0.010138 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\jbart\Documents\GitHub\CyberDeath\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.05 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Warning: Annotation not found!
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
@@ -2129,42 +401,42 @@ UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 [Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
 
 Mono: successfully reloaded assembly
-- Completed reload, in  2.211 seconds
+- Completed reload, in  1.884 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2211ms)
-		BeginReloadAssembly (179ms)
+	ReloadAssembly (1885ms)
+		BeginReloadAssembly (158ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (6ms)
+			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (64ms)
-		EndReloadAssembly (1979ms)
+			CreateAndSetChildDomain (62ms)
+		EndReloadAssembly (1676ms)
 			LoadAssemblies (88ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (369ms)
+			SetupTypeCache (346ms)
 			ReleaseScriptCaches (3ms)
-			RebuildScriptCaches (62ms)
-			SetupLoadedEditorAssemblies (1124ms)
+			RebuildScriptCaches (55ms)
+			SetupLoadedEditorAssemblies (877ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (83ms)
-				ProcessInitializeOnLoadAttributes (1013ms)
-				ProcessInitializeOnLoadMethodAttributes (14ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (776ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (27ms)
+			AwakeInstancesAfterBackupRestoration (14ms)
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.67 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6605 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 316.4 MB.
-System memory in use after: 316.9 MB.
+System memory in use before: 311.5 MB.
+System memory in use after: 311.9 MB.
 
-Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 7909.
-Total: 42.816300 ms (FindLiveObjects: 0.580500 ms CreateObjectMapping: 0.201100 ms MarkObjects: 41.855500 ms  DeleteObjects: 0.177100 ms)
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 7373.
+Total: 25.973000 ms (FindLiveObjects: 0.339100 ms CreateObjectMapping: 0.242700 ms MarkObjects: 25.275400 ms  DeleteObjects: 0.114600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -2177,4 +449,106 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 153.996312 seconds.
+  path: Assets/Art/Animation/Player/Player.controller
+  artifactKey: Guid(1b3f99be315356840af3e331e775c185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/Player/Player.controller using Guid(1b3f99be315356840af3e331e775c185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcef551ca3b07022a0e9ef47749906b5') in 0.026070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 330.245902 seconds.
+  path: Assets/Art/Animation/Player/PlayerSword.controller
+  artifactKey: Guid(4429c0c5c027845499b9e358d9385333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/Player/PlayerSword.controller using Guid(4429c0c5c027845499b9e358d9385333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c69ef8393f03593a81b225ed54b15209') in 0.005597 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 104.167042 seconds.
+  path: Assets/Art/Animation/Player/Player.controller
+  artifactKey: Guid(1b3f99be315356840af3e331e775c185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/Player/Player.controller using Guid(1b3f99be315356840af3e331e775c185) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af1764aa29cab299ca228f816015f1d0') in 0.007737 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.813733 seconds.
+  path: Assets/Art/Animation/Player/PlayerSword.controller
+  artifactKey: Guid(4429c0c5c027845499b9e358d9385333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/Player/PlayerSword.controller using Guid(4429c0c5c027845499b9e358d9385333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9399dcd5afb088fb6fd45318d5dbfc10') in 0.005484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 146.276093 seconds.
+  path: Assets/Art/Animation/Player/PlayerSword.controller
+  artifactKey: Guid(4429c0c5c027845499b9e358d9385333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/Player/PlayerSword.controller using Guid(4429c0c5c027845499b9e358d9385333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a20161adf40e446c30ac8b3a3d52375c') in 0.006097 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 62.525601 seconds.
+  path: Assets/Art/Animation/Player/PlayerSword.controller
+  artifactKey: Guid(4429c0c5c027845499b9e358d9385333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/Player/PlayerSword.controller using Guid(4429c0c5c027845499b9e358d9385333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd416913057b7cd285fd79a98e60b20d1') in 0.005484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 198.369240 seconds.
+  path: Assets/Art/Animation/Player/PlayerSword.controller
+  artifactKey: Guid(4429c0c5c027845499b9e358d9385333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/Player/PlayerSword.controller using Guid(4429c0c5c027845499b9e358d9385333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3d2dcc8794b7f5fa09e338103904357') in 0.006146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 495.226242 seconds.
+  path: Assets/Art/Animation/Player/PlayerSpear.controller
+  artifactKey: Guid(f59431be18aae5043897075bfbca1407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/Player/PlayerSpear.controller using Guid(f59431be18aae5043897075bfbca1407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7053d80e9f002c37fcff4e9cd8887fe6') in 0.005706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.709024 seconds.
+  path: Assets/Art/Animation/Player/PlayerSword.controller
+  artifactKey: Guid(4429c0c5c027845499b9e358d9385333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/Player/PlayerSword.controller using Guid(4429c0c5c027845499b9e358d9385333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ab494cf106abb93959cba7869b6d398') in 0.006300 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.948963 seconds.
+  path: Assets/Art/Animation/Player/PlayerBow.controller
+  artifactKey: Guid(a818afe04b5f3594ebe6205558984848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/Player/PlayerBow.controller using Guid(a818afe04b5f3594ebe6205558984848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70d2e8da67cf8e2f47011908fd151be0') in 0.005444 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 73.537559 seconds.
+  path: Assets/Art/Animation/Player/PlayerSpear.controller
+  artifactKey: Guid(f59431be18aae5043897075bfbca1407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/Player/PlayerSpear.controller using Guid(f59431be18aae5043897075bfbca1407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0cfdbd29a7dc17dc304bcfe251ec37ac') in 0.007715 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 240.850495 seconds.
+  path: Assets/Art/Animation/Player/PlayerSpear.controller
+  artifactKey: Guid(f59431be18aae5043897075bfbca1407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/Player/PlayerSpear.controller using Guid(f59431be18aae5043897075bfbca1407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff6e21fb8cbc2ba7f156f65ae242e82d') in 0.006256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 93.796808 seconds.
+  path: Assets/Art/Animation/Player/PlayerSword.controller
+  artifactKey: Guid(4429c0c5c027845499b9e358d9385333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/Player/PlayerSword.controller using Guid(4429c0c5c027845499b9e358d9385333) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c8547bec687e92fd14ade1bc80168cb') in 0.005876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.440460 seconds.
+  path: Assets/Art/Animation/Player/PlayerSpear.controller
+  artifactKey: Guid(f59431be18aae5043897075bfbca1407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/Player/PlayerSpear.controller using Guid(f59431be18aae5043897075bfbca1407) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0f56c28c205f8a0914f6f24bf11df77') in 0.005779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 306.361805 seconds.
+  path: Assets/Art/Animation/Player/PlayerBow.controller
+  artifactKey: Guid(a818afe04b5f3594ebe6205558984848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/Player/PlayerBow.controller using Guid(a818afe04b5f3594ebe6205558984848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8c527f7a1b0bfe40cf1e5da70c6ebee') in 0.003485 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 117.661328 seconds.
+  path: Assets/Art/Animation/Player/PlayerBow.controller
+  artifactKey: Guid(a818afe04b5f3594ebe6205558984848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/Player/PlayerBow.controller using Guid(a818afe04b5f3594ebe6205558984848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2a64892a9e8e0ea1eeecbc1d69dbe67') in 0.005479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 149.222916 seconds.
+  path: Assets/Art/Animation/Player/PlayerBow.controller
+  artifactKey: Guid(a818afe04b5f3594ebe6205558984848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Animation/Player/PlayerBow.controller using Guid(a818afe04b5f3594ebe6205558984848) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed6435c595c46ae4dd6b52570b2d2fad') in 0.005342 seconds 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
