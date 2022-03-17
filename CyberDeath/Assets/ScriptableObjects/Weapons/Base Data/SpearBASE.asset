@@ -17,7 +17,7 @@ MonoBehaviour:
   weaponName: 
   attackDamage:
     statName: 
-    baseStat: 10
+    baseStat: 5
   attackSpeed:
     statName: 
     baseStat: 2
