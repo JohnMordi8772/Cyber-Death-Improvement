@@ -15,27 +15,13 @@ namespace GoofyGhosts
         {
             target = GameObject.FindGameObjectWithTag("Player").transform;
             Vector3 targetPosition = target.position + new Vector3(0, 1.8f, 0);
-            //gameObject.transform.rotation = Quaternion.LookRotation(Vector3.RotateTowards(transform.forward, GameObject.Find("Player").transform.position - transform.position, 1, 1));
 
-            //StartCoroutine(EndBullet());
-            // Determine which direction to rotate towards
+            StartCoroutine(EndBullet());
+
             targetDirection = (targetPosition - transform.position).normalized * 5;
 
-            // The step size is equal to speed times frame time.
-            float singleStep = 2;
-
-            // Rotate the forward vector towards the target direction by one step
-            newDirection = Vector3.RotateTowards(transform.forward, targetDirection, singleStep, 0.0f);
-
-            // Draw a ray pointing at our target in
-            //Debug.DrawRay(transform.position, newDirection, Color.red);
-
-            // Calculate a rotation a step closer to the target and applies rotation to this object
-            //transform.rotation = Quaternion.LookRotation(newDirection);
+            newDirection = Vector3.RotateTowards(transform.forward, targetDirection, 2f, 0.0f);
         }
-
-        // Angular speed in radians per sec.
-        public float speed = 1.0f;
 
         void Update()
         {
