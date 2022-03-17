@@ -3266,3 +3266,559 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 3034.372219 seconds.
+  path: Assets/Scenes/Shop.unity
+  artifactKey: Guid(87465f86f830f4302b1ad4b6d7e1614a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Shop.unity using Guid(87465f86f830f4302b1ad4b6d7e1614a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52a3ba0854a08b6fef43884901d80e6a') in 0.014175 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.024258 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\fireb\OneDrive\Documents\GitHub\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\fireb\OneDrive\Documents\GitHub\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.95 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.924 seconds
+Domain Reload Profiling:
+	ReloadAssembly (3925ms)
+		BeginReloadAssembly (271ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (108ms)
+		EndReloadAssembly (3561ms)
+			LoadAssemblies (172ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (679ms)
+			ReleaseScriptCaches (3ms)
+			RebuildScriptCaches (106ms)
+			SetupLoadedEditorAssemblies (2000ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (141ms)
+				ProcessInitializeOnLoadAttributes (1820ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.33 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6607 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 300.3 MB.
+System memory in use after: 300.7 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 7361.
+Total: 59.021100 ms (FindLiveObjects: 0.686500 ms CreateObjectMapping: 0.676000 ms MarkObjects: 57.516400 ms  DeleteObjects: 0.140300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 510.010982 seconds.
+  path: Assets/Fonts
+  artifactKey: Guid(bd9ad4be694e161408ba939b3835bb58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts using Guid(bd9ad4be694e161408ba939b3835bb58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cca031dee99b9f1c2c58204460d1b271') in 0.028910 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.057562 seconds.
+  path: Assets/Fonts/dogica SDF.asset
+  artifactKey: Guid(d55824c9bee5b974c80a11be42ca8485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/dogica SDF.asset using Guid(d55824c9bee5b974c80a11be42ca8485) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da50af91c5273cb42dd9d14b2bacdafa') in 0.242034 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Fonts/pf_tempesta_seven_compressed.ttf
+  artifactKey: Guid(06fc9a1a469c4ec4b95fb64607bfcf9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/pf_tempesta_seven_compressed.ttf using Guid(06fc9a1a469c4ec4b95fb64607bfcf9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1518bc28b993332809983e46c6a0cb7') in 0.037315 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000350 seconds.
+  path: Assets/Fonts/dogicapixelbold.ttf
+  artifactKey: Guid(dd5b45b2992e9fd4bb8845c0798d3cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/dogicapixelbold.ttf using Guid(dd5b45b2992e9fd4bb8845c0798d3cdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a9ee2e52d583dc33bb2ffa7a1d4da1c') in 0.025094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000412 seconds.
+  path: Assets/Fonts/pf_tempesta_seven.mat
+  artifactKey: Guid(4055c4d921121474b8d26a1ffc6972b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/pf_tempesta_seven.mat using Guid(4055c4d921121474b8d26a1ffc6972b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '748de4568b933a85b21c69b93277e1f0') in 0.111821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000390 seconds.
+  path: Assets/Fonts/pf_tempesta_seven SDF 1.asset
+  artifactKey: Guid(a88fcb6f60a757b408ce86276d5f3cb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/pf_tempesta_seven SDF 1.asset using Guid(a88fcb6f60a757b408ce86276d5f3cb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e40f00eec0eb7bb3c004d5662fcb05c') in 0.043120 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/Fonts/dogicapixel.ttf
+  artifactKey: Guid(e31c1dfb323f8ac49932beffd9b96a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/dogicapixel.ttf using Guid(e31c1dfb323f8ac49932beffd9b96a6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c3b93aaabb337d40859e340625b1d3c') in 0.017424 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000328 seconds.
+  path: Assets/Fonts/pf_tempesta_seven.ttf
+  artifactKey: Guid(358d30dc2995b8a41b17deea4180d433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/pf_tempesta_seven.ttf using Guid(358d30dc2995b8a41b17deea4180d433) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b38f4477679690f637b2c571fde340f') in 0.012861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Fonts/pf_tempesta_seven_condensed.ttf
+  artifactKey: Guid(68207f212e32aa741b783ed826ba6b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/pf_tempesta_seven_condensed.ttf using Guid(68207f212e32aa741b783ed826ba6b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccce45dad12aa0531adefc99302946cf') in 0.025754 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000358 seconds.
+  path: Assets/Fonts/pf_tempesta_seven_bold.ttf
+  artifactKey: Guid(7d67440909a139c49afd9f6077916bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/pf_tempesta_seven_bold.ttf using Guid(7d67440909a139c49afd9f6077916bf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a71461065003811823061a2710a2b2c8') in 0.022286 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/Fonts/dogicapixel SDF.asset
+  artifactKey: Guid(f4a6572eb1109e44ca412490b85a1d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/dogicapixel SDF.asset using Guid(f4a6572eb1109e44ca412490b85a1d15) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88b130c47427990d61ff92f9e92c6311') in 0.041063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/Fonts/pf_tempesta_seven_condensed SDF.asset
+  artifactKey: Guid(53912eab27494b34d89ccbeda9dbb67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/pf_tempesta_seven_condensed SDF.asset using Guid(53912eab27494b34d89ccbeda9dbb67e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36fef97c43f278c6e60de85f529bc3b0') in 0.046594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Fonts/pf_tempesta_seven_extended_bold.ttf
+  artifactKey: Guid(ba7eac510bbeea04cb649e6fbc39e34c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/pf_tempesta_seven_extended_bold.ttf using Guid(ba7eac510bbeea04cb649e6fbc39e34c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61c5562a09604265bf26746556923a35') in 0.024706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000266 seconds.
+  path: Assets/Fonts/pf_tempesta_seven_condensed_bold.ttf
+  artifactKey: Guid(f327365e9290d334abdd9f06a87fa42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/pf_tempesta_seven_condensed_bold.ttf using Guid(f327365e9290d334abdd9f06a87fa42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23d31ebf4e480562b53ba57644ffb554') in 0.023379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000487 seconds.
+  path: Assets/Fonts/rainyhearts SDF.asset
+  artifactKey: Guid(6976743730e15e7418e47e6863c784ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/rainyhearts SDF.asset using Guid(6976743730e15e7418e47e6863c784ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2cce9cfb229a41eb1a259aa3e0a2fa2') in 0.039244 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000401 seconds.
+  path: Assets/Fonts/dogicabold.ttf
+  artifactKey: Guid(d48af86b759ebfb4bbb9707023af24a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/dogicabold.ttf using Guid(d48af86b759ebfb4bbb9707023af24a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9494cd6efc6da23bfdd99ddaa0fc1d7') in 0.017836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Fonts/pf_tempesta_seven_extended.ttf
+  artifactKey: Guid(b0d903fc8adf3ea4f8f4d81819f637b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/pf_tempesta_seven_extended.ttf using Guid(b0d903fc8adf3ea4f8f4d81819f637b4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8026ed41d998da73b76e79faee5f5abb') in 0.025655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000378 seconds.
+  path: Assets/Fonts/pf_tempesta_seven_compressed_bold.ttf
+  artifactKey: Guid(72febb698a87cae4c9457ed45aa8125b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/pf_tempesta_seven_compressed_bold.ttf using Guid(72febb698a87cae4c9457ed45aa8125b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd25f982b34b4d35ad200ff7d4f50e09d') in 0.024026 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/Fonts/dogicabold SDF.asset
+  artifactKey: Guid(93a8fc382dea8be468f23649bccc0fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/dogicabold SDF.asset using Guid(93a8fc382dea8be468f23649bccc0fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a57f988e05c91ceb6884d58446ea5121') in 0.040293 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000316 seconds.
+  path: Assets/Fonts/pf_tempesta_seven SDF.asset
+  artifactKey: Guid(218cf4fed8b8dab42b37a62b335a535f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/pf_tempesta_seven SDF.asset using Guid(218cf4fed8b8dab42b37a62b335a535f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c949ccb97c224f38c68ffcfc4b58c3e') in 0.089067 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/Fonts/rainyhearts.ttf
+  artifactKey: Guid(9fe4a33774779b54c97667d062e46fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/rainyhearts.ttf using Guid(9fe4a33774779b54c97667d062e46fa2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eeb4851893b9161fcc591f1dc3ee8a55') in 0.023843 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Fonts/pf_tempesta_seven_extended SDF.asset
+  artifactKey: Guid(d5815e4719d917b438239c0c1c812e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/pf_tempesta_seven_extended SDF.asset using Guid(d5815e4719d917b438239c0c1c812e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8fe0cb6fc585763c5f18a11932b1a1e') in 0.040827 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000375 seconds.
+  path: Assets/Fonts/dogica.ttf
+  artifactKey: Guid(3b23f8c1c8c3ce0459403ec7343573a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/dogica.ttf using Guid(3b23f8c1c8c3ce0459403ec7343573a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7928ab67f0cc36e7f959e00af8654ae') in 0.024438 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000362 seconds.
+  path: Assets/Fonts/pf_tempesta_seven.fontsettings
+  artifactKey: Guid(6a5ccaab9b07f1444946b954a2c37044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/pf_tempesta_seven.fontsettings using Guid(6a5ccaab9b07f1444946b954a2c37044) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bacfd164c1a6bd0aab944e48659af256') in 0.014967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000376 seconds.
+  path: Assets/Fonts/dogicapixelbold SDF.asset
+  artifactKey: Guid(6b5f96009e5808547af5e50812eacf7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/dogicapixelbold SDF.asset using Guid(6b5f96009e5808547af5e50812eacf7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfba30b98167628bd27d352404a54f4f') in 0.041045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000433 seconds.
+  path: Assets/Fonts/pf_tempesta_seven_copy.png
+  artifactKey: Guid(7d4b2a8aec010b94bbf1d7a3952489d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Fonts/pf_tempesta_seven_copy.png using Guid(7d4b2a8aec010b94bbf1d7a3952489d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b3d4825d1892b0d7c544acd595d937f') in 0.040326 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.670456 seconds.
+  path: Assets/Shop/Fonts/pf_tempesta_seven_condensed_bold.ttf
+  artifactKey: Guid(7a52a48a4d7bd42e7988af99acf0dd10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shop/Fonts/pf_tempesta_seven_condensed_bold.ttf using Guid(7a52a48a4d7bd42e7988af99acf0dd10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1f9ffaaa1e7142796dd938815d4da55') in 0.012661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000371 seconds.
+  path: Assets/Shop/Fonts/rainyhearts.ttf
+  artifactKey: Guid(972e885fee290274b825072c1c3bcf71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shop/Fonts/rainyhearts.ttf using Guid(972e885fee290274b825072c1c3bcf71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c4b6f221bc9dbf192529d4dde6dded7') in 0.013817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Shop/Fonts/pf_tempesta_seven_extended_bold.ttf
+  artifactKey: Guid(1a15d893c51c2407e800db88f716b124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shop/Fonts/pf_tempesta_seven_extended_bold.ttf using Guid(1a15d893c51c2407e800db88f716b124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c3c100f37031cfc0c20fd69c80914f2') in 0.012031 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000301 seconds.
+  path: Assets/Shop/Fonts/pf_tempesta_seven_extended.ttf
+  artifactKey: Guid(e09cd510946574905ba7b4d3c8851baa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shop/Fonts/pf_tempesta_seven_extended.ttf using Guid(e09cd510946574905ba7b4d3c8851baa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3e26c9a01b8dee91f9a67fba1f3ea84') in 0.013694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Fonts/SourceCodePro-Regular.otf
+  artifactKey: Guid(87315010b00b4122bfea12a652661dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Fonts/SourceCodePro-Regular.otf using Guid(87315010b00b4122bfea12a652661dba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12946e332fc46e6556f1c152dc4c7145') in 0.032537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.092992 seconds.
+  path: Assets/Shop/Fonts/pf_tempesta_seven_condensed.ttf
+  artifactKey: Guid(5962bc4cda5764316ae80704effb112e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shop/Fonts/pf_tempesta_seven_condensed.ttf using Guid(5962bc4cda5764316ae80704effb112e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2d49a00c483ca611ea2a75eedc5039a') in 0.017975 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Shop/Fonts/pf_tempesta_seven_compressed_bold.ttf
+  artifactKey: Guid(42f2d814760984e7a853889be461c5ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shop/Fonts/pf_tempesta_seven_compressed_bold.ttf using Guid(42f2d814760984e7a853889be461c5ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65e3c5c9d2fd9c396f8e63fd8c865ffa') in 0.019155 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.289377 seconds.
+  path: Assets/Shop/Fonts/pf_tempesta_seven_compressed.ttf
+  artifactKey: Guid(267cf501faeb344a3b7de2c7311b6fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shop/Fonts/pf_tempesta_seven_compressed.ttf using Guid(267cf501faeb344a3b7de2c7311b6fc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b870acaf1b1d29fa23d7b42c2a0bb04a') in 0.024494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000344 seconds.
+  path: Assets/Shop/Fonts/pf_tempesta_seven_bold.ttf
+  artifactKey: Guid(d018b11fa2da243dcbbc25fb8ec8e336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shop/Fonts/pf_tempesta_seven_bold.ttf using Guid(d018b11fa2da243dcbbc25fb8ec8e336) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66e33938c961440d17838359985c889c') in 0.019708 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.006525 seconds.
+  path: Assets/Shop/Fonts/pf_tempesta_seven.fontsettings
+  artifactKey: Guid(9b9b7a172f8a546f3b4f52f4550249c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shop/Fonts/pf_tempesta_seven.fontsettings using Guid(9b9b7a172f8a546f3b4f52f4550249c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1869b283a030611fa7fad2e7614ad18') in 0.011656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.275258 seconds.
+  path: Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+  artifactKey: Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Fonts/LiberationSans.ttf using Guid(e3265ab4bf004d28a9537516768c1c75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22e08b1e5c7cba26902ada864b0f8e8c') in 0.031919 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000340 seconds.
+  path: Assets/Shop/Fonts/dogicapixelbold.ttf
+  artifactKey: Guid(6c04e3f282775fe4db3e8351afa6aff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shop/Fonts/dogicapixelbold.ttf using Guid(6c04e3f282775fe4db3e8351afa6aff4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c11007c5331789c0784474457b2b7a99') in 0.013506 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000356 seconds.
+  path: Assets/Shop/Fonts/pf_tempesta_seven.ttf
+  artifactKey: Guid(e0648cc2fa3054d679e27df509ae2035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shop/Fonts/pf_tempesta_seven.ttf using Guid(e0648cc2fa3054d679e27df509ae2035) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13be4bb45b290380397c9b6bb4de11bb') in 0.013740 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/Shop/Fonts/dogicabold.ttf
+  artifactKey: Guid(f76e40d4be00f5548aadee07dc6c7815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shop/Fonts/dogicabold.ttf using Guid(f76e40d4be00f5548aadee07dc6c7815) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '959cea2648e3973d495086ad4ec7da5e') in 0.016363 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Shop/Fonts/dogicapixel.ttf
+  artifactKey: Guid(9dacff15410baea4abf3edc03ab87908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shop/Fonts/dogicapixel.ttf using Guid(9dacff15410baea4abf3edc03ab87908) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5f4f20f61209b788a0999de09d527b6') in 0.014096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Fonts/Inconsolata-Regular.ttf
+  artifactKey: Guid(78d879f0350e49cca4d8c041f2cef2f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Fonts/Inconsolata-Regular.ttf using Guid(78d879f0350e49cca4d8c041f2cef2f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '487ababe6f9e97545708c95852525822') in 0.024594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.097874 seconds.
+  path: Assets/Shop/Fonts/dogica.ttf
+  artifactKey: Guid(e740c4fe8a90c6c40a63910ad5ecae32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shop/Fonts/dogica.ttf using Guid(e740c4fe8a90c6c40a63910ad5ecae32) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f4c6eba96425aead529fe9c29c6ff72') in 0.015560 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001183 seconds.
+  path: Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Fonts/Courier Prime Code.ttf
+  artifactKey: Guid(811020126311456db59a7a8ea14c2103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Fonts/Courier Prime Code.ttf using Guid(811020126311456db59a7a8ea14c2103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35bf664478277154806d2968d276849c') in 0.023648 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002079 seconds.
+  path: Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Fonts/CamingoCode-Regular.ttf
+  artifactKey: Guid(8a702b07fa9146f8a6d7c6cb0a57325d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ludiq/Ludiq.PeekCore/Editor/Resources/Fonts/CamingoCode-Regular.ttf using Guid(8a702b07fa9146f8a6d7c6cb0a57325d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4e9fa8573d0025e893a06a6e5e7e6fc') in 0.025432 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015827 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\fireb\OneDrive\Documents\GitHub\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\fireb\OneDrive\Documents\GitHub\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.14 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.857 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2857ms)
+		BeginReloadAssembly (198ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (73ms)
+		EndReloadAssembly (2599ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (433ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (1415ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (1297ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (19ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6648 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 340.6 MB.
+System memory in use after: 341.0 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 8061.
+Total: 42.627100 ms (FindLiveObjects: 0.793500 ms CreateObjectMapping: 0.560800 ms MarkObjects: 41.129200 ms  DeleteObjects: 0.142000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 171.441668 seconds.
+  path: Assets/Scenes/Shop.unity
+  artifactKey: Guid(87465f86f830f4302b1ad4b6d7e1614a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Shop.unity using Guid(87465f86f830f4302b1ad4b6d7e1614a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8746b9866dbb4e945ae2dd409c5a2ea5') in 0.016238 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015244 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\fireb\OneDrive\Documents\GitHub\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\fireb\OneDrive\Documents\GitHub\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.704 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2704ms)
+		BeginReloadAssembly (189ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (69ms)
+		EndReloadAssembly (2453ms)
+			LoadAssemblies (105ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (438ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (65ms)
+			SetupLoadedEditorAssemblies (1428ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (97ms)
+				ProcessInitializeOnLoadAttributes (1303ms)
+				ProcessInitializeOnLoadMethodAttributes (13ms)
+				AfterProcessingInitializeOnLoad (10ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (23ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.26 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6607 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 339.2 MB.
+System memory in use after: 339.7 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 8063.
+Total: 39.121500 ms (FindLiveObjects: 0.573900 ms CreateObjectMapping: 0.378400 ms MarkObjects: 38.059400 ms  DeleteObjects: 0.108300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.015431 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\fireb\OneDrive\Documents\GitHub\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\fireb\OneDrive\Documents\GitHub\Cyber-Death-Improvement\CyberDeath\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Warning: Annotation not found!
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEditor.ProBuilder.EditorUtility:SetGizmoIconEnabled (System.Type,bool) (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs:575)
+UnityEditor.ProBuilder.HierarchyListener:.cctor () (at Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/HierarchyListener.cs:21)
+System.Runtime.CompilerServices.RuntimeHelpers:RunClassConstructor (System.RuntimeTypeHandle)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+[Library/PackageCache/com.unity.probuilder@5.0.3/Editor/EditorCore/EditorUtility.cs line 575]
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.820 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2821ms)
+		BeginReloadAssembly (192ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (67ms)
+		EndReloadAssembly (2567ms)
+			LoadAssemblies (119ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (581ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (68ms)
+			SetupLoadedEditorAssemblies (1378ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (3ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (90ms)
+				ProcessInitializeOnLoadAttributes (1262ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.13 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6607 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 339.3 MB.
+System memory in use after: 339.7 MB.
+
+Unloading 38 unused Assets to reduce memory usage. Loaded Objects now: 8065.
+Total: 36.657000 ms (FindLiveObjects: 0.536500 ms CreateObjectMapping: 0.337700 ms MarkObjects: 35.675100 ms  DeleteObjects: 0.106600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 867.542987 seconds.
+  path: Assets/Shop/Scripts/ChoiceManager.cs
+  artifactKey: Guid(dea5d8ca5bdd1c24a99e9712f9043b61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shop/Scripts/ChoiceManager.cs using Guid(dea5d8ca5bdd1c24a99e9712f9043b61) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78d42316a5f4a3d1061e4eb5a30fcbff') in 0.020454 seconds 
