@@ -191,6 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad4cd505011c5a946854de4331c76ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 2299156864005966224}
   checkDistanceTime: 0.3
 --- !u!195 &2299156864005966229
 NavMeshAgent:

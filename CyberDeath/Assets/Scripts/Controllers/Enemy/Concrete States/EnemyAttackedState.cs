@@ -32,20 +32,23 @@ namespace GoofyGhosts
 
         public override void Attack()
         {
+            //Debug.Log("EnemyAttackedState: Attack");
             // Cannot attack while being attacked.
         }
 
         public override void SeekTarget()
         {
+            //Debug.Log("EnemyAttackedState: SeekTarget");
             manager.SwapState<EnemySeekState>();
             manager.SeekTarget();
         }
 
         public override void OnAttacked(float damage)
         {
+            //Debug.Log("EnemyAttackedState: OnAttacked");
             // If the enemy is not stunned, take damage, become stunned,
             // and wait for stun effect to wear off.
-            if(!stunned)
+            if (!stunned)
             {
                 anim.SetTrigger("Stunned");
                 stunned = true;
