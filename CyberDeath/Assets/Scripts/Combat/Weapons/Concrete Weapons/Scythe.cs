@@ -50,7 +50,7 @@ namespace GoofyGhosts
                 data = weaponReference[++i];
                 weaponList[i].SetActive(true);
                 weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
-                playAnim.runtimeAnimatorController = weaponAnimList[++i];
+                playAnim.runtimeAnimatorController = weaponAnimList[i];
             }
             else
             {
@@ -59,6 +59,7 @@ namespace GoofyGhosts
                 data = weaponReference[i];
                 weaponList[i].SetActive(true);
                 weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
+                playAnim.runtimeAnimatorController = weaponAnimList[i];
             }
         }
 
