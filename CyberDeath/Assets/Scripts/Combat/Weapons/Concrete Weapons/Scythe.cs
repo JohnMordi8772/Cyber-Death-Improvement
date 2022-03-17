@@ -6,6 +6,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 namespace GoofyGhosts
 {
@@ -14,6 +15,8 @@ namespace GoofyGhosts
     /// </summary>
     public class Scythe : IWeapon
     {
+        public List<GameObject> weaponList = new List<GameObject> { };
+
         private Collider scytheCollider;
         int i;
         PlayerControls controls;
@@ -39,13 +42,17 @@ namespace GoofyGhosts
         {
             if (i < weaponReference.Length - 1)
             {
+                weaponList[i].SetActive(false);
                 data = weaponReference[++i];
+                weaponList[i].SetActive(true);
                 weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
             }
             else
             {
+                weaponList[i].SetActive(false);
                 i = 0;
                 data = weaponReference[i];
+                weaponList[i].SetActive(true);
                 weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
             }
         }

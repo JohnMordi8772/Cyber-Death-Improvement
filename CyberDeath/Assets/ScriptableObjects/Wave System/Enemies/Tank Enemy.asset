@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a1b870d58aef5e4aad2ad070dc2deea, type: 3}
   m_Name: Tank Enemy
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6696101541494441205, guid: 1c58886f78dd1a443aa775466df00b2c, type: 3}
+  prefab: {fileID: 5647659393917017057, guid: aa1741d675570bf44bb99734e6f6e4af, type: 3}
   waveNumber: 0
   spawnChance: 0.1
