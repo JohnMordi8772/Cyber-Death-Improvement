@@ -22,7 +22,10 @@ namespace GoofyGhosts
         PlayerControls controls;
         [SerializeField] WeaponData[] weaponReference;//scythereference, swordReference;
         [SerializeField] TextMeshProUGUI weaponText;
+        [SerializeField] public List<RuntimeAnimatorController> weaponAnimList = new List<RuntimeAnimatorController> { };
 
+        public Animator playAnim;
+       
         #region -- // Init // --
         protected override void Awake()
         {
@@ -30,6 +33,7 @@ namespace GoofyGhosts
             i = 0;
             controls = new PlayerControls();
             scytheCollider = GetComponent<Collider>();
+            playAnim = GameObject.Find("Player_Updated").GetComponent<Animator>();
         }
 
         private void OnEnable()
@@ -46,6 +50,7 @@ namespace GoofyGhosts
                 data = weaponReference[++i];
                 weaponList[i].SetActive(true);
                 weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
+                playAnim.runtimeAnimatorController = weaponAnimList[++i];
             }
             else
             {

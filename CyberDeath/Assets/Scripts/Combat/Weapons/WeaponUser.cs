@@ -16,8 +16,7 @@ namespace GoofyGhosts
     public class WeaponUser : MonoBehaviour
     {
         [SerializeField] private Transform weaponHolder;
-        [SerializeField] protected Animator anim;
-
+        [SerializeField] public Animator anim;
         protected IWeapon currentWeapon;
 
         private bool firing;
