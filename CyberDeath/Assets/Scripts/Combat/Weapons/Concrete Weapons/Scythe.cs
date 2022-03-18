@@ -23,7 +23,7 @@ namespace GoofyGhosts
         [SerializeField] WeaponData[] weaponReference;//scythereference, swordReference;
         [SerializeField] TextMeshProUGUI weaponText;
         [SerializeField] public List<RuntimeAnimatorController> weaponAnimList = new List<RuntimeAnimatorController> { };
-
+        [SerializeField] public List<GameObject> weaponUI = new List<GameObject> { };
         public Animator playAnim;
        
         #region -- // Init // --
@@ -47,17 +47,21 @@ namespace GoofyGhosts
             if (i < weaponReference.Length - 1)
             {
                 weaponList[i].SetActive(false);
+                weaponUI[i].SetActive(false);
                 data = weaponReference[++i];
                 weaponList[i].SetActive(true);
+                weaponUI[i].SetActive(true);
                 weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
                 playAnim.runtimeAnimatorController = weaponAnimList[i];
             }
             else
             {
                 weaponList[i].SetActive(false);
+                weaponUI[i].SetActive(false);
                 i = 0;
                 data = weaponReference[i];
                 weaponList[i].SetActive(true);
+                weaponUI[i].SetActive(true);
                 weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
                 playAnim.runtimeAnimatorController = weaponAnimList[i];
             }
