@@ -18,7 +18,7 @@ namespace GoofyGhosts
 
             StartCoroutine(EndBullet());
 
-            targetDirection = (targetPosition - transform.position).normalized * 5;
+            targetDirection = (targetPosition - transform.position).normalized * 10;
 
             newDirection = Vector3.RotateTowards(transform.forward, targetDirection, 2f, 0.0f);
         }

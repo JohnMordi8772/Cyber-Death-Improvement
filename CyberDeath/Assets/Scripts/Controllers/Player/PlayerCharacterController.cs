@@ -103,7 +103,7 @@ public class PlayerCharacterController : MonoBehaviour
         motor.MoveCharacter(inputVector);
         motor.Rotate(rotationVector);
 
-        if(Gamepad.current != null)
+        if(Gamepad.current != null || !MouseLookNew.scriptEnabled)
         {
             mouseScript.enabled = false;
         }
