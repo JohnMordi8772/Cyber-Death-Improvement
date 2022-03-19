@@ -93,6 +93,12 @@ namespace GoofyGhosts
         {
             //anim.SetBool("Fire", false);
             firing = false;
+
+            if(anim.GetBool("Spin") == true)
+            {
+                //print("released mouse. Spinning");
+                anim.SetBool("Spin", false);
+            }
         }
 
         /// <summary>
@@ -111,6 +117,13 @@ namespace GoofyGhosts
         public void DisableWeaponCollider()
         {
             currentWeapon.DisableCollider();
+        }
+
+        public virtual void Charge()
+        {
+            
+                anim.SetBool("Spin", true);
+            
         }
     }
 }

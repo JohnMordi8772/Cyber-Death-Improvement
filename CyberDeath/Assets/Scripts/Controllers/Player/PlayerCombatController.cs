@@ -29,7 +29,8 @@ namespace GoofyGhosts
         {
             controls.WeaponsHandling.Fire.started += _ => weaponUser.Fire();
             controls.WeaponsHandling.Fire.canceled += _ => weaponUser.ReleaseFire();
-
+            controls.WeaponsHandling.Charge.started += _ => weaponUser.Charge();
+            controls.WeaponsHandling.Charge.canceled += _ => weaponUser.ReleaseFire();
             controls.WeaponsHandling.Enable();
 
             controlsToggleChannel.OnEventRaised += ToggleControls;

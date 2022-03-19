@@ -35,7 +35,7 @@ namespace GoofyGhosts
         private void OnEnable()
         {
             //controls.WeaponsHandling.SwapWeapon.performed += _ => SwapWeapon();
-            //controls.WeaponsHandling.Enable();
+            controls.WeaponsHandling.Enable();
         }
         /*
         void SwapWeapon()
