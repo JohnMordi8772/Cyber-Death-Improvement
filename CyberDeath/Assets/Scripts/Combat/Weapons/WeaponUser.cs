@@ -20,7 +20,7 @@ namespace GoofyGhosts
 
         protected IWeapon currentWeapon;
 
-        private bool firing;
+        protected bool firing;
 
         private UnityAction SetFireToFalse;
 
@@ -59,6 +59,17 @@ namespace GoofyGhosts
         /// </summary>
         public virtual void Fire()
         {
+            //Debug.Log("WeaponUser: Fire");
+            if (anim.GetBool("Fire") == false)
+            {
+                anim.SetFloat("FireMultiplier", currentWeapon.AttackSpeed);
+                anim.SetBool("Fire", true);
+            }
+        }
+
+        public virtual void PlayerFire()
+        {
+            //Debug.Log("WeaponUser: PlayerFire");
             if (anim.GetBool("Fire") == false)
             {
                 anim.SetFloat("FireMultiplier", currentWeapon.AttackSpeed);
@@ -93,6 +104,14 @@ namespace GoofyGhosts
         public virtual void ReleaseFire()
         {
             //anim.SetBool("Fire", false);
+            //Debug.Log("WeaponUser: ReleaseFire");
+            firing = false;
+        }
+
+        public virtual void PlayerReleaseFire()
+        {
+            //anim.SetBool("Fire", false);
+            //Debug.Log("WeaponUser: PlayerReleaseFire");
             firing = false;
         }
 
