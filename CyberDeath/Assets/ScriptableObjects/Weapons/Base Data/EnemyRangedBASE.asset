@@ -9,9 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a1b870d58aef5e4aad2ad070dc2deea, type: 3}
-  m_Name: Tank Enemy
+  m_Script: {fileID: 11500000, guid: c55b9e5599b5f3b4c964483ee7a5d79a, type: 3}
+  m_Name: EnemyRangedBASE
   m_EditorClassIdentifier: 
-  prefab: {fileID: 5647659393917017057, guid: aa1741d675570bf44bb99734e6f6e4af, type: 3}
-  waveNumber: 0
-  spawnChance: 0.2
+  isBaseData: 1
+  baseData: {fileID: 0}
+  weaponName: EnemyRanged
+  attackDamage:
+    statName: Attack Damage
+    baseStat: 3
+  attackSpeed:
+    statName: Attack Speed
+    baseStat: 0.2

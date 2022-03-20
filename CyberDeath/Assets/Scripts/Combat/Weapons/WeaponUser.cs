@@ -19,7 +19,7 @@ namespace GoofyGhosts
         [SerializeField] public Animator anim;
         protected IWeapon currentWeapon;
 
-        private bool firing;
+        protected bool firing;
 
         private UnityAction SetFireToFalse;
 
@@ -58,6 +58,17 @@ namespace GoofyGhosts
         /// </summary>
         public virtual void Fire()
         {
+            //Debug.Log("WeaponUser: Fire");
+            if (anim.GetBool("Fire") == false)
+            {
+                anim.SetFloat("FireMultiplier", currentWeapon.AttackSpeed);
+                anim.SetBool("Fire", true);
+            }
+        }
+
+        public virtual void PlayerFire()
+        {
+            //Debug.Log("WeaponUser: PlayerFire");
             if (anim.GetBool("Fire") == false)
             {
                 anim.SetFloat("FireMultiplier", currentWeapon.AttackSpeed);
@@ -92,16 +103,26 @@ namespace GoofyGhosts
         public virtual void ReleaseFire()
         {
             //anim.SetBool("Fire", false);
+            //Debug.Log("WeaponUser: ReleaseFire");
             firing = false;
-<<<<<<< HEAD
+            if (anim.GetBool("Spin") == true)
+            {
+                print("released mouse. Spinning");
+                anim.SetBool("Spin", false);
+            }
+        }
+
+        public virtual void PlayerReleaseFire()
+        {
+            //anim.SetBool("Fire", false);
+            //Debug.Log("WeaponUser: PlayerReleaseFire");
+            firing = false;
 
             if(anim.GetBool("Spin") == true)
             {
-                //print("released mouse. Spinning");
+                print("released mouse. Spinning");
                 anim.SetBool("Spin", false);
             }
-=======
->>>>>>> parent of b3eb7e6 (Merge pull request #12 from JohnMordi8772/Jack)
         }
 
         /// <summary>
@@ -124,7 +145,7 @@ namespace GoofyGhosts
 
         public virtual void Charge()
         {
-            
+            print("charging. Spin is true");
                 anim.SetBool("Spin", true);
             
         }

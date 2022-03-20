@@ -4592,8 +4592,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6270123446216989724}
-  - component: {fileID: 6593435862747911323}
   - component: {fileID: 3218834492919242684}
+  - component: {fileID: 1847275315409588524}
   m_Layer: 7
   m_Name: Fists
   m_TagString: Untagged
@@ -4615,24 +4615,6 @@ Transform:
   m_Father: {fileID: 883748271}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6593435862747911323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7114873344389182946}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14f8f0271f021234b9bed6e4d735eac8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: afdba8ac235d3954b8f8e242ef6cc9ad, type: 2}
-  attackRange: 20
-  whatIsTarget:
-    serializedVersion: 2
-    m_Bits: 64
-  attackClip: {fileID: 11400000, guid: 91c33f0fa9b163d4580d8e0b32ea01c6, type: 2}
 --- !u!65 &3218834492919242684
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4646,6 +4628,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1847275315409588524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7114873344389182946}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 368c13e48c34aab4eafd53be6c969e85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  data: {fileID: 11400000, guid: 2cd9bb178f9d15e4683ff271b7c05a1f, type: 2}
+  bullet: {fileID: 2585991416956346662, guid: 8978890d4d52d4645a72029fef2bd41a, type: 3}
 --- !u!1 &7117265464285807001
 GameObject:
   m_ObjectHideFlags: 0
@@ -4761,7 +4757,7 @@ GameObject:
   - component: {fileID: 2030221374342325462}
   - component: {fileID: 9134646413626672012}
   m_Layer: 7
-  m_Name: Enemy
+  m_Name: RangedEnemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4775,7 +4771,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7146035057275725131}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.33, y: 1.53, z: 0.26969218}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 883748271}
@@ -4873,7 +4869,7 @@ NavMeshAgent:
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 180
-  m_StoppingDistance: 5
+  m_StoppingDistance: 25
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1

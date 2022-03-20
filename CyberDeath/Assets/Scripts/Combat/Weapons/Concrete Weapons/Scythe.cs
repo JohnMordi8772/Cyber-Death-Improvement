@@ -46,6 +46,7 @@ namespace GoofyGhosts
         {
             if (i < weaponReference.Length - 1)
             {
+                scytheCollider.enabled = false;
                 weaponList[i].SetActive(false);
                 weaponUI[i].SetActive(false);
                 data = weaponReference[++i];
