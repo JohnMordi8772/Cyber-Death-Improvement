@@ -18,3 +18,4 @@ MonoBehaviour:
   currentArmor:
     statName: 
     baseStat: 0
+  armorMod: 0

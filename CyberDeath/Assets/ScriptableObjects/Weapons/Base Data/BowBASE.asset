@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBaseData: 1
   baseData: {fileID: 0}
-  weaponName: 
+  weaponName: Bow
   attackDamage:
     statName: 
     baseStat: 5

@@ -13,9 +13,21 @@ namespace GoofyGhosts
     {
         [SerializeField] private Armor playerArmor;
 
+        public void Start()
+        {
+            playerArmor.armorMod = 0;
+        }
+
         public override void OnPurchased()
         {
             playerArmor.CurrentArmor = new StatUpgrade(playerArmor.CurrentArmor, rank * ModuleUpgrades.ARMOR_UPGRADE);
+            playerArmor.armorMod = rank;
+        }
+
+        public void OnPurchased(int value, int mod)
+        {
+            playerArmor.CurrentArmor = new StatUpgrade(playerArmor.CurrentArmor, value);
+            playerArmor.armorMod += mod;
         }
     }
 }

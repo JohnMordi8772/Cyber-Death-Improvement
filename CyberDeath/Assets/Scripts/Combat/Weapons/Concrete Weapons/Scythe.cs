@@ -6,6 +6,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 namespace GoofyGhosts
 {
@@ -14,17 +15,25 @@ namespace GoofyGhosts
     /// </summary>
     public class Scythe : IWeapon
     {
-        private Collider scytheCollider;
-        PlayerControls controls;
-        [SerializeField] WeaponData scythereference, swordReference;
-        [SerializeField] TextMeshProUGUI weaponText;
+        public List<GameObject> weaponList = new List<GameObject> { };
 
+        private Collider scytheCollider;
+        int i;
+        PlayerControls controls;
+        [SerializeField] WeaponData[] weaponReference;//scythereference, swordReference;
+        [SerializeField] TextMeshProUGUI weaponText;
+        [SerializeField] public List<RuntimeAnimatorController> weaponAnimList = new List<RuntimeAnimatorController> { };
+        [SerializeField] public List<GameObject> weaponUI = new List<GameObject> { };
+        public Animator playAnim;
+       
         #region -- // Init // --
         protected override void Awake()
         {
             base.Awake();
+            i = 0;
             controls = new PlayerControls();
             scytheCollider = GetComponent<Collider>();
+            playAnim = GameObject.Find("Player_Updated").GetComponent<Animator>();
         }
 
         private void OnEnable()
@@ -35,15 +44,27 @@ namespace GoofyGhosts
 
         void SwapWeapon()
         {
-            if (data.weaponName == "Scythe")
+            if (i < weaponReference.Length - 1)
             {
-                data = swordReference;
-                weaponText.text = "Current Weapon: Sword";
+                scytheCollider.enabled = false;
+                weaponList[i].SetActive(false);
+                weaponUI[i].SetActive(false);
+                data = weaponReference[++i];
+                weaponList[i].SetActive(true);
+                weaponUI[i].SetActive(true);
+                weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
+                playAnim.runtimeAnimatorController = weaponAnimList[i];
             }
             else
             {
-                data = scythereference;
-                weaponText.text = "Current Weapon: Scythe";
+                weaponList[i].SetActive(false);
+                weaponUI[i].SetActive(false);
+                i = 0;
+                data = weaponReference[i];
+                weaponList[i].SetActive(true);
+                weaponUI[i].SetActive(true);
+                weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
+                playAnim.runtimeAnimatorController = weaponAnimList[i];
             }
         }
 
