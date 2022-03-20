@@ -356,6 +356,7 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+<<<<<<< HEAD
                 },
                 {
                     "name": "Charge",
@@ -364,6 +365,8 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+=======
+>>>>>>> parent of b3eb7e6 (Merge pull request #12 from JohnMordi8772/Jack)
                 }
             ],
             "bindings": [
@@ -465,6 +468,7 @@
                     "action": "SwapWeapon",
                     "isComposite": false,
                     "isPartOfComposite": false
+<<<<<<< HEAD
                 },
                 {
                     "name": "",
@@ -476,6 +480,8 @@
                     "action": "Charge",
                     "isComposite": false,
                     "isPartOfComposite": false
+=======
+>>>>>>> parent of b3eb7e6 (Merge pull request #12 from JohnMordi8772/Jack)
                 }
             ]
         },

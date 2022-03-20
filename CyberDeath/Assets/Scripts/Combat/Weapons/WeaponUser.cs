@@ -93,12 +93,15 @@ namespace GoofyGhosts
         {
             //anim.SetBool("Fire", false);
             firing = false;
+<<<<<<< HEAD
 
             if(anim.GetBool("Spin") == true)
             {
                 //print("released mouse. Spinning");
                 anim.SetBool("Spin", false);
             }
+=======
+>>>>>>> parent of b3eb7e6 (Merge pull request #12 from JohnMordi8772/Jack)
         }
 
         /// <summary>

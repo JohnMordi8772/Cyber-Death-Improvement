@@ -91,3 +91,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+<<<<<<< HEAD
+=======
+*.log
+>>>>>>> parent of b3eb7e6 (Merge pull request #12 from JohnMordi8772/Jack)

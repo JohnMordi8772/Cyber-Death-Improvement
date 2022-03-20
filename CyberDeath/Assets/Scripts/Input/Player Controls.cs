@@ -369,6 +369,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+<<<<<<< HEAD
                 },
                 {
                     ""name"": ""Charge"",
@@ -377,6 +378,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+=======
+>>>>>>> parent of b3eb7e6 (Merge pull request #12 from JohnMordi8772/Jack)
                 }
             ],
             ""bindings"": [
@@ -478,6 +481,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""SwapWeapon"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+<<<<<<< HEAD
                 },
                 {
                     ""name"": """",
@@ -489,6 +493,8 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""Charge"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+=======
+>>>>>>> parent of b3eb7e6 (Merge pull request #12 from JohnMordi8772/Jack)
                 }
             ]
         },
@@ -1024,7 +1030,10 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_WeaponsHandling_Reload = m_WeaponsHandling.FindAction("Reload", throwIfNotFound: true);
         m_WeaponsHandling_Aim = m_WeaponsHandling.FindAction("Aim", throwIfNotFound: true);
         m_WeaponsHandling_SwapWeapon = m_WeaponsHandling.FindAction("SwapWeapon", throwIfNotFound: true);
+<<<<<<< HEAD
         m_WeaponsHandling_Charge = m_WeaponsHandling.FindAction("Charge", throwIfNotFound: true);
+=======
+>>>>>>> parent of b3eb7e6 (Merge pull request #12 from JohnMordi8772/Jack)
         // Interaction
         m_Interaction = asset.FindActionMap("Interaction", throwIfNotFound: true);
         m_Interaction_Interact = m_Interaction.FindAction("Interact", throwIfNotFound: true);
@@ -1175,7 +1184,10 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_WeaponsHandling_Reload;
     private readonly InputAction m_WeaponsHandling_Aim;
     private readonly InputAction m_WeaponsHandling_SwapWeapon;
+<<<<<<< HEAD
     private readonly InputAction m_WeaponsHandling_Charge;
+=======
+>>>>>>> parent of b3eb7e6 (Merge pull request #12 from JohnMordi8772/Jack)
     public struct WeaponsHandlingActions
     {
         private @PlayerControls m_Wrapper;
@@ -1184,7 +1196,10 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @Reload => m_Wrapper.m_WeaponsHandling_Reload;
         public InputAction @Aim => m_Wrapper.m_WeaponsHandling_Aim;
         public InputAction @SwapWeapon => m_Wrapper.m_WeaponsHandling_SwapWeapon;
+<<<<<<< HEAD
         public InputAction @Charge => m_Wrapper.m_WeaponsHandling_Charge;
+=======
+>>>>>>> parent of b3eb7e6 (Merge pull request #12 from JohnMordi8772/Jack)
         public InputActionMap Get() { return m_Wrapper.m_WeaponsHandling; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1206,9 +1221,12 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @SwapWeapon.started -= m_Wrapper.m_WeaponsHandlingActionsCallbackInterface.OnSwapWeapon;
                 @SwapWeapon.performed -= m_Wrapper.m_WeaponsHandlingActionsCallbackInterface.OnSwapWeapon;
                 @SwapWeapon.canceled -= m_Wrapper.m_WeaponsHandlingActionsCallbackInterface.OnSwapWeapon;
+<<<<<<< HEAD
                 @Charge.started -= m_Wrapper.m_WeaponsHandlingActionsCallbackInterface.OnCharge;
                 @Charge.performed -= m_Wrapper.m_WeaponsHandlingActionsCallbackInterface.OnCharge;
                 @Charge.canceled -= m_Wrapper.m_WeaponsHandlingActionsCallbackInterface.OnCharge;
+=======
+>>>>>>> parent of b3eb7e6 (Merge pull request #12 from JohnMordi8772/Jack)
             }
             m_Wrapper.m_WeaponsHandlingActionsCallbackInterface = instance;
             if (instance != null)
@@ -1225,9 +1243,12 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @SwapWeapon.started += instance.OnSwapWeapon;
                 @SwapWeapon.performed += instance.OnSwapWeapon;
                 @SwapWeapon.canceled += instance.OnSwapWeapon;
+<<<<<<< HEAD
                 @Charge.started += instance.OnCharge;
                 @Charge.performed += instance.OnCharge;
                 @Charge.canceled += instance.OnCharge;
+=======
+>>>>>>> parent of b3eb7e6 (Merge pull request #12 from JohnMordi8772/Jack)
             }
         }
     }
@@ -1484,7 +1505,10 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnReload(InputAction.CallbackContext context);
         void OnAim(InputAction.CallbackContext context);
         void OnSwapWeapon(InputAction.CallbackContext context);
+<<<<<<< HEAD
         void OnCharge(InputAction.CallbackContext context);
+=======
+>>>>>>> parent of b3eb7e6 (Merge pull request #12 from JohnMordi8772/Jack)
     }
     public interface IInteractionActions
     {
