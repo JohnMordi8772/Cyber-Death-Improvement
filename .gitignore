@@ -91,3 +91,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+<<<<<<< HEAD
+=======
+*.log
+*.log
+>>>>>>> main

@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
+using TMPro;
 
 namespace GoofyGhosts
 {
@@ -11,11 +13,13 @@ namespace GoofyGhosts
         private Quaternion newRot;
 
         private PlayerControls newPC;
+        public static bool scriptEnabled;
 
         // Start is called before the first frame update
         void Start()
         {
             newPC = new PlayerControls();
+            scriptEnabled = true;
         }
 
         // Update is called once per frame
@@ -36,6 +40,19 @@ namespace GoofyGhosts
             newRot.y = Mathf.Atan(Vector3.Distance(transform.position, mousePos));
             transform.rotation = newRot; 
             */
+        }
+
+        public static void UseThis(TextMeshProUGUI text)
+        {
+            scriptEnabled = !scriptEnabled;
+            if(scriptEnabled)
+            {
+                text.color = Color.green;
+            }
+            else
+            {
+                text.color = Color.red;
+            }
         }
     }
 }
