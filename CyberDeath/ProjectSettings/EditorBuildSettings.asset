@@ -4,18 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 6c9f8bf749ad48541923dd0644d006c7
-  - enabled: 1
-    path: Assets/Scenes/ReCodedGreyboxLVL1.unity
-    guid: 617f83d32d38b2f448993da37968c1e8
-  - enabled: 1
-    path: Assets/Scenes/Shop.unity
-    guid: 87465f86f830f4302b1ad4b6d7e1614a
-  - enabled: 1
-    path: Assets/Scenes/PauseMenu.unity
-    guid: 0d7698e9318862e499fd5bec9dcff64c
-  m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: 316b9b1bd544b1c499ac73918ed5938d, type: 2}
+  m_Scenes: []
+  m_configObjects: {}
