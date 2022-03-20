@@ -18,8 +18,6 @@ namespace GoofyGhosts
         private Transform target;
         private NavMeshAgent agent;
 
-        [SerializeField] protected Animator anim;
-
         private bool inRangeOfTarget;
 
         [SerializeField] private float checkDistanceTime = 0.3f;
@@ -45,17 +43,13 @@ namespace GoofyGhosts
             while (target != null)
             {
                 float distance = Vector3.Distance(transform.position, target.position);
-                if ((distance <= agent.stoppingDistance + 0.1f && !inRangeOfTarget) || (inRangeOfTarget && !anim.GetBool("Fire")))
+                if (distance <= agent.stoppingDistance + 0.1f && !inRangeOfTarget)
                 {
-                    Debug.Log("InRange");
                     inRangeOfTarget = true;
-                    anim.SetBool("Fire", true);
                 }
                 else if (distance > agent.stoppingDistance && inRangeOfTarget)
                 {
-                    Debug.Log("OutOfRange");
                     inRangeOfTarget = false;
-                    anim.SetBool("Fire", false);
                 }
 
                 yield return new WaitForSeconds(checkDistanceTime);

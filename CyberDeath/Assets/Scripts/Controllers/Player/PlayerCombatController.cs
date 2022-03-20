@@ -14,7 +14,7 @@ namespace GoofyGhosts
     public class PlayerCombatController : MonoBehaviour
     {
         private PlayerControls controls;
-        private PlayerWeaponUser weaponUser;
+        private WeaponUser weaponUser;
 
         [SerializeField] private GameObject scytheTrail;
         [SerializeField] private BoolChannelSO controlsToggleChannel;
@@ -22,21 +22,15 @@ namespace GoofyGhosts
         private void Awake()
         {
             controls = new PlayerControls();
-            weaponUser = GetComponent<PlayerWeaponUser>();
+            weaponUser = GetComponent<WeaponUser>();
         }
 
         private void OnEnable()
         {
-<<<<<<< HEAD
             controls.WeaponsHandling.Fire.started += _ => weaponUser.Fire();
             controls.WeaponsHandling.Fire.canceled += _ => weaponUser.ReleaseFire();
             controls.WeaponsHandling.Charge.started += _ => weaponUser.Charge();
             controls.WeaponsHandling.Charge.canceled += _ => weaponUser.ReleaseFire();
-=======
-            controls.WeaponsHandling.Fire.started += _ => weaponUser.PlayerFire();
-            controls.WeaponsHandling.Fire.canceled += _ => weaponUser.PlayerReleaseFire();
-
->>>>>>> main
             controls.WeaponsHandling.Enable();
 
             controlsToggleChannel.OnEventRaised += ToggleControls;

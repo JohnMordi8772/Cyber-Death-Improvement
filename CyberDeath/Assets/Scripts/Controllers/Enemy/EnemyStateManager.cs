@@ -32,19 +32,16 @@ namespace GoofyGhosts
 
         public void Attack()
         {
-            Debug.Log("AttackState");
             currentState.Attack();
         }
 
         public void SeekTarget()
         {
-            Debug.Log("SeekState");
             currentState.SeekTarget();
         }
 
         public void OnAttacked(float damage)
         {
-            Debug.Log("AttackedState");
             currentState.OnAttacked(damage);
         }
 

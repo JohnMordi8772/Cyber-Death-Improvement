@@ -18,7 +18,6 @@ namespace GoofyGhosts
         /// <returns>True if the weapon animation began.</returns>
         public override void Fire()
         {
-            //Debug.Log("EnemyWeaponUser: Fire");
             // Since everything is controlled via animation events, we don't need
             // to worry aboout checking for cooldowns.
             if (currentWeapon != null)
@@ -38,9 +37,8 @@ namespace GoofyGhosts
         /// </summary>
         public override void ReleaseFire()
         {
-            //Debug.Log("EnemyWeaponUser: ReleaseFire");
             base.ReleaseFire();
-            // print("Calling enemy release fire");
+           // print("Calling enemy release fire");
             anim.SetBool("Fire", false);
         }
     }

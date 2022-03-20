@@ -5208,9 +5208,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b49a68d1fd1ed66448081ebc26131bac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  abilityCooldown: {fileID: 0}
-  icon: {fileID: 0}
-  spriteIcons: []
 --- !u!114 &2036161922323433234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6532,8 +6529,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: fcd04ba9ccd762144a255a3abb412270, type: 2}
-  weaponReference: []
-  weaponText: {fileID: 0}
+  scythereference: {fileID: 11400000, guid: fcd04ba9ccd762144a255a3abb412270, type: 2}
+  swordReference: {fileID: 11400000, guid: b681c1a9f753547478b7ce0887181ec1, type: 2}
 --- !u!136 &8934205335043888241
 CapsuleCollider:
   m_ObjectHideFlags: 0

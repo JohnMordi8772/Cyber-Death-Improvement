@@ -35,7 +35,6 @@ namespace GoofyGhosts
 
         public override void Attack()
         {
-            //Debug.Log("EnemyAttackState: Attack");
             if (!attacking)
             {
                 attacking = true;
@@ -76,7 +75,6 @@ namespace GoofyGhosts
 
         public override void SeekTarget()
         {
-            //Debug.Log("EnemyAttackState: SeekTarget");
             manager.SwapState<EnemySeekState>();
             manager.SeekTarget();
         }

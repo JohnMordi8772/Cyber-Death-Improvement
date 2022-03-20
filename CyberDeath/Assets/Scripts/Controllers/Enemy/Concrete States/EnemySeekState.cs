@@ -67,7 +67,6 @@ namespace GoofyGhosts
 
         public override void Attack()
         {
-            //Debug.Log("EnemySeekState: Attack");
             seeking = false;
             manager.SwapState<EnemyAttackState>();
             manager.Attack();
@@ -78,8 +77,7 @@ namespace GoofyGhosts
         /// </summary>
         public override void SeekTarget()
         {
-            //Debug.Log("EnemySeekState: SeekTarget");
-            if (!seeking)
+            if(!seeking)
             {
                 seeking = true;
                 //agent.isStopped = false;

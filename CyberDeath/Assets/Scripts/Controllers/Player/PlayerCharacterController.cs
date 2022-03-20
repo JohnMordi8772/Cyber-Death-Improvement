@@ -46,8 +46,6 @@ public class PlayerCharacterController : MonoBehaviour
 
     [SerializeField] private BoolChannelSO controlsDisableChannel;
 
-    MouseLookNew mouseScript;
-
     #region -- // Initialization // --
     /// <summary>
     /// Creating the controls object and getting components.
@@ -56,7 +54,6 @@ public class PlayerCharacterController : MonoBehaviour
     {
         controls = new PlayerControls();
         motor = GetComponent<CharacterMotor>();
-        mouseScript = GetComponent<MouseLookNew>();
     }
 
     /// <summary>
@@ -102,15 +99,6 @@ public class PlayerCharacterController : MonoBehaviour
         rotationVector = new Vector3(rotation.x, 0, rotation.y);
         motor.MoveCharacter(inputVector);
         motor.Rotate(rotationVector);
-
-        if(Gamepad.current != null || !MouseLookNew.scriptEnabled)
-        {
-            mouseScript.enabled = false;
-        }
-        else
-        {
-            mouseScript.enabled = true;
-        }
     }
 
     private void ToggleControls(bool toggle)
