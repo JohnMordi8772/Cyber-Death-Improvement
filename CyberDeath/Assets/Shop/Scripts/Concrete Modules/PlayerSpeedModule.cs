@@ -11,9 +11,18 @@ namespace GoofyGhosts
     /// </summary>
     public class PlayerSpeedModule : PlayerModule
     {
+        public int modifier = 0;
+
         public override void OnPurchased()
         {
             motorData.movementSpeed = new StatUpgrade(motorData.movementSpeed, (rank * ModuleUpgrades.MOVE_SPEED_UPGRADE) + 1.5f);
+            modifier++;
+        }
+
+        public void OnPurchased(float value, int mod)
+        {
+            motorData.movementSpeed = new StatUpgrade(motorData.movementSpeed, value);
+            modifier += mod;
         }
     }
 }

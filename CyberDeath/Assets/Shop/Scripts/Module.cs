@@ -18,7 +18,6 @@ namespace GoofyGhosts
         // Cannot be edited in inspector
         [System.NonSerialized]
         public int rank = 1;
-
         
         void Awake()
         {
