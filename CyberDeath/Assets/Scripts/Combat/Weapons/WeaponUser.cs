@@ -16,11 +16,10 @@ namespace GoofyGhosts
     public class WeaponUser : MonoBehaviour
     {
         [SerializeField] private Transform weaponHolder;
-        [SerializeField] protected Animator anim;
-
+        [SerializeField] public Animator anim;
         protected IWeapon currentWeapon;
 
-        private bool firing;
+        protected bool firing;
 
         private UnityAction SetFireToFalse;
 
@@ -59,6 +58,17 @@ namespace GoofyGhosts
         /// </summary>
         public virtual void Fire()
         {
+            //Debug.Log("WeaponUser: Fire");
+            if (anim.GetBool("Fire") == false)
+            {
+                anim.SetFloat("FireMultiplier", currentWeapon.AttackSpeed);
+                anim.SetBool("Fire", true);
+            }
+        }
+
+        public virtual void PlayerFire()
+        {
+            //Debug.Log("WeaponUser: PlayerFire");
             if (anim.GetBool("Fire") == false)
             {
                 anim.SetFloat("FireMultiplier", currentWeapon.AttackSpeed);
@@ -93,7 +103,26 @@ namespace GoofyGhosts
         public virtual void ReleaseFire()
         {
             //anim.SetBool("Fire", false);
+            //Debug.Log("WeaponUser: ReleaseFire");
             firing = false;
+            if (anim.GetBool("Spin") == true)
+            {
+                print("released mouse. Spinning");
+                anim.SetBool("Spin", false);
+            }
+        }
+
+        public virtual void PlayerReleaseFire()
+        {
+            //anim.SetBool("Fire", false);
+            //Debug.Log("WeaponUser: PlayerReleaseFire");
+            firing = false;
+
+            if(anim.GetBool("Spin") == true)
+            {
+                print("released mouse. Spinning");
+                anim.SetBool("Spin", false);
+            }
         }
 
         /// <summary>
@@ -112,6 +141,13 @@ namespace GoofyGhosts
         public void DisableWeaponCollider()
         {
             currentWeapon.DisableCollider();
+        }
+
+        public virtual void Charge()
+        {
+            print("charging. Spin is true");
+                anim.SetBool("Spin", true);
+            
         }
     }
 }

@@ -4944,6 +4944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad4cd505011c5a946854de4331c76ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 2030221374342325462}
   checkDistanceTime: 0.3
 --- !u!114 &1707678543487998786
 MonoBehaviour:
