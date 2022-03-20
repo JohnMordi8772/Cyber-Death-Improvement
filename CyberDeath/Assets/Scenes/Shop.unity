@@ -160,7 +160,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 260, y: 125}
-  m_SizeDelta: {x: 300, y: 50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1585364
 MonoBehaviour:
@@ -284,14 +284,14 @@ RectTransform:
   m_GameObject: {fileID: 76580055}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.3333334, y: 1.3333334, z: 1.3333334}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1823773273}
-  m_RootOrder: 2
+  m_Father: {fileID: 662332699}
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -950, y: 500}
+  m_AnchoredPosition: {x: -757.43494, y: 450.475}
   m_SizeDelta: {x: 900, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &76580057
@@ -445,7 +445,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -308.4, y: 90.4}
+  m_AnchoredPosition: {x: -1797.3, y: 57.91}
   m_SizeDelta: {x: 600, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &117375555
@@ -601,7 +601,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -775, y: 125}
-  m_SizeDelta: {x: 300, y: 50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &136533563
 MonoBehaviour:
@@ -921,7 +921,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Attack Speed 2
+  m_Text: 'Attack Speed 2
+
+    Price: 50 Scrap'
 --- !u!222 &160468774
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1000,7 +1002,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Attack Power 2
+  m_Text: 'Attack Power 2
+
+    Price: 50 Scrap'
 --- !u!222 &238995517
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1045,8 +1049,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: 50}
-  m_SizeDelta: {x: 300, y: 50}
+  m_AnchoredPosition: {x: 100, y: 25}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &255871009
 MonoBehaviour:
@@ -1179,7 +1183,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -775, y: 225}
-  m_SizeDelta: {x: 300, y: 50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &280729872
 MonoBehaviour:
@@ -1420,7 +1424,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Health 2
+  m_Text: 'Health 2
+
+    Price: 50 Scrap'
 --- !u!222 &404120001
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1465,8 +1471,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: -25}
-  m_SizeDelta: {x: 300, y: 50}
+  m_AnchoredPosition: {x: 100, y: -75}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &408503573
 MonoBehaviour:
@@ -2111,7 +2117,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 100, y: 325}
-  m_SizeDelta: {x: 300, y: 50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &522345564
 MonoBehaviour:
@@ -2277,7 +2283,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Armor 2
+  m_Text: 'Armor 2
+
+    Price: 50 Scrap'
 --- !u!222 &540359654
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2323,7 +2331,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -450, y: 225}
-  m_SizeDelta: {x: 300, y: 50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &553238037
 MonoBehaviour:
@@ -2821,7 +2829,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &662332699
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2847,6 +2855,7 @@ RectTransform:
   - {fileID: 408503572}
   - {fileID: 970164734}
   - {fileID: 1585363}
+  - {fileID: 76580056}
   m_Father: {fileID: 819776803}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2961,7 +2970,7 @@ RectTransform:
   m_LocalScale: {x: 4, y: 4, z: 1.3333334}
   m_Children: []
   m_Father: {fileID: 1823773273}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3253,7 +3262,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -600, y: 425}
-  m_SizeDelta: {x: 300, y: 50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &769426122
 MonoBehaviour:
@@ -3419,7 +3428,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Attack Buff 1
+  m_Text: 'Attack Buff 1
+
+    Price: 10 Scrap'
 --- !u!222 &799846138
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3577,7 +3588,7 @@ RectTransform:
   m_Children:
   - {fileID: 1302727682}
   m_Father: {fileID: 1823773273}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3767,7 +3778,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Defense Buff 2
+  m_Text: 'Defense Buff 2
+
+    Price: 15 Scrap'
 --- !u!222 &848297838
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4026,7 +4039,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 260, y: 225}
-  m_SizeDelta: {x: 300, y: 50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &970164735
 MonoBehaviour:
@@ -4159,7 +4172,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -110, y: 225}
-  m_SizeDelta: {x: 300, y: 50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &992205049
 MonoBehaviour:
@@ -4286,11 +4299,11 @@ RectTransform:
   m_LocalScale: {x: 1.3333334, y: 1.3333334, z: 1.3333334}
   m_Children: []
   m_Father: {fileID: 1823773273}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -396.9, y: -87.99}
+  m_AnchoredPosition: {x: -1708.4, y: -87.99}
   m_SizeDelta: {x: 900, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1023354719
@@ -4953,7 +4966,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Move Speed 1
+  m_Text: 'Move Speed 1
+
+    Price: 40 Scrap'
 --- !u!222 &1161039436
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5577,7 +5592,7 @@ RectTransform:
   m_LocalScale: {x: 1.3333334, y: 1.3333334, z: 1.3333334}
   m_Children: []
   m_Father: {fileID: 1823773273}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -5737,7 +5752,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -110, y: 125}
-  m_SizeDelta: {x: 300, y: 50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1472284338
 MonoBehaviour:
@@ -5922,7 +5937,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -450, y: 125}
-  m_SizeDelta: {x: 300, y: 50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1476880161
 MonoBehaviour:
@@ -6088,7 +6103,7 @@ MonoBehaviour:
   anim: {fileID: 117375557}
   sAnim: {fileID: 461179830}
   cancelButton: {fileID: 1924837324}
-  arrows: {fileID: 1823773272}
+  arrows: {fileID: 662332698}
   shopArrows: {fileID: 461179828}
   buy: {fileID: 1517725472}
   choose: {fileID: 1517725474}
@@ -6421,6 +6436,22 @@ MonoBehaviour:
   playerHealth: {fileID: 3076712059291714645, guid: f15c5b03b48afba40a618fb4166e18f2, type: 3}
   playerSwing: {fileID: 2517762123376692883, guid: 7ef5cbe1bb7e2474dae9c6f0657fb550, type: 3}
   playerMove: {fileID: 3354788294400291211, guid: 19a025c09c65c4e588062e66ddca036c, type: 3}
+  moneyText: {fileID: 76580058}
+  buttons:
+  - {fileID: 1891053461}
+  - {fileID: 280729872}
+  - {fileID: 136533563}
+  - {fileID: 553238037}
+  - {fileID: 1476880161}
+  - {fileID: 522345564}
+  - {fileID: 992205049}
+  - {fileID: 1472284338}
+  - {fileID: 255871009}
+  - {fileID: 408503573}
+  - {fileID: 970164735}
+  - {fileID: 1585364}
+  - {fileID: 769426122}
+  - {fileID: 1743668818}
 --- !u!1 &1536231081
 GameObject:
   m_ObjectHideFlags: 0
@@ -6491,7 +6522,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Health 1
+  m_Text: 'Health 1
+
+    Price: 40 Scrap'
 --- !u!222 &1536231084
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6570,7 +6603,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Attack Power 1
+  m_Text: 'Attack Power 1
+
+    Price: 40 Scrap'
 --- !u!222 &1552883985
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6956,7 +6991,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Armor 1
+  m_Text: 'Armor 1
+
+    Price: 40 Scrap'
 --- !u!222 &1698848084
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7002,7 +7039,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 100, y: 425}
-  m_SizeDelta: {x: 300, y: 50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1743668818
 MonoBehaviour:
@@ -7129,7 +7166,6 @@ RectTransform:
   m_Children:
   - {fileID: 461179829}
   - {fileID: 652580683}
-  - {fileID: 76580056}
   - {fileID: 1023354718}
   - {fileID: 829487681}
   - {fileID: 1433171452}
@@ -7314,7 +7350,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Defense Buff 1
+  m_Text: 'Defense Buff 1
+
+    Price: 10 Scrap'
 --- !u!222 &1846579645
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7435,7 +7473,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -600, y: 325}
-  m_SizeDelta: {x: 300, y: 50}
+  m_SizeDelta: {x: 300, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1891053461
 MonoBehaviour:
@@ -7601,7 +7639,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Move Speed 2
+  m_Text: 'Move Speed 2
+
+    Price: 50 Scrap'
 --- !u!222 &1910795255
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8278,7 +8318,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Attack Speed 1
+  m_Text: 'Attack Speed 1
+
+    Price: 40 Scrap'
 --- !u!222 &1974330324
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8357,7 +8399,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Attack Buff 2
+  m_Text: 'Attack Buff 2
+
+    Price: 15 Scrap'
 --- !u!222 &2034256918
 CanvasRenderer:
   m_ObjectHideFlags: 0
