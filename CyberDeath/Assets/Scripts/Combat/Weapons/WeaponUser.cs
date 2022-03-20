@@ -16,8 +16,7 @@ namespace GoofyGhosts
     public class WeaponUser : MonoBehaviour
     {
         [SerializeField] private Transform weaponHolder;
-        [SerializeField] protected Animator anim;
-
+        [SerializeField] public Animator anim;
         protected IWeapon currentWeapon;
 
         protected bool firing;
@@ -106,6 +105,11 @@ namespace GoofyGhosts
             //anim.SetBool("Fire", false);
             //Debug.Log("WeaponUser: ReleaseFire");
             firing = false;
+            if (anim.GetBool("Spin") == true)
+            {
+                print("released mouse. Spinning");
+                anim.SetBool("Spin", false);
+            }
         }
 
         public virtual void PlayerReleaseFire()
@@ -113,6 +117,12 @@ namespace GoofyGhosts
             //anim.SetBool("Fire", false);
             //Debug.Log("WeaponUser: PlayerReleaseFire");
             firing = false;
+
+            if(anim.GetBool("Spin") == true)
+            {
+                print("released mouse. Spinning");
+                anim.SetBool("Spin", false);
+            }
         }
 
         /// <summary>
@@ -131,6 +141,13 @@ namespace GoofyGhosts
         public void DisableWeaponCollider()
         {
             currentWeapon.DisableCollider();
+        }
+
+        public virtual void Charge()
+        {
+            print("charging. Spin is true");
+                anim.SetBool("Spin", true);
+            
         }
     }
 }

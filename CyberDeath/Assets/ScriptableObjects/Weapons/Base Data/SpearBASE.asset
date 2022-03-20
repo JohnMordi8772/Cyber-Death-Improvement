@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isBaseData: 1
   baseData: {fileID: 0}
-  weaponName: 
+  weaponName: Spear
   attackDamage:
-    statName: 
+    statName: Attack Damage
     baseStat: 5
   attackSpeed:
-    statName: 
+    statName: Attack Speed
     baseStat: 2
