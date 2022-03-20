@@ -36,29 +36,13 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
-                },
-                {
-                    "name": "Charge",
-                    "type": "Button",
-                    "id": "db64dbd3-8d27-4384-b59d-5abdad0e10ff",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "Spin",
-                    "type": "Button",
-                    "id": "7164dd5c-1539-4e6b-8e29-faee9d222789",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
                 }
             ],
             "bindings": [
                 {
                     "name": "",
                     "id": "a46ab78f-2bda-42ae-aa14-c688b8c1fac0",
-                    "path": "<Mouse>/delta",
+                    "path": "<Mouse>/position",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -296,28 +280,6 @@
                     "action": "Rotate",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "be0f6a2a-ff29-4fd9-8146-6204f631c721",
-                    "path": "<Mouse>/rightButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Charge",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "bd8a32f5-fae0-40ed-99e4-134530c24e69",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Spin",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         },
@@ -356,17 +318,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
-<<<<<<< HEAD
                 },
                 {
                     "name": "Charge",
                     "type": "Button",
-                    "id": "7b608a04-f953-4616-ba74-1851662a8465",
+                    "id": "66c29381-d903-4773-b979-f48fefcccbc0",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
-=======
->>>>>>> parent of b3eb7e6 (Merge pull request #12 from JohnMordi8772/Jack)
                 }
             ],
             "bindings": [
@@ -468,11 +427,21 @@
                     "action": "SwapWeapon",
                     "isComposite": false,
                     "isPartOfComposite": false
-<<<<<<< HEAD
                 },
                 {
                     "name": "",
-                    "id": "90c27f23-ea42-4f4b-9905-32a3ab7f749c",
+                    "id": "ababa58f-d194-4686-9f69-876a2f2551a5",
+                    "path": "<Gamepad>/leftTrigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Charge",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c585e8d1-6f92-4271-a18f-646f8c1e0d5a",
                     "path": "<Mouse>/rightButton",
                     "interactions": "",
                     "processors": "",
@@ -480,8 +449,6 @@
                     "action": "Charge",
                     "isComposite": false,
                     "isPartOfComposite": false
-=======
->>>>>>> parent of b3eb7e6 (Merge pull request #12 from JohnMordi8772/Jack)
                 }
             ]
         },
