@@ -49,29 +49,13 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
-                },
-                {
-                    ""name"": ""Charge"",
-                    ""type"": ""Button"",
-                    ""id"": ""db64dbd3-8d27-4384-b59d-5abdad0e10ff"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
-                    ""name"": ""Spin"",
-                    ""type"": ""Button"",
-                    ""id"": ""7164dd5c-1539-4e6b-8e29-faee9d222789"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": """",
                     ""id"": ""a46ab78f-2bda-42ae-aa14-c688b8c1fac0"",
-                    ""path"": ""<Mouse>/delta"",
+                    ""path"": ""<Mouse>/position"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -309,28 +293,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                     ""action"": ""Rotate"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""be0f6a2a-ff29-4fd9-8146-6204f631c721"",
-                    ""path"": ""<Mouse>/rightButton"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Charge"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""bd8a32f5-fae0-40ed-99e4-134530c24e69"",
-                    ""path"": """",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Spin"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -373,7 +335,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 {
                     ""name"": ""Charge"",
                     ""type"": ""Button"",
-                    ""id"": ""7b608a04-f953-4616-ba74-1851662a8465"",
+                    ""id"": ""66c29381-d903-4773-b979-f48fefcccbc0"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -481,18 +443,18 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""e79632b0-152e-42fc-8498-a1080dd30d57"",
+                    ""id"": ""ababa58f-d194-4686-9f69-876a2f2551a5"",
                     ""path"": ""<Gamepad>/leftTrigger"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""AlternateFire"",
+                    ""action"": ""Charge"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""a6900f98-9e38-4e6e-ad84-46477a39ad4f"",
+                    ""id"": ""c585e8d1-6f92-4271-a18f-646f8c1e0d5a"",
                     ""path"": ""<Mouse>/rightButton"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -1027,8 +989,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_Rotate = m_Player.FindAction("Rotate", throwIfNotFound: true);
-        m_Player_Charge = m_Player.FindAction("Charge", throwIfNotFound: true);
-        m_Player_Spin = m_Player.FindAction("Spin", throwIfNotFound: true);
         // WeaponsHandling
         m_WeaponsHandling = asset.FindActionMap("WeaponsHandling", throwIfNotFound: true);
         m_WeaponsHandling_Fire = m_WeaponsHandling.FindAction("Fire", throwIfNotFound: true);
@@ -1113,8 +1073,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_Movement;
     private readonly InputAction m_Player_Jump;
     private readonly InputAction m_Player_Rotate;
-    private readonly InputAction m_Player_Charge;
-    private readonly InputAction m_Player_Spin;
     public struct PlayerActions
     {
         private @PlayerControls m_Wrapper;
@@ -1123,8 +1081,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         public InputAction @Movement => m_Wrapper.m_Player_Movement;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputAction @Rotate => m_Wrapper.m_Player_Rotate;
-        public InputAction @Charge => m_Wrapper.m_Player_Charge;
-        public InputAction @Spin => m_Wrapper.m_Player_Spin;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -1146,12 +1102,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Rotate.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRotate;
                 @Rotate.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRotate;
                 @Rotate.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRotate;
-                @Charge.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCharge;
-                @Charge.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCharge;
-                @Charge.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnCharge;
-                @Spin.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpin;
-                @Spin.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpin;
-                @Spin.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnSpin;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -1168,12 +1118,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 @Rotate.started += instance.OnRotate;
                 @Rotate.performed += instance.OnRotate;
                 @Rotate.canceled += instance.OnRotate;
-                @Charge.started += instance.OnCharge;
-                @Charge.performed += instance.OnCharge;
-                @Charge.canceled += instance.OnCharge;
-                @Spin.started += instance.OnSpin;
-                @Spin.performed += instance.OnSpin;
-                @Spin.canceled += instance.OnSpin;
             }
         }
     }
@@ -1486,8 +1430,6 @@ public class @PlayerControls : IInputActionCollection, IDisposable
         void OnMovement(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnRotate(InputAction.CallbackContext context);
-        void OnCharge(InputAction.CallbackContext context);
-        void OnSpin(InputAction.CallbackContext context);
     }
     public interface IWeaponsHandlingActions
     {
