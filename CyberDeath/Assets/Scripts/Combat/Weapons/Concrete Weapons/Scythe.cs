@@ -6,6 +6,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 namespace GoofyGhosts
 {
@@ -14,15 +15,19 @@ namespace GoofyGhosts
     /// </summary>
     public class Scythe : IWeapon
     {
+        public List<GameObject> weaponList = new List<GameObject> { };
+
         private Collider scytheCollider;
+        int i;
         PlayerControls controls;
-        [SerializeField] WeaponData scythereference, swordReference;
+        [SerializeField] WeaponData[] weaponReference;//scythereference, swordReference;
         [SerializeField] TextMeshProUGUI weaponText;
 
         #region -- // Init // --
         protected override void Awake()
         {
             base.Awake();
+            i = 0;
             controls = new PlayerControls();
             scytheCollider = GetComponent<Collider>();
         }
@@ -35,15 +40,20 @@ namespace GoofyGhosts
 
         void SwapWeapon()
         {
-            if (data.weaponName == "Scythe")
+            if (i < weaponReference.Length - 1)
             {
-                data = swordReference;
-                weaponText.text = "Current Weapon: Sword";
+                weaponList[i].SetActive(false);
+                data = weaponReference[++i];
+                weaponList[i].SetActive(true);
+                weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
             }
             else
             {
-                data = scythereference;
-                weaponText.text = "Current Weapon: Scythe";
+                weaponList[i].SetActive(false);
+                i = 0;
+                data = weaponReference[i];
+                weaponList[i].SetActive(true);
+                weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
             }
         }
 
