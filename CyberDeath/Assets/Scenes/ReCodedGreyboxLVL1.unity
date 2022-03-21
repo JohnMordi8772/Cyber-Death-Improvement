@@ -3779,7 +3779,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 2.1213872, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6409,6 +6409,10 @@ PrefabInstance:
       value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 5005352443119575318, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: arrow
+      value: 
+      objectReference: {fileID: 4946052083198807791, guid: c2758a996787fae4099e4b85b2f6e2f8, type: 3}
+    - target: {fileID: 5005352443119575318, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
       propertyPath: spear
       value: 
       objectReference: {fileID: 0}
@@ -6416,6 +6420,10 @@ PrefabInstance:
       propertyPath: sword
       value: 
       objectReference: {fileID: 1865482904}
+    - target: {fileID: 5005352443119575318, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 266957299}
     - target: {fileID: 5005352443119575318, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
       propertyPath: scythe
       value: 
@@ -67350,6 +67358,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponHolder: {fileID: 458134644}
   anim: {fileID: 1909309858}
+--- !u!114 &1909309853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909309850}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f1e5bf13c47ff6459c2a630ba828a45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arrow: {fileID: 4946052083198807791, guid: c2758a996787fae4099e4b85b2f6e2f8, type: 3}
+  player: {fileID: 266957299}
 --- !u!95 &1909309858 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 2036161922323433232, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}

@@ -25,7 +25,12 @@ namespace GoofyGhosts
         [SerializeField] public List<RuntimeAnimatorController> weaponAnimList = new List<RuntimeAnimatorController> { };
         [SerializeField] public List<GameObject> weaponUI = new List<GameObject> { };
         public Animator playAnim;
-       
+
+        public bool onBow;
+
+        [SerializeField] GameObject arrow;
+        [SerializeField] Transform player;
+
         #region -- // Init // --
         protected override void Awake()
         {
@@ -54,6 +59,14 @@ namespace GoofyGhosts
                 weaponUI[i].SetActive(true);
                 weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
                 playAnim.runtimeAnimatorController = weaponAnimList[i];
+                if(weaponAnimList[i].name == "PlayerBow")
+                {
+                    onBow = true;
+                }
+                else
+                {
+                    onBow = false;
+                }
             }
             else
             {
@@ -98,6 +111,25 @@ namespace GoofyGhosts
         {
             IDamageable damageable = other.GetComponent<IDamageable>();
             damageable?.TakeDamage(WeaponDamage);
+        }
+
+        private void Update()
+        {
+            if (onBow == true && playAnim.GetBool("Fire") == true)
+            {
+                Invoke("SpawnArrows", 0.6f);
+            }
+            if(onBow == true && playAnim.GetBool("Fire") == false)
+            {
+                CancelInvoke("SpawnArrows");
+            }
+        }
+
+        void SpawnArrows()
+        {
+            print("What the hell!?!?");
+            Instantiate(arrow, player.position + new Vector3(0, 1, 0), player.rotation);
+            
         }
     }
 }
