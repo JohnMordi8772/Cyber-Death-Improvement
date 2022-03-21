@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4027511831234825454}
   m_Layer: 9
   m_Name: Enemy Gib
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -65,7 +65,7 @@ GameObject:
   - component: {fileID: 7320633408901290072}
   m_Layer: 9
   m_Name: New Game Object
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2760,7 +2760,7 @@ GameObject:
   - component: {fileID: 6839726573485919040}
   m_Layer: 9
   m_Name: New Game Object
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20412,7 +20412,7 @@ GameObject:
   - component: {fileID: 8374523936072438343}
   m_Layer: 9
   m_Name: New Game Object
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23997,7 +23997,7 @@ GameObject:
   - component: {fileID: 8901002989698766380}
   m_Layer: 9
   m_Name: New Game Object
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42277,7 +42277,7 @@ GameObject:
   - component: {fileID: 1796158731051049764}
   m_Layer: 9
   m_Name: New Game Object
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44875,7 +44875,7 @@ GameObject:
   - component: {fileID: 3475808247543848366}
   m_Layer: 9
   m_Name: New Game Object
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -47748,7 +47748,7 @@ GameObject:
   - component: {fileID: 2342449524781543677}
   m_Layer: 9
   m_Name: New Game Object
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49711,7 +49711,7 @@ GameObject:
   - component: {fileID: 1695691251778645545}
   m_Layer: 9
   m_Name: New Game Object
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -61270,7 +61270,7 @@ GameObject:
   - component: {fileID: 7733169211097312894}
   m_Layer: 9
   m_Name: New Game Object
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -63959,7 +63959,7 @@ GameObject:
   - component: {fileID: 6246551347926619531}
   m_Layer: 9
   m_Name: New Game Object
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67127,7 +67127,7 @@ GameObject:
   - component: {fileID: 4823677968430629147}
   m_Layer: 9
   m_Name: polySurface63 (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -67733,7 +67733,7 @@ GameObject:
   - component: {fileID: 7352800437381877537}
   m_Layer: 9
   m_Name: New Game Object
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72737,7 +72737,7 @@ GameObject:
   - component: {fileID: 8979182279212415899}
   m_Layer: 9
   m_Name: New Game Object
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74759,7 +74759,7 @@ GameObject:
   - component: {fileID: 1874622721292144046}
   m_Layer: 9
   m_Name: New Game Object
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82350,7 +82350,7 @@ GameObject:
   - component: {fileID: 4373731662921791413}
   m_Layer: 9
   m_Name: New Game Object
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -84565,7 +84565,7 @@ GameObject:
   - component: {fileID: 1939478124723913299}
   m_Layer: 9
   m_Name: New Game Object
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -107328,7 +107328,7 @@ GameObject:
   - component: {fileID: 5819077596438088105}
   m_Layer: 9
   m_Name: polySurface59 1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

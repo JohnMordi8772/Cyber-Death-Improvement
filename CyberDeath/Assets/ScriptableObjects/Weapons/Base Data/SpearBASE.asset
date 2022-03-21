@@ -20,4 +20,4 @@ MonoBehaviour:
     baseStat: 10
   attackSpeed:
     statName: Attack Speed
-    baseStat: 2
+    baseStat: 2.5

@@ -302,7 +302,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.077669874
+        functionName: Fire
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: be736aebbd72550499227333c2a03b12, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}

@@ -8,21 +8,12 @@ namespace GoofyGhosts
     {
         [SerializeField] GameObject arrow;
         [SerializeField] Transform player;
+        PlayerControls controls;
+
         protected override void FireWeapon()
         {
-            Instantiate(arrow, player.position, player.rotation);
-        }
-
-        // Start is called before the first frame update
-        void Start()
-        {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
+            Debug.Log("What the hell!?!?");
+            Instantiate(arrow, player.position + new Vector3(0, 1, 0), player.rotation);
         }
     }
 }

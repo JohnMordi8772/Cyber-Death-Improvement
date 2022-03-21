@@ -11,6 +11,7 @@ namespace GoofyGhosts
         void Start()
         {
             Debug.Log("Spawned");
+            transform.rotation = Quaternion.Euler(0, transform.rotation.y, 90);
         }
 
         // Update is called once per frame

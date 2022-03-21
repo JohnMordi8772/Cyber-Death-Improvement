@@ -169,5 +169,10 @@ namespace GoofyGhosts
             audioClipChannel.RaiseEvent(waveEndSFX);
             audioClipChannel.RaiseEvent(waveEnd2SFX);
         }
+
+        public void PlayerDeath()
+        {
+            waveChannel.RaiseEvent(-1);
+        }
     }
 }
