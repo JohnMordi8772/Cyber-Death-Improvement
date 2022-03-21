@@ -17,15 +17,15 @@ namespace GoofyGhosts
         // Update is called once per frame
         void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                controlsPnl.SetActive(false);
-            }
+            //if (Input.GetKeyDown(KeyCode.Escape))
+            //{
+            //    controlsPnl.SetActive(false);
+            //}
         }
 
         public void OnClick()
         {
-            controlsPnl.SetActive(false);
+            controlsPnl.SetActive(true);
         }
     }
 }

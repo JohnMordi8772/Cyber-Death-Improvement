@@ -17,7 +17,7 @@ MonoBehaviour:
   weaponName: Spear
   attackDamage:
     statName: Attack Damage
-    baseStat: 5
+    baseStat: 10
   attackSpeed:
     statName: Attack Speed
-    baseStat: 2
+    baseStat: 2.5

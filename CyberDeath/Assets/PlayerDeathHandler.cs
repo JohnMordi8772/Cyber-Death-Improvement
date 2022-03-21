@@ -17,6 +17,7 @@ namespace GoofyGhosts
         private Health health;
         private Animator anim;
         [SerializeField] private BoolChannelSO disableControlsChannel;
+        [SerializeField] WaveManager waveManager;
 
         private void Awake()
         {
@@ -38,6 +39,7 @@ namespace GoofyGhosts
 
         private void HandleDeath()
         {
+            waveManager.PlayerDeath();
             disableControlsChannel.RaiseEvent(false);
             anim.SetTrigger("Death");
         }
