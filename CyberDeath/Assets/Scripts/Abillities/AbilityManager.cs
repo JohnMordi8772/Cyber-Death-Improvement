@@ -29,6 +29,8 @@ namespace GoofyGhosts
 
         [SerializeField] AbilityCooldownUI abilityCooldown;
 
+        [SerializeField] AbilityAvailableUI availableUI;
+
         [SerializeField] Image icon;
 
         [SerializeField] Sprite[] spriteIcons;
@@ -100,10 +102,12 @@ namespace GoofyGhosts
             if(currentAbility.coolingDown)
             {
                 abilityCooldown.UpdateSlider(currentAbility.i);
+                icon.color = availableUI.unavailableColor;
             }
             else
             {
                 abilityCooldown.UpdateSlider(-1);
+                icon.color = availableUI.availableColor;
             }
             //bool abilityExists = AbilityListContains<T>(out IAbility ability);
 

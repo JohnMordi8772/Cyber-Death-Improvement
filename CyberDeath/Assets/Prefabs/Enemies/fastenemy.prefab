@@ -179,6 +179,8 @@ MonoBehaviour:
   takeDamageChannel: {fileID: 0}
   armor: {fileID: 11400000, guid: a3f169577ede1684e8f55b5c9e730c02, type: 2}
   hitParticles: {fileID: 2586482092306019251}
+  isEnemy: 0
+  critChance: 0
 --- !u!114 &2299156864005966228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -755,6 +757,10 @@ PrefabInstance:
     - target: {fileID: 1823908389048016933, guid: 004dd00d5732f4c878078e06f45657b5, type: 3}
       propertyPath: m_Name
       value: Enemy PS
+      objectReference: {fileID: 0}
+    - target: {fileID: 1823908389048016933, guid: 004dd00d5732f4c878078e06f45657b5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2891552339356084301, guid: 004dd00d5732f4c878078e06f45657b5, type: 3}
       propertyPath: m_RootOrder
