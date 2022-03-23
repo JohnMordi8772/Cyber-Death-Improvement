@@ -136,11 +136,11 @@ namespace GoofyGhosts
                     EscapeKey();
                 }
 
-                /*
-                if (Input.GetKeyDown("space") && canBuy == true)
-                {
-                    ClickButton();
-                } */
+                
+                //if (Input.GetKeyDown("space") && canBuy == true)
+                //{
+                //    ClickButton();
+                //}
 
                 /*
                 // PROMOTE KEY (DEBUG ONLY)
@@ -272,9 +272,11 @@ namespace GoofyGhosts
         }
 
         public void EscapeKey()
-        { 
+        {
             //if( dialogue.displayText.text == dialogue.dialogue.Peek().ToString())
             //{
+            dialogue.StopAllCoroutines();
+            dialogue.StopAnimation();
                 ToggleInterface();
                 dialogue.returnToFirst = true;
                 dialogue.NextLine();
@@ -354,7 +356,7 @@ namespace GoofyGhosts
         //            dialogue.NextLine();
         //            //ConfirmPurchase();
         //        }
-        //    }          
+        //    }
         //}
 
         //GameObject ConfirmPurchase()
@@ -365,7 +367,7 @@ namespace GoofyGhosts
         //    Module m = temp.GetComponent<Module>();
         //    string a = m.GetDisplayName();
         //    print("Returned: " + a);
-            
+
         //    DecreasePrice();
         //    m.OnPurchased();
         //    m.Promote();

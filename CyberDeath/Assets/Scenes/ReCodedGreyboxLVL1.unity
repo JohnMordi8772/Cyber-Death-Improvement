@@ -3330,6 +3330,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tankModel
       objectReference: {fileID: 0}
+    - target: {fileID: 5647659393917017057, guid: aa1741d675570bf44bb99734e6f6e4af, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa1741d675570bf44bb99734e6f6e4af, type: 3}
 --- !u!1 &258509912
@@ -3905,7 +3909,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.6, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6629,6 +6633,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9054483115790528468, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: maxI
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 9054483115790528468, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: cooldownBeginChannel
+      value: 
+      objectReference: {fileID: 11400000, guid: cdd846c907c192546b7637617cc1c096, type: 2}
     m_RemovedComponents:
     - {fileID: 2036161922323433238, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
     - {fileID: 6006651880654310558, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}

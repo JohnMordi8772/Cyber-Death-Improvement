@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: HardEnemy
   m_EditorClassIdentifier: 
   prefab: {fileID: 4454448221328286761, guid: 689a4b227592ba343b338790f3a3079c, type: 3}
-  waveNumber: 0
+  waveNumber: 3
   spawnChance: 0.2
