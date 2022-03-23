@@ -1318,7 +1318,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controlsPnl: {fileID: 54637776}
-  pauseMenu: {fileID: 1284930724}
 --- !u!4 &672630568
 Transform:
   m_ObjectHideFlags: 0
@@ -2941,6 +2940,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6823333929093536260, guid: b6497e07e7f3ff74a95d722eb1f43590, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6823333929093536261, guid: b6497e07e7f3ff74a95d722eb1f43590, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -3332,7 +3335,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 664.9944, y: 156.99806}
+  m_AnchoredPosition: {x: 554, y: 156.99806}
   m_SizeDelta: {x: 1200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1467772503
