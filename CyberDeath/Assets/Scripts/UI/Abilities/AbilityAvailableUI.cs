@@ -18,8 +18,8 @@ namespace GoofyGhosts
         private UnityAction<float> StartCooldown;
 
         [SerializeField] private Image iconImage;
-        private Color availableColor;
-        [SerializeField] private Color unavailableColor;
+        public Color availableColor;
+        [SerializeField] public Color unavailableColor;
 
         [Tooltip("The Image that will display the cooldown time.")]
         [SerializeField] private Animator iconAnimator;

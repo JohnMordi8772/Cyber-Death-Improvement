@@ -29,6 +29,8 @@ namespace GoofyGhosts
 
         [SerializeField] AbilityCooldownUI abilityCooldown;
 
+        [SerializeField] AbilityAvailableUI availableUI;
+
         [SerializeField] Image icon;
 
         [SerializeField] Sprite[] spriteIcons;
@@ -52,6 +54,7 @@ namespace GoofyGhosts
             {
                 currentAbility.OnCooldownComplete += () => anim.SetTrigger("AbilityDone");
             }
+            abilityCooldown.SetCurrentAbility(currentAbility);
         }
 
         /// <summary>
@@ -88,13 +91,23 @@ namespace GoofyGhosts
             if (currentAbility is DashAbility)
             {
                 currentAbility = GetComponent<NanobotsAbility>();
-                
                 icon.sprite = spriteIcons[1];
             }
             else
             {
                 currentAbility = GetComponent<DashAbility>();
                 icon.sprite = spriteIcons[0];
+            }
+            abilityCooldown.SetCurrentAbility(currentAbility);
+            if(currentAbility.coolingDown)
+            {
+                abilityCooldown.UpdateSlider(currentAbility.i);
+                icon.color = availableUI.unavailableColor;
+            }
+            else
+            {
+                abilityCooldown.UpdateSlider(-1);
+                icon.color = availableUI.availableColor;
             }
             //bool abilityExists = AbilityListContains<T>(out IAbility ability);
 

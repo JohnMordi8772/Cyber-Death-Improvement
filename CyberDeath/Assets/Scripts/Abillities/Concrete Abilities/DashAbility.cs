@@ -62,12 +62,12 @@ namespace GoofyGhosts
                     {
                         print("Hit " + col.gameObject.name);
                         hitEnemies.Add(col.gameObject);
-                        col.GetComponent<CharacterMotor>().AddImpact(-col.transform.forward * dashData.EnemyKnockBack, 1f);
+                        //col.gameObject.GetComponent<CharacterMotor>().AddImpact(-col.transform.forward * dashData.EnemyKnockBack, 1f);
 
-                        EnemyStateManager manager = col.GetComponent<EnemyStateManager>();
+                        //EnemyStateManager manager = col.GetComponent<EnemyStateManager>();
 
-                        manager.SwapState<EnemyAttackedState>();
-                        manager.OnAttacked(dashData.DashDamage);
+                        //manager.SwapState<EnemyAttackedState>();
+                        //manager.OnAttacked(dashData.DashDamage);
                     }
                 }
 
