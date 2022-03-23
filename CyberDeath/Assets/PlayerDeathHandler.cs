@@ -39,6 +39,7 @@ namespace GoofyGhosts
 
         private void HandleDeath()
         {
+            ScrapCounter.scrapCount = 0;
             waveManager.PlayerDeath();
             disableControlsChannel.RaiseEvent(false);
             anim.SetTrigger("Death");

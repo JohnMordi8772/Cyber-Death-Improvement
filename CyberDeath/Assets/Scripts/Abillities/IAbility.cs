@@ -20,6 +20,7 @@ namespace GoofyGhosts
         /// </summary>
         public bool coolingDown;
         public float i;
+        public float maxI;
 
         [Tooltip("Channel used to signal the ability's cooldown has begun.")]
         [SerializeField] private FloatChannelSO cooldownBeginChannel;

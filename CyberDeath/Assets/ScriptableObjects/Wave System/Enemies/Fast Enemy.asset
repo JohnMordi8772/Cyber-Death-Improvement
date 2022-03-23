@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Fast Enemy
   m_EditorClassIdentifier: 
   prefab: {fileID: 1380730613261612237, guid: 63af2ab67cc5c3e43900182f8fb03d2b, type: 3}
-  waveNumber: 0
+  waveNumber: 3
   spawnChance: 0.692

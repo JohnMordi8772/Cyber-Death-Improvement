@@ -26,8 +26,8 @@ namespace GoofyGhosts
 
         public void OnPurchased(int value, int mod)
         {
-            playerArmor.CurrentArmor = new StatUpgrade(playerArmor.CurrentArmor, value);
-            playerArmor.armorMod += mod;
+            playerArmor.CurrentArmor = new StatUpgrade(playerArmor.CurrentArmor, playerArmor.armorMod += mod);
+            //playerArmor.armorMod += mod;
         }
     }
 }
