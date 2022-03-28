@@ -7,6 +7,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using UnityEngine.InputSystem;
 
 namespace GoofyGhosts
 {
@@ -23,9 +24,15 @@ namespace GoofyGhosts
         [SerializeField] WeaponData[] weaponReference;//scythereference, swordReference;
         [SerializeField] TextMeshProUGUI weaponText;
         [SerializeField] public List<RuntimeAnimatorController> weaponAnimList = new List<RuntimeAnimatorController> { };
-        [SerializeField] public List<GameObject> weaponUI = new List<GameObject> { };
+        //[SerializeField] public List<GameObject> weaponUI = new List<GameObject> { };
         public Animator playAnim;
-       
+
+        public bool onBow;
+        bool shooting;
+
+        [SerializeField] GameObject arrow;
+        [SerializeField] Transform player;
+
         #region -- // Init // --
         protected override void Awake()
         {
@@ -48,21 +55,29 @@ namespace GoofyGhosts
             {
                 scytheCollider.enabled = false;
                 weaponList[i].SetActive(false);
-                weaponUI[i].SetActive(false);
+                //weaponUI[i].SetActive(false);
                 data = weaponReference[++i];
                 weaponList[i].SetActive(true);
-                weaponUI[i].SetActive(true);
+                //weaponUI[i].SetActive(true);
                 weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
                 playAnim.runtimeAnimatorController = weaponAnimList[i];
+                //if(weaponAnimList[i].name == "PlayerBow")
+                //{
+                //    onBow = true;
+                //}
+                //else
+                //{
+                //    onBow = false;
+                //}
             }
             else
             {
                 weaponList[i].SetActive(false);
-                weaponUI[i].SetActive(false);
+                //weaponUI[i].SetActive(false);
                 i = 0;
                 data = weaponReference[i];
                 weaponList[i].SetActive(true);
-                weaponUI[i].SetActive(true);
+                //weaponUI[i].SetActive(true);
                 weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
                 playAnim.runtimeAnimatorController = weaponAnimList[i];
             }
@@ -99,5 +114,37 @@ namespace GoofyGhosts
             IDamageable damageable = other.GetComponent<IDamageable>();
             damageable?.TakeDamage(WeaponDamage);
         }
+
+        private void Update()
+        {
+            //if (onBow == true && playAnim.GetBool("Fire") == true)
+            //{
+            //    Invoke("SpawnArrows", 0.6f);
+            //    //shooting = true;
+            //    //SpawnArrows();
+            //}
+            //if(onBow == true && playAnim.GetBool("Fire") == false)
+            //{
+            //    //shooting = false;
+            //    CancelInvoke("SpawnArrows");
+            //}
+        }
+
+        //void SpawnArrows()
+        //{
+        //    //Plane playerPlane = new Plane(Vector3.up, player.position);
+        //    //Ray ray = Camera.main.ScreenPointToRay(Mouse.current.position.ReadValue());
+        //    //float hitDist = 0.0f;
+        //    //if(playerPlane.Raycast(ray, out hitDist))
+        //    //{
+        //    //    Vector3 targetPoint = ray.GetPoint(hitDist);
+        //    //    Quaternion targetRotation = Quaternion.LookRotation(targetPoint - player.position);
+        //    //    targetRotation.x = 0;
+        //    //    targetRotation.z = 0;
+        //    //    Instantiate(arrow, player.position + new Vector3(0, 2, 0), targetRotation);
+        //    //}
+        //    Instantiate(arrow, player.position + new Vector3(0, 2, 0), player.rotation);
+            
+        //}
     }
 }

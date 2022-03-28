@@ -18,7 +18,9 @@ namespace GoofyGhosts
         /// <summary>
         /// True if the ability is cooling down.
         /// </summary>
-        private bool coolingDown;
+        public bool coolingDown;
+        public float i;
+        public float maxI;
 
         [Tooltip("Channel used to signal the ability's cooldown has begun.")]
         [SerializeField] private FloatChannelSO cooldownBeginChannel;
@@ -27,6 +29,11 @@ namespace GoofyGhosts
         [SerializeField] protected IAbilityData data;
 
         public UnityAction OnCooldownComplete;
+
+        private void Start()
+        {
+            i = data.CooldownTime.GetStat();
+        }
 
         /// <summary>
         /// Invoked when the ability is swapped to.
@@ -74,9 +81,13 @@ namespace GoofyGhosts
 
             IEnumerator PerformCooldown()
             {
-                yield return new WaitForSeconds(data.CooldownTime.GetStat());
+                for (i = data.CooldownTime.GetStat(); i > 0 ; i--)
+                {
+                    yield return new WaitForSeconds(1);
+                }
                 coolingDown = false;
                 OnCooldownComplete?.Invoke();
+                i = data.CooldownTime.GetStat();
             }
         }
 

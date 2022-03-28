@@ -12,10 +12,10 @@ namespace GoofyGhosts
 
         protected override void ActivateAbility()
         {
-                if (playerHealthData.currentHealth <= 70)
-                    playerHealth.TakeDamage(-30);
-                else
-                    playerHealth.TakeDamage(playerHealthData.currentHealth - 100);
+            if (playerHealthData.currentHealth <= playerHealthData.maxHealth.GetStat() - 30)
+                playerHealth.TakeDamage(-30);
+            else
+                playerHealth.TakeDamage(playerHealthData.currentHealth - playerHealthData.maxHealth.GetStat());
         }
 
         // Start is called before the first frame update

@@ -16,5 +16,5 @@ MonoBehaviour:
   baseData: {fileID: 0}
   maxHealth:
     statName: Max Health
-    baseStat: 65
-  currentHealth: 65
+    baseStat: 120
+  currentHealth: 120

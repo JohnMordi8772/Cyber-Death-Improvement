@@ -32,11 +32,11 @@ namespace GoofyGhosts
             //playAnim = GameObject.Find("Player_Updated").GetComponent<Animator>();
         }
 
-        private void OnEnable()
-        {
-            //controls.WeaponsHandling.SwapWeapon.performed += _ => SwapWeapon();
-            controls.WeaponsHandling.Enable();
-        }
+        //private void OnEnable()
+        //{
+        //    //controls.WeaponsHandling.SwapWeapon.performed += _ => SwapWeapon();
+        //    //controls.WeaponsHandling.Enable();
+        //}
         /*
         void SwapWeapon()
         {

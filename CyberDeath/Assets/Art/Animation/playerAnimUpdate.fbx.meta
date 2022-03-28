@@ -302,7 +302,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.077669874
+        functionName: Fire
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: be736aebbd72550499227333c2a03b12, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -622,6 +629,13 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
+      - time: 0.013918108
+        functionName: EnableWeaponCollider
+        data: 
+        objectReferenceParameter: {fileID: 2036161922323433224, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       - time: 0.04538032
         functionName: PlaySFX
         data: 
@@ -629,14 +643,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.1451517
-        functionName: EnableWeaponCollider
-        data: 
-        objectReferenceParameter: {fileID: 2036161922323433224, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.33448672
+      - time: 1
         functionName: DisableWeaponCollider
         data: 
         objectReferenceParameter: {fileID: 2036161922323433224, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
@@ -672,6 +679,13 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
+      - time: 0.013918108
+        functionName: EnableWeaponCollider
+        data: 
+        objectReferenceParameter: {fileID: 2036161922323433224, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       - time: 0.04538032
         functionName: PlaySFX
         data: 
@@ -679,14 +693,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.1451517
-        functionName: EnableWeaponCollider
-        data: 
-        objectReferenceParameter: {fileID: 2036161922323433224, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.33711138
+      - time: 0.7386862
         functionName: DisableWeaponCollider
         data: 
         objectReferenceParameter: {fileID: 2036161922323433224, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
@@ -722,6 +729,13 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
+      - time: 0.016542781
+        functionName: EnableWeaponCollider
+        data: 
+        objectReferenceParameter: {fileID: 2036161922323433224, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       - time: 0.04538032
         functionName: PlaySFX
         data: 
@@ -729,14 +743,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.1451517
-        functionName: EnableWeaponCollider
-        data: 
-        objectReferenceParameter: {fileID: 2036161922323433224, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
-        floatParameter: 0
-        intParameter: 0
-        messageOptions: 0
-      - time: 0.3371114
+      - time: 0.636324
         functionName: DisableWeaponCollider
         data: 
         objectReferenceParameter: {fileID: 2036161922323433224, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
@@ -786,7 +793,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.1451517
+      - time: 0.15000607
         functionName: EnableWeaponCollider
         data: 
         objectReferenceParameter: {fileID: 2036161922323433224, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}

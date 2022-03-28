@@ -37,6 +37,10 @@ namespace GoofyGhosts
                 other.GetComponent<Health>().TakeDamage(5f);
                 Destroy(gameObject);
             }
+            else if(other.tag != "Enemy")
+            {
+                Destroy(gameObject);
+            }
         }
 
         IEnumerator EndBullet()

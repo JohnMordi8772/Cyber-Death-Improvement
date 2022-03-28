@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 171224834383541649}
   m_Layer: 7
   m_Name: fastenemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,6 +179,8 @@ MonoBehaviour:
   takeDamageChannel: {fileID: 0}
   armor: {fileID: 11400000, guid: a3f169577ede1684e8f55b5c9e730c02, type: 2}
   hitParticles: {fileID: 2586482092306019251}
+  isEnemy: 0
+  critChance: 0
 --- !u!114 &2299156864005966228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,8 +204,8 @@ NavMeshAgent:
   m_GameObject: {fileID: 1380730613261612237}
   m_Enabled: 1
   m_AgentTypeID: -1372625422
-  m_Radius: 3.5
-  m_Speed: 3.5
+  m_Radius: 2.5
+  m_Speed: 14
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -252,7 +254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eaa1145d2e221b48a76fd51aed7ae64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  motorData: {fileID: 11400000, guid: d15876723bbde0c4e801ba71940d5b40, type: 2}
+  motorData: {fileID: 11400000, guid: dc22d44c488a4ee4a97ca2ad934792c1, type: 2}
 --- !u!114 &2299156864005966252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -755,6 +757,10 @@ PrefabInstance:
     - target: {fileID: 1823908389048016933, guid: 004dd00d5732f4c878078e06f45657b5, type: 3}
       propertyPath: m_Name
       value: Enemy PS
+      objectReference: {fileID: 0}
+    - target: {fileID: 1823908389048016933, guid: 004dd00d5732f4c878078e06f45657b5, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2891552339356084301, guid: 004dd00d5732f4c878078e06f45657b5, type: 3}
       propertyPath: m_RootOrder

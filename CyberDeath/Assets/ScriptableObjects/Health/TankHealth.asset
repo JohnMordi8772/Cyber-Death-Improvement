@@ -16,5 +16,5 @@ MonoBehaviour:
   baseData: {fileID: 11400000, guid: 36bd9bbfd615425489cec3584643b229, type: 2}
   maxHealth:
     statName: Max Health
-    baseStat: 65
-  currentHealth: 65
+    baseStat: 120
+  currentHealth: 120
