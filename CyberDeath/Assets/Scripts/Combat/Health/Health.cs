@@ -24,6 +24,8 @@ namespace GoofyGhosts
         [SerializeField] private Armor armor;
         [SerializeField] private ParticleSystem hitParticles;
         private bool dead;
+        public bool isEnemy;
+        public int critChance;
 
         private void Start()
         {
@@ -53,13 +55,23 @@ namespace GoofyGhosts
             if (dead)
                 return;
 
+            if (isEnemy)
+            {
+                critChance = GameObject.Find("CritChanceStorage").GetComponent<CritChanceStorage>().critChance;
+                int chance = Random.Range(1, 100);
+                if (chance < critChance)
+                {
+                    amnt *= 1.5f;
+                }
+            }
+
             if (amnt < 0)
             {
                 IncreaseHealth(-amnt);
                 return;
             }
 
-            data.currentHealth -= (amnt / armor.GetArmorLevel());
+            data.currentHealth -= (amnt * (1 - (armor.GetArmorLevel() * 0.05f)));
             OnDamageTaken?.Invoke(data);
             takeDamageChannel?.RaiseEvent(data);
 

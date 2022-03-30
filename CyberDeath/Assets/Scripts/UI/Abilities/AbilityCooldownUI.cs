@@ -20,6 +20,8 @@ namespace GoofyGhosts
         [Tooltip("Channel used to handle an ability's cooldown.")]
         [SerializeField] private FloatChannelSO abilityCooldownChannel;
 
+        IAbility ability;
+
 
         #region -- // Event subbing / unsubbing // --
         private void OnEnable()
@@ -33,11 +35,16 @@ namespace GoofyGhosts
         }
         #endregion
 
+        public void SetCurrentAbility(IAbility currentAbility)
+        {
+            ability = currentAbility;
+        }
+
         /// <summary>
         /// Updates the slider according to the cooldown time.
         /// </summary>
         /// <param name="cooldownTime">The ability's cooldown time.</param>
-        private void UpdateSlider(float cooldownTime)
+        public void UpdateSlider(float cooldownTime)
         {
             StopAllCoroutines();
             StartCoroutine(DisplayCooldown(cooldownTime));
@@ -49,6 +56,11 @@ namespace GoofyGhosts
         /// <param name="cooldownTime">The ability's cooldown time.</param>
         private IEnumerator DisplayCooldown(float cooldownTime)
         {
+            if (cooldownTime == -1)
+            {
+                slider.value = 1f;
+                yield break;
+            }
             float currentTime = 0f;
             const float RESET_TIME = 0.2f;
 

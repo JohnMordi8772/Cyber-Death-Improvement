@@ -17,7 +17,7 @@ namespace GoofyGhosts
         public const float HEALTH_UPGRADE = 10f;
         public const float ARMOR_UPGRADE = (1f); // NOTE: Armor works by dividing the upgrade (rank*upgrade) to the amnt of damage received.
                                                    //       That being said, this should be at a minimum of 1 if you choose to go that low. 
-        public const float MOVE_SPEED_UPGRADE = 1.75f;
+        public const float MOVE_SPEED_UPGRADE = 0.25f;
         public const float ATT_SPEED_UPGRADE = 0.1f;
     }
 }

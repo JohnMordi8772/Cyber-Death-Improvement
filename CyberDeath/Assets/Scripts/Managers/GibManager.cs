@@ -13,7 +13,7 @@ namespace GoofyGhosts
     {
         private IEnumerator Start()
         {
-            yield return new WaitForSeconds(Random.Range(25, 46));
+            yield return new WaitForSeconds(Random.Range(6, 10));
             HideUtility.HideGameObject(gameObject);
         }
     }

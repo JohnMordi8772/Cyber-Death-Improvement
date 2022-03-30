@@ -4762,7 +4762,7 @@ GameObject:
   - component: {fileID: 9134646413626672012}
   m_Layer: 7
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4819,7 +4819,7 @@ MonoBehaviour:
   data: {fileID: 11400000, guid: 63ae874dbb6936445a695ec8448bb39f, type: 2}
   deathChannel: {fileID: 11400000, guid: 7379fb5e070662146b5197dd5fec0d6d, type: 2}
   takeDamageChannel: {fileID: 0}
-  armor: {fileID: 0}
+  armor: {fileID: 11400000, guid: a3f169577ede1684e8f55b5c9e730c02, type: 2}
   hitParticles: {fileID: 7924546688043020046}
 --- !u!114 &198699336
 MonoBehaviour:
@@ -4944,6 +4944,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad4cd505011c5a946854de4331c76ad7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 2030221374342325462}
   checkDistanceTime: 0.3
 --- !u!114 &1707678543487998786
 MonoBehaviour:

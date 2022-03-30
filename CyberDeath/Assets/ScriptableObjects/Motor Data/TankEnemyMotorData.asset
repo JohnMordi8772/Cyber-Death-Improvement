@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd9e1231d9e9fbb4aa7da13ce4798124, type: 3}
+  m_Name: TankEnemyMotorData
+  m_EditorClassIdentifier: 
+  isBase: 0
+  baseData: {fileID: 11400000, guid: 44ecde12cfcdef14ea2f0d14ddf92b14, type: 2}
+  _movementSpeed:
+    statName: Movement Speed
+    baseStat: 5
+  _rotateSpeed: 7
+  _jumpHeight: 7
+  _gravity: 40
+  _airControl: 35
+  maxJumps: 1

@@ -143,6 +143,7 @@ namespace GoofyGhosts
 
         IEnumerator Print()
         {
+            displayText.text = "";
             sAnim.SetBool("isTalking", true);
             foreach (char letter in (dialogue.Peek().ToString()).ToCharArray())
             {
@@ -280,6 +281,11 @@ namespace GoofyGhosts
         public void ClearQueue()
         {
             dialogue.Clear();
+        }
+
+        public void StopAnimation()
+        {
+            sAnim.SetBool("isTalking", false);
         }
 
         public void Choice(int x)

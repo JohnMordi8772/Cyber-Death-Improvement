@@ -63,7 +63,7 @@ namespace GoofyGhosts
             controls.UI.Right.started += _ => navRight = true;
             controls.UI.Progress.started += _ => progressClick = true;
 
-            controls.UI.Progress.started += _ => { if (shopActive) ClickButton(); };
+            //controls.UI.Progress.started += _ => { if (shopActive) ClickButton(); };
 
             controls.UI.PrintInfo.started += _ => printInfoKey = true;
             controls.UI.Escape.started += _ => escapeKey = true;
@@ -109,38 +109,38 @@ namespace GoofyGhosts
         {
             if (shopActive == true)
             {
-                if (navLeft)
-                {
-                    sAnim.SetTrigger("Left");
-                    choose.Play();
-                    DecrementIndex();
-                    UpdateModuleText();
-                    UpdatePriceText();
-                    ShowModuleInfo();
-                    UpdateModuleImage();
-                }
+                //if (navLeft)
+                //{
+                //    sAnim.SetTrigger("Left");
+                //    choose.Play();
+                //    DecrementIndex();
+                //    UpdateModuleText();
+                //    UpdatePriceText();
+                //    ShowModuleInfo();
+                //    UpdateModuleImage();
+                //}
 
-                if (navRight)
-                {
-                    sAnim.SetTrigger("Right");
-                    choose.Play();
-                    IncrementIndex();
-                    UpdateModuleText();
-                    UpdatePriceText();
-                    ShowModuleInfo();
-                    UpdateModuleImage();
-                }
+                //if (navRight)
+                //{
+                //    sAnim.SetTrigger("Right");
+                //    choose.Play();
+                //    IncrementIndex();
+                //    UpdateModuleText();
+                //    UpdatePriceText();
+                //    ShowModuleInfo();
+                //    UpdateModuleImage();
+                //}
 
                 if (escapeKey)
                 {
                     EscapeKey();
                 }
 
-                /*
-                if (Input.GetKeyDown("space") && canBuy == true)
-                {
-                    ClickButton();
-                } */
+                
+                //if (Input.GetKeyDown("space") && canBuy == true)
+                //{
+                //    ClickButton();
+                //}
 
                 /*
                 // PROMOTE KEY (DEBUG ONLY)
@@ -242,43 +242,45 @@ namespace GoofyGhosts
 
         void ShowModuleInfo()
         {
-            /*
-            GameObject temp = inventory[index];
-            Module m = temp.GetComponent<Module>();
-            string a = m.name;
 
-            if(a == "Speed")
-            {
-                dialogue.QueueDialogue(15);
-            }
-            else if(a == "Swing")
-            {
-                dialogue.QueueDialogue(16);
-            }
-            else if (a == "Power")
-            {
-                dialogue.QueueDialogue(17);
-            }
-            else if (a == "Endurance")
-            {
-                dialogue.QueueDialogue(18);
-            }
-            else if (a == "Armor")
-            {
-                dialogue.QueueDialogue(19);
-            }
+            //GameObject temp = inventory[index];
+            //Module m = temp.GetComponent<Module>();
+            //string a = m.name;
 
-            dialogue.NextLine(); */
+            //if (a == "Speed")
+            //{
+            //    dialogue.displayText.text = "Increase movement speed by 25%.";
+            //}
+            //else if (a == "Swing")
+            //{
+            //    dialogue.displayText.text = "Increase attack speed by 10%.";
+            //}
+            //else if (a == "Attack")
+            //{
+            //    dialogue.displayText.text = "Increase damage by a small amount.";
+            //}
+            //else if (a == "Endurance")
+            //{
+            //    dialogue.displayText.text = "Increase your health by 10 hitpoints.";
+            //}
+            //else if (a == "Armor")
+            //{
+            //    dialogue.displayText.text = "Take 5% less damage.";
+            //}
+
+            //dialogue.NextLine();
         }
 
         public void EscapeKey()
-        { 
-            if( dialogue.displayText.text == dialogue.dialogue.Peek().ToString())
-            {
+        {
+            //if( dialogue.displayText.text == dialogue.dialogue.Peek().ToString())
+            //{
+            dialogue.StopAllCoroutines();
+            dialogue.StopAnimation();
                 ToggleInterface();
                 dialogue.returnToFirst = true;
                 dialogue.NextLine();
-            }
+            //}
         }
 
         public void ToggleInterface()
@@ -302,84 +304,84 @@ namespace GoofyGhosts
             }
         }
 
-        public void ClickButton()
-        {
-            // Checks if dialogue is done printing
-            if (dialogue.displayText.text == dialogue.dialogue.Peek().ToString())
-            {
-                //If player doesn't have enough money, deny purchase
-                if (GetModulePrice(index) > GetScrapCount())
-                {
-                    //dialogue.ClearQueue();
-                    //dialogue.displayText.text = "";
+        //public void ClickButton()
+        //{
+        //    // Checks if dialogue is done printing
+        //    if (dialogue.displayText.text == dialogue.dialogue.Peek().ToString())
+        //    {
+        //        //If player doesn't have enough money, deny purchase
+        //        if (GetModulePrice(index) > GetScrapCount())
+        //        {
+        //            //dialogue.ClearQueue();
+        //            //dialogue.displayText.text = "";
 
-                    Random.seed = System.DateTime.Now.Millisecond;
-                    int random1 = Random.Range(1, 4);
+        //            Random.seed = System.DateTime.Now.Millisecond;
+        //            int random1 = Random.Range(1, 4);
 
-                    if (random1 == 1)
-                    {
-                        dialogue.QueueDialogue(14);
-                    }
-                    else if (random1 == 2)
-                    {
-                        dialogue.QueueDialogue(22);
-                    }
-                    else
-                    {
-                        dialogue.QueueDialogue(23);
-                    }
+        //            if (random1 == 1)
+        //            {
+        //                dialogue.QueueDialogue(14);
+        //            }
+        //            else if (random1 == 2)
+        //            {
+        //                dialogue.QueueDialogue(22);
+        //            }
+        //            else
+        //            {
+        //                dialogue.QueueDialogue(23);
+        //            }
 
-                    dialogue.NextLine();
-                }
+        //            dialogue.NextLine();
+        //        }
 
-                else
-                {
-                    buy.Play();
-                    Random.seed = System.DateTime.Now.Millisecond;
-                    int random2 = Random.Range(1, 4);
+        //        else
+        //        {
+        //            buy.Play();
+        //            Random.seed = System.DateTime.Now.Millisecond;
+        //            int random2 = Random.Range(1, 4);
 
-                    if (random2 == 1)
-                    {
-                        dialogue.QueueDialogue(13);
-                    }
-                    else if (random2 == 2)
-                    {
-                        dialogue.QueueDialogue(24);
-                    }
-                    else
-                    {
-                        dialogue.QueueDialogue(25);
-                    }
+        //            if (random2 == 1)
+        //            {
+        //                dialogue.QueueDialogue(13);
+        //            }
+        //            else if (random2 == 2)
+        //            {
+        //                dialogue.QueueDialogue(24);
+        //            }
+        //            else
+        //            {
+        //                dialogue.QueueDialogue(25);
+        //            }
 
-                    dialogue.NextLine();
-                    ConfirmPurchase();
-                }
-            }          
-        }
+        //            dialogue.NextLine();
+        //            //ConfirmPurchase();
+        //        }
+        //    }
+        //}
 
-        GameObject ConfirmPurchase()
-        {
-            // CHECK IF PLAYER CAN BUY HERE
+        //GameObject ConfirmPurchase()
+        //{
+        //    // CHECK IF PLAYER CAN BUY HERE
 
-            GameObject temp = inventory[index];
-            Module m = temp.GetComponent<Module>();
-            string a = m.GetDisplayName();
-            print("Returned: " + a);
-            
-            DecreasePrice();
-            m.OnPurchased();
-            m.Promote();
+        //    GameObject temp = inventory[index];
+        //    Module m = temp.GetComponent<Module>();
+        //    string a = m.GetDisplayName();
+        //    print("Returned: " + a);
 
-            UpdatePriceText();
-            UpdateModuleText();
+        //    DecreasePrice();
+        //    m.OnPurchased();
+        //    m.Promote();
 
-            // GAME OBJECT MODULE IS RETURNED TO PLAYER HERE,
-            // This line returns the current module being viewed
-            // in the shop indicated by the index
-            // Each module has a name, value, etc. that can be used
-            // by the player scrips to determine what values to raise.
-            // For more info, check the Module.cs script
-            return inventory[index];
-        }
+        //    UpdatePriceText();
+        //    UpdateModuleText();
+
+        //    // GAME OBJECT MODULE IS RETURNED TO PLAYER HERE,
+        //    // This line returns the current module being viewed
+        //    // in the shop indicated by the index
+        //    // Each module has a name, value, etc. that can be used
+        //    // by the player scrips to determine what values to raise.
+        //    // For more info, check the Module.cs script
+        //    return inventory[index];
+        //}
     }
 }

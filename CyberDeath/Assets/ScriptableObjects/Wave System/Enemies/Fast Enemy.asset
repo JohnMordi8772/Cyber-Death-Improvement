@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a1b870d58aef5e4aad2ad070dc2deea, type: 3}
   m_Name: Fast Enemy
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6969221711345317931, guid: b326e8259a3af9448aac24872bbf0658, type: 3}
-  waveNumber: 0
-  spawnChance: 0.4
+  prefab: {fileID: 1380730613261612237, guid: 63af2ab67cc5c3e43900182f8fb03d2b, type: 3}
+  waveNumber: 3
+  spawnChance: 0.692
