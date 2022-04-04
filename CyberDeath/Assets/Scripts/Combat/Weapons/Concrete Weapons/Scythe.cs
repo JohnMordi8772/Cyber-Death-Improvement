@@ -45,42 +45,48 @@ namespace GoofyGhosts
 
         private void OnEnable()
         {
-            controls.WeaponsHandling.SwapWeapon.performed += _ => SwapWeapon();
-            controls.WeaponsHandling.Enable();
+            //controls.WeaponsHandling.SwapWeapon.performed += _ => SwapWeapon();
+            //controls.WeaponsHandling.Enable();
         }
 
-        void SwapWeapon()
+        public void SwapWeapon(int j)
         {
-            if (i < weaponReference.Length - 1)
-            {
-                scytheCollider.enabled = false;
-                weaponList[i].SetActive(false);
-                //weaponUI[i].SetActive(false);
-                data = weaponReference[++i];
-                weaponList[i].SetActive(true);
-                //weaponUI[i].SetActive(true);
-                weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
-                playAnim.runtimeAnimatorController = weaponAnimList[i];
-                //if(weaponAnimList[i].name == "PlayerBow")
-                //{
-                //    onBow = true;
-                //}
-                //else
-                //{
-                //    onBow = false;
-                //}
-            }
-            else
-            {
-                weaponList[i].SetActive(false);
-                //weaponUI[i].SetActive(false);
-                i = 0;
-                data = weaponReference[i];
-                weaponList[i].SetActive(true);
-                //weaponUI[i].SetActive(true);
-                weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
-                playAnim.runtimeAnimatorController = weaponAnimList[i];
-            }
+            weaponList[0].SetActive(false);
+            weaponList[j].SetActive(true);
+            playAnim.runtimeAnimatorController = weaponAnimList[j];
+            
+            //if (i < weaponReference.Length - 1)
+            //{
+            //    scytheCollider.enabled = false;
+            //    weaponList[i].SetActive(false);
+            //    //weaponUI[i].SetActive(false);
+            //    data = weaponReference[++i];
+            //    weaponList[i].SetActive(true);
+            //    scytheCollider = weaponList[i].GetComponent<Collider>();
+            //    //weaponUI[i].SetActive(true);
+            //    weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
+            //    playAnim.runtimeAnimatorController = weaponAnimList[i];
+            //    //if(weaponAnimList[i].name == "PlayerBow")
+            //    //{
+            //    //    onBow = true;
+            //    //}
+            //    //else
+            //    //{
+            //    //    onBow = false;
+            //    //}
+            //}
+            //else
+            //{
+            //    weaponList[i].SetActive(false);
+            //    //weaponUI[i].SetActive(false);
+            //    i = 0;
+            //    data = weaponReference[i];
+            //    weaponList[i].SetActive(true);
+            //    scytheCollider = weaponList[i].GetComponent<Collider>();
+            //    //weaponUI[i].SetActive(true);
+            //    weaponText.text = "Current Weapon: " + weaponReference[i].weaponName;
+            //    playAnim.runtimeAnimatorController = weaponAnimList[i];
+            //}
         }
 
         private void Start()
@@ -112,7 +118,8 @@ namespace GoofyGhosts
         private void OnTriggerEnter(Collider other)
         {
             IDamageable damageable = other.GetComponent<IDamageable>();
-            damageable?.TakeDamage(WeaponDamage);
+            if(other.gameObject.tag != "Player")
+                damageable?.TakeDamage(WeaponDamage);
         }
 
         private void Update()
