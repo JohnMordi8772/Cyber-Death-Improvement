@@ -99,35 +99,35 @@ namespace GoofyGhosts
         /// <returns>The scrap per pile the player will receive.</returns>
         private int GetScrapPerPile(int waveNumber)
         {
-            // Taken from Anthony's Wave Distribution Chart on Google Drive.
-            if (waveNumber < 5)
-                return 4;
-            else if (waveNumber < 7)
-                return 5;
-            else if (waveNumber < 10)
-                return 6;
-            else if (waveNumber < 11)
-                return 7;
-            else if (waveNumber < 12)
-                return 8;
-            else if (waveNumber < 13)
-                return 9;
-            else if (waveNumber < 14)
-                return 10;
-            else if (waveNumber < 15)
-                return 11;
-            else if (waveNumber < 16)
-                return 13;
-            else if (waveNumber < 17)
-                return 15;
-            else if (waveNumber < 18)
-                return 17;
-            else if (waveNumber < 19)
-                return 19;
-            else if (waveNumber < 20)
-                return 21;
-            else
-                return 23;
+            //// Taken from Anthony's Wave Distribution Chart on Google Drive.
+            //if (waveNumber < 5)
+                  return 4;
+            //else if (waveNumber < 7)
+            //    return 5;
+            //else if (waveNumber < 10)
+            //    return 6;
+            //else if (waveNumber < 11)
+            //    return 7;
+            //else if (waveNumber < 12)
+            //    return 8;
+            //else if (waveNumber < 13)
+            //    return 9;
+            //else if (waveNumber < 14)
+            //    return 10;
+            //else if (waveNumber < 15)
+            //    return 11;
+            //else if (waveNumber < 16)
+            //    return 13;
+            //else if (waveNumber < 17)
+            //    return 15;
+            //else if (waveNumber < 18)
+            //    return 17;
+            //else if (waveNumber < 19)
+            //    return 19;
+            //else if (waveNumber < 20)
+            //    return 21;
+            //else
+            //    return 23;
         }
 
         /// <summary>

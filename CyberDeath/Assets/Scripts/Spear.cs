@@ -88,7 +88,8 @@ namespace GoofyGhosts
         private void OnTriggerEnter(Collider other)
         {
             IDamageable damageable = other.GetComponent<IDamageable>();
-            damageable?.TakeDamage(WeaponDamage);
+            if(other.gameObject.tag != "Player")
+                damageable?.TakeDamage(WeaponDamage);
         }
     }
 }

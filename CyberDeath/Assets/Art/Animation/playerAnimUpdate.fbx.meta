@@ -693,7 +693,7 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.7386862
+      - time: 1
         functionName: DisableWeaponCollider
         data: 
         objectReferenceParameter: {fileID: 2036161922323433224, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
@@ -729,21 +729,21 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.016542781
+      - time: 0.038387433
         functionName: EnableWeaponCollider
         data: 
         objectReferenceParameter: {fileID: 2036161922323433224, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.04538032
+      - time: 0.0647978
         functionName: PlaySFX
         data: 
         objectReferenceParameter: {fileID: 11400000, guid: 26922b069db2afa45958c01b251d0368, type: 2}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.636324
+      - time: 1
         functionName: DisableWeaponCollider
         data: 
         objectReferenceParameter: {fileID: 2036161922323433224, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
