@@ -17,7 +17,7 @@ namespace GoofyGhosts
         // Rank of the module, starts at 1 by default
         // Cannot be edited in inspector
         [System.NonSerialized]
-        public int rank = 1;
+        public float rank = 1;
         
         void Awake()
         {

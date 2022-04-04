@@ -40,13 +40,13 @@ namespace GoofyGhosts
 
             if (pm.purchase1)
             {
-                buttons[14].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[14].interactable = false;
                 buttons[0].image.color = Color.white;
                 aCounter1 = 1;
             }
             if (pm.purchase2)
             {
-                buttons[0].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[0].interactable = false;
                 buttons[1].image.color = Color.white;
                 buttons[3].image.color = Color.white;
                 buttons[12].image.color = Color.white;
@@ -54,46 +54,46 @@ namespace GoofyGhosts
             }
             if (pm.purchase3)
             {
-                buttons[1].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[1].interactable = false;
                 buttons[2].image.color = Color.white;
                 aCounter2 = 1;
             }
             if (pm.purchase4)
             {
-                buttons[2].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[2].interactable = false;
                 aCounter2 = 2;
             }
             if (pm.purchase5)
             {
-                buttons[3].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[3].interactable = false;
                 buttons[4].image.color = Color.white;
                 aCounter3 = 1;
             }
             if (pm.purchase6)
             {
-                buttons[4].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[4].interactable = false;
                 aCounter3 = 2;
             }
             if (pm.purchase7)
             {
-                buttons[12].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[12].interactable = false;
                 buttons[13].image.color = Color.white;
                 aCounter4 = 1;
             }
             if (pm.purchase8)
             {
-                buttons[13].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[13].interactable = false;
                 aCounter4 = 2;
             }
             if (pm.purchase9)
             {
-                buttons[15].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[15].interactable = false;
                 buttons[5].image.color = Color.white;
                 dCounter1 = 1;
             }
             if (pm.purchase10)
             {
-                buttons[5].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[5].interactable = false;
                 buttons[6].image.color = Color.white;
                 buttons[8].image.color = Color.white;
                 buttons[10].image.color = Color.white;
@@ -101,35 +101,35 @@ namespace GoofyGhosts
             }
             if (pm.purchase11)
             {
-                buttons[6].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[6].interactable = false;
                 buttons[7].image.color = Color.white;
                 dCounter2 = 1;
             }
             if (pm.purchase12)
             {
-                buttons[7].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[7].interactable = false;
                 dCounter2 = 2;
             }
             if (pm.purchase13)
             {
-                buttons[8].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[8].interactable = false;
                 buttons[9].image.color = Color.white;
                 dCounter3 = 1;
             }
             if (pm.purchase14)
             {
-                buttons[9].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[9].interactable = false;
                 dCounter3 = 2;
             }
             if (pm.purchase15)
             {
-                buttons[10].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[10].interactable = false;
                 buttons[11].image.color = Color.white;
                 dCounter4 = 1;
             }
             if (pm.purchase16)
             {
-                buttons[11].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[11].interactable = false;
                 dCounter4 = 2;
             }
         }
@@ -147,7 +147,7 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[0].image.color = Color.white;
-                buttons[14].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[14].interactable = false;
             }
         }
 
@@ -166,7 +166,7 @@ namespace GoofyGhosts
                 buttons[1].image.color = Color.white;
                 buttons[3].image.color = Color.white;
                 buttons[12].image.color = Color.white;
-                buttons[0].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[0].interactable = false;
             }
         }
 
@@ -181,7 +181,7 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[2].image.color = Color.white;
-                buttons[1].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[1].interactable = false;
             }
         }
 
@@ -195,7 +195,7 @@ namespace GoofyGhosts
                 ScrapCounter.scrapCount -= 50;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
-                buttons[2].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[2].interactable = false;
             }
         }
 
@@ -210,7 +210,7 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[4].image.color = Color.white;
-                buttons[3].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[3].interactable = false;
             }
         }
 
@@ -224,7 +224,7 @@ namespace GoofyGhosts
                 ScrapCounter.scrapCount -= 50;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
-                buttons[4].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[4].interactable = false;
             }
         }
 
@@ -239,7 +239,7 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[13].image.color = Color.white;
-                buttons[12].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[12].interactable = false;
             }
         }
 
@@ -253,7 +253,7 @@ namespace GoofyGhosts
                 ScrapCounter.scrapCount -= 50;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
-                buttons[13].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[13].interactable = false;
             }
         }
 
@@ -270,7 +270,7 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[5].image.color = Color.white;
-                buttons[15].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[15].interactable = false;
             }
         }
 
@@ -289,7 +289,7 @@ namespace GoofyGhosts
                 buttons[6].image.color = Color.white;
                 buttons[8].image.color = Color.white;
                 buttons[10].image.color = Color.white;
-                buttons[5].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[5].interactable = false;
             }
         }
 
@@ -304,7 +304,7 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[7].image.color = Color.white;
-                buttons[6].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[6].interactable = false;
             }
         }
 
@@ -318,7 +318,7 @@ namespace GoofyGhosts
                 ScrapCounter.scrapCount -= 50;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
-                buttons[7].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[7].interactable = false;
             }
         }
 
@@ -333,7 +333,7 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[9].image.color = Color.white;
-                buttons[8].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[8].interactable = false;
             }
         }
 
@@ -347,7 +347,7 @@ namespace GoofyGhosts
                 ScrapCounter.scrapCount -= 50;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
-                buttons[9].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[9].interactable = false;
             }
         }
 
@@ -362,7 +362,7 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[11].image.color = Color.white;
-                buttons[10].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[10].interactable = false;
             }
         }
 
@@ -376,7 +376,7 @@ namespace GoofyGhosts
                 ScrapCounter.scrapCount -= 50;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
-                buttons[11].GetComponentInChildren<Text>().text = "Purchased";
+                buttons[11].interactable = false;
             }
         }
 
