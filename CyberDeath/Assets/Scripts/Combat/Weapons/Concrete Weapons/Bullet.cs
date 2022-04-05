@@ -9,10 +9,12 @@ namespace GoofyGhosts
 
         public Transform target;
         Vector3 newDirection, targetDirection;
+        public IntChannelSO waveChannel;
 
         // Start is called before the first frame update
         void Start()
         {
+            Debug.Log("AHHHH");
             target = GameObject.FindGameObjectWithTag("Player").transform;
             Vector3 targetPosition = target.position + new Vector3(0, 1.8f, 0);
 
@@ -21,12 +23,14 @@ namespace GoofyGhosts
             targetDirection = (targetPosition - transform.position).normalized * 10;
 
             newDirection = Vector3.RotateTowards(transform.forward, targetDirection, 2f, 0.0f);
+
+            //waveChannel.OnEventRaised += _ => Destroy(gameObject);
         }
 
         void Update()
         {
-            Debug.DrawRay(transform.position, transform.forward, Color.red);
-            Debug.DrawRay(transform.position, newDirection, Color.green);
+            //Debug.DrawRay(transform.position, transform.forward, Color.red);
+            //Debug.DrawRay(transform.position, newDirection, Color.green);
             transform.Translate(new Vector3(targetDirection.x, targetDirection.y, targetDirection.z) * Time.deltaTime);
         }
 

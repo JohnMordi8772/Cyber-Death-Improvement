@@ -16,11 +16,12 @@ namespace GoofyGhosts
         private Collider spearCollider;
         int i;
         PlayerControls controls;
+        public RuntimeAnimatorController spearAnimator;
         //[SerializeField] WeaponData[] weaponReference;//scythereference, swordReference;
         //[SerializeField] TextMeshProUGUI weaponText;
         //[SerializeField] public List<RuntimeAnimatorController> weaponAnimList = new List<RuntimeAnimatorController> { };
 
-        //public Animator playAnim;
+        public Animator playAnim;
 
         #region -- // Init // --
         protected override void Awake()
@@ -29,7 +30,8 @@ namespace GoofyGhosts
             i = 0;
             controls = new PlayerControls();
             spearCollider = GetComponent<Collider>();
-            //playAnim = GameObject.Find("Player_Updated").GetComponent<Animator>();
+            playAnim = GameObject.Find("Player_Updated").GetComponent<Animator>();
+            playAnim.runtimeAnimatorController = spearAnimator;
         }
 
         //private void OnEnable()

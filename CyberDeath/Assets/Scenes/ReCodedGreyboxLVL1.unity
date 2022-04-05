@@ -123,51 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &3665962
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3665964}
-  - component: {fileID: 3665963}
-  m_Layer: 0
-  m_Name: Scrap Spawner (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &3665963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3665962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b387d0f83f241543b0769b04708d025, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrapPrefab: {fileID: 5730678233324163338, guid: 36776b484b9b65d438bfd5fe689ef6ae, type: 3}
-  waveChannel: {fileID: 11400000, guid: d1693b35dd5bcf847a746ae36c47fd8b, type: 2}
---- !u!4 &3665964
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3665962}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 62.8, y: 37.04, z: 11.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 23
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!43 &7728749
 Mesh:
   m_ObjectHideFlags: 0
@@ -510,13 +465,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1057955888}
-        m_TargetAssemblyTypeName: GoofyGhosts.Scythe, Assembly-CSharp
+      - m_Target: {fileID: 157755372}
+        m_TargetAssemblyTypeName: GoofyGhosts.WeaponUser, Assembly-CSharp
         m_MethodName: SwapWeapon
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1057955888}
+          m_ObjectArgumentAssemblyTypeName: GoofyGhosts.IWeapon, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -655,14 +610,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1057955888}
-        m_TargetAssemblyTypeName: GoofyGhosts.Scythe, Assembly-CSharp
+      - m_Target: {fileID: 157755372}
+        m_TargetAssemblyTypeName: GoofyGhosts.WeaponUser, Assembly-CSharp
         m_MethodName: SwapWeapon
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_ObjectArgument: {fileID: 897876569}
+          m_ObjectArgumentAssemblyTypeName: GoofyGhosts.IWeapon, Assembly-CSharp
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2545,7 +2500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 577789132523395330, guid: 0dd5c886da27d1c4eaa735ea2d20726e, type: 3}
       propertyPath: startingWave
-      value: 21
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 577789132523395331, guid: 0dd5c886da27d1c4eaa735ea2d20726e, type: 3}
       propertyPath: m_Name
@@ -2721,6 +2676,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 416994935831436735, guid: 7f30a62d291fd49419c93a8786e03812, type: 3}
   m_PrefabInstance: {fileID: 155705162}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &157755372 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1909309852, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+  m_PrefabInstance: {fileID: 458134643}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edec41a678f0b3f45b6c6c0f26a9a798, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &167773340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6698,6 +6664,14 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.03
       objectReference: {fileID: 0}
+    - target: {fileID: 1395065293, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: spearAnimator
+      value: 
+      objectReference: {fileID: 9100000, guid: f59431be18aae5043897075bfbca1407, type: 2}
+    - target: {fileID: 1865482907, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: swordAnimator
+      value: 
+      objectReference: {fileID: 9100000, guid: 4429c0c5c027845499b9e358d9385333, type: 2}
     - target: {fileID: 919132148221651176, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -6763,6 +6737,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 199741063}
     - target: {fileID: 5005352443119575318, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005352443119575318, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
       propertyPath: weaponText
       value: 
       objectReference: {fileID: 900327994}
@@ -6776,7 +6754,7 @@ PrefabInstance:
       objectReference: {fileID: 878968862}
     - target: {fileID: 8072498361272376072, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
@@ -7219,7 +7197,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &557513296
 PrefabInstance:
@@ -52965,7 +52943,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &798538015
 PrefabInstance:
@@ -55438,6 +55416,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6f6ebec7e6e8d54c8e4c3cd1a9534dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &897876569 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1395065293, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+  m_PrefabInstance: {fileID: 458134643}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c934230fc7bc4c749b2cc2c14aa18a44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &900327993
@@ -58524,7 +58513,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 458134643}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1057955885}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: becb5b0499d828d4aae02f3fda3f4fc0, type: 3}
   m_Name: 
@@ -61111,6 +61100,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1272888211 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1865482907, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+  m_PrefabInstance: {fileID: 458134643}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb653cb3b6a45a743b128d8d6ba6aade, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1275493496
 Mesh:
   m_ObjectHideFlags: 0
@@ -63644,7 +63644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7146035057275725131, guid: ff933ffe4c3a85945b7ddf904d849746, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff933ffe4c3a85945b7ddf904d849746, type: 3}
@@ -64203,51 +64203,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5264400846460362953, guid: 2a096aeb234df394f812c2d4cf3f58fe, type: 3}
   m_PrefabInstance: {fileID: 946691942}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1743034940
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1743034942}
-  - component: {fileID: 1743034941}
-  m_Layer: 0
-  m_Name: Scrap Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1743034941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1743034940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b387d0f83f241543b0769b04708d025, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scrapPrefab: {fileID: 5730678233324163338, guid: 36776b484b9b65d438bfd5fe689ef6ae, type: 3}
-  waveChannel: {fileID: 11400000, guid: d1693b35dd5bcf847a746ae36c47fd8b, type: 2}
---- !u!4 &1743034942
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1743034940}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -41.8, y: 20.551624, z: 11.6}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 22
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1744328952
 GameObject:
   m_ObjectHideFlags: 0
@@ -64974,14 +64929,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1057955888}
-        m_TargetAssemblyTypeName: GoofyGhosts.Scythe, Assembly-CSharp
+      - m_Target: {fileID: 157755372}
+        m_TargetAssemblyTypeName: GoofyGhosts.WeaponUser, Assembly-CSharp
         m_MethodName: SwapWeapon
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
+          m_ObjectArgument: {fileID: 1272888211}
+          m_ObjectArgumentAssemblyTypeName: GoofyGhosts.IWeapon, Assembly-CSharp
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0

@@ -41,6 +41,7 @@ namespace GoofyGhosts
             controls = new PlayerControls();
             scytheCollider = GetComponent<Collider>();
             playAnim = GameObject.Find("Player_Updated").GetComponent<Animator>();
+            scytheCollider.enabled = false;
         }
 
         private void OnEnable()
