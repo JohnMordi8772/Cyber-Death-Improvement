@@ -7,7 +7,7 @@ namespace GoofyGhosts
     public class Titanium : IAbility
     {
         [SerializeField] Armor playerArmor;
-        [SerializeField] ArmorData playerArmorhData;
+        //[SerializeField] ArmorData playerArmorhData;
         bool cooldownBool;
 
         protected override void ActivateAbility()

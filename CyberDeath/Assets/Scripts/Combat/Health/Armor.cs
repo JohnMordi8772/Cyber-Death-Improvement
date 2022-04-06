@@ -15,7 +15,7 @@ namespace GoofyGhosts
         [SerializeField] private Stat baseStat;
         [SerializeField] private Stat currentArmor;
         private float armorLevel;
-        public int armorMod;
+        public float armorMod;
 
         public Stat CurrentArmor
         {
