@@ -20,7 +20,8 @@ namespace GoofyGhosts
         //[SerializeField] TextMeshProUGUI weaponText;
         //[SerializeField] public List<RuntimeAnimatorController> weaponAnimList = new List<RuntimeAnimatorController> { };
 
-        //public Animator playAnim;
+        public Animator playAnim;
+        public RuntimeAnimatorController swordAnimator;
 
         #region -- // Init // --
         protected override void Awake()
@@ -29,7 +30,8 @@ namespace GoofyGhosts
             i = 0;
             controls = new PlayerControls();
             swordCollider = GetComponent<Collider>();
-            //playAnim = GameObject.Find("Player_Updated").GetComponent<Animator>();
+            playAnim = GameObject.Find("Player_Updated").GetComponent<Animator>();
+            playAnim.runtimeAnimatorController = swordAnimator;
         }
 
         private void OnEnable()

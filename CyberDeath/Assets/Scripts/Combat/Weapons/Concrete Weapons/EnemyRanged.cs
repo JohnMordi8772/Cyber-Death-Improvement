@@ -9,8 +9,10 @@ namespace GoofyGhosts
         [SerializeField] GameObject bullet;
         GameObject player;
         Transform parentTransform;
+
         protected override void FireWeapon()
         {
+            Debug.Log("Shoot");
             Instantiate(bullet, gameObject.transform.position, new Quaternion(0,0,0,0));
         }
 

@@ -28,11 +28,11 @@ namespace GoofyGhosts
         /// </summary>
         private void Awake()
         {
-            IWeapon weapon = weaponHolder.GetComponentInChildren<IWeapon>();
+            currentWeapon = weaponHolder.GetComponentInChildren<IWeapon>();
             SetFireToFalse = () => anim.SetBool("Fire", false);
             //anim.SetInteger("Fire0", 1);
 
-            SwapWeapon(weapon);
+            //SwapWeapon(weapon);
         }
 
         #region -- // Event Handling // --
@@ -49,7 +49,9 @@ namespace GoofyGhosts
 
         public void SwapWeapon(IWeapon weapon)
         {
+            currentWeapon.gameObject.SetActive(false);
             currentWeapon = weapon;
+            currentWeapon.gameObject.SetActive(true);
             Physics.IgnoreCollision(currentWeapon.GetComponent<Collider>(), GetComponent<Collider>());
         }
 

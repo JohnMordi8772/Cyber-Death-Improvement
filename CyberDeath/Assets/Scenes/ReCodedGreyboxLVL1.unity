@@ -6400,6 +6400,22 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 0.03
       objectReference: {fileID: 0}
+    - target: {fileID: 1395065293, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: playAnim
+      value: 
+      objectReference: {fileID: 740972429}
+    - target: {fileID: 1395065293, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: spearAnimator
+      value: 
+      objectReference: {fileID: 9100000, guid: f59431be18aae5043897075bfbca1407, type: 2}
+    - target: {fileID: 1865482907, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: playAnim
+      value: 
+      objectReference: {fileID: 740972429}
+    - target: {fileID: 1865482907, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: swordAnimator
+      value: 
+      objectReference: {fileID: 9100000, guid: 4429c0c5c027845499b9e358d9385333, type: 2}
     - target: {fileID: 919132148221651176, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -7170,6 +7186,11 @@ CanvasRenderer:
 Transform:
   m_CorrespondingSourceObject: {fileID: 577789132523395329, guid: 0dd5c886da27d1c4eaa735ea2d20726e, type: 3}
   m_PrefabInstance: {fileID: 143207792}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &740972429 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2036161922323433232, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+  m_PrefabInstance: {fileID: 458134643}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &792649619
 PrefabInstance:
