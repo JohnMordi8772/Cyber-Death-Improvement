@@ -22,11 +22,11 @@ namespace GoofyGhosts
         /// <summary>
         /// The total enemy count for the current wave.
         /// </summary>
-        private int totalEnemyCount;
+        public int totalEnemyCount;
         /// <summary>
         /// The number of enemies killed on the current wave.
         /// </summary>
-        private int enemyKillCount;
+        public int enemyKillCount;
 
         [Header("The wave to begin on.")]
         [Min(1)][SerializeField] private int startingWave;
@@ -149,6 +149,7 @@ namespace GoofyGhosts
         private void OnEnemyDeath()
         {
             ++enemyKillCount;
+            SpawnPoint.spawnCount--;
             enemiesRemainingChannel.RaiseEvent(totalEnemyCount - enemyKillCount);
 
             // If all enemies have been killed, signal
@@ -173,6 +174,11 @@ namespace GoofyGhosts
         public void PlayerDeath()
         {
             waveChannel.RaiseEvent(-1);
+        }
+
+        public IntChannelSO GetWaveChannel()
+        {
+            return waveChannel;
         }
     }
 }

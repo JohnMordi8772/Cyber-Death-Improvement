@@ -16,6 +16,7 @@ namespace GoofyGhosts
         {
             Debug.Log("AHHHH");
             target = GameObject.FindGameObjectWithTag("Player").transform;
+            waveChannel = GameObject.FindObjectOfType<WaveManager>().GetWaveChannel();
             Vector3 targetPosition = target.position + new Vector3(0, 1.8f, 0);
 
             StartCoroutine(EndBullet());
@@ -24,7 +25,7 @@ namespace GoofyGhosts
 
             newDirection = Vector3.RotateTowards(transform.forward, targetDirection, 2f, 0.0f);
 
-            //waveChannel.OnEventRaised += _ => Destroy(gameObject);
+            waveChannel.OnEventRaised += _ => Destroy(gameObject);
         }
 
         void Update()

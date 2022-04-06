@@ -16,6 +16,11 @@ namespace GoofyGhosts
     /// </summary>
     public class SpawnPoint : MonoBehaviour
     {
+        public static int spawnCount;
+        int maxSpawnCount = 20;
+
+        WaveManager manager;
+
         [SerializeField] private SpawnTimeInfo timeInfo;
 
         [Tooltip("The wave number this spawn point activates at.")]
@@ -26,6 +31,11 @@ namespace GoofyGhosts
 
         [Tooltip("The enemies which spawn at this spawn point.")]
         [SerializeField] private EnemySpawnInfo[] spawnables;
+
+        private void Start()
+        {
+            manager = GameObject.FindObjectOfType<WaveManager>();
+        }
 
         #region -- // Event Subbing / UnSubbing // --
         private void OnEnable()
@@ -82,13 +92,15 @@ namespace GoofyGhosts
                 float chance = Random.Range(0f, 1f);
                 //Debug.Log($"Chance to spawn is {chance * 100f}%", gameObject);
 
-                foreach(var enemy in sortedEnemies)
+                foreach (var enemy in sortedEnemies)
                 {
                     // Spawn the enemy if the chance checks out.
-                    if (chance <= enemy.SpawnChance)
+                    if (chance <= enemy.SpawnChance && spawnCount < maxSpawnCount && spawnCount < manager.totalEnemyCount - manager.enemyKillCount)
                     {
                         //Debug.Log($"Spawned enemy {enemy.Prefab.name} with a chance of {enemy.SpawnChance * 100f}%", gameObject);
+                        Debug.Log(spawnCount);
                         SpawnEnemy(enemy.Prefab);
+                        spawnCount++;
                         break;
                     }
                 }
