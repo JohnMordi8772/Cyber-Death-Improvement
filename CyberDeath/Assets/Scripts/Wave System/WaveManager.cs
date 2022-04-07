@@ -18,7 +18,7 @@ namespace GoofyGhosts
         /// <summary>
         /// The current wave number.
         /// </summary>
-        private int waveNumber;
+        public int waveNumber;
         /// <summary>
         /// The total enemy count for the current wave.
         /// </summary>
