@@ -34,11 +34,12 @@ namespace GoofyGhosts
             playAnim.runtimeAnimatorController = spearAnimator;
         }
 
-        //private void OnEnable()
-        //{
-        //    //controls.WeaponsHandling.SwapWeapon.performed += _ => SwapWeapon();
-        //    //controls.WeaponsHandling.Enable();
-        //}
+        private void OnEnable()
+        {
+            playAnim.runtimeAnimatorController = spearAnimator;
+            //controls.WeaponsHandling.SwapWeapon.performed += _ => SwapWeapon();
+            //controls.WeaponsHandling.Enable();
+        }
         /*
         void SwapWeapon()
         {
