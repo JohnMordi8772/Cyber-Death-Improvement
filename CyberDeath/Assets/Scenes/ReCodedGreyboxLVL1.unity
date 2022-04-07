@@ -1996,13 +1996,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1057955888}
-        m_TargetAssemblyTypeName: GoofyGhosts.Scythe, Assembly-CSharp
+      - m_Target: {fileID: 1160141162}
+        m_TargetAssemblyTypeName: GoofyGhosts.WeaponUser, Assembly-CSharp
         m_MethodName: SwapWeapon
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1057955888}
+          m_ObjectArgumentAssemblyTypeName: GoofyGhosts.IWeapon, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2141,13 +2141,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1057955888}
-        m_TargetAssemblyTypeName: GoofyGhosts.Scythe, Assembly-CSharp
+      - m_Target: {fileID: 1160141162}
+        m_TargetAssemblyTypeName: GoofyGhosts.WeaponUser, Assembly-CSharp
         m_MethodName: SwapWeapon
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1530806365}
+          m_ObjectArgumentAssemblyTypeName: GoofyGhosts.IWeapon, Assembly-CSharp
           m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
@@ -5409,7 +5409,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7777778, y: 1}
+    m_SensorSize: {x: 1.3333334, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -13343,6 +13343,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93a8db626b432084489f46d3dd565ff8, type: 3}
+--- !u!114 &1160141162 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1909309852, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+  m_PrefabInstance: {fileID: 458134643}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edec41a678f0b3f45b6c6c0f26a9a798, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1163553158
 GameObject:
   m_ObjectHideFlags: 0
@@ -15108,6 +15119,17 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1530806365 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1395065293, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+  m_PrefabInstance: {fileID: 458134643}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c934230fc7bc4c749b2cc2c14aa18a44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1541545275
 GameObject:
   m_ObjectHideFlags: 3
@@ -15777,6 +15799,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6586901195287459880, guid: 93a8db626b432084489f46d3dd565ff8, type: 3}
   m_PrefabInstance: {fileID: 1148381240}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1619954002 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1865482907, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+  m_PrefabInstance: {fileID: 458134643}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb653cb3b6a45a743b128d8d6ba6aade, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1626560690
 GameObject:
   m_ObjectHideFlags: 0
@@ -16979,13 +17012,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1057955888}
-        m_TargetAssemblyTypeName: GoofyGhosts.Scythe, Assembly-CSharp
+      - m_Target: {fileID: 1160141162}
+        m_TargetAssemblyTypeName: GoofyGhosts.WeaponUser, Assembly-CSharp
         m_MethodName: SwapWeapon
-        m_Mode: 3
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1619954002}
+          m_ObjectArgumentAssemblyTypeName: GoofyGhosts.IWeapon, Assembly-CSharp
           m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
