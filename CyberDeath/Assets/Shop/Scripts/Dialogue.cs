@@ -40,6 +40,8 @@ namespace GoofyGhosts
         [SerializeField] private BoolChannelSO controlsToggle;
         [SerializeField] private VoidChannelSO toggleSettingsChannel;
 
+        WaveManager wm;
+
         private void Awake()
         {
             controls = new PlayerControls();
@@ -64,10 +66,12 @@ namespace GoofyGhosts
             toggleSettingsChannel.RaiseEvent();
 
             Random.seed = System.DateTime.Now.Millisecond;
-            talkRandom = Random.Range(1, 4);
+            talkRandom = Random.Range(1, 7);
 
             Random.seed = System.DateTime.Now.Millisecond;
             int random = Random.Range(1, 5);
+
+            wm = GameObject.Find("WaveManager").GetComponent<WaveManager>();
 
             if (random == 1)
             {
@@ -329,12 +333,67 @@ namespace GoofyGhosts
                         QueueDialogue(4);
                         QueueDialogue(5);
                     }
-                    else
+                    else if (talkRandom == 3)
                     {
                         talkRandom = 1;
                         QueueDialogue(16);
                         QueueDialogue(17);
                         QueueDialogue(18);
+                    }
+                    else
+                    {
+                        if(wm.waveNumber >= 3)
+                        {
+                            int randomTalk = Random.Range(0, 2);
+                            if(randomTalk == 0)
+                            {
+                                QueueDialogue(30);
+                            }
+                            if (randomTalk == 1)
+                            {
+                                QueueDialogue(29);
+                            }
+                        }
+                        else if (wm.waveNumber >= 6)
+                        {
+                            int randomTalk = Random.Range(0, 3);
+                            if (randomTalk == 0)
+                            {
+                                QueueDialogue(31);
+                            }
+                            if (randomTalk == 1)
+                            {
+                                QueueDialogue(30);
+                            }
+                            if (randomTalk == 2)
+                            {
+                                QueueDialogue(29);
+                            }
+                        }
+                        else if (wm.waveNumber >= 9)
+                        {
+                            int randomTalk = Random.Range(0, 4);
+                            if (randomTalk == 0)
+                            {
+                                QueueDialogue(32);
+                            }
+                            if (randomTalk == 1)
+                            {
+                                QueueDialogue(31);
+                            }
+                            if (randomTalk == 2)
+                            {
+                                QueueDialogue(30);
+                            }
+                            if (randomTalk == 3)
+                            {
+                                QueueDialogue(29);
+                            }
+                        }
+                        else
+                        {
+                            QueueDialogue(30);
+                        }
                     }
 
                     returnToFirst = true;

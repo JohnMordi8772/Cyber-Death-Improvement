@@ -3415,7 +3415,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &662332699
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9269,6 +9269,14 @@ MonoBehaviour:
   - Look what da' bots dragged in! Welcome to da' shop!
   - Back again? I thought I'd never get rid of ya... Welcome to da' shop!
   - Welcome to da' shop! If it's a good price you want... then get the hell out!
+  - "These bots are always causin\u2019 trouble. Just keep slicing \u2018em and I\u2019ll\u2026I
+    mean, you\u2019ll reap the rewards."
+  - "You\u2019ve seen those pointy bots, right? I\u2019d keep an eye on \u2018em.
+    They\u2019ll close in on ya real quick!"
+  - "Wooow, lookit deese bozos! These bots think they\u2019re hot stuff, trying to
+    snipe ya. But they get shotblocked by a dumpster!"
+  - "Those big guys certainly took their time getting here! Keep on the move, ya
+    don\u2019t wanna get hammered by them! Ohohohohoh!"
   textDelay: 2.8
   returnToFirst: 0
   returnToBuy: 0
