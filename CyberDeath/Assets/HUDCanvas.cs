@@ -16,6 +16,7 @@ namespace GoofyGhosts
         [SerializeField] private IntChannelSO waveChannel;
         [SerializeField] private bool playOnWaveEnd;
         private Animator anim;
+        public WaveManager waveManager;
 
         private void Awake()
         {
@@ -37,7 +38,7 @@ namespace GoofyGhosts
 
         private void OnWaveChange(int waveNum)
         {
-            if (waveNum == -1 && playOnWaveEnd)
+            if (waveNum == -1 && playOnWaveEnd && !waveManager.playerDead)
             {
                 anim.SetTrigger("OnWaveChange");
             }

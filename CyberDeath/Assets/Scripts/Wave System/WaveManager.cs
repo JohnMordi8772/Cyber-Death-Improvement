@@ -46,12 +46,15 @@ namespace GoofyGhosts
         [SerializeField] private AudioClipSO waveEnd2SFX;
         [SerializeField] private AudioClipSO waveStartSFX;
 
+        public bool playerDead;
+
         /// <summary>
         /// Initialization.
         /// </summary>
         private void Awake()
         {
             waveNumber = 0;
+            playerDead = false;
         }
 
         #region -- // Event Subbing / UnSubbing // --
@@ -101,7 +104,7 @@ namespace GoofyGhosts
         {
             //// Taken from Anthony's Wave Distribution Chart on Google Drive.
             //if (waveNumber < 5)
-                  return 4;
+                  return 2;
             //else if (waveNumber < 7)
             //    return 5;
             //else if (waveNumber < 10)
@@ -173,6 +176,7 @@ namespace GoofyGhosts
 
         public void PlayerDeath()
         {
+            playerDead = true;
             waveChannel.RaiseEvent(-1);
         }
 

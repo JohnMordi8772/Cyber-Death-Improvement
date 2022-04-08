@@ -16,16 +16,25 @@ namespace GoofyGhosts
         bool interactive, within;
         PlayerControls controls;
         // Start is called before the first frame update
-        void Start()
+        void Awake()
         {
             interactive = false;
             within = false;
             controls = new PlayerControls();
             manager = FindObjectOfType<WaveManager>().GetWaveChannel();
             manager.OnEventRaised += _ => EndChoices();
-            controls.Interaction.Interact.performed += _ => ChooseWeapon();
-            controls.Interaction.Interact.Enable();
+            controls.Interaction.Interact.started += _ => ChooseWeapon();
 
+        }
+
+        private void OnEnable()
+        {
+            controls.Interaction.Interact.Enable();
+        }
+
+        private void OnDisable()
+        {
+            controls.Interaction.Interact.Disable();
         }
 
         // Update is called once per frame
@@ -65,7 +74,7 @@ namespace GoofyGhosts
 
         void EndChoices()
         {
-            weaponModel.SetActive(false);
+            Destroy(weaponModel);//weaponModel.SetActive(false);
         }
 
         void ChooseWeapon()
