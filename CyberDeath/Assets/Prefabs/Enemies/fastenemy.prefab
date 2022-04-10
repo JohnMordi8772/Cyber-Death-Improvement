@@ -92,7 +92,7 @@ CharacterController:
   serializedVersion: 2
   m_Height: 5
   m_Radius: 3.5
-  m_SlopeLimit: 45
+  m_SlopeLimit: 0
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
@@ -130,6 +130,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponHolder: {fileID: 2299156865232057845}
   anim: {fileID: 2299156864005966224}
+  arrow: {fileID: 0}
+  bowFiringPoint: {fileID: 0}
 --- !u!114 &2299156864005966232
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -24,10 +24,10 @@ namespace GoofyGhosts
             {
                 currentWeapon.Fire();
 
-                if (anim != null && anim.GetInteger("Fire0") == 1)
+                if (anim != null && anim.GetBool("Fire") == false)
                 {
                     anim.SetFloat("FireMultiplier", currentWeapon.AttackSpeed);
-                    anim.SetInteger("Fire0", 0);
+                    anim.SetBool("Fire", true);
                 }
             }
         }
@@ -39,7 +39,7 @@ namespace GoofyGhosts
         {
             base.ReleaseFire();
            // print("Calling enemy release fire");
-            anim.SetInteger("Fire0", 1);
+            anim.SetBool("Fire", false);
         }
     }
 }
