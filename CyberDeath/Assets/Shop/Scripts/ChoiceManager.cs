@@ -118,7 +118,7 @@ namespace GoofyGhosts
                 ++index;
         }
 
-        void Choose()
+        public void Choose()
         {
             select.Play();
             if (numberOfChoices == 2)
@@ -128,6 +128,19 @@ namespace GoofyGhosts
 
             ToggleChoice(0);
         }
+
+        public void Choose(int button)
+        {
+            select.Play();
+            if (numberOfChoices == 2)
+                dialogue.Choice(button + 3);
+            else
+                dialogue.Choice(button);
+
+            ToggleChoice(0);
+        }
+
+
 
         void ManagePointer()
         {
