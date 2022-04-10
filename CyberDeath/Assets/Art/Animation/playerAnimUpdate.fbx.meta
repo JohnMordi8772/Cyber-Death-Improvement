@@ -231,6 +231,13 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
+      - time: 0
+        functionName: EnableScytheTrail
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       - time: 0.020997375
         functionName: EnableWeaponCollider
         data: 
@@ -240,6 +247,13 @@ ModelImporter:
         messageOptions: 0
       - time: 0.55678916
         functionName: DisableWeaponCollider
+        data: 
+        objectReferenceParameter: {fileID: 2036161922323433224, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.98687667
+        functionName: DisableScytheTrail
         data: 
         objectReferenceParameter: {fileID: 2036161922323433224, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
         floatParameter: 0
