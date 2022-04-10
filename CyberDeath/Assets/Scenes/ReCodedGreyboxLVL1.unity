@@ -108,7 +108,7 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 45
+    agentSlope: 0
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
@@ -5397,7 +5397,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7146035057275725131, guid: e8329f1d28a2e54488572807bddbc2af, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8329f1d28a2e54488572807bddbc2af, type: 3}
@@ -5458,7 +5458,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5647659393917017057, guid: aa1741d675570bf44bb99734e6f6e4af, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa1741d675570bf44bb99734e6f6e4af, type: 3}
@@ -6517,6 +6517,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2680423457938365925, guid: d6fba6876d5f24159807d5f265947cdd, type: 3}
+      propertyPath: waveManager
+      value: 
+      objectReference: {fileID: 878968862}
     - target: {fileID: 3064217027428935082, guid: d6fba6876d5f24159807d5f265947cdd, type: 3}
       propertyPath: m_Name
       value: Canvas - Wave Start
@@ -9509,6 +9513,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 928713934, guid: 790392adfd437432dba0dc2fd60e21b6, type: 3}
+      propertyPath: waveManager
+      value: 
+      objectReference: {fileID: 878968862}
     - target: {fileID: 3064217027428935082, guid: 790392adfd437432dba0dc2fd60e21b6, type: 3}
       propertyPath: m_Name
       value: Canvas - Wave Clear
@@ -12492,7 +12500,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1380730613261612237, guid: 63af2ab67cc5c3e43900182f8fb03d2b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1757115797031317111, guid: 63af2ab67cc5c3e43900182f8fb03d2b, type: 3}
       propertyPath: m_RootOrder
