@@ -25,7 +25,7 @@ namespace GoofyGhosts
 
             newDirection = Vector3.RotateTowards(transform.forward, targetDirection, 2f, 0.0f);
 
-            waveChannel.OnEventRaised += _ => Destroy(gameObject);
+            waveChannel.OnEventRaised += _ => WaveEnd();
         }
 
         void Update()
@@ -46,6 +46,12 @@ namespace GoofyGhosts
             {
                 Destroy(gameObject);
             }
+        }
+
+        void WaveEnd()
+        {
+            try { Destroy(gameObject); }
+            catch(MissingReferenceException e) { }
         }
 
         IEnumerator EndBullet()
