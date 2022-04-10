@@ -18,6 +18,8 @@ namespace GoofyGhosts
         [SerializeField] private Transform weaponHolder;
         [SerializeField] public Animator anim;
         protected IWeapon currentWeapon;
+        public GameObject arrow;
+        public GameObject bowFiringPoint;
 
         protected bool firing;
 
@@ -68,14 +70,9 @@ namespace GoofyGhosts
             }
         }
 
-        public virtual void PlayerFire()
+        public virtual void BowFire()
         {
-            //Debug.Log("WeaponUser: PlayerFire");
-            if (anim.GetBool("Fire") == false)
-            {
-                anim.SetFloat("FireMultiplier", currentWeapon.AttackSpeed);
-                anim.SetBool("Fire", true);
-            }
+            Instantiate(arrow, new Vector3(bowFiringPoint.transform.position.x, transform.position.y + 2, bowFiringPoint.transform.position.z), transform.localRotation);
         }
 
         /// <summary>
