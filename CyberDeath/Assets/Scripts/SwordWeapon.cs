@@ -36,6 +36,7 @@ namespace GoofyGhosts
 
         private void OnEnable()
         {
+            playAnim.runtimeAnimatorController = swordAnimator;
             //controls.WeaponsHandling.SwapWeapon.performed += _ => SwapWeapon();
             //controls.WeaponsHandling.Enable();
         }

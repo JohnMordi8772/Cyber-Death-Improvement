@@ -1,22 +1,19 @@
-
-using TMPro;
-using UnityEngine;
-using UnityEngine.UI;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEngine;
 
 namespace GoofyGhosts
 {
-    /// <summary>
-    /// The player's main weapon. Slashes through hordes of enemies.
-    /// </summary>
-    public class Spear : IWeapon
+    public class PlayerBow : IWeapon
     {
         //public List<GameObject> weaponList = new List<GameObject> { };
 
-        private Collider spearCollider;
+        private Collider bowCollider;
         int i;
         PlayerControls controls;
-        public RuntimeAnimatorController spearAnimator;
+        public RuntimeAnimatorController bowAnimator;
+        public GameObject arrow;
+        GameObject player;
         //[SerializeField] WeaponData[] weaponReference;//scythereference, swordReference;
         //[SerializeField] TextMeshProUGUI weaponText;
         //[SerializeField] public List<RuntimeAnimatorController> weaponAnimList = new List<RuntimeAnimatorController> { };
@@ -29,14 +26,15 @@ namespace GoofyGhosts
             base.Awake();
             i = 0;
             controls = new PlayerControls();
-            spearCollider = GetComponent<Collider>();
+            bowCollider = GetComponent<Collider>();
             playAnim = GameObject.Find("Player_Updated").GetComponent<Animator>();
-            playAnim.runtimeAnimatorController = spearAnimator;
+            playAnim.runtimeAnimatorController = bowAnimator;
+            GameObject.FindGameObjectWithTag("Player");
         }
 
         private void OnEnable()
         {
-            playAnim.runtimeAnimatorController = spearAnimator;
+            playAnim.runtimeAnimatorController = bowAnimator;
             //controls.WeaponsHandling.SwapWeapon.performed += _ => SwapWeapon();
             //controls.WeaponsHandling.Enable();
         }
@@ -64,23 +62,23 @@ namespace GoofyGhosts
         */
         private void Start()
         {
-            spearCollider.enabled = false;
+            bowCollider.enabled = false;
         }
         #endregion
 
         protected override void FireWeapon()
         {
-            // Scythe weapon behaviour.
+            Instantiate(arrow, player.transform.position, player.transform.rotation);
         }
 
         public override void EnableCollider()
         {
-            spearCollider.enabled = true;
+            bowCollider.enabled = true;
         }
 
         public override void DisableCollider()
         {
-            spearCollider.enabled = false;
+            bowCollider.enabled = false;
         }
 
         /// <summary>
@@ -91,7 +89,7 @@ namespace GoofyGhosts
         private void OnTriggerEnter(Collider other)
         {
             IDamageable damageable = other.GetComponent<IDamageable>();
-            if(other.gameObject.tag != "Player")
+            if (other.gameObject.tag != "Player")
                 damageable?.TakeDamage(WeaponDamage);
         }
     }

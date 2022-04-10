@@ -35,6 +35,7 @@ namespace GoofyGhosts
         private void Start()
         {
             manager = GameObject.FindObjectOfType<WaveManager>();
+            spawnCount = 0;
         }
 
         #region -- // Event Subbing / UnSubbing // --

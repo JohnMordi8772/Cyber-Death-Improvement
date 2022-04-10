@@ -317,10 +317,10 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.077669874
-        functionName: Fire
+      - time: 0.11650485
+        functionName: BowFire
         data: 
-        objectReferenceParameter: {fileID: 11500000, guid: be736aebbd72550499227333c2a03b12, type: 3}
+        objectReferenceParameter: {fileID: 2036161922323433224, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
