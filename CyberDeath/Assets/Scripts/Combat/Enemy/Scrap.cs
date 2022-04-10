@@ -19,7 +19,7 @@ namespace GoofyGhosts
         private IEnumerator Start()
         {
             yield return new WaitForSeconds(3f);
-            HideUtility.HideGameObject(gameObject);
+            //HideUtility.HideGameObject(gameObject);
         }
 
         private void OnEnable()
@@ -53,7 +53,7 @@ namespace GoofyGhosts
             if (waveNum == -1)
                 return;
 
-            HideUtility.HideGameObject(gameObject);
+            //HideUtility.HideGameObject(gameObject);
         }
     }
 }
