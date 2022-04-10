@@ -136,7 +136,7 @@ namespace GoofyGhosts
 
         public void AttackBuff1()
         {
-            if (aCounter1 == 0 && GetScrapCount() >= 10)
+            if (aCounter1 == 0 && GetScrapCount() >= 10 && !pm.purchase1)
             {
                 playerAttack.OnPurchased(5, 1);
                 playerSwing.OnPurchased(0.05f, 1);
@@ -148,12 +148,13 @@ namespace GoofyGhosts
                 UpdateMoneyText();
                 buttons[0].image.color = Color.white;
                 buttons[14].interactable = false;
+                buttons[14].Select();
             }
         }
 
         public void AttackBuff2()
         {
-            if (aCounter1 == 1 && GetScrapCount() >= 15)
+            if (aCounter1 == 1 && GetScrapCount() >= 15 && !pm.purchase2)
             {
                 playerAttack.OnPurchased(5, 1);
                 playerSwing.OnPurchased(0.05f, 1);
@@ -167,12 +168,13 @@ namespace GoofyGhosts
                 buttons[3].image.color = Color.white;
                 buttons[12].image.color = Color.white;
                 buttons[0].interactable = false;
+                buttons[0].Select();
             }
         }
 
         public void AttackPowerUp1()
         {
-            if (aCounter1 == 2 && aCounter2 == 0 && GetScrapCount() >= 40)
+            if (aCounter1 == 2 && aCounter2 == 0 && GetScrapCount() >= 40 && !pm.purchase3)
             {
                 playerAttack.OnPurchased(10, 2);
                 aCounter2++;
@@ -182,12 +184,13 @@ namespace GoofyGhosts
                 UpdateMoneyText();
                 buttons[2].image.color = Color.white;
                 buttons[1].interactable = false;
+                buttons[1].Select();
             }
         }
 
         public void AttackPowerUp2()
         {
-            if (aCounter2 == 1 && GetScrapCount() >= 50)
+            if (aCounter2 == 1 && GetScrapCount() >= 50 && !pm.purchase4)
             {
                 playerAttack.OnPurchased(20, 4);
                 aCounter2++;
@@ -196,12 +199,13 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[2].interactable = false;
+                buttons[2].Select();
             }
         }
 
         public void AttackSpeedUp1()
         {
-            if (aCounter1 == 2 && aCounter3 == 0 && GetScrapCount() >= 40)
+            if (aCounter1 == 2 && aCounter3 == 0 && GetScrapCount() >= 40 && !pm.purchase5)
             {
                 playerSwing.OnPurchased(0.10f, 2);
                 aCounter3++;
@@ -211,12 +215,13 @@ namespace GoofyGhosts
                 UpdateMoneyText();
                 buttons[4].image.color = Color.white;
                 buttons[3].interactable = false;
+                buttons[3].Select();
             }
         }
 
         public void AttackSpeedUp2()
         {
-            if (aCounter3 == 1 && GetScrapCount() >= 50)
+            if (aCounter3 == 1 && GetScrapCount() >= 50 && !pm.purchase6)
             {
                 playerSwing.OnPurchased(0.20f, 4);
                 aCounter3++;
@@ -225,12 +230,13 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[4].interactable = false;
+                buttons[4].Select();
             }
         }
 
         public void CritChanceUp1()
         {
-            if (aCounter1 == 2 && aCounter4 == 0 && GetScrapCount() >= 40)
+            if (aCounter1 == 2 && aCounter4 == 0 && GetScrapCount() >= 40 && !pm.purchase7)
             {
                 GameObject.Find("CritChanceStorage").GetComponent<CritChanceStorage>().critChance += 10;
                 aCounter4++;
@@ -240,12 +246,13 @@ namespace GoofyGhosts
                 UpdateMoneyText();
                 buttons[13].image.color = Color.white;
                 buttons[12].interactable = false;
+                buttons[12].Select();
             }
         }
 
         public void CritChanceUp2()
         {
-            if (aCounter4 == 1 && GetScrapCount() >= 50)
+            if (aCounter4 == 1 && GetScrapCount() >= 50 && !pm.purchase8)
             {
                 GameObject.Find("CritChanceStorage").GetComponent<CritChanceStorage>().critChance += 15;
                 aCounter4++;
@@ -254,12 +261,13 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[13].interactable = false;
+                buttons[13].Select();
             }
         }
 
         public void DefenseBuff1()
         {
-            if (dCounter1 == 0 && GetScrapCount() >= 10)
+            if (dCounter1 == 0 && GetScrapCount() >= 10 && !pm.purchase9)
             {
                 playerHealth.OnPurchased(5, 1);
                 playerArmor.OnPurchased(5, 1);
@@ -271,12 +279,13 @@ namespace GoofyGhosts
                 UpdateMoneyText();
                 buttons[5].image.color = Color.white;
                 buttons[15].interactable = false;
+                buttons[15].Select();
             }
         }
 
         public void DefenseBuff2()
         {
-            if (dCounter1 == 1 && GetScrapCount() >= 15)
+            if (dCounter1 == 1 && GetScrapCount() >= 15 && !pm.purchase10)
             {
                 playerHealth.OnPurchased(5, 1);
                 playerArmor.OnPurchased(5, 1);
@@ -290,12 +299,13 @@ namespace GoofyGhosts
                 buttons[8].image.color = Color.white;
                 buttons[10].image.color = Color.white;
                 buttons[5].interactable = false;
+                buttons[5].Select();
             }
         }
 
         public void HealthUp1()
         {
-            if (dCounter1 == 2 && dCounter2 == 0 && GetScrapCount() >= 40) 
+            if (dCounter1 == 2 && dCounter2 == 0 && GetScrapCount() >= 40 && !pm.purchase11) 
             { 
                 playerHealth.OnPurchased(10, 2);
                 dCounter2++;
@@ -305,12 +315,13 @@ namespace GoofyGhosts
                 UpdateMoneyText();
                 buttons[7].image.color = Color.white;
                 buttons[6].interactable = false;
+                buttons[6].Select();
             }
         }
 
         public void HealthUp2()
         {
-            if (dCounter2 == 1 && GetScrapCount() >= 50)
+            if (dCounter2 == 1 && GetScrapCount() >= 50 && !pm.purchase12)
             {
                 playerHealth.OnPurchased(10, 2);
                 dCounter2++;
@@ -319,12 +330,13 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[7].interactable = false;
+                buttons[7].Select();
             }
         }
 
         public void ArmorUp1()
         {
-            if (dCounter1 == 2 && dCounter3 == 0 && GetScrapCount() >= 40)
+            if (dCounter1 == 2 && dCounter3 == 0 && GetScrapCount() >= 40 && !pm.purchase13)
             {
                 playerArmor.OnPurchased(10, 2);
                 dCounter3++;
@@ -334,12 +346,13 @@ namespace GoofyGhosts
                 UpdateMoneyText();
                 buttons[9].image.color = Color.white;
                 buttons[8].interactable = false;
+                buttons[8].Select();
             }
         }
 
         public void ArmorUp2()
         {
-            if (dCounter3 == 1 && GetScrapCount() >= 50)
+            if (dCounter3 == 1 && GetScrapCount() >= 50 && !pm.purchase14)
             {
                 playerArmor.OnPurchased(10, 2);
                 dCounter3++;
@@ -348,12 +361,13 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[9].interactable = false;
+                buttons[9].Select();
             }
         }
 
         public void MoveSpeedUp1()
         {
-            if (dCounter1 == 2 && dCounter4 == 0 && GetScrapCount() >= 40)
+            if (dCounter1 == 2 && dCounter4 == 0 && GetScrapCount() >= 40 && !pm.purchase15)
             {
                 playerMove.OnPurchased(1, 2);
                 dCounter4++;
@@ -363,12 +377,13 @@ namespace GoofyGhosts
                 UpdateMoneyText();
                 buttons[11].image.color = Color.white;
                 buttons[10].interactable = false;
+                buttons[10].Select();
             }
         }
 
         public void MoveSpeedUp2()
         {
-            if (dCounter4 == 1 && GetScrapCount() >= 50)
+            if (dCounter4 == 1 && GetScrapCount() >= 50 && !pm.purchase16)
             {
                 playerMove.OnPurchased(1, 2);
                 dCounter4++;
@@ -377,6 +392,7 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[11].interactable = false;
+                buttons[11].Select();
             }
         }
 
