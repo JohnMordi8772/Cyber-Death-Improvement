@@ -261,7 +261,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -789004444395844031, guid: 576869dac00e58f40b1fc79e8f5f038d, type: 3}
+  m_Motion: {fileID: -789004444395844031, guid: 2a5b0b81ae71bdc44aa5b50e869a4450, type: 3}
   m_Tag: 
   m_SpeedParameter: FireMultiplier
   m_MirrorParameter: 
@@ -611,7 +611,7 @@ AnimatorController:
   - serializedVersion: 5
     m_Name: Lower
     m_StateMachine: {fileID: -2500654971565926651}
-    m_Mask: {fileID: 0}
+    m_Mask: {fileID: 31900000, guid: 952b45656aa89524e9f673a84c570b65, type: 2}
     m_Motions: []
     m_Behaviours: []
     m_BlendingMode: 0
