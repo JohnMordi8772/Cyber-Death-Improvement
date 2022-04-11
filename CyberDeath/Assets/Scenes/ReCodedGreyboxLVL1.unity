@@ -6918,7 +6918,7 @@ PrefabInstance:
       objectReference: {fileID: 1522396410}
     - target: {fileID: 2036161922323433235, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
       propertyPath: empPurchased
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2036161922323433235, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
       propertyPath: slamPurchased
