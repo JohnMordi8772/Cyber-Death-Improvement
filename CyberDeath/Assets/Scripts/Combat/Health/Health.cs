@@ -155,5 +155,13 @@ namespace GoofyGhosts
             OnDamageTaken?.Invoke(data);
             takeDamageChannel?.RaiseEvent(data);
         }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.tag == "Ground Slam")
+            {
+                TakeDamage(60);
+            }
+        }
     }
 }
