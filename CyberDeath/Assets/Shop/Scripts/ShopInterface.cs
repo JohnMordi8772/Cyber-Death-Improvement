@@ -23,7 +23,7 @@ namespace GoofyGhosts
         // Current value being selected in the inventory
         private int index;
 
-        public TextMeshProUGUI moduleText, moneyText, priceText;
+        public TextMeshProUGUI moduleText, moneyText, priceText, wireText, fanText, coilText, armorText;
 
         public bool shopActive, canBuy, firstPurchase;
 
@@ -215,6 +215,10 @@ namespace GoofyGhosts
         void UpdateMoneyText()
         {
             moneyText.text = "Scrap: " + GetScrapCount();
+            wireText.text = "Wire: " + ScrapCounter.wireCount;
+            fanText.text = "Fan: " + ScrapCounter.fanCount;
+            coilText.text = "Coil: " + ScrapCounter.coilCount;
+            armorText.text = "Armor Plate: " + ScrapCounter.armorCount;
         }
 
         string GetModuleName(int x)
