@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 6802062387004253263}
   - component: {fileID: 4711840326866677997}
   - component: {fileID: -5777548982242434382}
-  - component: {fileID: 2611882711497267996}
+  - component: {fileID: -3334333470614770794}
   m_Layer: 11
   m_Name: Wires_Model
   m_TagString: Untagged
@@ -626,7 +626,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2611882711497267996
+--- !u!114 &-3334333470614770794
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -635,7 +635,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4633932857083270987}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d316a1fa9fca46141b03d7259e62e696, type: 3}
+  m_Script: {fileID: 11500000, guid: 9fb9d42080cde5c46be99f3933c9c5e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   waveChannel: {fileID: 11400000, guid: d1693b35dd5bcf847a746ae36c47fd8b, type: 2}

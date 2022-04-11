@@ -26,11 +26,21 @@ namespace GoofyGhosts
             _scrapCollectSFX = scrapCollectSFX;
             _scrapCollectedChannel = scrapCollectedChannel;
             scrapCount = 0;
+
+            wireCount = 0;
+            coilCount = 0;
+            fanCount = 0;
+            armorCount = 0;
         }
 
         /// <summary>
         /// The player's scrap count.
         /// </summary>
+        public static int wireCount { get; set; }
+        public static int coilCount { get; set; }
+        public static int fanCount { get; set; }
+        public static int armorCount { get; set; }
+
         public static int scrapCount { get; set; }
 
         /// <summary>
@@ -44,6 +54,34 @@ namespace GoofyGhosts
         public static void AddScrap()
         {
             scrapCount += scrapPerPile;
+            _sfxChannel.RaiseEvent(_scrapCollectSFX);
+            _scrapCollectedChannel.RaiseEvent();
+        }
+
+        public static void AddWireScrap()
+        {
+            wireCount += scrapPerPile;
+            _sfxChannel.RaiseEvent(_scrapCollectSFX);
+            _scrapCollectedChannel.RaiseEvent();
+        }
+
+        public static void AddCoilScrap()
+        {
+            coilCount += scrapPerPile;
+            _sfxChannel.RaiseEvent(_scrapCollectSFX);
+            _scrapCollectedChannel.RaiseEvent();
+        }
+
+        public static void AddFanScrap()
+        {
+            fanCount += scrapPerPile;
+            _sfxChannel.RaiseEvent(_scrapCollectSFX);
+            _scrapCollectedChannel.RaiseEvent();
+        }
+
+        public static void AddArmorScrap()
+        {
+            armorCount += scrapPerPile;
             _sfxChannel.RaiseEvent(_scrapCollectSFX);
             _scrapCollectedChannel.RaiseEvent();
         }
