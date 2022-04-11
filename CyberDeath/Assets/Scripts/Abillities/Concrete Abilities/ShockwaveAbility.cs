@@ -16,11 +16,16 @@ namespace GoofyGhosts
         
         private ShockwaveAbilityData shockData;
         private Collider col;
+        private SphereCollider sc;
+        public GameObject empRange;
+        private AudioSource aud;
 
         private void Awake()
         {
             col = GetComponent<Collider>();
             shockData = base.data as ShockwaveAbilityData;
+            sc = GetComponent<SphereCollider>();
+            aud = GetComponent<AudioSource>();
         }
 
         /// <summary>
@@ -28,10 +33,37 @@ namespace GoofyGhosts
         /// </summary>
         protected override void ActivateAbility()
         {
-            
-            StartCoroutine(Cast());
+            StartCoroutine("EMP");
+            StartCoroutine("Range");
+            //StartCoroutine(Cast());
         }
 
+        private IEnumerator Range()
+        {
+            empRange.SetActive(true);
+
+            int i = 1;
+
+            while (empRange.transform.localScale.x < 40)
+            {
+                empRange.transform.localScale = new Vector3(i, i, i);
+                yield return new WaitForSeconds(0.0125f);
+                i++;
+            }
+
+            empRange.SetActive(false);
+            empRange.transform.localScale = new Vector3(1, 1, 1);
+        }
+
+        private IEnumerator EMP()
+        {
+            sc.enabled = true;
+            aud.Play();
+            yield return new WaitForSeconds(0.5f);
+            sc.enabled = false;
+        }
+
+        /*
         /// <summary>
         /// Performs a sphere cast and knocks back + damages enemies hit.
         /// </summary>
@@ -70,5 +102,6 @@ namespace GoofyGhosts
 
             yield return new WaitForSeconds(0.3f);
         }
+        */
     }
 }
