@@ -130,6 +130,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponHolder: {fileID: 2299156865232057845}
   anim: {fileID: 2299156864005966224}
+  currentWeapon: {fileID: 0}
   arrow: {fileID: 0}
   bowFiringPoint: {fileID: 0}
 --- !u!114 &2299156864005966232
@@ -159,7 +160,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveChannel: {fileID: 11400000, guid: d1693b35dd5bcf847a746ae36c47fd8b, type: 2}
   gibPrefab: {fileID: 4027511831234825454, guid: 4088dee16a1ef8547a23e30c963f3e93, type: 3}
-  scrapPrefab: {fileID: 5730678233324163338, guid: 36776b484b9b65d438bfd5fe689ef6ae, type: 3}
+  scrapPrefab: {fileID: 5740882630919772352, guid: 2d934ce95b3e24a4389143a6e1d2f212, type: 3}
+  enemyPartPrefab: {fileID: 5730678233324163338, guid: 36776b484b9b65d438bfd5fe689ef6ae, type: 3}
   sfxChannel: {fileID: 11400000, guid: 21dd50e5a1219104392fa94444fd29dd, type: 2}
   deathSFX: {fileID: 11400000, guid: be4b335775964694b8b5f42d67755f2f, type: 2}
 --- !u!114 &2299156864005966234
@@ -181,7 +183,7 @@ MonoBehaviour:
   takeDamageChannel: {fileID: 0}
   armor: {fileID: 11400000, guid: a3f169577ede1684e8f55b5c9e730c02, type: 2}
   hitParticles: {fileID: 2586482092306019251}
-  isEnemy: 0
+  isEnemy: 1
   critChance: 0
 --- !u!114 &2299156864005966228
 MonoBehaviour:

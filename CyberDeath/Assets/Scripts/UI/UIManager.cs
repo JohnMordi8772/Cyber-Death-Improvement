@@ -16,6 +16,10 @@ namespace GoofyGhosts
         [SerializeField] private TextMeshProUGUI waveText;
         [SerializeField] private TextMeshProUGUI enemiesRemainingText;
         [SerializeField] private TextMeshProUGUI scrapText;
+        [SerializeField] private TextMeshProUGUI wireText;
+        [SerializeField] private TextMeshProUGUI fanText;
+        [SerializeField] private TextMeshProUGUI coilText;
+        [SerializeField] private TextMeshProUGUI armorText;
 
         [Header("Channels")]
         [SerializeField] private IntChannelSO waveChannel;
@@ -70,6 +74,10 @@ namespace GoofyGhosts
         private void OnScrapCollected()
         {
             scrapText.text = "x " + ScrapCounter.scrapCount.ToString().PadLeft(3, '0');
+            wireText.text = "x " + ScrapCounter.wireCount.ToString().PadLeft(3, '0');
+            fanText.text = "x " + ScrapCounter.fanCount.ToString().PadLeft(3, '0');
+            coilText.text = "x " + ScrapCounter.coilCount.ToString().PadLeft(3, '0');
+            armorText.text = "x " + ScrapCounter.armorCount.ToString().PadLeft(3, '0');
         }
     }
 }

@@ -11,26 +11,34 @@ namespace GoofyGhosts
         private SlamAbilityData slamData;
         private CharacterMotor motor;
         private Collider col;
+        public GameObject attackRange;
+        public GameObject partEff;
+        private AudioSource[] aud;
 
-        // Start is called before the first frame update
-        void Start()
+        private void Awake()
         {
-        
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-        
+            aud = GetComponents<AudioSource>();
         }
 
         protected override void ActivateAbility()
         {
-            motor.AddImpact(slamData.DashForce.GetStat(), 1);
-            StartCoroutine(Cast());
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("Slam", true);
+            StartCoroutine("Attack");
+            //StartCoroutine(Cast());
         }
 
+        private IEnumerator Attack()
+        {
+            aud[3].Play();
+            attackRange.SetActive(true);
+            Quaternion effRot = new Quaternion(-90, 0, 0, 90);
+            Instantiate(partEff, attackRange.transform.position, effRot);
+            yield return new WaitForSeconds(0.2f);
+            attackRange.SetActive(false);
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("Slam", false);
+        }
 
+        /*
         private IEnumerator Cast()
         {
             
@@ -64,6 +72,6 @@ namespace GoofyGhosts
 
             yield return new WaitForSeconds(0.3f);
            
-        }
+        } */
     }
 }

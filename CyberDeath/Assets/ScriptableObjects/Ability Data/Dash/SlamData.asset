@@ -15,7 +15,7 @@ MonoBehaviour:
   abilityName: Slam
   cooldownTime:
     statName: 
-    baseStat: 0
+    baseStat: 15
   slamForce:
     statName: 
     baseStat: 0
