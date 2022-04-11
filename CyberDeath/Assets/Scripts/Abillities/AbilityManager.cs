@@ -93,6 +93,11 @@ namespace GoofyGhosts
                 currentAbility = GetComponent<NanobotsAbility>();
                 icon.sprite = spriteIcons[1];
             }
+            else if (currentAbility is NanobotsAbility)
+            {
+                currentAbility = GetComponent<ShockwaveAbility>();
+                icon.sprite = spriteIcons[2];
+            }
             else
             {
                 currentAbility = GetComponent<DashAbility>();

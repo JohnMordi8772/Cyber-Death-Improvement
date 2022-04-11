@@ -39,6 +39,8 @@ namespace GoofyGhosts
         /// </summary>
         private bool seeking;
 
+        private bool isShocked = false;
+
 
 
         #region -- // Init // --
@@ -89,7 +91,7 @@ namespace GoofyGhosts
 
         private void Update()
         {
-            if (seeking)
+            if (seeking && !isShocked)
             {
                 agent.nextPosition = transform.position;
 
@@ -131,6 +133,21 @@ namespace GoofyGhosts
         public override void OnUnSwap()
         {
             seeking = false;
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.tag == "Player")
+            {
+                StartCoroutine("Shocked");
+            }
+        }
+
+        private IEnumerator Shocked()
+        {
+            isShocked = true;
+            yield return new WaitForSeconds(2f);
+            isShocked = false;
         }
     }
 }
