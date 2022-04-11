@@ -103,6 +103,11 @@ namespace GoofyGhosts
                 currentAbility = GetComponent<Titanium>();
                 icon.sprite = spriteIcons[3];
             }
+            else if (currentAbility is Titanium)
+            {
+                currentAbility = GetComponent<GrandSlamAbility>();
+                icon.sprite = spriteIcons[4];
+            }
             else
             {
                 currentAbility = GetComponent<DashAbility>();

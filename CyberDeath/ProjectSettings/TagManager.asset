@@ -8,6 +8,7 @@ TagManager:
   - Interactable
   - Obstruction
   - Enemy
+  - Ground Slam
   layers:
   - Default
   - TransparentFX
