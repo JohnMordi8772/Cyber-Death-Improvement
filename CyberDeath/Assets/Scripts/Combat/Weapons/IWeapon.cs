@@ -28,7 +28,7 @@ namespace GoofyGhosts
 
         [Tooltip("The weapon's data.")]
         [FormerlySerializedAs("weaponData")]
-        [SerializeField] protected WeaponData data;
+        [SerializeField] public WeaponData data;
 
         /// <summary>
         /// Invoked when the ability's cooldown begins.

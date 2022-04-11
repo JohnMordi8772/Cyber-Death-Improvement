@@ -17,7 +17,7 @@ MonoBehaviour:
   weaponName: Bow
   attackDamage:
     statName: 
-    baseStat: 5
+    baseStat: 8
   attackSpeed:
     statName: 
     baseStat: 2.5
