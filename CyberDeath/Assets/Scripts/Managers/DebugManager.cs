@@ -34,7 +34,7 @@ namespace GoofyGhosts
 
         private void RewardScrap()
         {
-            ScrapCounter.AddScrap("");
+            ScrapCounter.AddScrap();
         }
     }
 }

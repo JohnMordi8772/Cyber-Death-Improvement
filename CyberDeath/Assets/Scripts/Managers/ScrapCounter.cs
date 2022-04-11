@@ -58,6 +58,34 @@ namespace GoofyGhosts
             _scrapCollectedChannel.RaiseEvent();
         }
 
+        public static void AddWireScrap()
+        {
+            wireCount += scrapPerPile;
+            _sfxChannel.RaiseEvent(_scrapCollectSFX);
+            _scrapCollectedChannel.RaiseEvent();
+        }
+
+        public static void AddCoilScrap()
+        {
+            coilCount += scrapPerPile;
+            _sfxChannel.RaiseEvent(_scrapCollectSFX);
+            _scrapCollectedChannel.RaiseEvent();
+        }
+
+        public static void AddFanScrap()
+        {
+            fanCount += scrapPerPile;
+            _sfxChannel.RaiseEvent(_scrapCollectSFX);
+            _scrapCollectedChannel.RaiseEvent();
+        }
+
+        public static void AddArmorScrap()
+        {
+            armorCount += scrapPerPile;
+            _sfxChannel.RaiseEvent(_scrapCollectSFX);
+            _scrapCollectedChannel.RaiseEvent();
+        }
+
         public static void OnScrapCountChange()
         {
             _scrapCollectedChannel.RaiseEvent();
