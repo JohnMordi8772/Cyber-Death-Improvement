@@ -66,7 +66,7 @@ namespace GoofyGhosts
                 other.gameObject.GetComponent<Health>().TakeDamage(dmg);
                 //Destroy(gameObject);
             }
-            else if (other.gameObject.layer != 6)
+            else if (other.gameObject.layer != 6 && other.gameObject.layer != 11 && other.gameObject.layer != 9)
             {
                 Destroy(gameObject);
             }
