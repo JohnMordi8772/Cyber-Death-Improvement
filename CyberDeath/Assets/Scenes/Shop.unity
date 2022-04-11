@@ -850,8 +850,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Attack Power 2: Increases attack power by 20%                                                  
-              Price: 50 Scrap, 10 wires, 10 fans, and 5 coils'
+            m_StringArgument: 'Attack Power 2: Increases attack power by 20% Price:
+              50 Scrap, 10 wires, 10 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 9
@@ -867,8 +867,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Attack Power 2: Increases attack power by 20%                                                  
-              Price: 50 Scrap,, 10 wires, 10 fans, and 5 coils'
+            m_StringArgument: 'Attack Power 2: Increases attack power by 20% Price:
+              50 Scrap,, 10 wires, 10 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &142507057
@@ -956,8 +956,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 46
-  m_fontSizeBase: 46
+  m_fontSize: 44
+  m_fontSizeBase: 44
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1185,7 +1185,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Crit Chance 2: Increases critical hit chance by 15%                                   
+            m_StringArgument: 'Crit Chance 2: Increases critical hit chance by 15%
               Price: 50 Scrap, 10 wires, 10 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
@@ -1202,7 +1202,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Crit Chance 2: Increases critical hit chance by 15%                                   
+            m_StringArgument: 'Crit Chance 2: Increases critical hit chance by 15%
               Price: 50 Scrap, 10 wires, 10 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
@@ -2013,8 +2013,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Attack Power 1: Increases attack power by 10%                                                  
-              Price: 40 Scrap, 5 wires, 5 fans, and 5 coils'
+            m_StringArgument: 'Attack Power 1: Increases attack power by 10% Price:
+              40 Scrap, 5 wires, 5 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 9
@@ -2030,8 +2030,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Attack Power 1: Increases attack power by 10%                                                  
-              Price: 40 Scrap, 5 wires, 5 fans, and 5 coils'
+            m_StringArgument: 'Attack Power 1: Increases attack power by 10% Price:
+              40 Scrap, 5 wires, 5 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &305101084
@@ -3603,8 +3603,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Attack Speed 1: Increases attack speed by 10%                                                  
-              Price: 40 Scrap, 5 wires, 5 fans, and 5 coils'
+            m_StringArgument: 'Attack Speed 1: Increases attack speed by 10% Price:
+              40 Scrap, 5 wires, 5 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 9
@@ -3620,8 +3620,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Attack Speed 1: Increases attack speed by 10%                                                  
-              Price: 40 Scrap, 5 wires, 5 fans, and 5 coils'
+            m_StringArgument: 'Attack Speed 1: Increases attack speed by 10% Price:
+              40 Scrap, 5 wires, 5 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &615594051
@@ -5380,7 +5380,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Crit Chance 1: Increases critical hit chance by 10%                                   
+            m_StringArgument: 'Crit Chance 1: Increases critical hit chance by 10%
               Price: 40 Scrap, 5 wires, 5 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
@@ -5397,7 +5397,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Crit Chance 1: Increases critical hit chance by 10%                                   
+            m_StringArgument: 'Crit Chance 1: Increases critical hit chance by 10%
               Price: 40 Scrap, 5 wires, 5 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
@@ -7521,7 +7521,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 'EMP: An electric blast which stuns enemies in a wide
-              radius from the player Price: 25 Scrap'
+              radius from the player Price: 25 Scrap, 5 wires, 5 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!114 &1331189190
@@ -8240,8 +8240,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Attack Speed 2: Increases attack speed by 20%                                                  
-              Price: 50 Scrap, 10 wires, 10 fans, and 5 coils'
+            m_StringArgument: 'Attack Speed 2: Increases attack speed by 20% Price:
+              50 Scrap, 10 wires, 10 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 9
@@ -8257,8 +8257,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Attack Speed 2: Increases attack speed by 20%                                                  
-              Price: 50 Scrap, 10 wires, 10 fans, and 5 coils'
+            m_StringArgument: 'Attack Speed 2: Increases attack speed by 20% Price:
+              50 Scrap, 10 wires, 10 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &1517725469
