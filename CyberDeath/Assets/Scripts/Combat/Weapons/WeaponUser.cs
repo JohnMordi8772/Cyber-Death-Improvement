@@ -17,7 +17,7 @@ namespace GoofyGhosts
     {
         [SerializeField] private Transform weaponHolder;
         [SerializeField] public Animator anim;
-        protected IWeapon currentWeapon;
+        public IWeapon currentWeapon;
         public GameObject arrow;
         public GameObject bowFiringPoint;
 

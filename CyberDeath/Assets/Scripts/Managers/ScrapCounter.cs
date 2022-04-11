@@ -25,6 +25,7 @@ namespace GoofyGhosts
             _sfxChannel = sfxChannel;
             _scrapCollectSFX = scrapCollectSFX;
             _scrapCollectedChannel = scrapCollectedChannel;
+            scrapCount = 0;
         }
 
         /// <summary>
