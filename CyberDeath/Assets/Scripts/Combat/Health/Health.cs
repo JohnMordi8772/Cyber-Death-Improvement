@@ -96,6 +96,52 @@ namespace GoofyGhosts
             }
         }
 
+        public void TakeDamage(float amnt, bool behind)
+        {
+            if (dead)
+                return;
+
+            if (isEnemy)
+            {
+                critChance = GameObject.Find("CritChanceStorage").GetComponent<CritChanceStorage>().critChance;
+                int chance = Random.Range(1, 100);
+                if (chance < critChance || behind)
+                {
+                    amnt *= 1.5f;
+                }
+            }
+
+            if (amnt < 0)
+            {
+                IncreaseHealth(-amnt);
+                return;
+            }
+
+            data.currentHealth -= (amnt * (1 - (armor.GetArmorLevel() * 0.05f)));
+            OnDamageTaken?.Invoke(data);
+            takeDamageChannel?.RaiseEvent(data);
+
+            if (data.currentHealth <= 0)
+            {
+                dead = true;
+                OnDeath?.Invoke();
+                deathChannel?.RaiseEvent();
+
+                if (hitParticles != null)
+                {
+                    hitParticles.transform.parent = null;
+                    hitParticles.Play();
+                }
+
+                if (destroyOnDeath)
+                    Destroy(gameObject);
+            }
+            else if (hitParticles != null)
+            {
+                hitParticles.Play();
+            }
+        }
+
         public void IncreaseHealth(float amnt)
         {
             if (amnt < 0)

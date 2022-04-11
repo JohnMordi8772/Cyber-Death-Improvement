@@ -22,6 +22,7 @@ namespace GoofyGhosts
 
         protected override void ActivateAbility()
         {
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("Slam", true);
             StartCoroutine("Attack");
             //StartCoroutine(Cast());
         }
@@ -34,6 +35,7 @@ namespace GoofyGhosts
             Instantiate(partEff, attackRange.transform.position, effRot);
             yield return new WaitForSeconds(0.2f);
             attackRange.SetActive(false);
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>().SetBool("Slam", false);
         }
 
         /*
