@@ -569,7 +569,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PlayerSwing1
-  m_Speed: 1
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -3376271404082243402}
@@ -580,11 +580,11 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_SpeedParameterActive: 0
+  m_SpeedParameterActive: 1
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -7075073516943949097, guid: 576869dac00e58f40b1fc79e8f5f038d, type: 3}
+  m_Motion: {fileID: -3869592612438223782, guid: bef6bad34813c2340b9cb5873a5d29de, type: 3}
   m_Tag: 
   m_SpeedParameter: FireMultiplier
   m_MirrorParameter: 
@@ -1198,7 +1198,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Swing3
-  m_Speed: 0.6
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -6951291507734889388}
@@ -1208,11 +1208,11 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_SpeedParameterActive: 0
+  m_SpeedParameterActive: 1
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -3789035481791703913, guid: 576869dac00e58f40b1fc79e8f5f038d, type: 3}
+  m_Motion: {fileID: -3371930014687646519, guid: bef6bad34813c2340b9cb5873a5d29de, type: 3}
   m_Tag: 
   m_SpeedParameter: FireMultiplier
   m_MirrorParameter: 
@@ -1312,7 +1312,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Swing2
-  m_Speed: 1
+  m_Speed: 0.5
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: -5095003097151539937}
@@ -1323,11 +1323,11 @@ AnimatorState:
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
   m_Mirror: 0
-  m_SpeedParameterActive: 0
+  m_SpeedParameterActive: 1
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 8144672044803529019, guid: 576869dac00e58f40b1fc79e8f5f038d, type: 3}
+  m_Motion: {fileID: -478360747763639103, guid: bef6bad34813c2340b9cb5873a5d29de, type: 3}
   m_Tag: 
   m_SpeedParameter: FireMultiplier
   m_MirrorParameter: Fire

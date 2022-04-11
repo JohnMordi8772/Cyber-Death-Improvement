@@ -124,6 +124,15 @@ namespace GoofyGhosts
             }
         }
 
+        public void BowSpin()
+        {
+            Instantiate(arrow, new Vector3(bowFiringPoint.transform.position.x, transform.position.y + 2, bowFiringPoint.transform.position.z), Quaternion.Euler(transform.localRotation.x, transform.localRotation.y,transform.localRotation.z));
+            Instantiate(arrow, new Vector3(bowFiringPoint.transform.position.x, transform.position.y + 2, bowFiringPoint.transform.position.z), Quaternion.Euler(transform.localRotation.x, transform.localRotation.y + 72,transform.localRotation.z));
+            Instantiate(arrow, new Vector3(bowFiringPoint.transform.position.x, transform.position.y + 2, bowFiringPoint.transform.position.z), Quaternion.Euler(transform.localRotation.x, transform.localRotation.y + 144,transform.localRotation.z));
+            Instantiate(arrow, new Vector3(bowFiringPoint.transform.position.x, transform.position.y + 2, bowFiringPoint.transform.position.z), Quaternion.Euler(transform.localRotation.x, transform.localRotation.y + 216,transform.localRotation.z));
+            Instantiate(arrow, new Vector3(bowFiringPoint.transform.position.x, transform.position.y + 2, bowFiringPoint.transform.position.z), Quaternion.Euler(transform.localRotation.x, transform.localRotation.y + 288,transform.localRotation.z));
+        }
+
         /// <summary>
         /// Completes the weapon's cooldown.
         /// </summary>
