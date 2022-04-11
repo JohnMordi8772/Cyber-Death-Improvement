@@ -26,11 +26,21 @@ namespace GoofyGhosts
             _scrapCollectSFX = scrapCollectSFX;
             _scrapCollectedChannel = scrapCollectedChannel;
             scrapCount = 0;
+
+            wireCount = 0;
+            coilCount = 0;
+            fanCount = 0;
+            armorCount = 0;
         }
 
         /// <summary>
         /// The player's scrap count.
         /// </summary>
+        public static int wireCount { get; set; }
+        public static int coilCount { get; set; }
+        public static int fanCount { get; set; }
+        public static int armorCount { get; set; }
+
         public static int scrapCount { get; set; }
 
         /// <summary>
