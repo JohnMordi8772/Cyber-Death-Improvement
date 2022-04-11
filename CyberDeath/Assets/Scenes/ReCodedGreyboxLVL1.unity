@@ -6808,6 +6808,30 @@ PrefabInstance:
       propertyPath: spearAnimator
       value: 
       objectReference: {fileID: 9100000, guid: f59431be18aae5043897075bfbca1407, type: 2}
+    - target: {fileID: 1865482906, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: m_Height
+      value: 0.16361126
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865482906, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: m_Radius
+      value: 0.034305174
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865482906, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: m_Center.x
+      value: 0.015335603
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865482906, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: m_Center.y
+      value: 0.06882476
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865482906, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: m_Center.z
+      value: 0.00417823
+      objectReference: {fileID: 0}
+    - target: {fileID: 1865482906, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
+      propertyPath: m_Direction
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1865482907, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
       propertyPath: playAnim
       value: 
@@ -6894,7 +6918,7 @@ PrefabInstance:
       objectReference: {fileID: 1522396410}
     - target: {fileID: 2036161922323433235, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
       propertyPath: empPurchased
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2036161922323433235, guid: a4695e6c2cecb044b92cca85a2766c0f, type: 3}
       propertyPath: slamPurchased

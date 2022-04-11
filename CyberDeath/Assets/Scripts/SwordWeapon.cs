@@ -90,8 +90,11 @@ namespace GoofyGhosts
         /// <param name="other">The Collider that entered the trigger.</param>
         private void OnTriggerEnter(Collider other)
         {
-            IDamageable damageable = other.GetComponent<IDamageable>();
-            damageable?.TakeDamage(WeaponDamage);
+            if (other.tag != "Player")
+            {
+                IDamageable damageable = other.GetComponent<IDamageable>();
+                damageable?.TakeDamage(WeaponDamage);
+            }
         }
     }
 }
