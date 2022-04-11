@@ -92,3 +92,8 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 *.log
+*.log
+CyberDeath/Logs/shadercompiler-UnityShaderCompiler.exe5.log
+CyberDeath/Logs/shadercompiler-UnityShaderCompiler.exe3.log
+CyberDeath/Logs/shadercompiler-UnityShaderCompiler.exe1.log
+CyberDeath/Logs/shadercompiler-UnityShaderCompiler.exe0.log
