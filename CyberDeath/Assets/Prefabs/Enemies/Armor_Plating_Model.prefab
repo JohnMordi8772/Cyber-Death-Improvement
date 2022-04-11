@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 7276254241170159287}
   - component: {fileID: 2343360883408510303}
   - component: {fileID: -554818278717773724}
-  - component: {fileID: -8814760925466939878}
+  - component: {fileID: 2202795946646252811}
   m_Layer: 11
   m_Name: Armor_Plating_Model
   m_TagString: Untagged
@@ -377,7 +377,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &-8814760925466939878
+--- !u!114 &2202795946646252811
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -386,7 +386,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8660226311329686915}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d316a1fa9fca46141b03d7259e62e696, type: 3}
+  m_Script: {fileID: 11500000, guid: a398211c9b36daf468e13f046078e811, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   waveChannel: {fileID: 11400000, guid: d1693b35dd5bcf847a746ae36c47fd8b, type: 2}
