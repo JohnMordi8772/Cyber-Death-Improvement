@@ -104,7 +104,7 @@ namespace GoofyGhosts
         {
             //// Taken from Anthony's Wave Distribution Chart on Google Drive.
             //if (waveNumber < 5)
-                  return 2;
+                  return 1;
             //else if (waveNumber < 7)
             //    return 5;
             //else if (waveNumber < 10)

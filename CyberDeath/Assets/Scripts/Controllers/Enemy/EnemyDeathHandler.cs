@@ -18,6 +18,7 @@ namespace GoofyGhosts
         [SerializeField] private Transform gibPrefab;
         [Tooltip("Scrap prefab so player can collect it for currency.")]
         [SerializeField] private GameObject scrapPrefab;
+        [SerializeField] GameObject enemyPartPrefab;
         [SerializeField] private AudioClipChannelSO sfxChannel;
         [SerializeField] private AudioClipSO deathSFX;
 
@@ -57,6 +58,8 @@ namespace GoofyGhosts
         private void SpawnGibsWithScrap()
         {
             Instantiate(scrapPrefab, transform.position, Quaternion.identity);
+            if(Random.Range(0,1) < 10)
+                Instantiate(enemyPartPrefab, transform.position, Quaternion.identity);
             SpawnGibs();
         }
 

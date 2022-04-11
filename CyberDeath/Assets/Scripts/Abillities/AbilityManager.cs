@@ -39,6 +39,10 @@ namespace GoofyGhosts
 
         private Animator anim;
 
+        public bool slamPurchased = false;
+        public bool empPurchased = false;
+        public bool taniumPurchased = false;
+
         /// <summary>
         /// Initialize member variables.
         /// </summary>
@@ -95,13 +99,57 @@ namespace GoofyGhosts
             }
             else if (currentAbility is NanobotsAbility)
             {
-                currentAbility = GetComponent<ShockwaveAbility>();
-                icon.sprite = spriteIcons[2];
+                if (empPurchased)
+                {
+                    currentAbility = GetComponent<ShockwaveAbility>();
+                    icon.sprite = spriteIcons[2];
+                }
+                else if (taniumPurchased)
+                {
+                    currentAbility = GetComponent<Titanium>();
+                    icon.sprite = spriteIcons[3];
+                }
+                else if (slamPurchased)
+                {
+                    currentAbility = GetComponent<GrandSlamAbility>();
+                    icon.sprite = spriteIcons[4];
+                }
+                else
+                {
+                    currentAbility = GetComponent<DashAbility>();
+                    icon.sprite = spriteIcons[0];
+                }
             }
             else if (currentAbility is ShockwaveAbility)
             {
-                currentAbility = GetComponent<Titanium>();
-                icon.sprite = spriteIcons[3];
+                if (taniumPurchased)
+                {
+                    currentAbility = GetComponent<Titanium>();
+                    icon.sprite = spriteIcons[3];
+                }
+                else if (slamPurchased)
+                {
+                    currentAbility = GetComponent<GrandSlamAbility>();
+                    icon.sprite = spriteIcons[4];
+                }
+                else
+                {
+                    currentAbility = GetComponent<DashAbility>();
+                    icon.sprite = spriteIcons[0];
+                }
+            }
+            else if (currentAbility is Titanium)
+            {
+                if (slamPurchased)
+                {
+                    currentAbility = GetComponent<GrandSlamAbility>();
+                    icon.sprite = spriteIcons[4];
+                }
+                else
+                {
+                    currentAbility = GetComponent<DashAbility>();
+                    icon.sprite = spriteIcons[0];
+                }
             }
             else
             {

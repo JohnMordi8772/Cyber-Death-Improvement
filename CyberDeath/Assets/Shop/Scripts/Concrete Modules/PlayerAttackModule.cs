@@ -26,7 +26,7 @@ namespace GoofyGhosts
         public void OnPurchased(int value, int mod)
         {
             weaponData = GameObject.FindGameObjectWithTag("Player").GetComponent<WeaponUser>().currentWeapon.data;
-            weaponData.attackDamage = new StatUpgrade(weaponData.attackDamage, weaponData.attackDamage.GetStat() * (value/100));
+            weaponData.attackDamage = new StatUpgrade(weaponData.attackDamage, mod);
             modifier += mod;
         }
     }

@@ -4821,7 +4821,7 @@ MonoBehaviour:
   takeDamageChannel: {fileID: 0}
   armor: {fileID: 11400000, guid: a3f169577ede1684e8f55b5c9e730c02, type: 2}
   hitParticles: {fileID: 7924546688043020046}
-  isEnemy: 0
+  isEnemy: 1
   critChance: 0
 --- !u!114 &198699336
 MonoBehaviour:
@@ -4966,6 +4966,7 @@ MonoBehaviour:
   waveChannel: {fileID: 11400000, guid: d1693b35dd5bcf847a746ae36c47fd8b, type: 2}
   gibPrefab: {fileID: 4027511831234825454, guid: 4088dee16a1ef8547a23e30c963f3e93, type: 3}
   scrapPrefab: {fileID: 4633932857083270987, guid: a3305c77451ad4944b9d6c1706ad85f9, type: 3}
+  enemyPartPrefab: {fileID: 5730678233324163338, guid: 36776b484b9b65d438bfd5fe689ef6ae, type: 3}
   sfxChannel: {fileID: 11400000, guid: 21dd50e5a1219104392fa94444fd29dd, type: 2}
   deathSFX: {fileID: 11400000, guid: be4b335775964694b8b5f42d67755f2f, type: 2}
 --- !u!95 &2030221374342325462
