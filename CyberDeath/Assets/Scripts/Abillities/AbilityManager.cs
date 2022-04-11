@@ -98,6 +98,11 @@ namespace GoofyGhosts
                 currentAbility = GetComponent<ShockwaveAbility>();
                 icon.sprite = spriteIcons[2];
             }
+            else if (currentAbility is ShockwaveAbility)
+            {
+                currentAbility = GetComponent<Titanium>();
+                icon.sprite = spriteIcons[3];
+            }
             else
             {
                 currentAbility = GetComponent<DashAbility>();
