@@ -4821,7 +4821,7 @@ MonoBehaviour:
   takeDamageChannel: {fileID: 0}
   armor: {fileID: 11400000, guid: a3f169577ede1684e8f55b5c9e730c02, type: 2}
   hitParticles: {fileID: 7924546688043020046}
-  isEnemy: 0
+  isEnemy: 1
   critChance: 0
 --- !u!114 &198699336
 MonoBehaviour:
