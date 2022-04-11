@@ -7,6 +7,7 @@ namespace GoofyGhosts
 {
     public class Arrow : MonoBehaviour
     {
+        [SerializeField] WeaponData bowData;
         private Vector2 mousePos;
         private Vector3 newRot, targetDirection, newDirection;
         Vector2 screenCenter;
@@ -15,6 +16,8 @@ namespace GoofyGhosts
         void Awake()
         {
             transform.Rotate(90, 0, 0);
+            dmg = bowData.attackDamage.GetStat();
+            Debug.Log("Arrow Damage" + dmg);
             //transform.rotation = Quaternion.Euler(90, 0, 0);
             //Debug.Log("Spawned");
             //screenCenter = new Vector2(Screen.width / 2, Screen.height / 2);
@@ -48,7 +51,7 @@ namespace GoofyGhosts
             if(collision.gameObject.tag == "Enemy")
             {
                 gameObject.GetComponent<Health>().TakeDamage(dmg);
-                Destroy(gameObject);
+                //Destroy(gameObject);
             }
             else if(collision.gameObject.layer != 6)
             {
@@ -61,7 +64,7 @@ namespace GoofyGhosts
             if (other.gameObject.tag == "Enemy")
             {
                 other.gameObject.GetComponent<Health>().TakeDamage(dmg);
-                Destroy(gameObject);
+                //Destroy(gameObject);
             }
             else if (other.gameObject.layer != 6)
             {

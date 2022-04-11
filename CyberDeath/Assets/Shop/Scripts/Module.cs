@@ -19,7 +19,7 @@ namespace GoofyGhosts
         [System.NonSerialized]
         public float rank = 1;
         
-        void Awake()
+        protected void Awake()
         {
             displayPrice = price;
         }
