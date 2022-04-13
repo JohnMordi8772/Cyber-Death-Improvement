@@ -45,7 +45,7 @@ namespace GoofyGhosts
         void Update()
         {
             transform.Translate(Vector3.up * 50 * Time.deltaTime);
-            if ((distanceTravelled += 50 * Time.deltaTime) >= 10)
+            if ((distanceTravelled += 50 * Time.deltaTime) >= 30)
                 Destroy(gameObject);
         }
 
