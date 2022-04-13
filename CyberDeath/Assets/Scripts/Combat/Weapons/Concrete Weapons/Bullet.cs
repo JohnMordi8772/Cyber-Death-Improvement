@@ -25,7 +25,12 @@ namespace GoofyGhosts
 
             newDirection = Vector3.RotateTowards(transform.forward, targetDirection, 2f, 0.0f);
 
-            waveChannel.OnEventRaised += _ => WaveEnd();
+            waveChannel.OnEventRaised += WaveEnd;
+        }
+
+        private void OnDestroy()
+        {
+            waveChannel.OnEventRaised -= WaveEnd;
         }
 
         void Update()
@@ -42,16 +47,18 @@ namespace GoofyGhosts
                 other.GetComponent<Health>().TakeDamage(5f);
                 Destroy(gameObject);
             }
-            else if(other.tag != "Enemy")
+            else if(other.gameObject.layer != 6 && other.gameObject.layer != 11 && other.gameObject.layer != 9)
             {
                 Destroy(gameObject);
             }
         }
 
-        void WaveEnd()
+        void WaveEnd(int end)
         {
-            try { Destroy(gameObject); }
-            catch(MissingReferenceException e) { }
+            if(end == -1)
+                Destroy(gameObject);
+            //try { Destroy(gameObject); }
+            //catch(MissingReferenceException e) { }
         }
 
         IEnumerator EndBullet()
