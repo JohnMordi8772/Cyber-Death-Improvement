@@ -12,12 +12,14 @@ namespace GoofyGhosts
         private Vector3 newRot, targetDirection, newDirection;
         Vector2 screenCenter;
         float dmg = 8;
+        float enemiesHit;
+        float distanceTravelled;
         // Start is called before the first frame update
         void Awake()
         {
             transform.Rotate(90, 0, 0);
             dmg = bowData.attackDamage.GetStat();
-            Debug.Log("Arrow Damage" + dmg);
+            enemiesHit = 0;
             //transform.rotation = Quaternion.Euler(90, 0, 0);
             //Debug.Log("Spawned");
             //screenCenter = new Vector2(Screen.width / 2, Screen.height / 2);
@@ -42,21 +44,9 @@ namespace GoofyGhosts
         // Update is called once per frame
         void Update()
         {
-            Debug.DrawRay(transform.position, transform.forward);
             transform.Translate(Vector3.up * 50 * Time.deltaTime);
-        }
-
-        private void OnCollisionEnter(Collision collision)
-        {
-            if(collision.gameObject.tag == "Enemy")
-            {
-                gameObject.GetComponent<Health>().TakeDamage(dmg);
-                //Destroy(gameObject);
-            }
-            else if(collision.gameObject.layer != 6)
-            {
+            if ((distanceTravelled += 50 * Time.deltaTime) >= 30)
                 Destroy(gameObject);
-            }
         }
 
         private void OnTriggerEnter(Collider other)
@@ -64,7 +54,8 @@ namespace GoofyGhosts
             if (other.gameObject.tag == "Enemy")
             {
                 other.gameObject.GetComponent<Health>().TakeDamage(dmg);
-                //Destroy(gameObject);
+                if (++enemiesHit == 3)
+                    Destroy(gameObject);
             }
             else if (other.gameObject.layer != 6 && other.gameObject.layer != 11 && other.gameObject.layer != 9)
             {
