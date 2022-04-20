@@ -924,7 +924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waveChannel: {fileID: 11400000, guid: d1693b35dd5bcf847a746ae36c47fd8b, type: 2}
-  gibPrefab: {fileID: 4027511831234825454, guid: 4088dee16a1ef8547a23e30c963f3e93, type: 3}
+  gibPrefab: {fileID: 2457152246485526186, guid: 2a08b08a3ad70404d9ff7656b5a58458, type: 3}
   scrapPrefab: {fileID: 8660226311329686915, guid: 212a99ab81cc3f649bbe99c98e112423, type: 3}
   enemyPartPrefab: {fileID: 5730678233324163338, guid: 36776b484b9b65d438bfd5fe689ef6ae, type: 3}
   sfxChannel: {fileID: 11400000, guid: 21dd50e5a1219104392fa94444fd29dd, type: 2}
