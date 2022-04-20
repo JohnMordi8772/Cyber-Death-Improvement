@@ -510,6 +510,7 @@ GameObject:
   - component: {fileID: 4711840326866677997}
   - component: {fileID: -5777548982242434382}
   - component: {fileID: -3334333470614770794}
+  - component: {fileID: -1343380248665774753}
   m_Layer: 11
   m_Name: Wires_Model
   m_TagString: Untagged
@@ -640,6 +641,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveChannel: {fileID: 11400000, guid: d1693b35dd5bcf847a746ae36c47fd8b, type: 2}
   scrapVFX: {fileID: 3305846008607007348, guid: d34afb3c58435a44ba3db905330a8208, type: 3}
+--- !u!114 &-1343380248665774753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4633932857083270987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f2e3724d5247cc46b030805ac547c96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotateSpeed: 90
 --- !u!1 &4717067777531427702
 GameObject:
   m_ObjectHideFlags: 0
