@@ -31,10 +31,15 @@ namespace GoofyGhosts
 
         private AbilityManager am;
 
+        private AudioSource aud;
+
+        public Color purchased;
+
         public void Start()
         {
             pm = GameObject.Find("PurchaseManager").GetComponent<PurchaseManager>();
             am = GameObject.Find("Player_Updated").GetComponent<AbilityManager>();
+            aud = GetComponent<AudioSource>();
 
             for (int i = 0; i < 17; i++)
             {
@@ -43,23 +48,23 @@ namespace GoofyGhosts
 
             if (pm.purchase1)
             {
-                buttons[17].interactable = false;
+                buttons[17].image.color = purchased;
                 buttons[0].image.color = Color.white;
                 aCounter1 = 1;
             }
             if (pm.purchase17)
             {
-                buttons[0].interactable = false;
+                buttons[0].image.color = purchased;
                 buttons[14].image.color = Color.white;
                 aCounter1 = 2;
             }
             if (pm.purchase18)
             {
-                buttons[15].interactable = false;
+                buttons[15].image.color = purchased;
             }
             if (pm.purchase2)
             {
-                buttons[14].interactable = false;
+                buttons[14].image.color = purchased;
                 buttons[1].image.color = Color.white;
                 buttons[3].image.color = Color.white;
                 buttons[12].image.color = Color.white;
@@ -68,52 +73,52 @@ namespace GoofyGhosts
             }
             if (pm.purchase3)
             {
-                buttons[1].interactable = false;
+                buttons[1].image.color = purchased;
                 buttons[2].image.color = Color.white;
                 aCounter2 = 1;
             }
             if (pm.purchase4)
             {
-                buttons[2].interactable = false;
+                buttons[2].image.color = purchased;
                 aCounter2 = 2;
             }
             if (pm.purchase5)
             {
-                buttons[3].interactable = false;
+                buttons[3].image.color = purchased;
                 buttons[4].image.color = Color.white;
                 aCounter3 = 1;
             }
             if (pm.purchase6)
             {
-                buttons[4].interactable = false;
+                buttons[4].image.color = purchased;
                 aCounter3 = 2;
             }
             if (pm.purchase7)
             {
-                buttons[12].interactable = false;
+                buttons[12].image.color = purchased;
                 buttons[13].image.color = Color.white;
                 aCounter4 = 1;
             }
             if (pm.purchase8)
             {
-                buttons[13].interactable = false;
+                buttons[13].image.color = purchased;
                 aCounter4 = 2;
             }
             if (pm.purchase9)
             {
-                buttons[18].interactable = false;
+                buttons[18].image.color = purchased;
                 buttons[5].image.color = Color.white;
                 dCounter1 = 1;
             }
             if (pm.purchase19)
             {
-                buttons[5].interactable = false;
+                buttons[5].image.color = purchased;
                 buttons[16].image.color = Color.white;
                 dCounter1 = 2;
             }
             if (pm.purchase10)
             {
-                buttons[16].interactable = false;
+                buttons[16].image.color = purchased;
                 buttons[6].image.color = Color.white;
                 buttons[8].image.color = Color.white;
                 buttons[10].image.color = Color.white;
@@ -122,35 +127,35 @@ namespace GoofyGhosts
             }
             if (pm.purchase11)
             {
-                buttons[6].interactable = false;
+                buttons[6].image.color = purchased;
                 buttons[7].image.color = Color.white;
                 dCounter2 = 1;
             }
             if (pm.purchase12)
             {
-                buttons[7].interactable = false;
+                buttons[7].image.color = purchased;
                 dCounter2 = 2;
             }
             if (pm.purchase13)
             {
-                buttons[8].interactable = false;
+                buttons[8].image.color = purchased;
                 buttons[9].image.color = Color.white;
                 dCounter3 = 1;
             }
             if (pm.purchase14)
             {
-                buttons[9].interactable = false;
+                buttons[9].image.color = purchased;
                 dCounter3 = 2;
             }
             if (pm.purchase15)
             {
-                buttons[10].interactable = false;
+                buttons[10].image.color = purchased;
                 buttons[11].image.color = Color.white;
                 dCounter4 = 1;
             }
             if (pm.purchase16)
             {
-                buttons[11].interactable = false;
+                buttons[11].image.color = purchased;
                 dCounter4 = 2;
             }
         }
@@ -159,6 +164,7 @@ namespace GoofyGhosts
         {
             if (aCounter1 == 0 && GetScrapCount() >= 10 && !pm.purchase1)
             {
+                aud.Play();
                 playerAttack.OnPurchased(5, 1);
                 playerSwing.OnPurchased(0.05f, 1);
                 GameObject.Find("CritChanceStorage").GetComponent<CritChanceStorage>().critChance += 5;
@@ -168,7 +174,7 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[0].image.color = Color.white;
-                buttons[17].interactable = false;
+                buttons[17].image.color = purchased;
                 buttons[17].Select();
             }
         }
@@ -177,6 +183,7 @@ namespace GoofyGhosts
         {
             if (aCounter1 == 1 && GetScrapCount() >= 15 && !pm.purchase17)
             {
+                aud.Play();
                 playerAttack.OnPurchased(5, 1);
                 playerSwing.OnPurchased(0.05f, 1);
                 GameObject.Find("CritChanceStorage").GetComponent<CritChanceStorage>().critChance += 5;
@@ -186,7 +193,7 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[14].image.color = Color.white;
-                buttons[0].interactable = false;
+                buttons[0].image.color = purchased;
                 buttons[0].Select();
             }
         }
@@ -195,6 +202,7 @@ namespace GoofyGhosts
         {
             if (aCounter1 == 2 && GetScrapCount() >= 25 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && !pm.purchase2)
             {
+                aud.Play();
                 am.slamPurchased = true;
                 aCounter1++;
                 pm.purchase2 = true;
@@ -207,7 +215,7 @@ namespace GoofyGhosts
                 buttons[3].image.color = Color.white;
                 buttons[12].image.color = Color.white;
                 buttons[15].image.color = Color.white;
-                buttons[14].interactable = false;
+                buttons[14].image.color = purchased;
                 buttons[14].Select();
             }
         }
@@ -216,6 +224,7 @@ namespace GoofyGhosts
         {
             if ((aCounter1 == 3 || dCounter1 == 3) && GetScrapCount() >= 25 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.coilCount >= 5 && !pm.purchase18)
             {
+                aud.Play();
                 am.empPurchased = true;
                 pm.purchase18 = true;
                 ScrapCounter.scrapCount -= 25;
@@ -224,7 +233,7 @@ namespace GoofyGhosts
                 ScrapCounter.coilCount -= 5;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
-                buttons[15].interactable = false;
+                buttons[15].image.color = purchased;
                 buttons[15].Select();
             }
         }
@@ -233,6 +242,7 @@ namespace GoofyGhosts
         {
             if (aCounter1 == 3 && aCounter2 == 0 && GetScrapCount() >= 40 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.coilCount >= 5 && !pm.purchase3)
             {
+                aud.Play();
                 playerAttack.OnPurchased(10, 2);
                 aCounter2++;
                 pm.purchase3 = true;
@@ -243,7 +253,7 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[2].image.color = Color.white;
-                buttons[1].interactable = false;
+                buttons[1].image.color = purchased;
                 buttons[1].Select();
             }
         }
@@ -252,6 +262,7 @@ namespace GoofyGhosts
         {
             if (aCounter2 == 1 && GetScrapCount() >= 50 && ScrapCounter.wireCount >= 10 && ScrapCounter.fanCount >= 10 && ScrapCounter.coilCount >= 5 && !pm.purchase4)
             {
+                aud.Play();
                 playerAttack.OnPurchased(20, 4);
                 aCounter2++;
                 pm.purchase4 = true;
@@ -261,7 +272,7 @@ namespace GoofyGhosts
                 ScrapCounter.coilCount -= 5;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
-                buttons[2].interactable = false;
+                buttons[2].image.color = purchased;
                 buttons[2].Select();
             }
         }
@@ -270,6 +281,7 @@ namespace GoofyGhosts
         {
             if (aCounter1 == 3 && aCounter3 == 0 && GetScrapCount() >= 40 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.coilCount >= 5 && !pm.purchase5)
             {
+                aud.Play();
                 playerSwing.OnPurchased(0.10f, 2);
                 aCounter3++;
                 pm.purchase5 = true;
@@ -280,7 +292,7 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[4].image.color = Color.white;
-                buttons[3].interactable = false;
+                buttons[3].image.color = purchased;
                 buttons[3].Select();
             }
         }
@@ -289,6 +301,7 @@ namespace GoofyGhosts
         {
             if (aCounter3 == 1 && GetScrapCount() >= 50 && ScrapCounter.wireCount >= 10 && ScrapCounter.fanCount >= 10 && ScrapCounter.coilCount >= 5 && !pm.purchase6)
             {
+                aud.Play();
                 playerSwing.OnPurchased(0.20f, 4);
                 aCounter3++;
                 pm.purchase6 = true;
@@ -298,7 +311,7 @@ namespace GoofyGhosts
                 ScrapCounter.coilCount -= 5;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
-                buttons[4].interactable = false;
+                buttons[4].image.color = purchased;
                 buttons[4].Select();
             }
         }
@@ -307,6 +320,7 @@ namespace GoofyGhosts
         {
             if (aCounter1 == 3 && aCounter4 == 0 && GetScrapCount() >= 40 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.coilCount >= 5 && !pm.purchase7)
             {
+                aud.Play();
                 GameObject.Find("CritChanceStorage").GetComponent<CritChanceStorage>().critChance += 10;
                 aCounter4++;
                 pm.purchase7 = true;
@@ -317,7 +331,7 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[13].image.color = Color.white;
-                buttons[12].interactable = false;
+                buttons[12].image.color = purchased;
                 buttons[12].Select();
             }
         }
@@ -326,6 +340,7 @@ namespace GoofyGhosts
         {
             if (aCounter4 == 1 && GetScrapCount() >= 50 && ScrapCounter.wireCount >= 10 && ScrapCounter.fanCount >= 10 && ScrapCounter.coilCount >= 5 && !pm.purchase8)
             {
+                aud.Play();
                 GameObject.Find("CritChanceStorage").GetComponent<CritChanceStorage>().critChance += 15;
                 aCounter4++;
                 pm.purchase8 = true;
@@ -335,7 +350,7 @@ namespace GoofyGhosts
                 ScrapCounter.coilCount -= 5;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
-                buttons[13].interactable = false;
+                buttons[13].image.color = purchased;
                 buttons[13].Select();
             }
         }
@@ -344,6 +359,7 @@ namespace GoofyGhosts
         {
             if (dCounter1 == 0 && GetScrapCount() >= 10 && !pm.purchase9)
             {
+                aud.Play();
                 playerHealth.OnPurchased(5, 1);
                 playerArmor.OnPurchased(5, 1);
                 playerMove.OnPurchased(0.5f, 1);
@@ -353,7 +369,7 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[5].image.color = Color.white;
-                buttons[18].interactable = false;
+                buttons[18].image.color = purchased;
                 buttons[18].Select();
             }
         }
@@ -362,6 +378,7 @@ namespace GoofyGhosts
         {
             if (dCounter1 == 1 && GetScrapCount() >= 15 && !pm.purchase19)
             {
+                aud.Play();
                 playerHealth.OnPurchased(5, 1);
                 playerArmor.OnPurchased(5, 1);
                 playerMove.OnPurchased(0.5f, 1);
@@ -371,7 +388,7 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[16].image.color = Color.white;
-                buttons[5].interactable = false;
+                buttons[5].image.color = purchased;
                 buttons[5].Select();
             }
         }
@@ -380,6 +397,7 @@ namespace GoofyGhosts
         {
             if (dCounter1 == 2 && GetScrapCount() >= 25 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && !pm.purchase10)
             {
+                aud.Play();
                 am.taniumPurchased = true;
                 dCounter1++;
                 pm.purchase10 = true;
@@ -392,7 +410,7 @@ namespace GoofyGhosts
                 buttons[8].image.color = Color.white;
                 buttons[10].image.color = Color.white;
                 buttons[15].image.color = Color.white;
-                buttons[16].interactable = false;
+                buttons[16].image.color = purchased;
                 buttons[16].Select();
             }
         }
@@ -400,7 +418,8 @@ namespace GoofyGhosts
         public void HealthUp1()
         {
             if (dCounter1 == 3 && dCounter2 == 0 && GetScrapCount() >= 40 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.armorCount >= 5 && !pm.purchase11) 
-            { 
+            {
+                aud.Play();
                 playerHealth.OnPurchased(10, 2);
                 dCounter2++;
                 pm.purchase11 = true;
@@ -411,7 +430,7 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[7].image.color = Color.white;
-                buttons[6].interactable = false;
+                buttons[6].image.color = purchased;
                 buttons[6].Select();
             }
         }
@@ -420,6 +439,7 @@ namespace GoofyGhosts
         {
             if (dCounter2 == 1 && GetScrapCount() >= 50 && ScrapCounter.wireCount >= 10 && ScrapCounter.fanCount >= 10 && ScrapCounter.armorCount >= 5 && !pm.purchase12)
             {
+                aud.Play();
                 playerHealth.OnPurchased(10, 2);
                 dCounter2++;
                 pm.purchase12 = true;
@@ -429,7 +449,7 @@ namespace GoofyGhosts
                 ScrapCounter.armorCount -= 5;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
-                buttons[7].interactable = false;
+                buttons[7].image.color = purchased;
                 buttons[7].Select();
             }
         }
@@ -438,6 +458,7 @@ namespace GoofyGhosts
         {
             if (dCounter1 == 3 && dCounter3 == 0 && GetScrapCount() >= 40 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.armorCount >= 5 && !pm.purchase13)
             {
+                aud.Play();
                 playerArmor.OnPurchased(10, 2);
                 dCounter3++;
                 pm.purchase13 = true;
@@ -448,7 +469,7 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[9].image.color = Color.white;
-                buttons[8].interactable = false;
+                buttons[8].image.color = purchased;
                 buttons[8].Select();
             }
         }
@@ -457,6 +478,7 @@ namespace GoofyGhosts
         {
             if (dCounter3 == 1 && GetScrapCount() >= 50 && ScrapCounter.wireCount >= 10 && ScrapCounter.fanCount >= 10 && ScrapCounter.armorCount >= 5 && !pm.purchase14)
             {
+                aud.Play();
                 playerArmor.OnPurchased(10, 2);
                 dCounter3++;
                 pm.purchase14 = true;
@@ -466,7 +488,7 @@ namespace GoofyGhosts
                 ScrapCounter.armorCount -= 5;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
-                buttons[9].interactable = false;
+                buttons[9].image.color = purchased;
                 buttons[9].Select();
             }
         }
@@ -475,6 +497,7 @@ namespace GoofyGhosts
         {
             if (dCounter1 == 3 && dCounter4 == 0 && GetScrapCount() >= 40 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.armorCount >= 5 && !pm.purchase15)
             {
+                aud.Play();
                 playerMove.OnPurchased(1, 2);
                 dCounter4++;
                 pm.purchase15 = true;
@@ -485,7 +508,7 @@ namespace GoofyGhosts
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[11].image.color = Color.white;
-                buttons[10].interactable = false;
+                buttons[10].image.color = purchased;
                 buttons[10].Select();
             }
         }
@@ -494,6 +517,7 @@ namespace GoofyGhosts
         {
             if (dCounter4 == 1 && GetScrapCount() >= 50 && ScrapCounter.wireCount >= 10 && ScrapCounter.fanCount >= 10 && ScrapCounter.armorCount >= 5 && !pm.purchase16)
             {
+                aud.Play();
                 playerMove.OnPurchased(1, 2);
                 dCounter4++;
                 pm.purchase16 = true;
@@ -503,7 +527,7 @@ namespace GoofyGhosts
                 ScrapCounter.armorCount -= 5;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
-                buttons[11].interactable = false;
+                buttons[11].image.color = purchased;
                 buttons[11].Select();
             }
         }

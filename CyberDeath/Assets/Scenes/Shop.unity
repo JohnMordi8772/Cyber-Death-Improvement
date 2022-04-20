@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 1, b: 0.98039216, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_PressedColor: {r: 0, g: 1, b: 0.9803922, a: 1}
     m_SelectedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_DisabledColor: {r: 0, g: 0.58431375, b: 0.94509804, a: 1}
@@ -283,7 +283,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Move 2: Increases move speed by 10% Price: 50 Scrap'
+            m_StringArgument: 'Move 2: Increases move speed by 10%                
+              Price: 50 Scrap, 10 wires, 10 fans, and 5 armor plates'
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 9
@@ -299,8 +300,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Move 2: Increases move speed by 10% Price: 50 Scrap,
-              10 wires, 10 fans, and 5 armor plates'
+            m_StringArgument: 'Move 2: Increases move speed by 10%                
+              Price: 50 Scrap, 10 wires, 10 fans, and 5 armor plates'
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &76580055
@@ -752,7 +753,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 1, b: 0.98039216, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_PressedColor: {r: 0, g: 1, b: 0.9803922, a: 1}
     m_SelectedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_DisabledColor: {r: 0, g: 0.58431375, b: 0.94509804, a: 1}
@@ -850,7 +851,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Attack Power 2: Increases attack power by 20% Price:
+            m_StringArgument: 'Attack Power 2: Increases attack power by 20%  Price:
               50 Scrap, 10 wires, 10 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
@@ -867,8 +868,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Attack Power 2: Increases attack power by 20% Price:
-              50 Scrap,, 10 wires, 10 fans, and 5 coils'
+            m_StringArgument: 'Attack Power 2: Increases attack power by 20%  Price:
+              50 Scrap, 10 wires, 10 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &142507057
@@ -956,8 +957,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 44
-  m_fontSizeBase: 44
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1087,7 +1088,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 1, b: 0.98039216, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_PressedColor: {r: 0, g: 1, b: 0.9803922, a: 1}
     m_SelectedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_DisabledColor: {r: 0, g: 0.58431375, b: 0.94509804, a: 1}
@@ -1734,7 +1735,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 1, b: 0.98039216, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_PressedColor: {r: 0, g: 1, b: 0.9803922, a: 1}
     m_SelectedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_DisabledColor: {r: 0, g: 0.58431375, b: 0.94509804, a: 1}
@@ -1832,7 +1833,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Armor 1: Increases armor by 10%                    
+            m_StringArgument: 'Armor 1: Increases armor by 10%                       
               Price: 40 Scrap, 5 wires, 5 fans, and 5 armor plates'
             m_BoolArgument: 0
           m_CallState: 2
@@ -1849,7 +1850,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Armor 1: Increases armor by 10%                    
+            m_StringArgument: 'Armor 1: Increases armor by 10%                       
               Price: 40 Scrap, 5 wires, 5 fans, and 5 armor plates'
             m_BoolArgument: 0
           m_CallState: 2
@@ -1915,7 +1916,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 1, b: 0.98039216, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_PressedColor: {r: 0, g: 1, b: 0.9803922, a: 1}
     m_SelectedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_DisabledColor: {r: 0, g: 0.58431375, b: 0.94509804, a: 1}
@@ -2013,7 +2014,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Attack Power 1: Increases attack power by 10% Price:
+            m_StringArgument: 'Attack Power 1: Increases attack power by 10%   Price:
               40 Scrap, 5 wires, 5 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
@@ -2030,7 +2031,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Attack Power 1: Increases attack power by 10% Price:
+            m_StringArgument: 'Attack Power 1: Increases attack power by 10%   Price:
               40 Scrap, 5 wires, 5 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
@@ -2483,7 +2484,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 1, b: 0.98039216, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_PressedColor: {r: 0, g: 1, b: 0.9803922, a: 1}
     m_SelectedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_DisabledColor: {r: 0, g: 0.58431375, b: 0.94509804, a: 1}
@@ -2581,7 +2582,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Armor 2: Increases armor by 10%                    
+            m_StringArgument: 'Armor 2: Increases armor by 10%                        
               Price: 50 Scrap, 10 wires, 10 fans, and 5 armor plates'
             m_BoolArgument: 0
           m_CallState: 2
@@ -2598,7 +2599,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Armor 2: Increases armor by 10%                    
+            m_StringArgument: 'Armor 2: Increases armor by 10%                        
               Price: 50 Scrap, 10 wires, 10 fans, and 5 armor plates'
             m_BoolArgument: 0
           m_CallState: 2
@@ -3245,7 +3246,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 1, b: 0.98039216, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_PressedColor: {r: 0, g: 1, b: 0.9803922, a: 1}
     m_SelectedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_DisabledColor: {r: 0, g: 0.58431375, b: 0.94509804, a: 1}
@@ -3344,7 +3345,8 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 'Defense Boost 2: Increases health, armor, and move
-              speed by 5%                          Price: 15 Scrap'
+              speed by 5%                                                       Price:
+              15 Scrap'
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 9
@@ -3361,7 +3363,8 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 'Defense Boost 2: Increases health, armor, and move
-              speed by 5%                          Price: 15 Scrap'
+              speed by 5%                                                       Price:
+              15 Scrap'
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &540359651
@@ -3505,7 +3508,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 1, b: 0.98039216, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_PressedColor: {r: 0, g: 1, b: 0.9803922, a: 1}
     m_SelectedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_DisabledColor: {r: 0, g: 0.58431375, b: 0.94509804, a: 1}
@@ -3603,7 +3606,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Attack Speed 1: Increases attack speed by 10% Price:
+            m_StringArgument: 'Attack Speed 1: Increases attack speed by 10%  Price:
               40 Scrap, 5 wires, 5 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
@@ -3620,7 +3623,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Attack Speed 1: Increases attack speed by 10% Price:
+            m_StringArgument: 'Attack Speed 1: Increases attack speed by 10%  Price:
               40 Scrap, 5 wires, 5 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
@@ -4778,7 +4781,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 'Attack Boost 1: Increases attack power, attack speed,
-              and crit chance by 5% Price: 10 Scrap'
+              and crit chance by 5%                             Price: 10 Scrap'
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 9
@@ -4795,7 +4798,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 'Attack Boost 1: Increases attack power, attack speed,
-              and crit chance by 5% Price: 10 Scrap'
+              and crit chance by 5%                             Price: 10 Scrap'
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &799846135
@@ -5282,7 +5285,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 1, b: 0.98039216, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_PressedColor: {r: 0, g: 1, b: 0.9803922, a: 1}
     m_SelectedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_DisabledColor: {r: 0, g: 0.58431375, b: 0.94509804, a: 1}
@@ -5676,7 +5679,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 1, b: 0.98039216, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_PressedColor: {r: 0, g: 1, b: 0.9803922, a: 1}
     m_SelectedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_DisabledColor: {r: 0, g: 0.58431375, b: 0.94509804, a: 1}
@@ -5774,8 +5777,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Move 1: Increases move speed by 10% Price: 40 Scrap,
-              5 wires, 5 fans, and 5 armor plates'
+            m_StringArgument: 'Move 1: Increases move speed by 10%                
+              Price: 40 Scrap, 5 wires, 5 fans, and 5 armor plates'
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 9
@@ -5791,8 +5794,8 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Move 1: Increases move speed by 10% Price: 40 Scrap,
-              5 wires, 5 fans, and 5 armor plates'
+            m_StringArgument: 'Move 1: Increases move speed by 10%                
+              Price: 40 Scrap, 5 wires, 5 fans, and 5 armor plates'
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &992205047
@@ -5857,7 +5860,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 1, b: 0.98039216, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_PressedColor: {r: 0, g: 1, b: 0.9803922, a: 1}
     m_SelectedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_DisabledColor: {r: 0, g: 0.58431375, b: 0.94509804, a: 1}
@@ -5955,7 +5958,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Health 1: Increase health by 10%                    
+            m_StringArgument: 'Health 1: Increase health by 10%                       
               Price: 40 Scrap, 5 wires, 5 fans, and 5 armor plates'
             m_BoolArgument: 0
           m_CallState: 2
@@ -5972,7 +5975,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Health 1: Increase health by 10%                    
+            m_StringArgument: 'Health 1: Increase health by 10%                       
               Price: 40 Scrap, 5 wires, 5 fans, and 5 armor plates'
             m_BoolArgument: 0
           m_CallState: 2
@@ -7504,7 +7507,8 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 'EMP: An electric blast which stuns enemies in a wide
-              radius from the player Price: 25 Scrap, 5 wires, 5 fans, and 5 coils'
+              radius from the player                                      Price:
+              25 Scrap, 5 wires, 5 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 9
@@ -7521,7 +7525,8 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 'EMP: An electric blast which stuns enemies in a wide
-              radius from the player Price: 25 Scrap, 5 wires, 5 fans, and 5 coils'
+              radius from the player                                      Price:
+              25 Scrap, 5 wires, 5 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!114 &1331189190
@@ -7546,7 +7551,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 1, b: 0.98039216, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_PressedColor: {r: 0, g: 1, b: 0.9803922, a: 1}
     m_SelectedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_DisabledColor: {r: 0, g: 0.58431375, b: 0.94509804, a: 1}
@@ -7909,7 +7914,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 1, b: 0.98039216, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_PressedColor: {r: 0, g: 1, b: 0.9803922, a: 1}
     m_SelectedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_DisabledColor: {r: 0, g: 0.58431375, b: 0.94509804, a: 1}
@@ -8007,7 +8012,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Health 2: Increase health by 10%                    
+            m_StringArgument: 'Health 2: Increase health by 10%                       
               Price: 50 Scrap, 10 wires, 10 fans, and 5 armor plates'
             m_BoolArgument: 0
           m_CallState: 2
@@ -8024,7 +8029,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Health 2: Increase health by 10%                    
+            m_StringArgument: 'Health 2: Increase health by 10%                       
               Price: 50 Scrap, 10 wires, 10 fans, and 5 armor plates'
             m_BoolArgument: 0
           m_CallState: 2
@@ -8142,7 +8147,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 1, b: 0.98039216, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_PressedColor: {r: 0, g: 1, b: 0.9803922, a: 1}
     m_SelectedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_DisabledColor: {r: 0, g: 0.58431375, b: 0.94509804, a: 1}
@@ -8240,7 +8245,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Attack Speed 2: Increases attack speed by 20% Price:
+            m_StringArgument: 'Attack Speed 2: Increases attack speed by 20%  Price:
               50 Scrap, 10 wires, 10 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
@@ -8257,7 +8262,7 @@ MonoBehaviour:
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 'Attack Speed 2: Increases attack speed by 20% Price:
+            m_StringArgument: 'Attack Speed 2: Increases attack speed by 20%  Price:
               50 Scrap, 10 wires, 10 fans, and 5 coils'
             m_BoolArgument: 0
           m_CallState: 2
@@ -8690,6 +8695,7 @@ MonoBehaviour:
   - {fileID: 1781970864}
   - {fileID: 769426122}
   - {fileID: 1743668818}
+  purchased: {r: 0, g: 0.58431375, b: 0.94509804, a: 1}
 --- !u!1 &1536231081
 GameObject:
   m_ObjectHideFlags: 0
@@ -9375,7 +9381,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 1, b: 0.98039216, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_PressedColor: {r: 0, g: 1, b: 0.9803922, a: 1}
     m_SelectedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_DisabledColor: {r: 0, g: 0.58431375, b: 0.94509804, a: 1}
@@ -9474,7 +9480,8 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 'Defense Boost 1: Increases health, armor, and move
-              speed by 5%                          Price: 10 Scrap'
+              speed by 5%                                                       Price:
+              10 Scrap'
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 9
@@ -9491,7 +9498,8 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 'Defense Boost 1: Increases health, armor, and move
-              speed by 5%                          Price: 10 Scrap'
+              speed by 5%                                                       Price:
+              10 Scrap'
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &1745203340
@@ -9561,7 +9569,8 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 'Ground Slam: A powerful attack which slams enemies
-              in front of the player Price: 25 Scrap, 5 wires, and 5 fans'
+              in front of the player                                        Price:
+              25 Scrap, 5 wires, and 5 fans'
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 9
@@ -9578,7 +9587,8 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 'Ground Slam: A powerful attack which slams enemies
-              in front of the player Price: 25 Scrap, 5 wires, and 5 fans'
+              in front of the player                                        Price:
+              25 Scrap, 5 wires, and 5 fans'
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!114 &1745203343
@@ -9603,7 +9613,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 1, b: 0.98039216, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_PressedColor: {r: 0, g: 1, b: 0.9803922, a: 1}
     m_SelectedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_DisabledColor: {r: 0, g: 0.58431375, b: 0.94509804, a: 1}
@@ -9742,7 +9752,8 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 'Tanium Skin: Leaves the player nearly invulnerable
-              for a short time                Price: 25 Scrap, 5 wires, and 5 fans'
+              for a short time                                                Price:
+              25 Scrap, 5 wires, and 5 fans'
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 9
@@ -9759,7 +9770,8 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 'Tanium Skin: Leaves the player nearly invulnerable
-              for a short time                Price: 25 Scrap, 5 wires, and 5 fans'
+              for a short time                                                Price:
+              25 Scrap, 5 wires, and 5 fans'
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!114 &1781970864
@@ -9784,7 +9796,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 1, b: 0.98039216, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_PressedColor: {r: 0, g: 1, b: 0.9803922, a: 1}
     m_SelectedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_DisabledColor: {r: 0, g: 0.58431375, b: 0.94509804, a: 1}
@@ -10217,7 +10229,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0, g: 1, b: 0.98039216, a: 1}
+    m_HighlightedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_PressedColor: {r: 0, g: 1, b: 0.9803922, a: 1}
     m_SelectedColor: {r: 0, g: 1, b: 0.21176472, a: 1}
     m_DisabledColor: {r: 0, g: 0.58431375, b: 0.94509804, a: 1}
@@ -10316,7 +10328,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 'Attack Boost 2: Increases attack power, attack speed,
-              and crit chance by 5% Price: 15 Scrap'
+              and crit chance by 5%                             Price: 15 Scrap'
             m_BoolArgument: 0
           m_CallState: 2
   - eventID: 9
@@ -10333,7 +10345,7 @@ MonoBehaviour:
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 'Attack Boost 2: Increases attack power, attack speed,
-              and crit chance by 5% Price: 15 Scrap'
+              and crit chance by 5%                             Price: 15 Scrap'
             m_BoolArgument: 0
           m_CallState: 2
 --- !u!1 &1910795252
