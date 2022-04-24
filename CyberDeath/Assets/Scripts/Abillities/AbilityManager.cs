@@ -159,7 +159,7 @@ namespace GoofyGhosts
             abilityCooldown.SetCurrentAbility(currentAbility);
             if(currentAbility.coolingDown)
             {
-                abilityCooldown.UpdateSlider(currentAbility.i);
+                abilityCooldown.UpdateSlider(currentAbility.GetCoolDown());
                 icon.color = availableUI.unavailableColor;
             }
             else

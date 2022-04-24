@@ -56,15 +56,17 @@ namespace GoofyGhosts
         /// <param name="cooldownTime">The ability's cooldown time.</param>
         private IEnumerator DisplayCooldown(float cooldownTime)
         {
+            Debug.Log(cooldownTime);
             if (cooldownTime == -1)
             {
                 slider.value = 1f;
                 yield break;
             }
-            float currentTime = 0f;
+            float currentTime = cooldownTime - ability.i;
             const float RESET_TIME = 0.2f;
+            //slider.value = (ability.i) / (cooldownTime);
 
-            while(currentTime < (cooldownTime - RESET_TIME))
+            while (currentTime < (cooldownTime - RESET_TIME))
             {
                 currentTime += Time.deltaTime;
                 slider.value = Mathf.Lerp(1f, 0f, currentTime / (cooldownTime - RESET_TIME));
