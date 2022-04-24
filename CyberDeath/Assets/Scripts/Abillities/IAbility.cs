@@ -35,6 +35,11 @@ namespace GoofyGhosts
             i = data.CooldownTime.GetStat();
         }
 
+        private void Awake()
+        {
+            i = data.CooldownTime.GetStat();
+        }
+
         public float GetCoolDown()
         {
             return data.CooldownTime.GetStat();

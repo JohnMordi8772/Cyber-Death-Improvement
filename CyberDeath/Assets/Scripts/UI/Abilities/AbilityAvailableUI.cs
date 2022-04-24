@@ -50,6 +50,12 @@ namespace GoofyGhosts
         }
         #endregion
 
+        public void PerformCoroutine(float cooldownTime)
+        {
+            StopAllCoroutines();
+            StartCoroutine(AnimateIcon(cooldownTime));
+        }
+
         /// <summary>
         /// Animates the ability icon after the cooldown is completed.
         /// </summary>

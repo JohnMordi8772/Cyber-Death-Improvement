@@ -63,6 +63,7 @@ namespace GoofyGhosts
                 yield break;
             }
             float currentTime = cooldownTime - ability.i;
+            Debug.Log(currentTime);
             const float RESET_TIME = 0.2f;
             //slider.value = (ability.i) / (cooldownTime);
 
