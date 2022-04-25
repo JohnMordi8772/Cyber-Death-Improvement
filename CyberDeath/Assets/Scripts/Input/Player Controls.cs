@@ -187,7 +187,7 @@ public class @PlayerControls : IInputActionCollection, IDisposable
                 {
                     ""name"": ""Right Joystick"",
                     ""id"": ""a7942c49-a421-48d7-bbe4-2061a1c7b85a"",
-                    ""path"": ""2DVector"",
+                    ""path"": ""2DVector(mode=2)"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
