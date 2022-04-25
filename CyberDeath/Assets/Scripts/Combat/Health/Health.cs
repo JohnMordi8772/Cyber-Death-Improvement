@@ -26,6 +26,8 @@ namespace GoofyGhosts
         private bool dead;
         public bool isEnemy;
         public int critChance;
+        private bool critted = false;
+        public ParticleSystem critParticles;
 
         private void Start()
         {
@@ -48,6 +50,7 @@ namespace GoofyGhosts
             }
 
             takeDamageChannel?.RaiseEvent(data);
+            critChance = GameObject.Find("CritChanceStorage").GetComponent<CritChanceStorage>().critChance;
         }
 
         public void TakeDamage(float amnt)
@@ -57,11 +60,11 @@ namespace GoofyGhosts
 
             if (isEnemy)
             {
-                critChance = GameObject.Find("CritChanceStorage").GetComponent<CritChanceStorage>().critChance;
                 int chance = Random.Range(1, 100);
                 if (chance < critChance)
                 {
                     amnt *= 1.5f;
+                    critted = true;
                 }
             }
 
@@ -83,8 +86,15 @@ namespace GoofyGhosts
 
                 if (hitParticles != null)
                 {
-                    hitParticles.transform.parent = null;
-                    hitParticles.Play();
+                    if (critted)
+                    {
+                        critParticles.Play();
+                    }
+                    else
+                    {
+                        hitParticles.transform.parent = null;
+                        hitParticles.Play();
+                    }
                 }
 
                 if (destroyOnDeath)
@@ -92,7 +102,15 @@ namespace GoofyGhosts
             }
             else if (hitParticles != null)
             {
-                hitParticles.Play();
+                if (critted)
+                {
+                    critParticles.Play();
+                    critted = false;
+                }
+                else
+                {
+                    hitParticles.Play();
+                }
             }
         }
 
@@ -108,6 +126,7 @@ namespace GoofyGhosts
                 if (chance < critChance || behind)
                 {
                     amnt *= 1.5f;
+                    critted = true;
                 }
             }
 
@@ -129,8 +148,15 @@ namespace GoofyGhosts
 
                 if (hitParticles != null)
                 {
-                    hitParticles.transform.parent = null;
-                    hitParticles.Play();
+                    if (critted)
+                    {
+                        critParticles.Play();
+                    }
+                    else
+                    {
+                        hitParticles.transform.parent = null;
+                        hitParticles.Play();
+                    }
                 }
 
                 if (destroyOnDeath)
@@ -138,7 +164,15 @@ namespace GoofyGhosts
             }
             else if (hitParticles != null)
             {
-                hitParticles.Play();
+                if (critted)
+                {
+                    critParticles.Play();
+                    critted = false;
+                }
+                else
+                {
+                    hitParticles.Play();
+                }
             }
         }
 
