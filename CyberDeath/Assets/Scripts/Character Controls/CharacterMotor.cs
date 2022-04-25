@@ -81,6 +81,8 @@ public class CharacterMotor : MonoBehaviour
     /// </summary>
     private bool wasGrounded;
 
+    public bool bowFiring;
+
     /// <summary>
     /// Getting components.
     /// </summary>
@@ -92,6 +94,7 @@ public class CharacterMotor : MonoBehaviour
         heightMultiplier = 1;
         takeJumpAway = true;
         wasGrounded = true;
+        bowFiring = false;
     }
 
     private void Start()
@@ -105,8 +108,13 @@ public class CharacterMotor : MonoBehaviour
     /// <param name="inputVector">The direction in local space to move the character.</param>
     public void MoveCharacter(Vector3 inputVector)
     {
+        Vector3 vel;
+
         // Calculating the velocity to apply to the character.
-        Vector3 vel = inputVector * motorData.movementSpeed.GetStat();
+        if (!bowFiring)
+            vel = inputVector * motorData.movementSpeed.GetStat();
+        else
+            vel = inputVector * motorData.movementSpeed.GetStat() / 2;
 
         // Transforming the velocity from local space to world space.
         //vel = transform.TransformDirection(vel);
@@ -386,5 +394,15 @@ public class CharacterMotor : MonoBehaviour
     public void SwapMotorData(CharacterMotorDataSO data)
     {
         motorData = data;
+    }
+
+    public void BowFiring()
+    {
+        bowFiring = true;
+    }
+
+    public void BowFinished()
+    {
+        bowFiring = false;
     }
 }
