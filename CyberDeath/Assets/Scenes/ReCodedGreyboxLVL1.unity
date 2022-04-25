@@ -4100,7 +4100,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 850c4efc733223a4294c958e92331009, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.31
+      value: -18.76
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 850c4efc733223a4294c958e92331009, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5516,7 +5516,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7774245, y: 1}
+    m_SensorSize: {x: 1.6, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -5814,7 +5814,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh37930
+  m_Name: pb_Mesh131316
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -7951,7 +7951,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 654684961}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.07, y: 2.98, z: 43.3}
+  m_LocalPosition: {x: -10.81, y: 2.98, z: 43.3}
   m_LocalScale: {x: 1, y: 3, z: 1}
   m_Children:
   - {fileID: 783661804}
@@ -27612,7 +27612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0f52bc1978464c04b89f5e3daba3956f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.66
+      value: -14.54
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0f52bc1978464c04b89f5e3daba3956f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -27867,6 +27867,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: colorSpear
       objectReference: {fileID: 0}
+    - target: {fileID: 2040542448765327740, guid: 851f11a64494f3e4eb24404169c326f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7750397243111347764, guid: 851f11a64494f3e4eb24404169c326f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8536400945726557719, guid: 851f11a64494f3e4eb24404169c326f7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 851f11a64494f3e4eb24404169c326f7, type: 3}
 --- !u!1 &2138223789 stripped
@@ -27900,7 +27912,7 @@ BoxCollider:
   m_GameObject: {fileID: 2138223789}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.04581715, y: 0.07900125, z: 0.111766025}
   m_Center: {x: 0, y: -0.02, z: -0.0778745}

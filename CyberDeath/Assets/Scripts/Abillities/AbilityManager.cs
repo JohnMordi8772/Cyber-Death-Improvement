@@ -159,12 +159,14 @@ namespace GoofyGhosts
             abilityCooldown.SetCurrentAbility(currentAbility);
             if(currentAbility.coolingDown)
             {
-                abilityCooldown.UpdateSlider(currentAbility.i);
+                abilityCooldown.UpdateSlider(currentAbility.GetCoolDown());
+                availableUI.PerformCoroutine(currentAbility.i);
                 icon.color = availableUI.unavailableColor;
             }
             else
             {
                 abilityCooldown.UpdateSlider(-1);
+                availableUI.StopAllCoroutines();
                 icon.color = availableUI.availableColor;
             }
             //bool abilityExists = AbilityListContains<T>(out IAbility ability);
