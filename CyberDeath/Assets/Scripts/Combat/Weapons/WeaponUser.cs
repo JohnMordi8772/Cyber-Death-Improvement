@@ -31,7 +31,7 @@ namespace GoofyGhosts
         private void Awake()
         {
             currentWeapon = weaponHolder.GetComponentInChildren<IWeapon>();
-            SetFireToFalse = () => anim.SetBool("Fire", false);
+            //SetFireToFalse = () => anim.SetBool("Fire", false);
             //anim.SetInteger("Fire0", 1);
 
             //SwapWeapon(weapon);
@@ -93,7 +93,7 @@ namespace GoofyGhosts
                 yield return null;
             }
 
-            anim.SetBool("Fire", false);
+            //anim.SetBool("Fire", false);
         }
 
         /// <summary>
@@ -109,6 +109,7 @@ namespace GoofyGhosts
                 print("released mouse. Spinning");
                 anim.SetBool("Spin", false);
             }
+            anim.SetBool("Fire", false);
         }
 
         public virtual void PlayerReleaseFire()
