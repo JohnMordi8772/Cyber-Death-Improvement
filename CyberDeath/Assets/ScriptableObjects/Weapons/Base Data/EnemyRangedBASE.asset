@@ -17,7 +17,7 @@ MonoBehaviour:
   weaponName: EnemyRanged
   attackDamage:
     statName: Attack Damage
-    baseStat: 3
+    baseStat: 5
   attackSpeed:
     statName: Attack Speed
     baseStat: 0.75

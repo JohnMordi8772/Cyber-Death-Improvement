@@ -46,7 +46,7 @@ namespace GoofyGhosts
             if (currentHits >= maxHits)
             {
                 stunned = true;
-                anim.SetTrigger("Stunned");
+                //anim.SetTrigger("Stunned");
                 flashComponent.StartFlash();
                 StartCoroutine(ResetStun());
             }
