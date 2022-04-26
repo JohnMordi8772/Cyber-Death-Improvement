@@ -29,7 +29,19 @@ namespace GoofyGhosts
         public int enemyKillCount;
 
         [Header("The wave to begin on.")]
-        [Min(1)][SerializeField] private int startingWave;
+        [Min(1)] [SerializeField] private int startingWave;
+
+        [Header("Enemy Health Data")]
+        [SerializeField] HealthData baseEnemyData;
+        [SerializeField] HealthData fastEnemyData;
+        [SerializeField] HealthData rangedEnemyData;
+        [SerializeField] HealthData tankEnemyData;
+
+        [Header("Enemy Weapon Data")]
+        [SerializeField] WeaponData baseFist;
+        [SerializeField] WeaponData fastFist;
+        [SerializeField] WeaponData rangedWeapon;
+        [SerializeField] WeaponData tankFist;
 
         [Header("Channels")]
         [Tooltip("Channel used to signal when a new wave starts.")]
@@ -55,6 +67,16 @@ namespace GoofyGhosts
         {
             waveNumber = 0;
             playerDead = false;
+
+            baseEnemyData.Init();
+            fastEnemyData.Init();
+            //rangedEnemyData.Init();
+            tankEnemyData.Init();
+
+            baseFist.Hydrate();
+            fastFist.Hydrate();
+            rangedWeapon.Hydrate();
+            tankFist.Hydrate();
         }
 
         #region -- // Event Subbing / UnSubbing // --
@@ -172,6 +194,28 @@ namespace GoofyGhosts
             waveChannel.RaiseEvent(-1);
             audioClipChannel.RaiseEvent(waveEndSFX);
             audioClipChannel.RaiseEvent(waveEnd2SFX);
+
+            if ( ((waveNumber + 1) % 5 )== 0)
+            {
+                float increment;
+
+                baseEnemyData.maxHealth = new StatUpgrade(baseEnemyData.maxHealth, increment = baseEnemyData.maxHealth.GetStat() * 0.1f);
+                baseEnemyData.currentHealth += increment;
+                baseFist.attackDamage = new StatUpgrade(baseFist.attackDamage, 1);
+
+                fastEnemyData.maxHealth = new StatUpgrade(fastEnemyData.maxHealth, increment = fastEnemyData.maxHealth.GetStat() * 0.1f);
+                fastEnemyData.currentHealth += increment;
+                fastFist.attackDamage = new StatUpgrade(fastFist.attackDamage, 1);
+
+                //rangedEnemyData.maxHealth = new StatUpgrade(rangedEnemyData.maxHealth, increment = rangedEnemyData.maxHealth.GetStat() * 0.05f);
+                //rangedEnemyData.currentHealth += increment;
+                rangedWeapon.attackDamage = new StatUpgrade(rangedWeapon.attackDamage, 1);
+
+                tankEnemyData.maxHealth = new StatUpgrade(tankEnemyData.maxHealth, increment = tankEnemyData.maxHealth.GetStat() * 0.1f);
+                tankEnemyData.currentHealth += increment;
+                tankFist.attackDamage = new StatUpgrade(tankFist.attackDamage, 1);
+            }
+
         }
 
         public void PlayerDeath()

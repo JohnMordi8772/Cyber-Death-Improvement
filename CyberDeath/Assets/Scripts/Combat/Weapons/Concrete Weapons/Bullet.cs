@@ -10,11 +10,11 @@ namespace GoofyGhosts
         public Transform target;
         Vector3 newDirection, targetDirection;
         public IntChannelSO waveChannel;
+        public WeaponData ranged;
 
         // Start is called before the first frame update
         void Start()
         {
-            Debug.Log("AHHHH");
             target = GameObject.FindGameObjectWithTag("Player").transform;
             waveChannel = GameObject.FindObjectOfType<WaveManager>().GetWaveChannel();
             Vector3 targetPosition = target.position + new Vector3(0, 1.8f, 0);
@@ -44,7 +44,7 @@ namespace GoofyGhosts
         {
             if(other.tag == "Player")
             {
-                other.GetComponent<Health>().TakeDamage(5f);
+                other.GetComponent<Health>().TakeDamage(ranged.attackDamage.GetStat());
                 Destroy(gameObject);
             }
             else if(other.gameObject.layer != 6 && other.gameObject.layer != 11 && other.gameObject.layer != 9)
