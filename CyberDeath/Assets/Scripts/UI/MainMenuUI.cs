@@ -133,7 +133,7 @@ namespace GoofyGhosts
             }
         }
 
-        void ShowCredits()
+        public void ShowCredits()
         {
             controls.Dispose();
             controls = new PlayerControls();
@@ -147,7 +147,7 @@ namespace GoofyGhosts
             mainMenu.SetActive(false);
         }
 
-        void ShowHowToPlay()
+        public void ShowHowToPlay()
         {
             controls.Dispose();
             controls = new PlayerControls();
@@ -162,7 +162,7 @@ namespace GoofyGhosts
 
         }
 
-        void ShowMainMenu()
+        public void ShowMainMenu()
         {
             index = 0;
 
@@ -179,12 +179,12 @@ namespace GoofyGhosts
             howToPlay.SetActive(false);
         }
 
-        void QuitGame()
+        public void QuitGame()
         {
             Application.Quit();
         }
 
-        void LoadGameScene()
+        public void LoadGameScene()
         {
             SceneManager.LoadSceneAsync(1);
         }

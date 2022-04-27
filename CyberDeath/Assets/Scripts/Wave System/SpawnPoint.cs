@@ -115,7 +115,7 @@ namespace GoofyGhosts
         /// <param name="enemy">The enemy GameObject.</param>
         private void SpawnEnemy(GameObject enemy)
         {
-            Instantiate(enemy, transform.position, enemy.transform.rotation);
+            Debug.Log(Instantiate(enemy, transform.position, enemy.transform.rotation).GetComponent<Health>().GetData().maxHealth.GetStat());
         }
 
         /// <summary>

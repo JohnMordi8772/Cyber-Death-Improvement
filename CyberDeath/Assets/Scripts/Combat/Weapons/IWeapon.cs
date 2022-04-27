@@ -61,7 +61,7 @@ namespace GoofyGhosts
         /// </summary>
         protected virtual void Awake()
         {
-            data.Hydrate();
+            //data.Hydrate();
         }
 
         /// <summary>

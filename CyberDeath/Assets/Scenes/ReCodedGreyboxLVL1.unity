@@ -4296,8 +4296,40 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 577789132523395330, guid: 0dd5c886da27d1c4eaa735ea2d20726e, type: 3}
+      propertyPath: baseFist
+      value: 
+      objectReference: {fileID: 11400000, guid: afdba8ac235d3954b8f8e242ef6cc9ad, type: 2}
+    - target: {fileID: 577789132523395330, guid: 0dd5c886da27d1c4eaa735ea2d20726e, type: 3}
+      propertyPath: fastFist
+      value: 
+      objectReference: {fileID: 11400000, guid: b79ee6a7c9dc54e49a8e653941aee61c, type: 2}
+    - target: {fileID: 577789132523395330, guid: 0dd5c886da27d1c4eaa735ea2d20726e, type: 3}
+      propertyPath: tankFist
+      value: 
+      objectReference: {fileID: 11400000, guid: 018a99c8f43f81c41bf0c4ba328ac810, type: 2}
+    - target: {fileID: 577789132523395330, guid: 0dd5c886da27d1c4eaa735ea2d20726e, type: 3}
+      propertyPath: rangedWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 2cd9bb178f9d15e4683ff271b7c05a1f, type: 2}
+    - target: {fileID: 577789132523395330, guid: 0dd5c886da27d1c4eaa735ea2d20726e, type: 3}
       propertyPath: startingWave
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 577789132523395330, guid: 0dd5c886da27d1c4eaa735ea2d20726e, type: 3}
+      propertyPath: baseEnemyData
+      value: 
+      objectReference: {fileID: 11400000, guid: 63ae874dbb6936445a695ec8448bb39f, type: 2}
+    - target: {fileID: 577789132523395330, guid: 0dd5c886da27d1c4eaa735ea2d20726e, type: 3}
+      propertyPath: fastEnemyData
+      value: 
+      objectReference: {fileID: 11400000, guid: 185946632e7de1e4cb82a7eed9e27d78, type: 2}
+    - target: {fileID: 577789132523395330, guid: 0dd5c886da27d1c4eaa735ea2d20726e, type: 3}
+      propertyPath: tankEnemyData
+      value: 
+      objectReference: {fileID: 11400000, guid: b1a4f6bfc6c5a6b44b3a918c22506768, type: 2}
+    - target: {fileID: 577789132523395330, guid: 0dd5c886da27d1c4eaa735ea2d20726e, type: 3}
+      propertyPath: rangedEnemyData
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 577789132523395331, guid: 0dd5c886da27d1c4eaa735ea2d20726e, type: 3}
       propertyPath: m_Name
