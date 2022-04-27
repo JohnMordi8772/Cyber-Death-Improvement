@@ -54,6 +54,7 @@ namespace GoofyGhosts
             currentWeapon.gameObject.SetActive(false);
             currentWeapon = weapon;
             currentWeapon.gameObject.SetActive(true);
+            currentWeapon.data.Hydrate();
             Physics.IgnoreCollision(currentWeapon.GetComponent<Collider>(), GetComponent<Collider>());
         }
 
