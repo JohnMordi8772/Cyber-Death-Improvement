@@ -31,7 +31,8 @@ namespace GoofyGhosts
 
         private void Start()
         {
-            data.Init();
+            if(gameObject.tag == "Player")
+                data.Init();
             if(armor == null)
             {
                 armor = ScriptableObject.CreateInstance<Armor>();
@@ -196,6 +197,11 @@ namespace GoofyGhosts
             {
                 TakeDamage(60);
             }
+        }
+
+        public HealthData GetData()
+        {
+            return data;
         }
     }
 }
