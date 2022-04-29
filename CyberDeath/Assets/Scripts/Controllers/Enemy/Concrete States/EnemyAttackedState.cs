@@ -67,5 +67,10 @@ namespace GoofyGhosts
             stunned = false;
             SeekTarget();
         }
+
+        public void NewStunComplete()
+        {
+            stunned = false;
+        }
     }
 }
