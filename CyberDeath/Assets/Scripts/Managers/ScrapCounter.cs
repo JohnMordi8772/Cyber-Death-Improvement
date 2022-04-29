@@ -25,7 +25,7 @@ namespace GoofyGhosts
             _sfxChannel = sfxChannel;
             _scrapCollectSFX = scrapCollectSFX;
             _scrapCollectedChannel = scrapCollectedChannel;
-            scrapCount = 0;
+            scrapCount = 20;
 
             wireCount = 0;
             coilCount = 0;

@@ -25,5 +25,6 @@ namespace GoofyGhosts
         public bool purchase17 = false;
         public bool purchase18 = false;
         public bool purchase19 = false;
+        public bool purchase20 = false;
     }
 }

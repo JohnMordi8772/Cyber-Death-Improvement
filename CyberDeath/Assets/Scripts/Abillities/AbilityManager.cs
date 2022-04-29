@@ -39,6 +39,7 @@ namespace GoofyGhosts
 
         private Animator anim;
 
+        public bool nanobotsPurchased = false;
         public bool slamPurchased = false;
         public bool empPurchased = false;
         public bool taniumPurchased = false;
@@ -94,8 +95,30 @@ namespace GoofyGhosts
         {
             if (currentAbility is DashAbility)
             {
-                currentAbility = GetComponent<NanobotsAbility>();
-                icon.sprite = spriteIcons[1];
+                if (nanobotsPurchased)
+                {
+                    currentAbility = GetComponent<NanobotsAbility>();
+                    icon.sprite = spriteIcons[1];
+                }
+                else if (empPurchased)
+                {
+                    currentAbility = GetComponent<ShockwaveAbility>();
+                    icon.sprite = spriteIcons[2];
+                }
+                else if (taniumPurchased)
+                {
+                    currentAbility = GetComponent<Titanium>();
+                    icon.sprite = spriteIcons[3];
+                }
+                else if (slamPurchased)
+                {
+                    currentAbility = GetComponent<GrandSlamAbility>();
+                    icon.sprite = spriteIcons[4];
+                }
+                else
+                {
+                    return;
+                }
             }
             else if (currentAbility is NanobotsAbility)
             {
