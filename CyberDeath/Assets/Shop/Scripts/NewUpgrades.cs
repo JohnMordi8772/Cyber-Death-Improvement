@@ -184,7 +184,7 @@ namespace GoofyGhosts
             if (aCounter1 == 1 && GetScrapCount() >= 15 && !pm.purchase17)
             {
                 aud.Play();
-                playerAttack.OnPurchased(5, 1);
+                playerAttack.OnPurchased(5, 2);
                 playerSwing.OnPurchased(0.05f, 1);
                 GameObject.Find("CritChanceStorage").GetComponent<CritChanceStorage>().critChance += 5;
                 aCounter1++;
@@ -243,7 +243,7 @@ namespace GoofyGhosts
             if (aCounter1 == 3 && aCounter2 == 0 && GetScrapCount() >= 40 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.coilCount >= 5 && !pm.purchase3)
             {
                 aud.Play();
-                playerAttack.OnPurchased(10, 2);
+                playerAttack.OnPurchased(10, 3);
                 aCounter2++;
                 pm.purchase3 = true;
                 ScrapCounter.scrapCount -= 40;
