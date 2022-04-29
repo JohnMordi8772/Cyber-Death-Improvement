@@ -114,7 +114,7 @@ public class CharacterMotor : MonoBehaviour
         if (!bowFiring)
             vel = inputVector * motorData.movementSpeed.GetStat();
         else
-            vel = inputVector * motorData.movementSpeed.GetStat() / 2;
+            vel = inputVector * motorData.movementSpeed.GetStat() / 3;
 
         // Transforming the velocity from local space to world space.
         //vel = transform.TransformDirection(vel);

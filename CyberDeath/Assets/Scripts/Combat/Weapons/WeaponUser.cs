@@ -22,6 +22,7 @@ namespace GoofyGhosts
         public GameObject bowFiringPoint;
 
         protected bool firing;
+        protected bool canSpinAttack;
 
         private UnityAction SetFireToFalse;
 
@@ -31,6 +32,7 @@ namespace GoofyGhosts
         private void Awake()
         {
             currentWeapon = weaponHolder.GetComponentInChildren<IWeapon>();
+            canSpinAttack = false;
             //SetFireToFalse = () => anim.SetBool("Fire", false);
             //anim.SetInteger("Fire0", 1);
 
@@ -107,10 +109,16 @@ namespace GoofyGhosts
             firing = false;
             if (anim.GetBool("Spin") == true)
             {
+                if (canSpinAttack)
+                {
+                    anim.SetTrigger("CanSpinAttack");
+                }
+                StopAllCoroutines();
                 print("released mouse. Spinning");
                 anim.SetBool("Spin", false);
             }
             anim.SetBool("Fire", false);
+            canSpinAttack = false;
         }
 
         public virtual void PlayerReleaseFire()
@@ -130,8 +138,8 @@ namespace GoofyGhosts
         {
             Quaternion actualRot = transform.localRotation;
             Instantiate(arrow, new Vector3(bowFiringPoint.transform.position.x, transform.position.y + 2, bowFiringPoint.transform.position.z), actualRot);
-            Instantiate(arrow, new Vector3(bowFiringPoint.transform.position.x, transform.position.y + 2, bowFiringPoint.transform.position.z), actualRot *= Quaternion.Euler(0, 30, 0));
-            Instantiate(arrow, new Vector3(bowFiringPoint.transform.position.x, transform.position.y + 2, bowFiringPoint.transform.position.z), actualRot *= Quaternion.Euler(0, -60, 0));
+            Instantiate(arrow, new Vector3(bowFiringPoint.transform.position.x, transform.position.y + 2, bowFiringPoint.transform.position.z), actualRot *= Quaternion.Euler(0, 15, 0));
+            Instantiate(arrow, new Vector3(bowFiringPoint.transform.position.x, transform.position.y + 2, bowFiringPoint.transform.position.z), actualRot *= Quaternion.Euler(0, -30, 0));
         }
 
         /// <summary>
@@ -156,7 +164,14 @@ namespace GoofyGhosts
         {
             print("charging. Spin is true");
                 anim.SetBool("Spin", true);
+            StartCoroutine(CanShoot());
             
+        }
+
+        IEnumerator CanShoot()
+        {
+            yield return new WaitForSeconds(.6f);
+            canSpinAttack = true;
         }
     }
 }
