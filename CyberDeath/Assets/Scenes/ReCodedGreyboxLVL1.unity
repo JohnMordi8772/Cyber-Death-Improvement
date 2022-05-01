@@ -5384,7 +5384,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7776026, y: 1}
+    m_SensorSize: {x: 1.7785933, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -6782,8 +6782,10 @@ MonoBehaviour:
 
     Average Attack Speed
 
-    Easy
-    to Use
+    Stuns
+    Enemies on Hit
+
+    Easy to Use
 
     Press E to choose'
   m_isRightToLeft: 0
@@ -9508,6 +9510,8 @@ MonoBehaviour:
 
     Wide Area of
     Attack
+
+    Stuns Enemies on Hit
 
     Press E to choose'
   m_isRightToLeft: 0
@@ -14816,8 +14820,10 @@ MonoBehaviour:
 
     Shoot from a distance
 
-    Press
-    E to choose'
+    Must
+    Charge Spin Attack
+
+    Press E to choose'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 1080751a4eef04d8685d39bb49c0ee2d, type: 2}
   m_sharedMaterial: {fileID: -7418862247938417270, guid: 1080751a4eef04d8685d39bb49c0ee2d, type: 2}
