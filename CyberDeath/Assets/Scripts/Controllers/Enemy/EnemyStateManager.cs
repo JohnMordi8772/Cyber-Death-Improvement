@@ -16,7 +16,7 @@ namespace GoofyGhosts
         /// <summary>
         /// The enemy's current state.
         /// </summary>
-        private IEnemyState currentState;
+        public IEnemyState currentState;
 
         private List<IEnemyState> states;
 

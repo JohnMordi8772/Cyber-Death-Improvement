@@ -53,7 +53,8 @@ namespace GoofyGhosts
         {
             if (other.gameObject.tag == "Enemy")
             {
-                other.gameObject.GetComponent<IDamageable>().TakeDamage(dmg);
+                //other.gameObject.GetComponent<IDamageable>().TakeDamage(dmg);
+                other.gameObject.GetComponent<Health>().TakeDamage(dmg);
                 if (++enemiesHit == 3)
                     Destroy(gameObject);
             }

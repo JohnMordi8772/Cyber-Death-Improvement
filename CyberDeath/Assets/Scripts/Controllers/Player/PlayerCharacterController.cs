@@ -106,10 +106,12 @@ public class PlayerCharacterController : MonoBehaviour
         if(Gamepad.current != null || !MouseLookNew.scriptEnabled)
         {
             mouseScript.enabled = false;
+            Cursor.visible = false;
         }
         else
         {
             mouseScript.enabled = true;
+            Cursor.visible = true;
         }
     }
 

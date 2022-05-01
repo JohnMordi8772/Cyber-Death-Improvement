@@ -39,7 +39,7 @@ namespace GoofyGhosts
         /// </summary>
         private bool seeking;
 
-        private bool isShocked = false;
+        //private bool isShocked = false;
 
 
 
