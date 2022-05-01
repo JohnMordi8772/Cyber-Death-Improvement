@@ -43,7 +43,7 @@ namespace GoofyGhosts
 
                 // We only call this once to start the animation.
                 // After that, it is called repeatedly via an AnimationEvent.
-                weaponUser.Fire();
+                //weaponUser.Fire();
             }
         }
 
@@ -79,6 +79,22 @@ namespace GoofyGhosts
             //Debug.Log("EnemyAttackState: SeekTarget");
             manager.SwapState<EnemySeekState>();
             manager.SeekTarget();
+        }
+
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.tag == "Player")
+            {
+                StartCoroutine("Shocked");
+            }
+        }
+
+        private IEnumerator Shocked()
+        {
+            isShocked = true;
+            weaponUser.anim.SetBool("Fire", false);
+            yield return new WaitForSeconds(2f);
+            isShocked = false;
         }
     }
 }

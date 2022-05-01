@@ -26,6 +26,8 @@ namespace GoofyGhosts
 
         private UnityAction SetFireToFalse;
 
+        public AudioSource audioSource;
+
         /// <summary>
         /// Member variable initialization.
         /// </summary>
@@ -76,6 +78,7 @@ namespace GoofyGhosts
         public virtual void BowFire()
         {
             Instantiate(arrow, new Vector3(bowFiringPoint.transform.position.x, transform.position.y + 2, bowFiringPoint.transform.position.z), transform.localRotation);
+            audioSource.Play();
         }
 
         /// <summary>

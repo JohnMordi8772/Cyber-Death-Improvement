@@ -47,7 +47,7 @@ namespace GoofyGhosts
             while (empRange.transform.localScale.x < 40)
             {
                 empRange.transform.localScale = new Vector3(i, i, i);
-                yield return new WaitForSeconds(0.0125f);
+                yield return new WaitForSeconds(0.00125f);
                 i++;
             }
 
