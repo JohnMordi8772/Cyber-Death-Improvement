@@ -8266,15 +8266,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8963117091853503625, guid: 2ea1e20c1b4040f4b86757324b7ca973, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.35
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8963117091853503625, guid: 2ea1e20c1b4040f4b86757324b7ca973, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.9499998
+      value: 3.99
       objectReference: {fileID: 0}
     - target: {fileID: 8963117091853503625, guid: 2ea1e20c1b4040f4b86757324b7ca973, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.26969218
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8963117091853503625, guid: 2ea1e20c1b4040f4b86757324b7ca973, type: 3}
       propertyPath: m_LocalRotation.y
