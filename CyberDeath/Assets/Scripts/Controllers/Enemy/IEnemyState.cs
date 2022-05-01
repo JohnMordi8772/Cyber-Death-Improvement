@@ -17,6 +17,8 @@ namespace GoofyGhosts
         /// Reference to the EnemyCharacterController component.
         /// </summary>
         protected EnemyStateManager manager;
+
+        public bool isShocked = false;
         /// <summary>
         /// Attacks a target.
         /// </summary>

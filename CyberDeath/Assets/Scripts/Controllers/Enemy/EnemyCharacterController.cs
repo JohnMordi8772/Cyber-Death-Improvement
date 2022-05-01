@@ -45,17 +45,20 @@ namespace GoofyGhosts
             while (target != null)
             {
                 float distance = Vector3.Distance(transform.position, target.position);
-                if ((distance <= agent.stoppingDistance + 0.1f && !inRangeOfTarget) || (inRangeOfTarget && !anim.GetBool("Fire")))
+                if (!manager.currentState.isShocked)
                 {
-                    Debug.Log("InRange");
-                    inRangeOfTarget = true;
-                    anim.SetBool("Fire", true);
-                }
-                else if (distance > agent.stoppingDistance && inRangeOfTarget)
-                {
-                    Debug.Log("OutOfRange");
-                    inRangeOfTarget = false;
-                    anim.SetBool("Fire", false);
+                    if ((distance <= agent.stoppingDistance + 0.1f && !inRangeOfTarget) || (inRangeOfTarget && !anim.GetBool("Fire")))
+                    {
+                        Debug.Log("InRange");
+                        inRangeOfTarget = true;
+                        anim.SetBool("Fire", true);
+                    }
+                    else if (distance > agent.stoppingDistance && inRangeOfTarget)
+                    {
+                        Debug.Log("OutOfRange");
+                        inRangeOfTarget = false;
+                        anim.SetBool("Fire", false);
+                    }
                 }
 
                 yield return new WaitForSeconds(checkDistanceTime);

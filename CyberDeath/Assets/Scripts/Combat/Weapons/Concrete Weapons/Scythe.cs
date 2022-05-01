@@ -94,6 +94,7 @@ namespace GoofyGhosts
         private void Start()
         {
             scytheCollider.enabled = false;
+            data.Hydrate();
         }
         #endregion
 

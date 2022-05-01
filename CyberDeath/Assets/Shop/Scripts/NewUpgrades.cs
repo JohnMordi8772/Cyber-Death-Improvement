@@ -158,6 +158,10 @@ namespace GoofyGhosts
                 buttons[11].image.color = purchased;
                 dCounter4 = 2;
             }
+            if(pm.purchase20)
+            {
+                buttons[19].image.color = purchased;
+            }
         }
 
         public void AttackBuff1()
@@ -195,6 +199,21 @@ namespace GoofyGhosts
                 buttons[14].image.color = Color.white;
                 buttons[0].image.color = purchased;
                 buttons[0].Select();
+            }
+        }
+
+        public void Nanobots()
+        {
+            if (GetScrapCount() >= 20)
+            {
+                aud.Play();
+                am.nanobotsPurchased = true;
+                pm.purchase20 = true;
+                ScrapCounter.scrapCount -= 20;
+                ScrapCounter.OnScrapCountChange();
+                UpdateMoneyText();
+                buttons[19].image.color = purchased;
+                buttons[19].Select();
             }
         }
 
