@@ -107,11 +107,13 @@ public class PlayerCharacterController : MonoBehaviour
         {
             mouseScript.enabled = false;
             Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
         }
         else
         {
             mouseScript.enabled = true;
             Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
         }
     }
 

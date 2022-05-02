@@ -64,8 +64,15 @@ namespace GoofyGhosts
         /// </summary>
         public void OnStunComplete()
         {
-            stunned = false;
+            //stunned = false;
+            StartCoroutine(Cooldown());
             SeekTarget();
+        }
+
+        IEnumerator Cooldown()
+        {
+            yield return new WaitForSeconds(2f);
+            stunned = false;
         }
 
         public void NewStunComplete()
