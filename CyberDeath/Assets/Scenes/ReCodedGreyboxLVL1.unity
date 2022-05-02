@@ -4313,7 +4313,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 2cd9bb178f9d15e4683ff271b7c05a1f, type: 2}
     - target: {fileID: 577789132523395330, guid: 0dd5c886da27d1c4eaa735ea2d20726e, type: 3}
       propertyPath: startingWave
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 577789132523395330, guid: 0dd5c886da27d1c4eaa735ea2d20726e, type: 3}
       propertyPath: baseEnemyData
