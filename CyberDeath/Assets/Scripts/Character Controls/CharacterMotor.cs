@@ -403,6 +403,7 @@ public class CharacterMotor : MonoBehaviour
 
     public void BowFinished()
     {
-        bowFiring = false;
+        if (!animator.GetBool("Fire") || !animator.GetBool("Spin"))
+            bowFiring = false;
     }
 }

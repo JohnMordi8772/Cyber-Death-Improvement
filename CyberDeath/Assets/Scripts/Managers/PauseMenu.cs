@@ -13,6 +13,8 @@ namespace GoofyGhosts
 
         [SerializeField] private SelectionArrow selectionArrow;
 
+        public GameObject controlsMenu, pauseMenu;
+
         private void Awake()
         {
             controls = new PlayerControls();
@@ -38,7 +40,20 @@ namespace GoofyGhosts
         }
         #endregion
 
+        public void ShowControls()
+        {
+            controls.UI.Escape.started += _ => ShowPauseMenu();
+            controls.UI.Escape.Enable();
+            controlsMenu.SetActive(true);
+            pauseMenu.SetActive(false);
+        }
 
+        public void ShowPauseMenu()
+        {
+            controls.UI.Escape.Disable();
+            controlsMenu.SetActive(false);
+            pauseMenu.SetActive(true);
+        }
 
         private void OnUpPressed()
         {

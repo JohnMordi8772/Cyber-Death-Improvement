@@ -57,9 +57,27 @@ namespace GoofyGhosts
         /// </summary>
         private void SpawnGibsWithScrap()
         {
-            Instantiate(scrapPrefab, transform.position, Quaternion.identity);
-            if(Random.Range(0,100) < 60)
-                Instantiate(enemyPartPrefab, transform.position, Quaternion.identity);
+            Vector3 pos = new Vector3(transform.position.x, transform.position.y + 1, transform.position.z);
+            Instantiate(scrapPrefab, pos, Quaternion.identity);
+            switch (gameObject.name)
+            {
+                case "Enemy(Clone)":
+                    if (Random.Range(0, 100) < 50)
+                        Instantiate(enemyPartPrefab, pos, Quaternion.identity);
+                    break;
+                case "tankModel(Clone)":
+                    if (Random.Range(0, 100) < 80)
+                        Instantiate(enemyPartPrefab, pos, Quaternion.identity);
+                    break;
+                case "fastenemy(Clone)":
+                    if (Random.Range(0, 100) < 80)
+                        Instantiate(enemyPartPrefab, pos, Quaternion.identity);
+                    break;
+                case "RangedEnemy(Clone)":
+                    if (Random.Range(0, 100) < 80)
+                        Instantiate(enemyPartPrefab, pos, Quaternion.identity);
+                    break;
+            }
             SpawnGibs();
         }
 
