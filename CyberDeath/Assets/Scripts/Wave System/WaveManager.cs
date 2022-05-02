@@ -163,7 +163,7 @@ namespace GoofyGhosts
         public static int GetNumEnemiesForWave(int waveNum)
         {
             int num = Mathf.FloorToInt(
-                Mathf.Pow(1.3f, waveNum) + 5);
+                Mathf.Pow(1.3f, waveNum) + 10);
 
             return num;
         }
