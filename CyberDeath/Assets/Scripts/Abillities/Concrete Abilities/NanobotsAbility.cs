@@ -12,8 +12,8 @@ namespace GoofyGhosts
 
         protected override void ActivateAbility()
         {
-            if (playerHealthData.currentHealth <= playerHealthData.maxHealth.GetStat() - 30)
-                playerHealth.TakeDamage(-30);
+            if (playerHealthData.currentHealth <= playerHealthData.maxHealth.GetStat() - 25)
+                playerHealth.TakeDamage(-25);
             else
                 playerHealth.TakeDamage(playerHealthData.currentHealth - playerHealthData.maxHealth.GetStat());
         }
