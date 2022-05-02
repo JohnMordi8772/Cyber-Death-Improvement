@@ -67,7 +67,7 @@ namespace GoofyGhosts
                     }
                     yield return new WaitForSeconds(0.1f);
                 }
-                print("alpa " + images[0].GetComponent<Image>().color.a);
+                //print("alpa " + images[0].GetComponent<Image>().color.a);
             }
             else
             {

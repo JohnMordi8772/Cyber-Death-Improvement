@@ -23,7 +23,7 @@ namespace GoofyGhosts
         private int dCounter3 = 0;
         private int dCounter4 = 0;
 
-        public TextMeshProUGUI moneyText;
+        public TextMeshProUGUI moneyText, wireText, fanText, coilText, armorText;
 
         public Button[] buttons;
 
@@ -57,10 +57,6 @@ namespace GoofyGhosts
                 buttons[0].image.color = purchased;
                 buttons[14].image.color = Color.white;
                 aCounter1 = 2;
-            }
-            if (pm.purchase18)
-            {
-                buttons[15].image.color = purchased;
             }
             if (pm.purchase2)
             {
@@ -162,6 +158,10 @@ namespace GoofyGhosts
             {
                 buttons[19].image.color = purchased;
             }
+            if (pm.purchase18)
+            {
+                buttons[15].image.color = purchased;
+            }
         }
 
         public void AttackBuff1()
@@ -233,7 +233,8 @@ namespace GoofyGhosts
                 buttons[1].image.color = Color.white;
                 buttons[3].image.color = Color.white;
                 buttons[12].image.color = Color.white;
-                buttons[15].image.color = Color.white;
+                if(!pm.purchase18)
+                    buttons[15].image.color = Color.white;
                 buttons[14].image.color = purchased;
                 buttons[14].Select();
             }
@@ -259,13 +260,13 @@ namespace GoofyGhosts
 
         public void AttackPowerUp1()
         {
-            if (aCounter1 == 3 && aCounter2 == 0 && GetScrapCount() >= 40 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.coilCount >= 5 && !pm.purchase3)
+            if (aCounter1 == 3 && aCounter2 == 0 && GetScrapCount() >= 35 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.coilCount >= 5 && !pm.purchase3)
             {
                 aud.Play();
                 playerAttack.OnPurchased(10, 3);
                 aCounter2++;
                 pm.purchase3 = true;
-                ScrapCounter.scrapCount -= 40;
+                ScrapCounter.scrapCount -= 35;
                 ScrapCounter.wireCount -= 5;
                 ScrapCounter.fanCount -= 5;
                 ScrapCounter.coilCount -= 5;
@@ -279,7 +280,7 @@ namespace GoofyGhosts
 
         public void AttackPowerUp2()
         {
-            if (aCounter2 == 1 && GetScrapCount() >= 50 && ScrapCounter.wireCount >= 10 && ScrapCounter.fanCount >= 10 && ScrapCounter.coilCount >= 5 && !pm.purchase4)
+            if (aCounter2 == 1 && GetScrapCount() >= 50 && ScrapCounter.wireCount >= 10 && ScrapCounter.fanCount >= 10 && ScrapCounter.coilCount >= 5 && ScrapCounter.armorCount >= 5 && !pm.purchase4)
             {
                 aud.Play();
                 playerAttack.OnPurchased(20, 4);
@@ -289,6 +290,7 @@ namespace GoofyGhosts
                 ScrapCounter.wireCount -= 10;
                 ScrapCounter.fanCount -= 10;
                 ScrapCounter.coilCount -= 5;
+                ScrapCounter.armorCount -= 5;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[2].image.color = purchased;
@@ -298,13 +300,13 @@ namespace GoofyGhosts
 
         public void AttackSpeedUp1()
         {
-            if (aCounter1 == 3 && aCounter3 == 0 && GetScrapCount() >= 40 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.coilCount >= 5 && !pm.purchase5)
+            if (aCounter1 == 3 && aCounter3 == 0 && GetScrapCount() >= 35 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.coilCount >= 5 && !pm.purchase5)
             {
                 aud.Play();
                 playerSwing.OnPurchased(0.10f, 2);
                 aCounter3++;
                 pm.purchase5 = true;
-                ScrapCounter.scrapCount -= 40;
+                ScrapCounter.scrapCount -= 35;
                 ScrapCounter.wireCount -= 5;
                 ScrapCounter.fanCount -= 5;
                 ScrapCounter.coilCount -= 5;
@@ -318,7 +320,7 @@ namespace GoofyGhosts
 
         public void AttackSpeedUp2()
         {
-            if (aCounter3 == 1 && GetScrapCount() >= 50 && ScrapCounter.wireCount >= 10 && ScrapCounter.fanCount >= 10 && ScrapCounter.coilCount >= 5 && !pm.purchase6)
+            if (aCounter3 == 1 && GetScrapCount() >= 50 && ScrapCounter.wireCount >= 10 && ScrapCounter.fanCount >= 10 && ScrapCounter.coilCount >= 5 && ScrapCounter.armorCount >= 5 && !pm.purchase6)
             {
                 aud.Play();
                 playerSwing.OnPurchased(0.20f, 4);
@@ -328,6 +330,7 @@ namespace GoofyGhosts
                 ScrapCounter.wireCount -= 10;
                 ScrapCounter.fanCount -= 10;
                 ScrapCounter.coilCount -= 5;
+                ScrapCounter.armorCount -= 5;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[4].image.color = purchased;
@@ -337,13 +340,13 @@ namespace GoofyGhosts
 
         public void CritChanceUp1()
         {
-            if (aCounter1 == 3 && aCounter4 == 0 && GetScrapCount() >= 40 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.coilCount >= 5 && !pm.purchase7)
+            if (aCounter1 == 3 && aCounter4 == 0 && GetScrapCount() >= 35 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.coilCount >= 5 && !pm.purchase7)
             {
                 aud.Play();
                 GameObject.Find("CritChanceStorage").GetComponent<CritChanceStorage>().critChance += 10;
                 aCounter4++;
                 pm.purchase7 = true;
-                ScrapCounter.scrapCount -= 40;
+                ScrapCounter.scrapCount -= 35;
                 ScrapCounter.wireCount -= 5;
                 ScrapCounter.fanCount -= 5;
                 ScrapCounter.coilCount -= 5;
@@ -357,7 +360,7 @@ namespace GoofyGhosts
 
         public void CritChanceUp2()
         {
-            if (aCounter4 == 1 && GetScrapCount() >= 50 && ScrapCounter.wireCount >= 10 && ScrapCounter.fanCount >= 10 && ScrapCounter.coilCount >= 5 && !pm.purchase8)
+            if (aCounter4 == 1 && GetScrapCount() >= 50 && ScrapCounter.wireCount >= 10 && ScrapCounter.fanCount >= 10 && ScrapCounter.coilCount >= 5 && ScrapCounter.armorCount >= 5 && !pm.purchase8)
             {
                 aud.Play();
                 GameObject.Find("CritChanceStorage").GetComponent<CritChanceStorage>().critChance += 15;
@@ -367,6 +370,7 @@ namespace GoofyGhosts
                 ScrapCounter.wireCount -= 10;
                 ScrapCounter.fanCount -= 10;
                 ScrapCounter.coilCount -= 5;
+                ScrapCounter.armorCount -= 5;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[13].image.color = purchased;
@@ -428,7 +432,8 @@ namespace GoofyGhosts
                 buttons[6].image.color = Color.white;
                 buttons[8].image.color = Color.white;
                 buttons[10].image.color = Color.white;
-                buttons[15].image.color = Color.white;
+                if(!pm.purchase18)
+                    buttons[15].image.color = Color.white;
                 buttons[16].image.color = purchased;
                 buttons[16].Select();
             }
@@ -436,16 +441,16 @@ namespace GoofyGhosts
 
         public void HealthUp1()
         {
-            if (dCounter1 == 3 && dCounter2 == 0 && GetScrapCount() >= 40 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.armorCount >= 5 && !pm.purchase11) 
+            if (dCounter1 == 3 && dCounter2 == 0 && GetScrapCount() >= 35 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.coilCount >= 5 && !pm.purchase11) 
             {
                 aud.Play();
                 playerHealth.OnPurchased(10, 2);
                 dCounter2++;
                 pm.purchase11 = true;
-                ScrapCounter.scrapCount -= 40;
+                ScrapCounter.scrapCount -= 35;
                 ScrapCounter.wireCount -= 5;
                 ScrapCounter.fanCount -= 5;
-                ScrapCounter.armorCount -= 5;
+                ScrapCounter.coilCount -= 5;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[7].image.color = Color.white;
@@ -456,7 +461,7 @@ namespace GoofyGhosts
 
         public void HealthUp2()
         {
-            if (dCounter2 == 1 && GetScrapCount() >= 50 && ScrapCounter.wireCount >= 10 && ScrapCounter.fanCount >= 10 && ScrapCounter.armorCount >= 5 && !pm.purchase12)
+            if (dCounter2 == 1 && GetScrapCount() >= 50 && ScrapCounter.wireCount >= 10 && ScrapCounter.fanCount >= 10 && ScrapCounter.armorCount >= 5 && ScrapCounter.coilCount >= 5 && !pm.purchase12)
             {
                 aud.Play();
                 playerHealth.OnPurchased(10, 2);
@@ -466,6 +471,7 @@ namespace GoofyGhosts
                 ScrapCounter.wireCount -= 10;
                 ScrapCounter.fanCount -= 10;
                 ScrapCounter.armorCount -= 5;
+                ScrapCounter.coilCount -= 5;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[7].image.color = purchased;
@@ -475,16 +481,16 @@ namespace GoofyGhosts
 
         public void ArmorUp1()
         {
-            if (dCounter1 == 3 && dCounter3 == 0 && GetScrapCount() >= 40 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.armorCount >= 5 && !pm.purchase13)
+            if (dCounter1 == 3 && dCounter3 == 0 && GetScrapCount() >= 35 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.coilCount >= 5 && !pm.purchase13)
             {
                 aud.Play();
                 playerArmor.OnPurchased(10, 2);
                 dCounter3++;
                 pm.purchase13 = true;
-                ScrapCounter.scrapCount -= 40;
+                ScrapCounter.scrapCount -= 35;
                 ScrapCounter.wireCount -= 5;
                 ScrapCounter.fanCount -= 5;
-                ScrapCounter.armorCount -= 5;
+                ScrapCounter.coilCount -= 5;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[9].image.color = Color.white;
@@ -495,7 +501,7 @@ namespace GoofyGhosts
 
         public void ArmorUp2()
         {
-            if (dCounter3 == 1 && GetScrapCount() >= 50 && ScrapCounter.wireCount >= 10 && ScrapCounter.fanCount >= 10 && ScrapCounter.armorCount >= 5 && !pm.purchase14)
+            if (dCounter3 == 1 && GetScrapCount() >= 50 && ScrapCounter.wireCount >= 10 && ScrapCounter.fanCount >= 10 && ScrapCounter.armorCount >= 5 && ScrapCounter.coilCount >= 5 && !pm.purchase14)
             {
                 aud.Play();
                 playerArmor.OnPurchased(10, 2);
@@ -505,6 +511,7 @@ namespace GoofyGhosts
                 ScrapCounter.wireCount -= 10;
                 ScrapCounter.fanCount -= 10;
                 ScrapCounter.armorCount -= 5;
+                ScrapCounter.coilCount -= 5;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[9].image.color = purchased;
@@ -514,16 +521,16 @@ namespace GoofyGhosts
 
         public void MoveSpeedUp1()
         {
-            if (dCounter1 == 3 && dCounter4 == 0 && GetScrapCount() >= 40 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.armorCount >= 5 && !pm.purchase15)
+            if (dCounter1 == 3 && dCounter4 == 0 && GetScrapCount() >= 35 && ScrapCounter.wireCount >= 5 && ScrapCounter.fanCount >= 5 && ScrapCounter.coilCount >= 5 && !pm.purchase15)
             {
                 aud.Play();
                 playerMove.OnPurchased(1, 2);
                 dCounter4++;
                 pm.purchase15 = true;
-                ScrapCounter.scrapCount -= 40;
+                ScrapCounter.scrapCount -= 35;
                 ScrapCounter.wireCount -= 5;
                 ScrapCounter.fanCount -= 5;
-                ScrapCounter.armorCount -= 5;
+                ScrapCounter.coilCount -= 5;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[11].image.color = Color.white;
@@ -534,7 +541,7 @@ namespace GoofyGhosts
 
         public void MoveSpeedUp2()
         {
-            if (dCounter4 == 1 && GetScrapCount() >= 50 && ScrapCounter.wireCount >= 10 && ScrapCounter.fanCount >= 10 && ScrapCounter.armorCount >= 5 && !pm.purchase16)
+            if (dCounter4 == 1 && GetScrapCount() >= 50 && ScrapCounter.wireCount >= 10 && ScrapCounter.fanCount >= 10 && ScrapCounter.armorCount >= 5 && ScrapCounter.coilCount >= 5 && !pm.purchase16)
             {
                 aud.Play();
                 playerMove.OnPurchased(1, 2);
@@ -544,6 +551,7 @@ namespace GoofyGhosts
                 ScrapCounter.wireCount -= 10;
                 ScrapCounter.fanCount -= 10;
                 ScrapCounter.armorCount -= 5;
+                ScrapCounter.coilCount -= 5;
                 ScrapCounter.OnScrapCountChange();
                 UpdateMoneyText();
                 buttons[11].image.color = purchased;
@@ -559,6 +567,10 @@ namespace GoofyGhosts
         void UpdateMoneyText()
         {
             moneyText.text = "Scrap: " + GetScrapCount();
+            wireText.text = "Wire: " + ScrapCounter.wireCount;
+            fanText.text = "Fan: " + ScrapCounter.fanCount;
+            coilText.text = "Coil: " + ScrapCounter.coilCount;
+            armorText.text = "Armor Plate: " + ScrapCounter.armorCount;
         }
     }
 }
