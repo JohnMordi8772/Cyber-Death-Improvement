@@ -5688,7 +5688,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7663463491292103227, guid: 8913f1426f3da5345b94503380789359, type: 3}
       propertyPath: m_text
-      value: Player Controls
+      value: Programming and Design
       objectReference: {fileID: 0}
     - target: {fileID: 7663463491596162688, guid: 8913f1426f3da5345b94503380789359, type: 3}
       propertyPath: m_AnchoredPosition.y
