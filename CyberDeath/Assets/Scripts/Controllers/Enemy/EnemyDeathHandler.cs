@@ -58,7 +58,7 @@ namespace GoofyGhosts
         private void SpawnGibsWithScrap()
         {
             Instantiate(scrapPrefab, transform.position, Quaternion.identity);
-            if(Random.Range(0,1) < 10)
+            if(Random.Range(0,100) < 10)
                 Instantiate(enemyPartPrefab, transform.position, Quaternion.identity);
             SpawnGibs();
         }
