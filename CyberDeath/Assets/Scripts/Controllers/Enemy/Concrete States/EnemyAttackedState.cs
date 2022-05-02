@@ -64,8 +64,8 @@ namespace GoofyGhosts
         /// </summary>
         public void OnStunComplete()
         {
-            //stunned = false;
-            StartCoroutine(Cooldown());
+            stunned = false;
+            //StartCoroutine(Cooldown());
             SeekTarget();
         }
 
