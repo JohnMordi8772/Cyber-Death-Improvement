@@ -15,7 +15,7 @@ MonoBehaviour:
   abilityName: Shockwave
   cooldownTime:
     statName: Shockwave Cooldown
-    baseStat: 10
+    baseStat: 25
   shockForce:
     statName: 
     baseStat: 0
