@@ -841,7 +841,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 0.12
-  m_Radius: 0.05
+  m_Radius: 0.025
   m_SlopeLimit: 0
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -878,6 +878,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1750d597bbb76c49a86147266aabcb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: {fileID: 0}
 --- !u!114 &-5303407887489603501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -890,6 +891,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bbd2ebf894aa034da50e8d13988aaaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isShocked: 0
   wakeupTime: 0
 --- !u!114 &-3330493823095021218
 MonoBehaviour:
@@ -927,8 +929,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveChannel: {fileID: 11400000, guid: d1693b35dd5bcf847a746ae36c47fd8b, type: 2}
   gibPrefab: {fileID: 2457152246485526186, guid: 2a08b08a3ad70404d9ff7656b5a58458, type: 3}
-  scrapPrefab: {fileID: 8660226311329686915, guid: 212a99ab81cc3f649bbe99c98e112423, type: 3}
-  enemyPartPrefab: {fileID: 5730678233324163338, guid: 36776b484b9b65d438bfd5fe689ef6ae, type: 3}
+  scrapPrefab: {fileID: 5730678233324163338, guid: 36776b484b9b65d438bfd5fe689ef6ae, type: 3}
+  enemyPartPrefab: {fileID: 8660226311329686915, guid: 212a99ab81cc3f649bbe99c98e112423, type: 3}
   sfxChannel: {fileID: 11400000, guid: 21dd50e5a1219104392fa94444fd29dd, type: 2}
   deathSFX: {fileID: 11400000, guid: be4b335775964694b8b5f42d67755f2f, type: 2}
 --- !u!195 &-1479766787651161164
@@ -979,6 +981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1750d597bbb76c49a86147266aabcb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: {fileID: 0}
 --- !u!114 &-8622796518570662631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1005,6 +1008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc077b8e0d59ceb43b9b01dd000956a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isShocked: 0
   updatePathTime: 0.3
 --- !u!114 &-932344708061919549
 MonoBehaviour:
@@ -1030,6 +1034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b88a88eb15c33df42ab9fd589421c319, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isShocked: 0
   hitSFX: {fileID: 11400000, guid: 91c33f0fa9b163d4580d8e0b32ea01c6, type: 2}
 --- !u!114 &-8607880987316694804
 MonoBehaviour:
@@ -1048,6 +1053,7 @@ MonoBehaviour:
   currentWeapon: {fileID: 0}
   arrow: {fileID: 0}
   bowFiringPoint: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!114 &4146044706190069797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1060,6 +1066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2e4f95a2cd362e4da1397499bcb8794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isShocked: 0
 --- !u!1 &6208501338983286037
 GameObject:
   m_ObjectHideFlags: 0
@@ -1523,15 +1530,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2891552339356084301, guid: 004dd00d5732f4c878078e06f45657b5, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.01
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2891552339356084301, guid: 004dd00d5732f4c878078e06f45657b5, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.01
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2891552339356084301, guid: 004dd00d5732f4c878078e06f45657b5, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.03
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2891552339356084301, guid: 004dd00d5732f4c878078e06f45657b5, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1598,15 +1605,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8963117091853503625, guid: 2ea1e20c1b4040f4b86757324b7ca973, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.01
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8963117091853503625, guid: 2ea1e20c1b4040f4b86757324b7ca973, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.01
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8963117091853503625, guid: 2ea1e20c1b4040f4b86757324b7ca973, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.01
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8963117091853503625, guid: 2ea1e20c1b4040f4b86757324b7ca973, type: 3}
       propertyPath: m_LocalPosition.x

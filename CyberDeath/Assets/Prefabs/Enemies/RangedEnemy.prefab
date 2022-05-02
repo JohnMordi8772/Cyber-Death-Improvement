@@ -5789,6 +5789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1750d597bbb76c49a86147266aabcb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: {fileID: 0}
 --- !u!114 &6339807668237610977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5801,6 +5802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bbd2ebf894aa034da50e8d13988aaaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isShocked: 0
   wakeupTime: 0
 --- !u!114 &4610981134714297456
 MonoBehaviour:
@@ -5814,6 +5816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc077b8e0d59ceb43b9b01dd000956a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isShocked: 0
   updatePathTime: 0.3
 --- !u!195 &2919399331839118277
 NavMeshAgent:
@@ -5849,6 +5852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2e4f95a2cd362e4da1397499bcb8794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isShocked: 0
 --- !u!114 &5112898108546024107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5861,6 +5865,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b88a88eb15c33df42ab9fd589421c319, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isShocked: 0
   hitSFX: {fileID: 11400000, guid: 3831ba59ad2a9f4458dffbf220436bf5, type: 2}
 --- !u!114 &6168517878572105591
 MonoBehaviour:
@@ -5891,6 +5896,7 @@ MonoBehaviour:
   currentWeapon: {fileID: 0}
   arrow: {fileID: 0}
   bowFiringPoint: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!114 &5194246570146179896
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5919,8 +5925,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveChannel: {fileID: 11400000, guid: d1693b35dd5bcf847a746ae36c47fd8b, type: 2}
   gibPrefab: {fileID: 8412908639135468929, guid: a3b558e13c24b86458c4aa91a6a31d51, type: 3}
-  scrapPrefab: {fileID: 3095083623917434936, guid: fe483b64735f52944ab30533da634621, type: 3}
-  enemyPartPrefab: {fileID: 5730678233324163338, guid: 36776b484b9b65d438bfd5fe689ef6ae, type: 3}
+  scrapPrefab: {fileID: 5730678233324163338, guid: 36776b484b9b65d438bfd5fe689ef6ae, type: 3}
+  enemyPartPrefab: {fileID: 3095083623917434936, guid: fe483b64735f52944ab30533da634621, type: 3}
   sfxChannel: {fileID: 11400000, guid: 21dd50e5a1219104392fa94444fd29dd, type: 2}
   deathSFX: {fileID: 11400000, guid: be4b335775964694b8b5f42d67755f2f, type: 2}
 --- !u!95 &2030221374342325462

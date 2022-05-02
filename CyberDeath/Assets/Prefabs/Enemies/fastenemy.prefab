@@ -92,7 +92,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 5
-  m_Radius: 3.5
+  m_Radius: 2
   m_SlopeLimit: 0
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -134,6 +134,7 @@ MonoBehaviour:
   currentWeapon: {fileID: 0}
   arrow: {fileID: 0}
   bowFiringPoint: {fileID: 0}
+  audioSource: {fileID: 0}
 --- !u!114 &2299156864005966232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -146,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bbd2ebf894aa034da50e8d13988aaaa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isShocked: 0
   wakeupTime: 0
 --- !u!114 &2299156864005966233
 MonoBehaviour:
@@ -161,8 +163,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waveChannel: {fileID: 11400000, guid: d1693b35dd5bcf847a746ae36c47fd8b, type: 2}
   gibPrefab: {fileID: 9183885808318931080, guid: eedcf75581dc42541a0909437e19c802, type: 3}
-  scrapPrefab: {fileID: 5740882630919772352, guid: 2d934ce95b3e24a4389143a6e1d2f212, type: 3}
-  enemyPartPrefab: {fileID: 5730678233324163338, guid: 36776b484b9b65d438bfd5fe689ef6ae, type: 3}
+  scrapPrefab: {fileID: 5730678233324163338, guid: 36776b484b9b65d438bfd5fe689ef6ae, type: 3}
+  enemyPartPrefab: {fileID: 5740882630919772352, guid: 2d934ce95b3e24a4389143a6e1d2f212, type: 3}
   sfxChannel: {fileID: 11400000, guid: 21dd50e5a1219104392fa94444fd29dd, type: 2}
   deathSFX: {fileID: 11400000, guid: be4b335775964694b8b5f42d67755f2f, type: 2}
 --- !u!114 &2299156864005966234
@@ -235,6 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1750d597bbb76c49a86147266aabcb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentState: {fileID: 0}
 --- !u!114 &2299156864005966226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,6 +250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc077b8e0d59ceb43b9b01dd000956a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isShocked: 0
   updatePathTime: 0.3
 --- !u!114 &2299156864005966227
 MonoBehaviour:
@@ -286,6 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b88a88eb15c33df42ab9fd589421c319, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isShocked: 0
   hitSFX: {fileID: 11400000, guid: 3831ba59ad2a9f4458dffbf220436bf5, type: 2}
 --- !u!114 &171224834383541649
 MonoBehaviour:
@@ -299,6 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f2e4f95a2cd362e4da1397499bcb8794, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isShocked: 0
 --- !u!1 &1599344543535721679
 GameObject:
   m_ObjectHideFlags: 0

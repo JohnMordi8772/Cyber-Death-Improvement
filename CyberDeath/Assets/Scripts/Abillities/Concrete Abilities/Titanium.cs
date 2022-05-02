@@ -37,7 +37,7 @@ namespace GoofyGhosts
             mats[3] = silver;
             player.GetComponent<SkinnedMeshRenderer>().materials = mats;
             playerArmor.CurrentArmor = new StatUpgrade(playerArmor.CurrentArmor, increase);
-            yield return new WaitForSeconds(8f);
+            yield return new WaitForSeconds(4f);
             aud[2].Play();
             mats[2] = body2;
             mats[3] = body1;

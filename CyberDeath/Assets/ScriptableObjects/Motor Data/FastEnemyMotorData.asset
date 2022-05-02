@@ -16,7 +16,7 @@ MonoBehaviour:
   baseData: {fileID: 11400000, guid: 3c59f3cad16d59b4e98e91923bfd83ef, type: 2}
   _movementSpeed:
     statName: Movement Speed
-    baseStat: 17.5
+    baseStat: 30
   _rotateSpeed: 7
   _jumpHeight: 7
   _gravity: 40
