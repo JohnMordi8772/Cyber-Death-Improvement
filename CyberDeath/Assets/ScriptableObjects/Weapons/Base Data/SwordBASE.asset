@@ -17,7 +17,7 @@ MonoBehaviour:
   weaponName: Sword
   attackDamage:
     statName: Attack Damage
-    baseStat: 22.5
+    baseStat: 25
   attackSpeed:
     statName: Attack Speed
     baseStat: 1
